@@ -69,16 +69,17 @@ All content should be loadable from static local data files.
 
 ---
 
-## 3. Suggested Tech Stack
+## 3. Tech Stack
 
-Preferred implementation:
+Chosen implementation:
 
 - React
 - Vite
-- TypeScript
+- TypeScript, scoped to the data layer (see 3.1)
 - Tailwind CSS
 - React Router
 - React Zoom Pan Pinch or equivalent lightweight pan/zoom library
+- a build-time prerenderer such as `vite-react-ssg` (see 3.2)
 - Motion / Framer Motion only where animation materially improves the experience
 
 Deployment targets:
@@ -87,6 +88,32 @@ Deployment targets:
 - GitHub Pages
 
 The application must remain deployable as a static frontend.
+
+### 3.1 TypeScript scope
+
+TypeScript is required for `src/types/`, `src/data/`, and the validation script in 3.3. Components may be plain `.jsx`. Vite compiles both without extra configuration, so an individual component can be renamed to `.tsx` when its props become complex enough to benefit.
+
+The reasoning is that this project's risk is bad *data*, not bad rendering: a mistyped source ID or an invalid confidence value damages the site's credibility, while a component bug is visible immediately. Put the type safety where the risk is.
+
+### 3.2 Prerendering
+
+The site must be prerendered to static HTML at build time. Every v1 route — `/`, `/chapters`, `/chapter/:chapterId` for all six chapters, `/about`, `/sources` — must ship its Chinese content inside the HTML source rather than rendering it only after hydration.
+
+This is a product requirement, not a performance nicety. The project's value is a body of searchable cultural writing: roughly ninety marker cards covering 观音禅院、亢金龙、辟水金睛兽 and similar terms. Content that exists only after JavaScript runs cannot be indexed, linked with a preview, or read without scripts.
+
+If `/entity/:entityId` routes are added later, they must be prerendered too, or not added.
+
+### 3.3 Data validation gate
+
+A validation script must run in `prebuild` and in CI, and must fail the build on any of the following:
+
+1. a source ID referenced by a chapter or marker that does not resolve in `src/data/sources.json`;
+2. a `confidence`, `evidenceType`, `type`, `layers`, `mapMode`, or `topologyStatus` value outside its allowed set;
+3. a media ID referenced by chapter data that is missing from `src/data/media.json`, or whose `licenseStatus` is not `cleared`, `public-domain`, or a documented first-party `original-*`;
+4. a marker carrying coordinates on a map whose `mapMode`/`topologyStatus` combination does not permit them, per 6.2;
+5. a `realWorld` entry with no `sources`, or a marker whose `journeyToTheWest` block cites no chapter number.
+
+Most content in this repository is written by agents across many sessions. A build that fails loudly on a broken citation is a stronger safeguard than any review convention, because a broken citation otherwise renders as ordinary-looking text that nobody notices.
 
 ---
 
@@ -674,6 +701,8 @@ A successful v1 should include:
 - at least one verified real-world heritage connection somewhere in the v1 experience; it may be a clearly labeled Chapter 3 preview (for example, 隰县小西天 or 府城玉皇庙) and must not be falsely attached to Chapter 1
 - a visibly *Black Myth: Wukong*-inspired but original interface as defined in Section 13
 - mobile support
+- all v1 routes prerendered to static HTML per 3.2
+- a passing data validation gate per 3.3, wired into `prebuild` and CI
 
 The remaining five chapters can then reuse the same data and UI structure.
 
@@ -706,9 +735,11 @@ Agents working on this repository should follow these rules:
 9. Prioritize map usability over decorative UI.
 10. Keep components reusable across all six chapters.
 11. Avoid large new dependencies when a lightweight implementation is sufficient.
-12. Any new content field should be documented before broad use.
-13. Do not force a real-world heritage block onto a marker when `KNOWLEDGE_BASE.md` says the connection is unverified; omit the section instead of rendering an empty or apologetic one.
-14. Preserve media provenance and license status; generated, documentary, official-game, and comparison images must never be conflated.
+12. Any new content field should be documented before broad use, and added to the validation script in the same change.
+13. Never weaken or skip the validation gate to make a build pass. Fix the data, or remove the claim.
+14. Keep every route prerenderable: no content may depend on a runtime-only data source, and nothing essential may appear only after hydration.
+15. Do not force a real-world heritage block onto a marker when `KNOWLEDGE_BASE.md` says the connection is unverified; omit the section instead of rendering an empty or apologetic one.
+16. Preserve media provenance and license status; generated, documentary, official-game, and comparison images must never be conflated.
 
 ---
 
@@ -725,6 +756,8 @@ black-myth-wukong-atlas/
 │       ├── items/
 │       ├── architecture/
 │       └── ui/
+├── scripts/
+│   └── validate-data.ts
 ├── src/
 │   ├── components/
 │   ├── data/
@@ -735,8 +768,8 @@ black-myth-wukong-atlas/
 │   ├── hooks/
 │   ├── types/
 │   ├── styles/
-│   ├── App.tsx
-│   └── main.tsx
+│   ├── App.jsx
+│   └── main.jsx
 ├── AGENTS.md
 ├── README.md
 ├── DEVELOPMENT_SPEC.md

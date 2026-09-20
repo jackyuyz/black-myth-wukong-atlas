@@ -56,9 +56,18 @@ Coordinates are always normalized 0–1, never pixels.
 - No raster image may contain baked-in Chinese text. Typeset text in the interface.
 - Every production asset needs a `media.json` record before any chapter JSON may reference it.
 
+## Build gates
+
+Two gates are not optional and must not be weakened to make a build pass.
+
+**Prerendering.** Every route ships its Chinese content inside the HTML source, not after hydration. The product is a body of searchable cultural writing; content that only exists once JavaScript runs cannot be indexed, previewed, or read without scripts. Do not introduce runtime-only data sources.
+
+**Data validation.** `scripts/validate-data.ts` runs in `prebuild` and CI and fails on unresolvable source IDs, invalid enum values, missing or non-`cleared` media references, coordinates on a map whose `mapMode`/`topologyStatus` does not permit them, a `realWorld` entry with no sources, or a `journeyToTheWest` block with no chapter number. Fix the data or remove the claim; never loosen the check. When you add a content field, add its rule in the same change.
+
 ## Style and implementation
 
-- React + Vite + TypeScript + Tailwind, React Router, a lightweight pan/zoom library. Avoid large new dependencies when a small implementation suffices.
+- React + Vite + Tailwind, React Router, a lightweight pan/zoom library. Avoid large new dependencies when a small implementation suffices.
+- TypeScript covers `src/types/`, `src/data/`, and `scripts/`. Components may be plain `.jsx`; rename an individual one to `.tsx` when its props warrant it. The type safety belongs where the risk is, and the risk here is bad data rather than bad rendering.
 - Visual direction is an original **《黑神话：悟空》气质的文化展览 UI**: ink, weathered stone, bronze, temple wood, soot-black surfaces, bone-colored text, restrained cinnabar accents. It is homage, not replica — never trace the official logo, HUD, item frames, iconography, or key art.
 - The map stays the visual center. Atmosphere must never obscure navigation, controls, or evidence status.
 - Components must be reusable across all six chapters.
