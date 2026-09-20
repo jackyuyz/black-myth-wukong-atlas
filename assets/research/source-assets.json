@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-19",
+  "optimizedPathRule": "将 localPath 的 assets/source/ 替换为 assets/optimized/，并将扩展名替换为 .webp；对应文件均已生成。",
+  "rulesZh": [
+    "本文件中的实景照片与历史图像可以按各自许可用于页面，但不能单独证明游戏与现实遗产之间的关联。",
+    "commons-960px-derivative 与 commons-500px-derivative 是 Wikimedia Commons 官方派生文件，不是项目自行裁切的版本。",
+    "小西天现有照片均为建筑外观与屋顶细节，不得用作殿内悬塑证据。",
+    "铁佛寺照片可说明造像艺术与公开报道中的采风背景；没有逐点证据时不绑定具体游戏角色。"
+  ],
+  "collections": {
+    "yuhuang-statues": {
+      "titleZh": "府城玉皇庙二十八宿彩塑",
+      "creator": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "categoryPage": "https://commons.wikimedia.org/wiki/Category:Statues_of_the_Twenty-Eight_Mansions_in_Jade_Emperor_Temple,_Fucheng",
+      "evidenceRefs": ["H01", "H04"]
+    },
+    "yuhuang-context": {
+      "titleZh": "府城玉皇庙建筑环境",
+      "creator": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "categoryPage": "https://commons.wikimedia.org/wiki/Category:Fucheng_Jade_Emperor_Temple",
+      "evidenceRefs": ["H01", "H04"]
+    },
+    "xiaoxitian-context": {
+      "titleZh": "隰县小西天建筑环境",
+      "creator": "三猎",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "categoryPage": "https://commons.wikimedia.org/wiki/Category:Qianfo_An",
+      "evidenceRefs": ["H02", "H03"]
+    },
+    "tiefo-temple": {
+      "titleZh": "高平铁佛寺建筑与二十四诸天彩塑",
+      "creator": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "categoryPage": "https://commons.wikimedia.org/wiki/Category:Gaoping_Iron_Buddha_Temple",
+      "evidenceRefs": ["H04", "H05"]
+    },
+    "journey-to-the-west-public-domain": {
+      "titleZh": "公版《西游记》历史图像",
+      "license": "Public domain",
+      "categoryPage": "https://commons.wikimedia.org/wiki/Category:Journey_to_the_West_illustrations",
+      "evidenceRefs": []
+    }
+  },
+  "items": [
+    {
+      "id": "yuhuang-kang-jin-long",
+      "localPath": "assets/source/heritage/yuhuang-temple/kang-jin-long.jpg",
+      "collectionId": "yuhuang-statues",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:亢金龙.jpg",
+      "assetRole": "heritage-detail",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙亢金龙彩塑，人物坐姿下方可见盘曲的龙形塑像。"
+    },
+    {
+      "id": "yuhuang-shen-shui-yuan-gui-jin-yang",
+      "localPath": "assets/source/heritage/yuhuang-temple/shen-shui-yuan-and-gui-jin-yang.jpg",
+      "collectionId": "yuhuang-statues",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:参水猿观望鬼金羊.jpg",
+      "assetRole": "heritage-group-detail",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙参水猿与鬼金羊彩塑，两尊人物形成相互观望的组合。"
+    },
+    {
+      "id": "yuhuang-mao-ri-ji",
+      "localPath": "assets/source/heritage/yuhuang-temple/mao-ri-ji.jpg",
+      "collectionId": "yuhuang-statues",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:昴日鸡.jpg",
+      "assetRole": "heritage-detail",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙昴日鸡彩塑，人物造型结合传统星宿与鸡的动物意象。"
+    },
+    {
+      "id": "yuhuang-kui-mu-lang",
+      "localPath": "assets/source/heritage/yuhuang-temple/kui-mu-lang.jpg",
+      "collectionId": "yuhuang-statues",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:奎木狼.jpg",
+      "assetRole": "heritage-detail",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙奎木狼彩塑，人物与狼形动物属性共同出现。"
+    },
+    {
+      "id": "yuhuang-exterior-entrance",
+      "localPath": "assets/source/heritage/yuhuang-temple/exterior-entrance.jpg",
+      "collectionId": "yuhuang-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20250906_Yuhuang_Temple_01.jpg",
+      "assetRole": "heritage-context",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙入口与传统木构建筑外观，院外可见树木与石阶。"
+    },
+    {
+      "id": "yuhuang-main-gate",
+      "localPath": "assets/source/heritage/yuhuang-temple/main-gate.jpg",
+      "collectionId": "yuhuang-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20250906_Yuhuang_Temple_04.jpg",
+      "assetRole": "heritage-architecture",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙院内木构门殿，屋顶与斗拱在正面阳光下清晰可见。"
+    },
+    {
+      "id": "yuhuang-painted-timber",
+      "localPath": "assets/source/heritage/yuhuang-temple/painted-timber-structure.jpg",
+      "collectionId": "yuhuang-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20250906_Yuhuang_Temple_14.jpg",
+      "assetRole": "heritage-architecture-detail",
+      "sourceVariant": "original",
+      "altZh": "府城玉皇庙彩绘木构内部，梁架、斗拱与柱列形成纵深。"
+    },
+    {
+      "id": "xiaoxitian-daxiong-hall-exterior",
+      "localPath": "assets/source/heritage/xiaoxitian/daxiong-hall-exterior.jpg",
+      "collectionId": "xiaoxitian-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:隰县小西天大雄宝殿.JPG",
+      "assetRole": "heritage-context",
+      "sourceVariant": "original",
+      "altZh": "隰县小西天大雄宝殿外观，红墙、木构屋檐与院落石地位于画面中央。"
+    },
+    {
+      "id": "xiaoxitian-entrance-plaque",
+      "localPath": "assets/source/heritage/xiaoxitian/entrance-plaque.jpg",
+      "collectionId": "xiaoxitian-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:隰县千佛庵_小西天.JPG",
+      "assetRole": "heritage-context",
+      "sourceVariant": "original",
+      "altZh": "隰县千佛庵入口，门上匾额书写小西天。"
+    },
+    {
+      "id": "xiaoxitian-upper-lower-courtyards",
+      "localPath": "assets/source/heritage/xiaoxitian/upper-lower-courtyards.jpg",
+      "collectionId": "xiaoxitian-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:隰县小西天_上院下院.JPG",
+      "assetRole": "heritage-site-layout",
+      "sourceVariant": "original",
+      "altZh": "从隰县小西天院落观察上院与下院层叠的建筑关系。"
+    },
+    {
+      "id": "xiaoxitian-dao-ru-xitian",
+      "localPath": "assets/source/heritage/xiaoxitian/dao-ru-xitian-passage.jpg",
+      "collectionId": "xiaoxitian-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:隰县小西天_道入西天.JPG",
+      "assetRole": "heritage-context",
+      "sourceVariant": "original",
+      "altZh": "隰县小西天狭窄石阶通道，门上可见道入西天匾额。"
+    },
+    {
+      "id": "xiaoxitian-daxiong-roof-ornament",
+      "localPath": "assets/source/heritage/xiaoxitian/daxiong-hall-roof-ornament.jpg",
+      "collectionId": "xiaoxitian-context",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:隰县小西天大雄宝殿吻兽.JPG",
+      "assetRole": "heritage-architecture-detail",
+      "sourceVariant": "original",
+      "altZh": "隰县小西天大雄宝殿屋脊端部的吻兽与瓦作细节。"
+    },
+    {
+      "id": "tiefo-main-hall-exterior",
+      "localPath": "assets/source/heritage/tiefo-temple/main-hall-exterior.jpg",
+      "collectionId": "tiefo-temple",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_02.jpg",
+      "assetRole": "heritage-context",
+      "sourceVariant": "original",
+      "altZh": "高平铁佛寺正殿外观，灰瓦屋顶、砖墙和木格门面向院落。"
+    },
+    {
+      "id": "tiefo-main-buddha-hall",
+      "localPath": "assets/source/heritage/tiefo-temple/main-buddha-and-hall.jpg",
+      "collectionId": "tiefo-temple",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_03.jpg",
+      "assetRole": "heritage-interior-context",
+      "sourceVariant": "commons-960px-derivative",
+      "altZh": "高平铁佛寺殿内主尊与两侧造像，背光与木构屋架共同形成整体空间。"
+    },
+    {
+      "id": "tiefo-guardian-deity-detail",
+      "localPath": "assets/source/heritage/tiefo-temple/guardian-deity-detail.jpg",
+      "collectionId": "tiefo-temple",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_05.jpg",
+      "assetRole": "heritage-detail",
+      "sourceVariant": "commons-960px-derivative",
+      "altZh": "高平铁佛寺二十四诸天彩塑局部，一尊持兵器的威猛护法居于画面中央。"
+    },
+    {
+      "id": "tiefo-ziwei-emperor",
+      "localPath": "assets/source/heritage/tiefo-temple/ziwei-emperor.jpg",
+      "collectionId": "tiefo-temple",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_16.jpg",
+      "assetRole": "heritage-detail",
+      "sourceVariant": "original",
+      "altZh": "高平铁佛寺二十四诸天中的紫微大帝彩塑，周围可见其他造像与飘带。"
+    },
+    {
+      "id": "tiefo-deva-group-detail",
+      "localPath": "assets/source/heritage/tiefo-temple/deva-group-detail.jpg",
+      "collectionId": "tiefo-temple",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_19.jpg",
+      "assetRole": "heritage-group-detail",
+      "sourceVariant": "commons-960px-derivative",
+      "altZh": "高平铁佛寺多尊彩塑前后交叠，中央造像的面部从其他人物之间显露。"
+    },
+    {
+      "id": "tiefo-sculptural-group-relief",
+      "localPath": "assets/source/heritage/tiefo-temple/sculptural-group-relief.jpg",
+      "collectionId": "tiefo-temple",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_20.jpg",
+      "assetRole": "heritage-group-detail",
+      "sourceVariant": "commons-960px-derivative",
+      "altZh": "高平铁佛寺彩塑群局部，中心人物与翼状装饰、兵器和周围护法组成密集构图。"
+    },
+    {
+      "id": "jttw-yunzhandong-zhu-bajie",
+      "localPath": "assets/source/literature/journey-to-the-west/yunzhandong-zhu-bajie.png",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Anonymous",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xiyou2.PNG",
+      "assetRole": "historical-illustration",
+      "sourceVariant": "original",
+      "altZh": "古本《西游记》插图，上方题有云栈洞，下方画猪八戒与人物相遇的场景。"
+    },
+    {
+      "id": "jttw-white-bone-demon",
+      "localPath": "assets/source/literature/journey-to-the-west/white-bone-demon-scene.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bai_Gu_Jing.jpg",
+      "assetRole": "historical-illustration",
+      "sourceVariant": "commons-500px-derivative",
+      "altZh": "《西游记》白骨精故事插图，唐僧与孙悟空在前景争执，猪八戒和沙僧在远处。"
+    },
+    {
+      "id": "jttw-puti-zushi-commentary",
+      "localPath": "assets/source/literature/journey-to-the-west/puti-zushi-li-zhuowu-commentary.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown; from Li Zhuowu's Commentary on Journey to the West",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Li_Zhuowu's_Commentary_on_Journey_to_the_West,_Puti_Zushi_(1).jpg",
+      "assetRole": "historical-edition-illustration",
+      "sourceVariant": "commons-500px-derivative",
+      "altZh": "《李卓吾先生批评西游记》插图，菩提祖师坐于室内，画面保留古籍版框。"
+    },
+    {
+      "id": "jttw-hokusai-sketches",
+      "localPath": "assets/source/literature/journey-to-the-west/hokusai-journey-sketches.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Katsushika Hokusai",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sketches_for_'Journey_to_the_West'_by_Katsushika_Hokusai,_Honolulu_Museum_of_Art_accession_11204.jpg",
+      "assetRole": "cross-cultural-historical-illustration",
+      "sourceVariant": "commons-500px-derivative",
+      "altZh": "葛饰北斋约十九世纪三十年代绘制的《西游记》人物与动作草图合集。"
+    },
+    {
+      "id": "jttw-qing-shadow-puppet-xuanzang",
+      "localPath": "assets/source/literature/journey-to-the-west/qing-shadow-puppet-xuanzang.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown; photograph by Daderot",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xuanzang,_Wujing,_Wuneng,_Wukong,_and_White_Horse,_China,_Qing_dynasty,_1644-1911_AD,_cowhide_-_Sichuan_Provincial_Museum_-_Chengdu,_China_-_DSC04600.jpg",
+      "assetRole": "historical-object",
+      "sourceVariant": "commons-960px-derivative",
+      "altZh": "四川博物院藏清代牛皮影人中的玄奘形象，人物身穿红色纹样长袍。"
+    },
+    {
+      "id": "jttw-1590-rulai",
+      "localPath": "assets/source/literature/journey-to-the-west/1590-rulai-illustration.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xyj-ru_lai.jpg",
+      "assetRole": "historical-edition-illustration",
+      "sourceVariant": "commons-500px-derivative",
+      "altZh": "1590 年《西游记》古籍双页插图，如来端坐云中，左页为竖排诗文。"
+    },
+    {
+      "id": "jttw-1590-sun-wukong",
+      "localPath": "assets/source/literature/journey-to-the-west/1590-sun-wukong-illustration.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xyj-sunwukong.jpg",
+      "assetRole": "historical-edition-illustration",
+      "sourceVariant": "original",
+      "altZh": "1590 年《西游记》古籍双页插图，孙悟空持棒立于云气与山石之间。"
+    },
+    {
+      "id": "jttw-1590-zhu-bajie",
+      "localPath": "assets/source/literature/journey-to-the-west/1590-zhu-bajie-illustration.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xyj-zhubajie.jpg",
+      "assetRole": "historical-edition-illustration",
+      "sourceVariant": "commons-500px-derivative",
+      "altZh": "1590 年《西游记》古籍双页插图，猪八戒持钉耙站在洞口山路旁。"
+    },
+    {
+      "id": "jttw-1590-guanyin",
+      "localPath": "assets/source/literature/journey-to-the-west/1590-guanyin-illustration.jpg",
+      "collectionId": "journey-to-the-west-public-domain",
+      "creator": "Unknown",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xyj_guanshiyin.jpg",
+      "assetRole": "historical-edition-illustration",
+      "sourceVariant": "commons-500px-derivative",
+      "altZh": "1590 年《西游记》古籍双页插图，观音与童子立于云中，左页为竖排诗文。"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-19",
+  "items": [
+    {
+      "path": "assets/generated/homepage-atmosphere-hero-v1.png",
+      "kind": "generated",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2500398,
+      "sha256": "ccbe04ad9c8e4b2f6a556ac5f792375112f6587da8aa4987f0774f61022796aa"
+    },
+    {
+      "path": "assets/optimized/generated/homepage-atmosphere-hero-v1.webp",
+      "kind": "optimized",
+      "width": 1672,
+      "height": 941,
+      "bytes": 197854,
+      "sha256": "aca27cf6f0a33a9745ff99d0b10bbf3c0f41dc25cf7ad301389172d6af132761"
+    },
+    {
+      "path": "assets/optimized/heritage/tiefo-temple/deva-group-detail.webp",
+      "kind": "optimized",
+      "width": 960,
+      "height": 1440,
+      "bytes": 219442,
+      "sha256": "e8304ca25a9463086c6fcf6c22ccc403622f5c54f4e7631acc0a3c9bd00f9ce9"
+    },
+    {
+      "path": "assets/optimized/heritage/tiefo-temple/guardian-deity-detail.webp",
+      "kind": "optimized",
+      "width": 960,
+      "height": 1440,
+      "bytes": 400392,
+      "sha256": "bac03e9e01563e121d8f0cff676d457d45a93f73182f459e178dbad237b6fc06"
+    },
+    {
+      "path": "assets/optimized/heritage/tiefo-temple/main-buddha-and-hall.webp",
+      "kind": "optimized",
+      "width": 960,
+      "height": 640,
+      "bytes": 195166,
+      "sha256": "590efff0421d1756b0637299f0aae1cd9309f0cb2b9269078ec076cea8db7158"
+    },
+    {
+      "path": "assets/optimized/heritage/tiefo-temple/main-hall-exterior.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 286422,
+      "sha256": "73bab135b93d6017f53b319700cca5c52866d54227cc8f7347e5fc7c196756ed"
+    },
+    {
+      "path": "assets/optimized/heritage/tiefo-temple/sculptural-group-relief.webp",
+      "kind": "optimized",
+      "width": 960,
+      "height": 640,
+      "bytes": 200744,
+      "sha256": "46bb74e6c4808bec745544aacdbdb0ce75b4e61a79ecd1b01a6b7906cbbf1a63"
+    },
+    {
+      "path": "assets/optimized/heritage/tiefo-temple/ziwei-emperor.webp",
+      "kind": "optimized",
+      "width": 1200,
+      "height": 1800,
+      "bytes": 317106,
+      "sha256": "3515632d7e03a3a2b4406753c11d3896fc7a450b0de33c318b5c2c48da38d7b8"
+    },
+    {
+      "path": "assets/optimized/heritage/xiaoxitian/dao-ru-xitian-passage.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 2845,
+      "bytes": 371872,
+      "sha256": "2e87c841ddf2eb0821d74b787b492085a4dc171e7d08ea634474ef259024a355"
+    },
+    {
+      "path": "assets/optimized/heritage/xiaoxitian/daxiong-hall-exterior.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 900,
+      "bytes": 174134,
+      "sha256": "ad928022bd8a70703f9bab1554854eddefdbf6f785e5f5b7200e0e20d11acb62"
+    },
+    {
+      "path": "assets/optimized/heritage/xiaoxitian/daxiong-hall-roof-ornament.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 900,
+      "bytes": 155168,
+      "sha256": "dff8c35b3e889dc6363ee1f96ed330030128dad52ce9971f7641204d5442f71b"
+    },
+    {
+      "path": "assets/optimized/heritage/xiaoxitian/entrance-plaque.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 3068,
+      "bytes": 632740,
+      "sha256": "59ee325292bccfc69203aadd1ad48f2645305ed8e07de6f73148a3ad81d9d284"
+    },
+    {
+      "path": "assets/optimized/heritage/xiaoxitian/upper-lower-courtyards.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 900,
+      "bytes": 356136,
+      "sha256": "9214e01ffee6324ff9a4d65a15396b48edaadd294fca60f771e0729648b2bb09"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/exterior-entrance.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 292852,
+      "sha256": "261d648ef1873b95e207a858f85edb1a669a301719250c9cd509996cb0f07d02"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/kang-jin-long.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 211646,
+      "sha256": "a81265d0ff92684cfb3f56feb061fab94ab90547c8af01fb461fc466f14e7c6b"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/kui-mu-lang.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 206684,
+      "sha256": "0656753c8e82cd6a11c0803a835903e5800eb671ca0060bf64fb35846ea1be1d"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/main-gate.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 520632,
+      "sha256": "dd7a38ee2821d637e4d44531d432d07ef3cc193db1da0739a0953f67c886709c"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/mao-ri-ji.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 171620,
+      "sha256": "dc1836a03c3f61cb91bd78ee8fdc1ed7ac2819adcdf1c9e90621572c6ca2fe96"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/painted-timber-structure.webp",
+      "kind": "optimized",
+      "width": 1200,
+      "height": 1800,
+      "bytes": 435510,
+      "sha256": "68c96f57cb1cae81c4a88ada4a1cce9fc06892dc698418991ddf812cc5f0b1bf"
+    },
+    {
+      "path": "assets/optimized/heritage/yuhuang-temple/shen-shui-yuan-and-gui-jin-yang.webp",
+      "kind": "optimized",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 132966,
+      "sha256": "635533ebb001e06e18e16a485c8fcfd8feac36cc54f2eb0f01553746e07c4a0e"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/1590-guanyin-illustration.webp",
+      "kind": "optimized",
+      "width": 500,
+      "height": 367,
+      "bytes": 49112,
+      "sha256": "b0b556666b3a86be8690a929333c0a8566a9393a59c07d86a17e4b36e09f6d53"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/1590-rulai-illustration.webp",
+      "kind": "optimized",
+      "width": 500,
+      "height": 368,
+      "bytes": 48836,
+      "sha256": "b9ae4ff99940768357fd62cdc678f5cd2309ecb9cc0b2ec4559104f0a9419ca7"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/1590-sun-wukong-illustration.webp",
+      "kind": "optimized",
+      "width": 645,
+      "height": 475,
+      "bytes": 57802,
+      "sha256": "e77bd676d9203fa86ac98e7febbfedd2d2066808fec011182d489f349bf95c76"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/1590-zhu-bajie-illustration.webp",
+      "kind": "optimized",
+      "width": 500,
+      "height": 370,
+      "bytes": 52152,
+      "sha256": "4056959ea7ff2ef3efed0a7f5bf9a9c2df5a89a39c1a271250c72fcb9a192177"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/hokusai-journey-sketches.webp",
+      "kind": "optimized",
+      "width": 500,
+      "height": 376,
+      "bytes": 65090,
+      "sha256": "8ea750cdfddb27bc45e33d6f1ed50d664c3a9a4d09f163597bf120997ccf0540"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/puti-zushi-li-zhuowu-commentary.webp",
+      "kind": "optimized",
+      "width": 500,
+      "height": 830,
+      "bytes": 84416,
+      "sha256": "d0cf536eb0769e172e086b27ce646586954cd88cf2de692d6e13068311193721"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/qing-shadow-puppet-xuanzang.webp",
+      "kind": "optimized",
+      "width": 960,
+      "height": 1188,
+      "bytes": 149842,
+      "sha256": "db25e2621ecdfcc7adcf2d0884b612beaf3716c2429ab769f6a02efa1f2cfd3b"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/white-bone-demon-scene.webp",
+      "kind": "optimized",
+      "width": 500,
+      "height": 632,
+      "bytes": 98570,
+      "sha256": "10a6c0303d0bb6f7148dc57b4dfbf819f4ad6901a3d96c51a9e6c05580bfde05"
+    },
+    {
+      "path": "assets/optimized/literature/journey-to-the-west/yunzhandong-zhu-bajie.webp",
+      "kind": "optimized",
+      "width": 1200,
+      "height": 1757,
+      "bytes": 393386,
+      "sha256": "33bff6572300c323f3336adc6784df0ed055999c3be47c8b95127c3aaeffe98d"
+    },
+    {
+      "path": "assets/source/heritage/tiefo-temple/deva-group-detail.jpg",
+      "kind": "source",
+      "width": 960,
+      "height": 1440,
+      "bytes": 335199,
+      "sha256": "84fdc790a38d0a0f2828b13a7bd05a677236880c014d25e32fef0f1a53c1f9b0"
+    },
+    {
+      "path": "assets/source/heritage/tiefo-temple/guardian-deity-detail.jpg",
+      "kind": "source",
+      "width": 960,
+      "height": 1440,
+      "bytes": 502223,
+      "sha256": "c772d2d3740fb7da67e775ac7ec7bea57a30e751c09327ace4068467cfcb4189"
+    },
+    {
+      "path": "assets/source/heritage/tiefo-temple/main-buddha-and-hall.jpg",
+      "kind": "source",
+      "width": 960,
+      "height": 640,
+      "bytes": 244413,
+      "sha256": "a2630d1d4110affa6ad040ea1e3744b186aa421617de162a576f7c3e57704afb"
+    },
+    {
+      "path": "assets/source/heritage/tiefo-temple/main-hall-exterior.jpg",
+      "kind": "source",
+      "width": 1800,
+      "height": 1200,
+      "bytes": 1943107,
+      "sha256": "5f24c62d8a2aef70e6144daa7881902b20b36fa4e6bcd37dc187a2481e9f5881"
+    },
+    {
+      "path": "assets/source/heritage/tiefo-temple/sculptural-group-relief.jpg",
+      "kind": "source",
+      "width": 960,
+      "height": 640,
+      "bytes": 245956,
+      "sha256": "5153fc5dc4e28f358e558ef963fe6dd16672caee4c0a45d9837c0a23cd3738f6"
+    },
+    {
+      "path": "assets/source/heritage/tiefo-temple/ziwei-emperor.jpg",
+      "kind": "source",
+      "width": 1200,
+      "height": 1800,
+      "bytes": 1930439,
+      "sha256": "113ba1a84305bd1f50d9f6e3126dddd09ab616058f3667986e4fdae6bd5b0570"
+    },
+    {
+      "path": "assets/source/heritage/xiaoxitian/dao-ru-xitian-passage.jpg",
+      "kind": "source",
+      "width": 2160,
+      "height": 3840,
+      "bytes": 5038818,
+      "sha256": "86c1c2fe6ca5258ffb45b4774bd1a10fc171b910b1709377900d8cc143fce363"
+    },
+    {
+      "path": "assets/source/heritage/xiaoxitian/daxiong-hall-exterior.jpg",
+      "kind": "source",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 4357716,
+      "sha256": "7f7212b42d6d7ecd6de23014c86ffa5aff13d4badca15cd408f779f99ccfecc2"
+    },
+    {
+      "path": "assets/source/heritage/xiaoxitian/daxiong-hall-roof-ornament.jpg",
+      "kind": "source",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5249737,
+      "sha256": "37841e641186fa608fe4f9ae7cfc3fbd56d8e607a11841c93b452b3ac55887d0"
+    },
+    {
+      "path": "assets/source/heritage/xiaoxitian/entrance-plaque.jpg",
+      "kind": "source",
+      "width": 1884,
+      "height": 3612,
+      "bytes": 5409043,
+      "sha256": "8bc08888c29bceb402f8d5af87b12d504dabe58237c96ce3b6fc0809efa0e912"
+    },
+    {
+      "path": "assets/source/heritage/xiaoxitian/upper-lower-courtyards.jpg",
+      "kind": "source",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5318891,
+      "sha256": "4fd1631184c5c6b49a10332cf9bad9b1bdb082a0e03612c4d77c042bba39da2d"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/exterior-entrance.jpg",
+      "kind": "source",
+      "width": 1800,
+      "height": 1200,
+      "bytes": 2157062,
+      "sha256": "ad16adf79bd069e760ceb9ce6ea998ba08d735ee2d57085cf45193403bafce1d"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/kang-jin-long.jpg",
+      "kind": "source",
+      "width": 4032,
+      "height": 3024,
+      "bytes": 4984995,
+      "sha256": "a09d7c777ee9aa3532109360ce8640a02e6143a66efa0257501c327c7d39e56e"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/kui-mu-lang.jpg",
+      "kind": "source",
+      "width": 5712,
+      "height": 4284,
+      "bytes": 8621451,
+      "sha256": "3da136232e450997f9437272689006997519615ae09fb1cf4c1c694e03ef88d2"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/main-gate.jpg",
+      "kind": "source",
+      "width": 1800,
+      "height": 1200,
+      "bytes": 2975259,
+      "sha256": "2dc8ee53ffcf927cc40b549ab6dbe0401b693bb880924ea7e2ddb63ca37a5305"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/mao-ri-ji.jpg",
+      "kind": "source",
+      "width": 5712,
+      "height": 4284,
+      "bytes": 7970155,
+      "sha256": "4d4835490a64ac29bda4488e22977ae0092ec0ce23a51ad164a75ad4c60a7a28"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/painted-timber-structure.jpg",
+      "kind": "source",
+      "width": 1200,
+      "height": 1800,
+      "bytes": 2424444,
+      "sha256": "06640125602518cd35bd703635247340906fe49ba9d0f87fa73f02d6e7ee6eac"
+    },
+    {
+      "path": "assets/source/heritage/yuhuang-temple/shen-shui-yuan-and-gui-jin-yang.jpg",
+      "kind": "source",
+      "width": 4032,
+      "height": 3024,
+      "bytes": 3582354,
+      "sha256": "9cc592f3eb1bc7ff943d5990311f5b8ff2bf17084fd34314fd31b7cedf95b235"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/1590-guanyin-illustration.jpg",
+      "kind": "source",
+      "width": 500,
+      "height": 367,
+      "bytes": 63344,
+      "sha256": "8b62541dc904e9c43873372e2fee746b02c781b0153debac741c5fd21f8dd0af"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/1590-rulai-illustration.jpg",
+      "kind": "source",
+      "width": 500,
+      "height": 368,
+      "bytes": 52133,
+      "sha256": "2ea90b2acdb94918ea1c27f94494601871755205a3a07a4202a55015ee0914b9"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/1590-sun-wukong-illustration.jpg",
+      "kind": "source",
+      "width": 645,
+      "height": 475,
+      "bytes": 59996,
+      "sha256": "bca129e192f2862d43fb60b708f11f39fc415f626e1207f7ffc6b1924848fd86"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/1590-zhu-bajie-illustration.jpg",
+      "kind": "source",
+      "width": 500,
+      "height": 370,
+      "bytes": 65661,
+      "sha256": "0d6fc86f97f0c93c3339cec4fa3986c40998f653036dcf8c4dd9250cce21ab42"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/hokusai-journey-sketches.jpg",
+      "kind": "source",
+      "width": 500,
+      "height": 376,
+      "bytes": 86680,
+      "sha256": "606af1a2d84cd2c01ceb71066ceffcee088b279ce163038a9449227e1c09ab1e"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/puti-zushi-li-zhuowu-commentary.jpg",
+      "kind": "source",
+      "width": 500,
+      "height": 830,
+      "bytes": 197236,
+      "sha256": "b76c9ad06912c5fa0a5fc0065348e3bc7d02570ee0f5f633c5e4225821e4a734"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/qing-shadow-puppet-xuanzang.jpg",
+      "kind": "source",
+      "width": 960,
+      "height": 1188,
+      "bytes": 239819,
+      "sha256": "fcfdc73e04c92358c44d94d9b1b9952bacf2ac67440a7e14756a56a76bca80bd"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/white-bone-demon-scene.jpg",
+      "kind": "source",
+      "width": 500,
+      "height": 632,
+      "bytes": 132242,
+      "sha256": "b7986431b9ed46e416ee05991357ba4407ec1bf5e1470642245f406f30739f4a"
+    },
+    {
+      "path": "assets/source/literature/journey-to-the-west/yunzhandong-zhu-bajie.png",
+      "kind": "source",
+      "width": 1726,
+      "height": 2526,
+      "bytes": 3146781,
+      "sha256": "db4146fb49dab28b580b7ffd0be331142fbac05915899b6e813ecf8ac5ab8267"
+    }
+  ]
+}

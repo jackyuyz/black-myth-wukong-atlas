@@ -2,6 +2,12 @@
   "schemaVersion": 1,
   "updatedAt": "2026-09-19",
   "notesZh": "source 条目可以在遵守许可和证据边界的前提下进入页面；link-only 条目只供研究；generated 条目永远不能作为纪实证据。",
+  "catalogs": {
+    "sourceAssets": "assets/research/source-assets.json",
+    "localFileInventory": "assets/research/local-file-inventory.json",
+    "officialGameMediaLinks": "assets/research/official-game-media-links.json",
+    "restrictedDocumentaryLinks": "assets/research/restricted-documentary-links.json"
+  },
   "items": [
     {
       "id": "generated-homepage-atmosphere-hero-v1",
@@ -26,7 +32,7 @@
     },
     {
       "id": "heritage-yuhuang-kang-jin-long-01",
-      "localPath": "assets/source/heritage/yuhuang-temple-kang-jin-long.jpg",
+      "localPath": "assets/source/heritage/yuhuang-temple/kang-jin-long.jpg",
       "assetRole": "heritage-detail",
       "provenanceType": "documentary-photo",
       "licenseStatus": "cleared-with-attribution",
@@ -48,7 +54,7 @@
     },
     {
       "id": "heritage-yuhuang-exterior-01",
-      "localPath": "assets/source/heritage/yuhuang-temple-exterior.jpg",
+      "localPath": "assets/source/heritage/yuhuang-temple/exterior-entrance.jpg",
       "assetRole": "heritage-context",
       "provenanceType": "documentary-photo",
       "licenseStatus": "cleared-with-attribution",
@@ -70,7 +76,7 @@
     },
     {
       "id": "heritage-xiaoxitian-exterior-01",
-      "localPath": "assets/source/heritage/xiaoxitian-daxiong-hall.jpg",
+      "localPath": "assets/source/heritage/xiaoxitian/daxiong-hall-exterior.jpg",
       "assetRole": "heritage-context",
       "provenanceType": "documentary-photo",
       "licenseStatus": "cleared-with-attribution",
@@ -92,7 +98,7 @@
     },
     {
       "id": "heritage-tiefo-ziwei-01",
-      "localPath": "assets/source/heritage/tiefo-temple-ziwei-emperor.jpg",
+      "localPath": "assets/source/heritage/tiefo-temple/ziwei-emperor.jpg",
       "assetRole": "heritage-detail",
       "provenanceType": "documentary-photo",
       "licenseStatus": "cleared-with-attribution",
@@ -114,7 +120,7 @@
     },
     {
       "id": "literature-xiyou2-01",
-      "localPath": "assets/source/literature/journey-to-the-west-illustration-xiyou2.png",
+      "localPath": "assets/source/literature/journey-to-the-west/yunzhandong-zhu-bajie.png",
       "assetRole": "historical-illustration",
       "provenanceType": "public-domain-scan",
       "licenseStatus": "public-domain",

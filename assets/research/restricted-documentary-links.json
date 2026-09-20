@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-19",
+  "rightsNoteZh": "这些页面可用来核实关联或继续寻找授权方，但页面内图片没有明确的自由再发布许可，因此只存链接，不保存图片二进制。",
+  "items": [
+    {
+      "id": "H01",
+      "subjectZh": "府城玉皇庙亢金龙彩塑与游戏形象公开对照",
+      "url": "https://jcgov.gov.cn/dtxx/jcdt/202408/t20240827_2026026.shtml",
+      "publisherZh": "晋城市人民政府转载晋城新闻客户端",
+      "assetRole": "evidence-page",
+      "licenseStatus": "link-only-rights-unknown",
+      "localBinaryStored": false
+    },
+    {
+      "id": "H02",
+      "subjectZh": "隰县小西天悬塑与游戏场景公开对照",
+      "url": "https://news.yongzhou.gov.cn/mixmedia/content/WS66c6a02ee4b0005f4ec30d1c.html",
+      "publisherZh": "央视新闻稿转载页",
+      "assetRole": "evidence-page",
+      "licenseStatus": "link-only-rights-unknown",
+      "localBinaryStored": false
+    },
+    {
+      "id": "H03",
+      "subjectZh": "隰县小西天文化遗产与游戏场景报道",
+      "url": "https://www.sx.jcy.gov.cn/jcxwlm/mtbb/202408/t20240828_6627169.shtml",
+      "publisherZh": "检察日报稿转载页",
+      "assetRole": "evidence-page",
+      "licenseStatus": "link-only-rights-unknown",
+      "localBinaryStored": false
+    },
+    {
+      "id": "H04",
+      "subjectZh": "铁佛寺二十四诸天、玉皇庙二十八宿及采风建模报道",
+      "url": "https://www.jcgov.gov.cn/dtxx/jcdt/202408/t20240822_2024024.shtml",
+      "publisherZh": "晋城市人民政府",
+      "assetRole": "evidence-page",
+      "licenseStatus": "link-only-rights-unknown",
+      "localBinaryStored": false
+    },
+    {
+      "id": "H05",
+      "subjectZh": "公开不完整的山西取景地名单与统计",
+      "url": "https://www.sxgp.gov.cn/zjgp/dmgp_423/202408/t20240821_2023289.shtml",
+      "publisherZh": "高平市人民政府",
+      "assetRole": "evidence-page",
+      "licenseStatus": "link-only-rights-unknown",
+      "localBinaryStored": false
+    },
+    {
+      "id": "H06",
+      "subjectZh": "展览中的水陆庵实景复刻悬塑与游戏场景对照",
+      "url": "https://wlt.hlj.gov.cn/wlt/c114253/202504/c00_31834742.shtml",
+      "publisherZh": "黑龙江省文化和旅游厅转载页",
+      "assetRole": "evidence-page",
+      "licenseStatus": "link-only-rights-unknown",
+      "localBinaryStored": false,
+      "scopeWarningZh": "页面描述的是展览复制品，不等于游戏原始制作流程证据。"
+    }
+  ]
+}
+

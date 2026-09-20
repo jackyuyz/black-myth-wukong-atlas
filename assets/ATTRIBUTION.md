@@ -4,16 +4,15 @@
 
 ## 实景与造像
 
-- **府城玉皇庙亢金龙彩塑** — Patrick20242023，来源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E4%BA%A2%E9%87%91%E9%BE%99.jpg)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。
-- **府城玉皇庙外观** — Windmemories，来源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20250906_Yuhuang_Temple_01.jpg)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。
-- **隰县小西天大雄宝殿外观** — 三猎，来源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E9%9A%B0%E5%8E%BF%E5%B0%8F%E8%A5%BF%E5%A4%A9%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.JPG)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。
-- **高平铁佛寺紫微大帝及邻近造像** — Windmemories，来源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_16.jpg)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。
+- **府城玉皇庙二十八宿彩塑组（4 张）** — Patrick20242023，来源：[Wikimedia Commons 分类](https://commons.wikimedia.org/wiki/Category:Statues_of_the_Twenty-Eight_Mansions_in_Jade_Emperor_Temple,_Fucheng)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。逐图来源见 `research/source-assets.json`。
+- **府城玉皇庙建筑环境组（3 张）** — Windmemories，来源：[Wikimedia Commons 分类](https://commons.wikimedia.org/wiki/Category:Fucheng_Jade_Emperor_Temple)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。
+- **隰县小西天建筑环境组（5 张）** — 三猎，来源：[Wikimedia Commons 分类](https://commons.wikimedia.org/wiki/Category:Qianfo_An)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。
+- **高平铁佛寺建筑与造像组（6 张）** — Windmemories，来源：[Wikimedia Commons 分类](https://commons.wikimedia.org/wiki/Category:Gaoping_Iron_Buddha_Temple)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。其中部分文件保存的是 Commons 官方 960px 派生版本。
 
 ## 历史插图
 
-- **古本《西游记》“云栈洞 / 猪八戒”插图** — 佚名，约 15 世纪，来源：[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Xiyou2.PNG)，公版。
+- **《西游记》历史图像组（9 张）** — 包含佚名古籍插图、约 1590 年版本人物图、李卓吾评本菩提祖师、清代皮影，以及葛饰北斋的《西游记》草图；均由 Wikimedia Commons 标记为公版。逐图作者、内容和来源页见 `research/source-assets.json`。
 
 ## 项目生成素材
 
 - **首页气氛图风格基准草案** — 使用 OpenAI 内置图片生成工具为本项目生成，2026-09-19。非纪实素材，不代表游戏实机、真实地点或官方美术。当前尺寸未达到生产规范，只用于风格评审。
-
