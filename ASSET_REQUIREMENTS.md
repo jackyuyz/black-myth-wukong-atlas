@@ -82,7 +82,7 @@ Default decision rule:
 
 | Asset class | Required method | v1 requirement |
 |---|---|---|
-| Chapter map topology | Search/verify first; then original illustration or programmatic composition | Chapter 1 required; Chapters 2–6 may use non-interactive placeholders until verified |
+| Chapter map topology | Verify the route first; then original scroll-style illustration or programmatic composition, default `mapMode: schematic` | Chapter 1 required; Chapters 2–6 may use non-interactive placeholders until verified |
 | Chapter hero atmosphere | Generate or create original composite; sourced game key art only if usage is cleared | Six required, clearly non-official when generated |
 | Exact character/boss/item appearance | Official/game reference search | Chapter 1 priorities only for MVP; do not generate a fake canonical portrait |
 | Heritage and sculpture images | Documentary search only | Begin with verified Chapter 3 connections; no forced Chapter 1 heritage image |
@@ -133,17 +133,35 @@ or equivalent high-resolution landscape composition
 
 If using an original illustrated map rather than a game screenshot/map extraction, preserve recognizable geography but do not falsely imply it is an official game map.
 
-Required strategy:
+#### A.1 Two map modes
+
+Every chapter map must declare a `mapMode`, because the two modes make different claims and therefore carry different evidence gates.
+
+| `mapMode` | What the image claims | What a marker coordinate means |
+|---|---|---|
+| `schematic` | The **order and branching** of areas and landmarks along the chapter route | An illustration-layout position chosen by the designer |
+| `geographic` | The **spatial layout** of the chapter as it exists in the game world | An assertion about where the place actually is |
+
+`schematic` is the v1 default. *Black Myth: Wukong* levels are vertical, layered, and largely linear, and the in-game 行旅图 is itself a stylized route illustration rather than a survey projection. A scroll-style route diagram is therefore both the more honest and the more legible form, and it matches the ink/scroll art direction in Section 2.
+
+#### A.2 Required strategy
 
 1. Search official gameplay footage, the team's own captures, and multiple reliable route references to establish only the high-level area sequence and landmark relationships.
 2. Record the evidence used for topology. Fan maps may help discovery but are not a sole authoritative or automatically reusable source.
 3. Produce a custom map surface inspired by Chinese scroll painting and the chapter's weather/material language.
-4. Set `assetRole` to `chapter-map`, record `provenanceType` as `generated` or `original-illustration`, and record `topologyStatus` as `unverified`, `verified-high-level`, or `verified-markers`; never label it as an official game map.
+4. Set `assetRole` to `chapter-map`, record `provenanceType` as `generated` or `original-illustration`, record `mapMode`, and record `topologyStatus` as `unverified`, `verified-high-level`, or `verified-markers`; never label it as an official game map.
 5. Manually place HTML/SVG website markers over the image after visual QA. Coordinates remain data, not baked pixels.
 
 Do not embed clickable labels into the image itself.
 
-Because the knowledge base does not yet contain verified map coordinates, no agent may invent normalized marker positions simply to complete a screen. A map may ship as a chapter overview until its markers are validated against the chosen final map image.
+#### A.3 Coordinate gate
+
+The gate depends on `mapMode`:
+
+- **`schematic`** requires `topologyStatus: verified-high-level` — the area sequence and branching must be backed by the chapter's topology research log. Coordinates are then authored as part of the illustration and need no further validation, because they are layout positions rather than geographic claims. The interface must carry a persistent Chinese notice that the map is a route diagram, not to scale, and not an official game map.
+- **`geographic`** requires `topologyStatus: verified-markers`, meaning every landmark has been located against first-party captures of the chosen final map image.
+
+No agent may invent an area, a landmark, or a route branch that the topology log does not support, in either mode. Inventing *layout* on a verified route is design work; inventing *route* is fabrication. A chapter may also ship as a non-interactive overview image with no markers at all while its topology research is still `unverified`.
 
 ---
 
@@ -803,11 +821,26 @@ do-not-use
 unknown
 ```
 
+Allowed `mapMode` values, for `chapter-map` assets only:
+
+```text
+schematic
+geographic
+```
+
+Allowed `topologyStatus` values, for `chapter-map` assets only:
+
+```text
+unverified
+verified-high-level
+verified-markers
+```
+
 Only `cleared`, `public-domain`, and documented first-party `original-*` assets may be shipped as local binaries in the public site. `permission-required`, `link-only`, `do-not-use`, and `unknown` stay in the research manifest and must not be copied into production asset folders.
 
 Generated assets additionally require `generator`, `generationDate`, `promptSummary`, and `reviewedByHuman`; they must always set `documentary` to `false`. A generated asset may not cite an H/G/W source ID as proof, though its prompt can be informed by non-proprietary mood and chapter facts.
 
-Chapter maps additionally require `topologyStatus`. Only `verified-markers` maps may be used with finalized normalized marker coordinates; `unverified` and `verified-high-level` maps are overview images only.
+Chapter maps additionally require `mapMode` and `topologyStatus`, and follow the coordinate gate in Section 3.2.A.3: a `schematic` map may carry authored marker coordinates once its topology is `verified-high-level`, while a `geographic` map may carry them only at `verified-markers`. An `unverified` map of either mode is an overview image with no markers.
 
 ---
 
@@ -976,7 +1009,7 @@ These are art-direction notes, not rigid CSS color requirements.
 3. programmatic UI foundation: type hierarchy, palette, panel surfaces, evidence labels, controls, focus states, and reduced-motion behavior
 4. one original/generated homepage atmosphere hero with no baked text
 5. six original/generated chapter atmosphere images with consistent art direction
-6. Chapter 1 topology research log and one custom Chapter 1 overview map; markers remain `待定位` until validated on the final image
+6. Chapter 1 topology research log raised to `verified-high-level`, then one original Chapter 1 scroll-style route map with `mapMode: schematic`; marker coordinates are authored on that illustration and the map carries its "路线示意，非地理比例" notice
 7. one original SVG marker/evidence icon set with all interaction states
 8. a minimal, rights-reviewed set of Chapter 1 game-reference images for the 8–15 MVP markers; text-first fallback where rights are not cleared
 9. one public-domain or licensed *Journey to the West* literary image if a suitable edition is found; otherwise use an original decorative book/scroll treatment

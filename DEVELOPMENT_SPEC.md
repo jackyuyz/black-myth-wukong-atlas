@@ -171,7 +171,15 @@ Users must be able to:
 - filter marker categories
 - view marker names on hover/focus where practical
 
-### 6.2 Coordinate system
+### 6.2 Map mode
+
+Each chapter map declares a `mapMode`, defined in `ASSET_REQUIREMENTS.md` Section 3.2.A. The v1 default is `schematic`: a scroll-style route diagram whose marker positions describe the **order and branching** of the chapter, not its geography. `geographic` maps claim real spatial layout and are gated behind first-party map captures.
+
+A `schematic` map must display a persistent, non-dismissible Chinese notice near the map frame, for example **“路线示意图，非地理比例，非官方地图”**. It should be part of the map chrome rather than a tooltip or a footnote, because it is the statement that keeps authored coordinates honest.
+
+Do not describe a `schematic` map as a game map, a 行旅图, or an accurate layout anywhere in the interface.
+
+### 6.3 Coordinate system
 
 All marker coordinates must use **normalized coordinates from 0 to 1**.
 
@@ -186,7 +194,9 @@ Example:
 
 Do not store pixel coordinates.
 
-### 6.3 Marker categories
+On a `schematic` map these numbers are illustration-layout positions chosen alongside the artwork. They are still data rather than baked pixels, so the same marker set survives a redraw of the map surface. Route order and branching must match the chapter's topology research log; layout within that route is a design decision.
+
+### 6.4 Marker categories
 
 Keep **what the marker is** separate from **which knowledge layers it contains**.
 
@@ -224,7 +234,7 @@ Suggested user-facing layer filters/badges:
 - 《西游记》
 - 现实文化遗产
 
-### 6.4 Marker visual language
+### 6.5 Marker visual language
 
 Markers should be visually distinct but stylistically consistent.
 
@@ -382,6 +392,9 @@ src/data/chapters/
   "regionZh": "黑风山",
   "regionEn": "Black Wind Mountain",
   "mapImage": "/maps/chapter-01.webp",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
   "overviewZh": "...",
   "markers": []
 }
@@ -652,7 +665,7 @@ A successful v1 should include:
 - complete Chinese-first UI with no English-only controls, errors, or accessibility labels
 - a clear “游戏 / 原著 / 现实” onboarding explanation for visitors unfamiliar with the subject
 - six chapter cards
-- one fully implemented chapter map: Chapter 1
+- one fully implemented chapter map: Chapter 1, as a `schematic` scroll-style route map with its "路线示意" notice
 - at least 8–15 markers for Chapter 1
 - marker filtering
 - responsive info panel
@@ -664,6 +677,18 @@ A successful v1 should include:
 
 The remaining five chapters can then reuse the same data and UI structure.
 
+### 15.1 What Chapter 1 can and cannot show
+
+Chapter 1 carries the strongest literary layer in the project — 第十六至十七回 supply 广智、广谋、金池长老、黑熊精、白衣秀士、凌虚子 and 辟火罩 — so the 游戏/原著 pairing can be fully realized at MVP.
+
+Its real-world layer cannot. `KNOWLEDGE_BASE.md` states that no temple prototype for 观音禅院 has been established, and that Shanxi sites used by other chapters must not be bound to this location. **An empty 现实文化与实地遗产 section on a Chapter 1 marker is a correct result, not a gap to fill.** The panel should simply omit the section rather than render a placeholder, an apology, or a "尚未核实" card for every marker.
+
+The single verified heritage connection required above therefore ships as a self-contained Chapter 3 preview, clearly labeled as belonging to 第三回 and reachable from the homepage or the onboarding explanation rather than from a Chapter 1 marker.
+
+### 15.2 Text-first marker cards
+
+Almost all Chapter 1 game imagery currently carries `licenseStatus: permission-required` and is excluded from the public build. Marker cards must therefore be designed to work with no photographic image at all: original silhouette or seal motif, Chinese prose, a short 原著 excerpt, and source links. Do not ship grey image placeholders, broken frames, or layouts that collapse without a hero image.
+
 ---
 
 ## 16. Coding Agent Rules
@@ -674,7 +699,7 @@ Agents working on this repository should follow these rules:
 2. Do not add authentication or databases.
 3. Keep chapter content in JSON, not hard-coded in components.
 4. Do not invent historical, literary, or game facts.
-5. Preserve normalized map coordinates.
+5. Preserve normalized map coordinates, and respect the `mapMode` gate: authored coordinates are allowed on a `schematic` map with verified route order, never on an unverified one.
 6. Ship a Chinese-only visible interface for v1; retain optional English fields only for future localization.
 7. Keep citations and source IDs intact.
 8. Treat speculative real-world connections as speculative.
@@ -682,7 +707,7 @@ Agents working on this repository should follow these rules:
 10. Keep components reusable across all six chapters.
 11. Avoid large new dependencies when a lightweight implementation is sufficient.
 12. Any new content field should be documented before broad use.
-13. Do not force a real-world heritage block onto a marker when `KNOWLEDGE_BASE.md` says the connection is unverified.
+13. Do not force a real-world heritage block onto a marker when `KNOWLEDGE_BASE.md` says the connection is unverified; omit the section instead of rendering an empty or apologetic one.
 14. Preserve media provenance and license status; generated, documentary, official-game, and comparison images must never be conflated.
 
 ---
