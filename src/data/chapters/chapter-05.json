@@ -1,0 +1,68 @@
+{
+  "id": "chapter-05",
+  "order": 5,
+  "numeralZh": "五",
+  "titleZh": "日落红尘",
+  "regionZh": "火焰山",
+  "themeZh": "一扇风火，一家离合。",
+  "overviewZh": "火焰山的阅读入口是牛魔王一家与芭蕉扇。从原著的三调芭蕉扇，再看游戏里被重新塑造的角色与器物。",
+  "readingGuideZh": "原著中的坐骑如何成为游戏中的妖王？读辟水金睛兽一条即可比较。",
+  "sources": ["G09", "W059", "W060", "W061"],
+  "atmosphereMediaId": "atmosphere-05",
+  "mapMode": "schematic",
+  "topologyStatus": "unverified",
+  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "markers": [
+    {
+      "id": "bishui-beast",
+      "nameZh": "璧水金睛兽",
+      "type": "boss",
+      "areaZh": "第五回 · 隐·璧水洞",
+      "summaryZh": "原著中的坐骑，在游戏里成为妖王。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "璧水金睛兽出现在第五回隐藏区域璧水洞。它是比较“同一文学意象如何改变叙事作用”的好入口。游戏强调的是隐藏区域中的妖王遭遇，原著则把相近名称的异兽放在牛魔王的出行故事中。",
+        "sources": ["G05", "G09"]
+      },
+      "funFacts": [],
+      "sources": ["G05", "G09", "W060"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [60],
+        "chapterTitlesZh": ["牛魔王罢战赴华筵　孙行者二调芭蕉扇"],
+        "summaryZh": "原著“辟水金睛兽”是牛魔王的坐骑，出现在赴宴与悟空设法借扇的情节里。",
+        "adaptationNoteZh": "注意名称用字：游戏妖王为“璧水金睛兽”，原著坐骑为“辟水金睛兽”；角色作用与故事也有所不同。",
+        "sources": ["W060"]
+      }
+    },
+    {
+      "id": "plantain-fan",
+      "nameZh": "芭蕉扇",
+      "type": "item",
+      "areaZh": "第五回 · 火焰山",
+      "summaryZh": "一把扇子，贯穿火焰山的文学故事。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "芭蕉扇是游戏里的法宝之一，也是一条熟悉而值得重读的文学线索。在地图科普中，我们关注它怎样参与故事，以及游戏如何改写它的获得与使用方式，不把这张卡写成战斗操作指南。",
+        "sources": ["G11"]
+      },
+      "funFacts": [],
+      "sources": ["G11", "W059", "W060", "W061"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [59, 60, 61],
+        "chapterTitlesZh": [
+          "唐三藏路阻火焰山　孙行者一调芭蕉扇",
+          "牛魔王罢战赴华筵　孙行者二调芭蕉扇",
+          "猪八戒助力败魔王　孙行者三调芭蕉扇"
+        ],
+        "summaryZh": "原著用三回篇幅讲悟空三调芭蕉扇，牵连铁扇公主、牛魔王与火焰山。",
+        "adaptationNoteZh": "游戏借用器物和人物关系，重新安排天命人的经历。",
+        "sources": ["W059", "W060", "W061"]
+      }
+    }
+  ],
+  "areas": [],
+  "routes": [],
+  "anchors": []
+}

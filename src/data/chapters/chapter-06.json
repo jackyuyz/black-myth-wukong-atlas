@@ -1,0 +1,42 @@
+{
+  "id": "chapter-06",
+  "order": 6,
+  "numeralZh": "六",
+  "titleZh": "未竟",
+  "regionZh": "花果山",
+  "themeZh": "来时石生，归处何寻。",
+  "overviewZh": "花果山让故事回到石猴、水帘洞与悟空的起点。游戏结局属于新的创作，不能当作《西游记》原有的后续章节。",
+  "readingGuideZh": "先重读石猴出世，再区分游戏石猴与原著起源的关系。",
+  "sources": ["G09", "W001"],
+  "atmosphereMediaId": "atmosphere-06",
+  "mapMode": "schematic",
+  "topologyStatus": "unverified",
+  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "markers": [
+    {
+      "id": "stone-monkey",
+      "nameZh": "石猴",
+      "type": "character",
+      "areaZh": "第六回 · 花果山",
+      "summaryZh": "回到石头、山水与一个故事的起点。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "石猴是第六回故事中的重要形象。读到这里，可以回望小说开篇，再区分游戏中的具体角色与原著的石猴起源。名称和意象产生呼应，却不意味着两部作品有完全相同的结局。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W001"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [1],
+        "chapterTitlesZh": ["灵根育孕源流出　心性修持大道生"],
+        "summaryZh": "原著开篇写花果山仙石孕育石猴，之后石猴发现水帘洞。",
+        "adaptationNoteZh": "游戏第六回属于独立的结局创作，不能把新的遭遇补写进小说原文。",
+        "sources": ["W001"]
+      }
+    }
+  ],
+  "areas": [],
+  "routes": [],
+  "anchors": []
+}

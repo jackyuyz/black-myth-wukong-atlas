@@ -1,0 +1,80 @@
+{
+  "id": "chapter-03",
+  "order": 3,
+  "numeralZh": "三",
+  "titleZh": "夜生白露",
+  "regionZh": "小西天",
+  "themeZh": "一山雪色，万象有源。",
+  "overviewZh": "从亢金龙破金铙的文学典故，走到府城玉皇庙的星宿彩塑；在这里，把游戏、原著和现实艺术放在各自的证据里阅读。",
+  "readingGuideZh": "重点观察：原著解释故事，彩塑照片展示文物，政府报道说明二者与游戏形象的联系。",
+  "sources": ["G09", "W065", "H01", "H04"],
+  "atmosphereMediaId": "atmosphere-03",
+  "mapMode": "schematic",
+  "topologyStatus": "unverified",
+  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "markers": [
+    {
+      "id": "kang-jin-loong",
+      "nameZh": "亢金龙",
+      "type": "character",
+      "areaZh": "第三回 · 小西天",
+      "summaryZh": "从星宿之名，到一尊可以亲眼看见的彩塑。",
+      "layers": ["game", "journey-to-the-west", "real-world"],
+      "game": {
+        "descriptionZh": "亢金龙是第三回出现的角色。理解这一形象，可以同时走两条线：去原著看他怎样帮助悟空脱困，再去现实艺术中观察同名星宿的塑像。两条线的证据不同，不能互相替代。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W065"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [65],
+        "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
+        "summaryZh": "二十八宿参与解救困在金铙中的悟空。亢金龙把角伸入金铙，悟空设法借此脱身。金铙在这个故事里是一件能困住人的法器。",
+        "adaptationNoteZh": "游戏重新设计了形态、人格和遭遇；原著典故不能证明开发团队使用过哪一件文物。",
+        "sources": ["W065"]
+      },
+      "realWorld": [
+        {
+          "nameZh": "府城玉皇庙 · 亢金龙彩塑",
+          "locationZh": "山西省 · 晋城市 · 泽州县",
+          "descriptionZh": "二十八宿是中国传统天象体系中的一组名称，也进入了神话和造像艺术。府城玉皇庙的彩塑把人物与动物形象结合起来，照片中可以观察亢金龙人物身边的龙形塑像。",
+          "evidenceScopeZh": "晋城市政府报道将游戏概念形象与玉皇庙泥塑并列对照。证据支持角色造型的文化联系，不证明小雷音寺整组建筑来自玉皇庙，也不证明这个模型是一比一扫描。",
+          "relationship": "cultural-comparison",
+          "confidence": "high-confidence",
+          "evidenceType": "government-source",
+          "sources": ["H01", "H04"],
+          "mediaIds": ["heritage-yuhuang-kang-jin-long-01"]
+        }
+      ]
+    },
+    {
+      "id": "yellowbrow",
+      "nameZh": "黄眉",
+      "type": "boss",
+      "areaZh": "第三回 · 小雷音寺",
+      "summaryZh": "假佛境的故事，原著如何落笔？",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "黄眉是小雷音寺故事的核心角色。游戏为他重构了寺中情境和执念；原著则以取经人遇到假佛境展开。第一次阅读时，不必预先认识所有神佛，先区分地点、人物和法器的作用即可。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W065", "W066"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [65, 66],
+        "chapterTitlesZh": [
+          "妖邪假设小雷音　四众皆遭大厄难",
+          "诸神遭毒手　弥勒缚妖魔"
+        ],
+        "summaryZh": "原著的黄眉原是弥勒座前童子，使用金铙与人种袋，最终被弥勒收伏。",
+        "adaptationNoteZh": "游戏里天命人的遭遇与寺中故事是重新创作，不是原著文字的逐场复现。",
+        "sources": ["W065", "W066"]
+      }
+    }
+  ],
+  "areas": [],
+  "routes": [],
+  "anchors": []
+}

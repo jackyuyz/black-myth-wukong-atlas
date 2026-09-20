@@ -1,0 +1,400 @@
+{
+  "chapterId": "chapter-01",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "reviewedAt": "2026-09-20",
+  "reviewer": "独立子代理 /root/topology_review（用户授权的第二成员）",
+  "canvas": {
+    "width": 1200,
+    "height": 700
+  },
+  "notice": "路线示意图，非地理比例，非官方地图",
+  "scope": "仅核对区域先后、选取地点的所属区域与可选分支；不主张地理布局、完整地图、实机版本复验或精确行走路线。",
+  "nodes": [
+    {
+      "id": "forest-outside",
+      "name": "林外",
+      "region": "苍狼林",
+      "position": {
+        "x": 0.1,
+        "y": 0.43
+      },
+      "isMarker": false,
+      "sources": [
+        "G07",
+        "G08"
+      ]
+    },
+    {
+      "id": "guangzhi",
+      "name": "广智",
+      "region": "苍狼林·林外",
+      "position": {
+        "x": 0.1,
+        "y": 0.2
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09",
+        "G10"
+      ]
+    },
+    {
+      "id": "wandering-wight",
+      "name": "幽魂",
+      "region": "苍狼林·林外",
+      "position": {
+        "x": 0.2,
+        "y": 0.66
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "id": "guanyin-temple",
+      "name": "观音禅院",
+      "region": "苍狼林",
+      "position": {
+        "x": 0.26,
+        "y": 0.43
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "id": "lingxuzi",
+      "name": "灵虚子",
+      "region": "苍狼林·观音禅院",
+      "position": {
+        "x": 0.36,
+        "y": 0.43
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "id": "snake-trail",
+      "name": "蛇径",
+      "region": "翠竹林",
+      "position": {
+        "x": 0.44,
+        "y": 0.52
+      },
+      "isMarker": false,
+      "sources": [
+        "G07",
+        "G08"
+      ]
+    },
+    {
+      "id": "baw-li-guhh-lang",
+      "name": "波里个浪",
+      "region": "翠竹林·蛇径",
+      "position": {
+        "x": 0.42,
+        "y": 0.76
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "id": "guangmou",
+      "name": "广谋",
+      "region": "翠竹林·蛇径",
+      "position": {
+        "x": 0.52,
+        "y": 0.45
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09",
+        "G10"
+      ]
+    },
+    {
+      "id": "whiteclad-noble",
+      "name": "白衣秀士",
+      "region": "翠竹林·白雾泽",
+      "position": {
+        "x": 0.64,
+        "y": 0.43
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09",
+        "G10"
+      ]
+    },
+    {
+      "id": "third-bell",
+      "name": "第三口钟",
+      "region": "翠竹林·白雾泽",
+      "position": {
+        "x": 0.66,
+        "y": 0.65
+      },
+      "isMarker": false,
+      "sources": [
+        "G10",
+        "G12"
+      ]
+    },
+    {
+      "id": "fireproof-mantle",
+      "name": "辟火罩",
+      "region": "翠竹林·第三口钟旁（完成旧禅院支线后）",
+      "position": {
+        "x": 0.8,
+        "y": 0.65
+      },
+      "isMarker": true,
+      "sources": [
+        "G11",
+        "G12"
+      ]
+    },
+    {
+      "id": "ancient-guanyin-temple",
+      "name": "隐·旧观音禅院",
+      "region": "隐藏区域",
+      "position": {
+        "x": 0.67,
+        "y": 0.86
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G08",
+        "G10"
+      ]
+    },
+    {
+      "id": "elder-jinchi",
+      "name": "金池长老",
+      "region": "隐·旧观音禅院",
+      "position": {
+        "x": 0.88,
+        "y": 0.86
+      },
+      "isMarker": true,
+      "sources": [
+        "G09",
+        "G12"
+      ]
+    },
+    {
+      "id": "black-wind-king",
+      "name": "黑风大王",
+      "region": "黑风洞·洞内",
+      "position": {
+        "x": 0.8,
+        "y": 0.36
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "id": "black-bear-guai",
+      "name": "黑熊精",
+      "region": "黑风洞·见谛峰",
+      "position": {
+        "x": 0.91,
+        "y": 0.22
+      },
+      "isMarker": true,
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "forest-outside",
+      "toId": "guanyin-temple",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "guanyin-temple",
+      "toId": "lingxuzi",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "lingxuzi",
+      "toId": "snake-trail",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "snake-trail",
+      "toId": "guangmou",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "guangmou",
+      "toId": "whiteclad-noble",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "whiteclad-noble",
+      "toId": "black-wind-king",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "black-wind-king",
+      "toId": "black-bear-guai",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "forest-outside",
+      "toId": "guangzhi",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ],
+      "label": "林外探索；第一口钟"
+    },
+    {
+      "fromId": "forest-outside",
+      "toId": "wandering-wight",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ],
+      "label": "林外可选遭遇"
+    },
+    {
+      "fromId": "snake-trail",
+      "toId": "baw-li-guhh-lang",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G07",
+        "G09"
+      ],
+      "label": "河流支线"
+    },
+    {
+      "fromId": "whiteclad-noble",
+      "toId": "third-bell",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G10",
+        "G12"
+      ],
+      "label": "白衣秀士后方支路"
+    },
+    {
+      "fromId": "third-bell",
+      "toId": "ancient-guanyin-temple",
+      "kind": "optional",
+      "mode": "teleport",
+      "sources": [
+        "G10",
+        "G12"
+      ],
+      "label": "三钟齐鸣后传送",
+      "condition": "须敲响广智、广谋场地及白衣秀士后方的三口钟。此连线按常见初次探索顺序示意，不表示必定由这口钟最后触发。"
+    },
+    {
+      "fromId": "ancient-guanyin-temple",
+      "toId": "elder-jinchi",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G12"
+      ],
+      "label": "隐藏区域"
+    },
+    {
+      "fromId": "elder-jinchi",
+      "toId": "third-bell",
+      "kind": "optional",
+      "mode": "return",
+      "sources": [
+        "G11",
+        "G12"
+      ],
+      "label": "完成后返回钟旁"
+    },
+    {
+      "fromId": "third-bell",
+      "toId": "fireproof-mantle",
+      "kind": "optional",
+      "mode": "reward",
+      "sources": [
+        "G11",
+        "G12"
+      ],
+      "label": "完成旧禅院支线后领取",
+      "condition": "击败金池长老后，返回第三口钟旁调查悬尸。"
+    }
+  ],
+  "limitations": [
+    "Game8 既有入口本次无法读取，未计入证据；用可读取的具体 Boss、三钟与法宝条目补核。",
+    "未取得团队自己的当前版本行旅图，因此不能升为 verified-markers。",
+    "幽魂连线表示可选遭遇，不能据此声称幽魂位于独立岔路末端。",
+    "旧禅院独立于主线；三钟条件传送与完成后返回不属于普通步行道路。",
+    "辟火罩点是领取地点，不把它画在金池长老战场内。",
+    "林外之前的牯护院、色蕴等不在本轮文化标记范围；未核准的完整收集路线不进入此图。"
+  ]
+}

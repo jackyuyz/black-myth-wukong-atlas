@@ -795,3 +795,20 @@ Only after the map experience is stable:
 - classroom presentation mode
 
 These should remain optional enhancements rather than requirements for initial development.
+
+## 19. Initial implementation schema (2026-09-20)
+
+The executable schema lives in `src/types/schema.ts`. All content fields below are validated before building. All text ending in `Zh` must contain Chinese text. No chapter content is stored in components.
+
+- Chapter: `numeralZh`, `themeZh`, `overviewZh`, `readingGuideZh`, `sources`, `atmosphereMediaId`, optional `mapMediaId`, `mapNoticeZh`, `mapMode`, `topologyStatus`, `markers`, `routes` and `areas`. The existing `id`, `order`, `titleZh`, `regionZh` remain. Other chapters can have reading cards without `position`; these are not map markers.
+- `areas`: `{ id, nameZh, position }` for verified schematic areas. `routes`: `{ from, to, kind: main | optional, sources }`, referencing marker IDs; connections only represent researched route relationships. All positions use normalized coordinates and pass the map gate. A topological map needs a local `topologyLog` path. Unverified chapters have no areas, routes, map media or coordinates.
+- Marker: `areaZh`, `summaryZh`, `sources`, optional `position`, `game: { descriptionZh, sources }`, optional `journeyToTheWest`, optional `realWorld`, `funFacts`, optional `spoiler: { warningZh, textZh, sources }`. `journeyToTheWest` contains `relationship: direct | recombined`, chapter numbers, chapter titles, summary, adaptation note, optional excerpt and sources. These are shown as 原著直接出现 / 原著元素重组. Markers without a literary block must carry `noDirectNovelZh`; do not fabricate a chapter reference.
+- Heritage: `nameZh`, `locationZh`, `descriptionZh`, `evidenceScopeZh`, `relationship: cultural-comparison | developer-confirmed`, `confidence`, `evidenceType`, `sources`, optional `mediaIds`. Explicit evidence scope prevents a visual comparison from becoming a claim about scanning. `developer-confirmed` requires developer evidence; `confirmed` cannot use visual-comparison/community-theory evidence.
+- Media index: keyed by stable ID, using local `file`, Chinese title/alt/usage note, asset role, documentary flag, provenance, creator, license/license URL/status, source URL, evidence source IDs/scope, modification note. Original vectors have `firstParty: true` and a production license. Documentary photos retain attribution and share-alike terms. Original atmosphere vectors are non-documentary and do not portray an exact game location.
+- Source index: keyed by original W/G/H/L/F IDs or new G07+ research IDs; each has `titleZh`, `publisherZh`, `url`, `type`, `scopeZh`. Source types map to Chinese labels. Existing IDs are never repurposed.
+
+Build-time static rendering uses React's server renderer plus React Router's static router. All ten required route pages include the full Chinese reading cards in native disclosure elements, so closed drawers do not hide the writing from static HTML or script-free readers. The same cards are reused in interactive dialogs. Hash links identify cards and work without JavaScript. No fetch is needed to read content. Unknown paths use the generated Chinese 404 page. Vite's automatic directory deletion is disabled in accordance with repository deletion rules.
+
+### 19.1 Verified route semantics
+
+`anchors` contains non-card junctions `{ id, nameZh, position, sources }`; `routes.from/to` may reference either an anchor or a positioned marker. Each route also has `mode: route | teleport | return | reward`, optional `labelZh`, optional `conditionZh`. Conditional links must display their Chinese explanation, and teleport/return lines use a different stroke from ordinary exploration. The first map follows `assets/research/chapter-01-topology.json` and its reviewed wireframe exactly. Validation compares node coordinates, names, source lists and edge semantics against that research graph to prevent unsupported edits. `areas` are editorial region labels only, not navigable nodes.

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">第一回高层级路线黑白复核线框</title>
+<desc id="desc">实线为主要区域先后，虚线为可选探索，点线为三钟条件传送及返回。坐标仅用于插画布局。</desc>
+<rect width="1200" height="700" fill="white"/>
+<g font-family="sans-serif" fill="black">
+<text x="30" y="36" font-size="24">第一回·黑风山｜高层级路线线框</text>
+<text x="30" y="63" font-size="15">路线示意图，非地理比例，非官方地图；并非完整关卡攻略。</text>
+<text x="40" y="100" font-size="19">苍狼林</text>
+<text x="500" y="100" font-size="19">翠竹林</text>
+<text x="940" y="100" font-size="19">黑风洞</text>
+<path d="M120.0 301.0 L312.0 301.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M312.0 301.0 L432.0 301.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M432.0 301.0 L528.0 364.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M528.0 364.0 L624.0 315.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M624.0 315.0 L768.0 301.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M768.0 301.0 L960.0 252.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M960.0 252.0 L1092.0 154.0" fill="none" stroke="black" stroke-width="2"/>
+<path d="M120.0 301.0 L120.0 140.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="9 6"/>
+<path d="M120.0 301.0 L240.0 462.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="9 6"/>
+<path d="M528.0 364.0 L504.0 532.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="9 6"/>
+<path d="M768.0 301.0 L792.0 455.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="9 6"/>
+<path d="M792.0 455.0 L804.0 602.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="3 7"/>
+<path d="M804.0 602.0 L1056.0 602.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="9 6"/>
+<path d="M1056.0 602.0 C1150 492.0 892.0 405.0 792.0 455.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="3 7"/>
+<path d="M792.0 455.0 L960.0 455.0" fill="none" stroke="black" stroke-width="2" stroke-dasharray="9 6"/>
+<circle cx="120.0" cy="301.0" r="5" fill="white" stroke="black" stroke-width="2"/>
+<text x="120.0" y="283.0" text-anchor="middle" font-size="17">林外</text>
+<circle cx="120.0" cy="140.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="120.0" y="122.0" text-anchor="middle" font-size="17">广智</text>
+<circle cx="240.0" cy="462.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="240.0" y="444.0" text-anchor="middle" font-size="17">幽魂</text>
+<circle cx="312.0" cy="301.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="312.0" y="283.0" text-anchor="middle" font-size="17">观音禅院</text>
+<circle cx="432.0" cy="301.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="432.0" y="283.0" text-anchor="middle" font-size="17">灵虚子</text>
+<circle cx="528.0" cy="364.0" r="5" fill="white" stroke="black" stroke-width="2"/>
+<text x="528.0" y="346.0" text-anchor="middle" font-size="17">蛇径</text>
+<circle cx="504.0" cy="532.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="504.0" y="514.0" text-anchor="middle" font-size="17">波里个浪</text>
+<circle cx="624.0" cy="315.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="624.0" y="297.0" text-anchor="middle" font-size="17">广谋</text>
+<circle cx="768.0" cy="301.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="768.0" y="283.0" text-anchor="middle" font-size="17">白衣秀士</text>
+<circle cx="792.0" cy="455.0" r="5" fill="white" stroke="black" stroke-width="2"/>
+<text x="792.0" y="437.0" text-anchor="middle" font-size="17">第三口钟</text>
+<circle cx="960.0" cy="455.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="960.0" y="437.0" text-anchor="middle" font-size="17">辟火罩</text>
+<circle cx="804.0" cy="602.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="804.0" y="584.0" text-anchor="middle" font-size="17">隐·旧观音禅院</text>
+<circle cx="1056.0" cy="602.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="1056.0" y="584.0" text-anchor="middle" font-size="17">金池长老</text>
+<circle cx="960.0" cy="252.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="960.0" y="234.0" text-anchor="middle" font-size="17">黑风大王</text>
+<circle cx="1092.0" cy="154.0" r="8" fill="white" stroke="black" stroke-width="2"/>
+<text x="1092.0" y="136.0" text-anchor="middle" font-size="17">黑熊精</text>
+<text x="720" y="516" font-size="14">三钟齐鸣后传送</text>
+<text x="1060" y="530" font-size="13">完成后返回</text>
+<text x="900" y="484" font-size="13">返回钟旁领取</text>
+<text x="90" y="171" font-size="13">第一口钟</text>
+<text x="598" y="341" font-size="13">第二口钟</text>
+<text x="30" y="660" font-size="14">实线：主要区域先后　虚线：可选探索　点线：条件传送／返回</text>
+<text x="30" y="683" font-size="13">三钟条件：广智场地、广谋场地、白衣秀士后方。幽魂为可选遭遇，支线画法不主张实际岔路。</text>
+</g></svg>

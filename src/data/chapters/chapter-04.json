@@ -1,0 +1,64 @@
+{
+  "id": "chapter-04",
+  "order": 4,
+  "numeralZh": "四",
+  "titleZh": "曲度紫鸳",
+  "regionZh": "盘丝岭",
+  "themeZh": "丝缠旧梦，谁解其结。",
+  "overviewZh": "盘丝洞与黄花观把读者引向《西游记》第七十二、七十三回。原著的蜘蛛精与多目怪，在游戏里获得新的姓名、关系与命运。",
+  "readingGuideZh": "留意人物姓名和家族故事：同一组文学元素，可以被重新组织。",
+  "sources": ["G09", "W072", "W073"],
+  "atmosphereMediaId": "atmosphere-04",
+  "mapMode": "schematic",
+  "topologyStatus": "unverified",
+  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "markers": [
+    {
+      "id": "violet-spider",
+      "nameZh": "紫蛛儿",
+      "type": "character",
+      "areaZh": "盘丝岭 · 盘丝洞",
+      "summaryZh": "蜘蛛精的旧名目，游戏里的新身世。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "紫蛛儿出现在盘丝洞相关故事中。游戏赋予这个人物姓名和家族经历。把她放回文学背景中比较时，需要把原著的七蜘蛛精与游戏塑造的具体人物分开，不能从一种关系推断另一种关系。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W072"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [72],
+        "chapterTitlesZh": ["盘丝洞七情迷本　濯垢泉八戒忘形"],
+        "summaryZh": "原著第七十二回有盘丝洞七蜘蛛精及濯垢泉的故事。",
+        "adaptationNoteZh": "紫蛛儿的姓名、家族和与猪八戒的过往属于游戏扩写。",
+        "sources": ["W072"]
+      }
+    },
+    {
+      "id": "hundred-eyed-daoist",
+      "nameZh": "百眼魔君",
+      "type": "boss",
+      "areaZh": "盘丝岭 · 黄花观",
+      "summaryZh": "从黄花观多目怪，读到游戏百眼魔君。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "百眼魔君出现在黄花观，是盘丝岭的重要角色。道观是道教活动的场所；黄花观在这里首先是故事地点。不能仅凭建筑风格就给它指定现实原型，人物的文学关系也需要单独核对。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W073"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [73],
+        "chapterTitlesZh": ["情因旧恨生灾毒　心主遭魔幸破光"],
+        "summaryZh": "黄花观的多目怪为蜈蚣精，设毒茶害取经人，最终由毗蓝婆菩萨协助降伏。",
+        "adaptationNoteZh": "游戏重新创作他的目标、势力关系与命运。",
+        "sources": ["W073"]
+      }
+    }
+  ],
+  "areas": [],
+  "routes": [],
+  "anchors": []
+}

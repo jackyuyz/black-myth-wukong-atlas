@@ -1,0 +1,67 @@
+{
+  "id": "chapter-02",
+  "order": 2,
+  "numeralZh": "二",
+  "titleZh": "风起黄昏",
+  "regionZh": "黄风岭",
+  "themeZh": "黄沙之下，旧事未息。",
+  "overviewZh": "黄风岭将黄风怪故事与游戏新增的国度往事交织在一起。从虎先锋与黄风大圣入手，辨认文学人物与游戏续写。",
+  "readingGuideZh": "先对照黄风怪的称呼，勿把游戏的黄金之国历史全部当成原著。",
+  "sources": ["G09", "W020", "W021"],
+  "atmosphereMediaId": "atmosphere-02",
+  "mapMode": "schematic",
+  "topologyStatus": "unverified",
+  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "markers": [
+    {
+      "id": "tiger-vanguard",
+      "nameZh": "虎先锋",
+      "type": "boss",
+      "areaZh": "黄风岭 · 卧虎寺",
+      "summaryZh": "原著里已有其名，家族故事另有新写。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "虎先锋是黄风岭卧虎寺的头目。把游戏中的形象与原著对照，可以看见改编沿用了称谓，却发展出新的角色关系。这里不将游戏中虎妖的亲缘故事写成原著事实。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W020"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [20],
+        "chapterTitlesZh": ["黄风岭唐僧有难　半山中八戒争先"],
+        "summaryZh": "原著第二十回的虎先锋是黄风怪的手下，曾抓走唐僧。",
+        "adaptationNoteZh": "游戏中的虎妖家族与人物经历属于游戏扩写。",
+        "sources": ["W020"]
+      }
+    },
+    {
+      "id": "yellow-wind-sage",
+      "nameZh": "黄风大圣",
+      "type": "boss",
+      "areaZh": "黄风岭 · 黄风阵",
+      "summaryZh": "从“黄风怪”到“黄风大圣”。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "黄风大圣是黄风岭的重要妖王。游戏使用“大圣”的称呼，并把他的故事与此地的历史联系起来。先读原著中的黄风怪，再理解游戏增加的情境，能避免将两个作品的叙事混成一段。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "W020", "W021"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [20, 21],
+        "chapterTitlesZh": [
+          "黄风岭唐僧有难　半山中八戒争先",
+          "护法设庄留大圣　须弥灵吉定风魔"
+        ],
+        "summaryZh": "原著写黄风岭黄风洞的黄风怪，第二十一回中灵吉菩萨协助降伏他。",
+        "adaptationNoteZh": "游戏里的黄金之国往事是独立扩写，不等于原著已有同样完整的历史。",
+        "sources": ["W020", "W021"]
+      }
+    }
+  ],
+  "areas": [],
+  "routes": [],
+  "anchors": []
+}

@@ -1,60 +1,85 @@
 # 第一回地图拓扑研究记录
 
-更新日期：2026-09-19
+更新日期：2026-09-20
 
-当前状态：`unverified`
+当前状态：`verified-high-level`，仅适用于 `mapMode: schematic`。
 
-目标形态：`mapMode: schematic`（卷轴式路线示意图）
+独立复核成员：`/root/topology_review`。用户已授权调用独立子代理作为第二成员；本成员独立打开原研究清单、交叉检查来源并修正初始骨架。主代理集成时仍需检查最终示意图与本线框一致，不能把本记录视为实机地理坐标复验。
 
-目标素材：`chapter-01-map-v1.png`
+配套文件：[机器可读拓扑](chapter-01-topology.json)、[原创黑白复核线框](chapter-01-topology.svg)。线框画布为 1200 × 700；JSON 只保存 0–1 的插画布局坐标，不是游戏地图坐标。线框是研究材料，不是第三方地图复刻；未下载游戏截图或地图图片。
 
-## 当前结论
+## 核准范围与重要修正
 
-2024 年 12 月更新后，游戏加入了“行旅图”；官方更新说明称玩家初入黑风山并遇见土地后可以解锁第一张图，之后可在土地庙购买新区域行旅图。因此第一回自制地图应优先根据**团队自己的最新版游戏截图/录屏中的行旅图**建立拓扑，再用路线资料交叉核对。官方和第三方地图图片均不直接复制进仓库。
+主线区域顺序为苍狼林 → 翠竹林 → 黑风洞；本次仅选择 12 个文化阅读标记及 3 个连接锚点，不承诺完整收集路线。广智、幽魂不能被串成必须完成的主线；幽魂虽在行进通路附近，击败它是可选遭遇，线框支线画法并不声称其地理位置是独立岔路末端。波里个浪属于蛇径河流探索分支，与通往广谋的方向分开。
 
-## 待实机核对的高层级顺序
+隐·旧观音禅院通过敲响三口钟的条件传送进入，不能画成白衣秀士后方可直接走到的普通寺院。第三口钟在白衣秀士后方支路，图上依初次常见探索顺序从此处画传送线；该画法并不声称敲钟顺序被强制固定。三钟条件同时包括广智场地、广谋场地与白衣秀士后方，必须在界面说明。完成金池长老遭遇后返回钟旁，再取得辟火罩；**辟火罩领取标记放在第三钟旁，不在金池长老战场内**。[G10][G11][G12]
 
-以下只是路线研究骨架，不是最终坐标：
+锦襕袈裟适合做阅读条目，本轮不赋予拾取点。牯护院、色蕴、马天霸、葫芦仙人、申猴及后续回访的赤髯龙不在本轮选取范围；原待核查骨架里列出它们不等于已逐点批准上线。
 
-```text
-苍狼林
-前山 → 河流尽头佛头 / 色蕴 → 牯护院 → 山上亭子 → 林外
-    → 广智 / 第一口钟 → 幽魂 → 观音禅院 → 灵虚子
+## 四份既有路线资料的检查结果
 
-翠竹林
-后山 → 洞内相遇 → 蛇径 → 葫芦仙人 → 波里个浪
-    → 广谋 / 第二口钟 → 白雾泽 → 申猴 → 白衣秀士 / 第三口钟
-    ↘ 隐·旧观音禅院 → 金池长老 → 辟火罩
+| 资料 | 本次打开结果 | 可以证明的范围 | 不能据此证明的内容 |
+|---|---|---|---|
+| [游民星空第一章路线指引（G07）](https://www.gamersky.com/handbook/202412/1858397.shtml) | 可读取 | 苍狼林、翠竹林、黑风洞的章节先后及所选角色/寺院/法宝在流程中的关系 | 这是推荐全收集顺序，不能把所有箭头理解为必经主线 |
+| [Game8 原区域地图入口](https://game8.co/games/Black-Myth-Wukong/archives/470912) | 浏览工具返回 Internal Error | 无，本次不计为成功复核证据 | 不声称四份入口均可用或均支持每个节点 |
+| [PowerPyx 土地庙清单（G08）](https://www.powerpyx.com/black-myth-wukong-all-shrines-fast-travel-points/) | 可读取 | 第一回三个常规区域及独立隐藏寺院、林外/蛇径/洞内/见谛峰等名称归属 | 本页未逐个说明人物与法宝位置，不能单独给全部 12 标记背书 |
+| [BWIKI 地图条目](https://wiki.biligame.com/wukong/%E5%9C%B0%E5%9B%BE) | 可读取 | 中文区域树和第一回隐藏区域名称，与 G07/G08 相符 | 地图页本身未给出完整三钟传送过程；不能替代具体条目 |
 
-黑风洞
-洞内 → 黑风大王 → 洞外 → 见谛峰 → 黑熊精
-```
+Game8 不可读的缺口由以下可读取的具体条目补核，未降低“每节点至少两处一致来源”的要求。BWIKI 地图的“苍狼林／翠竹林／黑风洞”段落作为中文命名辅助，不取用其地图图片。
 
-## 研究链接
+## 补充来源元数据
 
-| 来源 | 用途 | 权利处理 |
-|---|---|---|
-| [Steam 官方 1.0.13.16669 更新公告](https://store.steampowered.com/news/app/2358720/view/527580578293220145?l=schinese) | 确认行旅图的加入、黑风山解锁方式与后续土地庙购买机制 | 只引用文字；公告头图只有 800×450 且不展示行旅图界面，未收入高质量素材库 |
-| [游民星空第一章路线指引](https://www.gamersky.com/handbook/202412/1858397.shtml) | 核对苍狼林、翠竹林、黑风洞的主线和三口钟顺序 | 第三方路线参考，不复制地图图片 |
-| [Game8 区域地图入口](https://game8.co/games/Black-Myth-Wukong/archives/470912) | 英文区域名与章节范围交叉核对 | 第三方参考，不复制图片 |
-| [PowerPyx 土地庙清单](https://www.powerpyx.com/black-myth-wukong-all-shrines-fast-travel-points/) | 核对土地庙与快速旅行节点 | 第三方参考，不复制图片 |
-| [BWIKI 地图条目](https://wiki.biligame.com/wukong/%E5%9C%B0%E5%9B%BE) | 中文区域与隐藏地图入口交叉核对 | 社区参考，不作单一事实来源 |
+下列编号由主代理同步到 `src/data/sources.json`；本记录不修改来源主文件。
 
-## 两级门槛
+| ID | 页面标题／出版者／日期 | URL | 本次核对定位 |
+|---|---|---|---|
+| G07 | 《黑神话悟空》第一章黑风山路线指引／游民星空／2024-12-12 | https://www.gamersky.com/handbook/202412/1858397.shtml | 正文“苍狼林”“翠竹林”“黑风洞”三段 |
+| G08 | Black Myth Wukong All Shrines (Fast Travel Points)／PowerPyx／2024-08-20 | https://www.powerpyx.com/black-myth-wukong-all-shrines-fast-travel-points/ | Chapter 1: Black Wind Mountain |
+| G09 | Black Myth: Wukong Boss Guide – All Bosses／PowerPyx／2024-08-20 | https://www.powerpyx.com/black-myth-wukong-boss-guide-all-bosses/ | 第一回各具名 Boss 的 Location 字段；不引用打法或数值 |
+| G10 | Black Myth Wukong Bell Locations – How to Reach Ancient Guanyin Temple／PowerPyx／2024-08-20 | https://www.powerpyx.com/black-myth-wukong-bell-locations-how-to-reach-ancient-guanyin-temple/ | Bell 1、Bell 2、Bell 3 与末段传送说明 |
+| G11 | Black Myth Wukong All Vessel Locations／PowerPyx／2024-08-20 | https://www.powerpyx.com/black-myth-wukong-all-vessel-locations/ | 1. Fireproof Mantle，尤其第 3 步 |
+| G12 | 《黑神话悟空》金池长老位置说明 第一回隐藏BOSS在哪／游民星空／2024-11-26 | https://www.gamersky.com/handbook/202411/1850941.shtml | “金池长老位置”中敲三钟、返回与悬尸领取法宝的段落 |
 
-本项目第一回采用 `schematic` 路线示意图，因此只需达到 `verified-high-level` 即可出图并落标记；`verified-markers` 是将来若改做 `geographic` 地理还原图时才需要的门槛。两者的区别见 `ASSET_REQUIREMENTS.md` 第 3.2.A 节。
+只摘要路线事实，不复制第三方图文或人物传记。这里的游戏来源是第三方流程参考，不应在公开界面标为“官方确认”。
 
-### 变为 `verified-high-level` 前必须完成
+## 逐节点双来源记录
 
-1. 把上面的路线骨架逐节点对照研究链接中的四份路线资料，记录每个节点至少两处一致来源；出现分歧的节点单独列出。
-2. 确认三个区域的先后、主要分叉，以及隐·旧观音禅院的接入位置；土地庙精确数量与命名不属于本级要求。
-3. 绘制无美术风格的黑白拓扑线框，并由第二位成员复核骨架与来源记录。
-4. 线框确认后方可作为出图参考；生成或绘制过程不得新增、删减或移动骨架中的节点与连线。
-5. 成图后在图上人工摆放标记坐标。坐标是插画构图位置，**不得**声称为游戏地理位置，页面须常驻「路线示意图，非地理比例」提示。
+第二来源均定位到具体小节；这里只记录地图所属与连接关系，不扩写游戏生平。
 
-### 变为 `verified-markers` 另需完成
+| 节点 ID／名称 | 核准所属或关系 | 第一处来源 | 第二处一致来源 |
+|---|---|---|---|
+| `forest-outside` 林外（锚点） | 苍狼林，通往观音禅院之前 | G07 苍狼林段 | G08 Forest of Wolves 列表 |
+| `guangzhi` 广智 | 苍狼林·林外探索区；关联第一口钟 | G07 苍狼林段 | G09 Guangzhi 的 Location；G10 Bell 1 |
+| `wandering-wight` 幽魂 | 苍狼林·林外的可选遭遇 | G07 苍狼林段 | G09 Wandering Wight 的 Location；该来源也记载推进至金池时可能尚未打幽魂，非主线前置 |
+| `guanyin-temple` 观音禅院 | 苍狼林主线路径，不能与隐藏旧禅院混同 | G07 苍狼林段 | G08 Forest of Wolves 列表；G09 Lingxuzi 的 Location |
+| `lingxuzi` 灵虚子 | 观音禅院 | G07 苍狼林段 | G09 Lingxuzi 的 Location |
+| `snake-trail` 蛇径（锚点） | 翠竹林，后山与白雾泽之间 | G07 翠竹林段 | G08 Bamboo Grove 列表 |
+| `baw-li-guhh-lang` 波里个浪 | 蛇径河流探索分支 | G07 翠竹林段 | G09 Baw-Li-Guhh-Lang 的 Location 与 Guangmou 的相反行进分向 |
+| `guangmou` 广谋 | 翠竹林·蛇径，关联第二口钟 | G07 翠竹林段 | G09 Guangmou 的 Location；G10 Bell 2 |
+| `whiteclad-noble` 白衣秀士 | 翠竹林·白雾泽 | G07 翠竹林段 | G09 Whiteclad Noble 的 Location；G10 Bell 3 |
+| `third-bell` 第三口钟（锚点） | 白衣秀士后方支路，进入黑风洞前 | G10 Bell 3 | G12 白衣秀士之后“先走左边”段 |
+| `ancient-guanyin-temple` 隐·旧观音禅院 | 三钟条件传送的独立隐藏区域 | G10 开头及 Bell 3 后说明 | G12 三钟与旧禅院段；G08 Secret 列表 |
+| `elder-jinchi` 金池长老 | 隐·旧观音禅院 | G09 Elder Jinchi 的 Location | G12 旧禅院开门与金池段 |
+| `fireproof-mantle` 辟火罩 | 完成旧禅院支线后回第三钟旁取得 | G11 Fireproof Mantle 第 3 步 | G12 金池后调查悬尸段；G10 末段 |
+| `black-wind-king` 黑风大王 | 黑风洞·洞内 | G07 黑风洞段 | G09 Black Wind King 的 Location |
+| `black-bear-guai` 黑熊精 | 黑风洞·见谛峰 | G07 黑风洞段 | G09 Black Bear Guai 的 Location |
 
-1. 团队用当前游戏版本截取第一回行旅图全图和各区域放大图。
-2. 记录平台、版本号、截图者、日期，以及行旅图是否随更新改变。
-3. 对照实机逐点验证所有区域顺序、分叉和土地庙；把攻略来源只当辅助。
-4. 在最终成图上重新校准每个标记坐标，不能从路线文字直接推算。
+两个推荐顺序并非全都相同：G07 把波里个浪列在广谋之前，G09 的文章索引先列广谋。二者位置描述一致，分歧来自可选探索顺序，因此图中将波里个浪放为蛇径分支，不画成通往广谋的必经节点。广智和幽魂同样不固定相互先后。
+
+## 通过后的展示约束
+
+1. JSON 中 `main` 表示所选主区域顺序；`optional` 表示可选探索或隐藏支线。连线省略了中间路段，不可写“直达”。
+2. `mode: teleport` 与 `mode: return` 必须区别于普通路线，采用点线并显示中文条件说明。`mode: reward` 只表达条件领取关系。
+3. 所有坐标均为线框完成后选择的插画布局坐标；SVG 中无游戏地形测绘主张。最终美术可以改变路径曲线及背景，但不得改变节点所属、分支、传送/返回含义。
+4. 地图常驻“路线示意图，非地理比例，非官方地图”。锚点不是额外文化卡片；只有 `isMarker: true` 的 12 点参与卡片浏览。
+5. 第一回没有核实的现实寺院取景映射，地图与卡片不得暗示观音禅院对应某座山西寺庙。
+
+## `verified-markers` 仍未达到
+
+没有团队当前游戏版本的行旅图全图、局部截图、平台和截图者记录，没有逐点实机定位。本轮不宣称完成该级别。未来如改为 `geographic`，必须重新取得第一方证据并逐点复验，不能复用本示意图坐标作为地理坐标。
+
+[Steam 官方 1.0.13.16669 更新公告](https://store.steampowered.com/news/app/2358720/view/527580578293220145?l=schinese) 是原研究记录保留的行旅图机制来源；本轮没有用该公告给上述具体路线节点背书。
+
+## 集成复核
+
+2026-09-20，主代理对照 JSON 节点、边与黑白 SVG 源码完成复核，接受第二成员的线框。正式界面沿用全部 15 个节点、15 条边与归一化位置；特别保留三钟条件、金池后的返回和辟火罩领取地点。界面视觉检查另记录在实现验证报告。
