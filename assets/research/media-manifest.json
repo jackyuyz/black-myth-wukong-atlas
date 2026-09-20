@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-19",
+  "notesZh": "source 条目可以在遵守许可和证据边界的前提下进入页面；link-only 条目只供研究；generated 条目永远不能作为纪实证据。",
+  "items": [
+    {
+      "id": "generated-homepage-atmosphere-hero-v1",
+      "localPath": "assets/generated/homepage-atmosphere-hero-v1.png",
+      "assetRole": "homepage-hero",
+      "provenanceType": "generated",
+      "licenseStatus": "generated-project-asset",
+      "generator": "OpenAI built-in image generation tool",
+      "generatedAt": "2026-09-19",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "sha256": "ccbe04ad9c8e4b2f6a556ac5f792375112f6587da8aa4987f0774f61022796aa",
+      "productionStatus": "draft-below-minimum-resolution",
+      "evidenceRefs": [],
+      "evidenceScopeZh": "原创非纪实气氛图，只用于首页和风格评审；不代表游戏实机、真实地点、原著版本或官方美术。",
+      "altZh": "云雾笼罩的群山与悬崖古寺，瀑布沿深色岩壁落下，左侧留有浅色水墨空间。",
+      "spoilerLevel": "none",
+      "useInPublicBuild": false,
+      "promptRef": "assets/research/ASSET_GENERATION_BRIEFS.md#G01"
+    },
+    {
+      "id": "heritage-yuhuang-kang-jin-long-01",
+      "localPath": "assets/source/heritage/yuhuang-temple-kang-jin-long.jpg",
+      "assetRole": "heritage-detail",
+      "provenanceType": "documentary-photo",
+      "licenseStatus": "cleared-with-attribution",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "Patrick20242023",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E4%BA%A2%E9%87%91%E9%BE%99.jpg",
+      "retrievedAt": "2026-09-19",
+      "dimensions": {
+        "width": 4032,
+        "height": 3024
+      },
+      "sha256": "a09d7c777ee9aa3532109360ce8640a02e6143a66efa0257501c327c7d39e56e",
+      "evidenceRefs": ["H01", "H04"],
+      "evidenceScopeZh": "照片展示府城玉皇庙亢金龙彩塑及龙形动物属性；游戏关联必须另引 H01/H04，照片本身不证明扫描或一比一复制。",
+      "altZh": "府城玉皇庙亢金龙彩塑，人物坐姿下方可见盘曲的龙形塑像。",
+      "spoilerLevel": "low",
+      "useInPublicBuild": true
+    },
+    {
+      "id": "heritage-yuhuang-exterior-01",
+      "localPath": "assets/source/heritage/yuhuang-temple-exterior.jpg",
+      "assetRole": "heritage-context",
+      "provenanceType": "documentary-photo",
+      "licenseStatus": "cleared-with-attribution",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "Windmemories",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20250906_Yuhuang_Temple_01.jpg",
+      "retrievedAt": "2026-09-19",
+      "dimensions": {
+        "width": 1800,
+        "height": 1200
+      },
+      "sha256": "ad16adf79bd069e760ceb9ce6ea998ba08d735ee2d57085cf45193403bafce1d",
+      "evidenceRefs": ["H01", "H04"],
+      "evidenceScopeZh": "照片展示府城玉皇庙外部环境，只可作地点背景，不作为游戏场景模型证据。",
+      "altZh": "府城玉皇庙入口与传统木构建筑外观，院外可见树木与石阶。",
+      "spoilerLevel": "none",
+      "useInPublicBuild": true
+    },
+    {
+      "id": "heritage-xiaoxitian-exterior-01",
+      "localPath": "assets/source/heritage/xiaoxitian-daxiong-hall.jpg",
+      "assetRole": "heritage-context",
+      "provenanceType": "documentary-photo",
+      "licenseStatus": "cleared-with-attribution",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "三猎",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E9%9A%B0%E5%8E%BF%E5%B0%8F%E8%A5%BF%E5%A4%A9%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.JPG",
+      "retrievedAt": "2026-09-19",
+      "dimensions": {
+        "width": 3840,
+        "height": 2160
+      },
+      "sha256": "7f7212b42d6d7ecd6de23014c86ffa5aff13d4badca15cd408f779f99ccfecc2",
+      "evidenceRefs": ["H02", "H03"],
+      "evidenceScopeZh": "照片只展示隰县小西天大雄宝殿外观，没有展示殿内悬塑；不可用于悬塑细节证据位。",
+      "altZh": "隰县小西天大雄宝殿外观，红墙、木构屋檐与院落石地位于画面中央。",
+      "spoilerLevel": "none",
+      "useInPublicBuild": true
+    },
+    {
+      "id": "heritage-tiefo-ziwei-01",
+      "localPath": "assets/source/heritage/tiefo-temple-ziwei-emperor.jpg",
+      "assetRole": "heritage-detail",
+      "provenanceType": "documentary-photo",
+      "licenseStatus": "cleared-with-attribution",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "Windmemories",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20260828_Tiefo_Temple_16.jpg",
+      "retrievedAt": "2026-09-19",
+      "dimensions": {
+        "width": 1200,
+        "height": 1800
+      },
+      "sha256": "113ba1a84305bd1f50d9f6e3126dddd09ab616058f3667986e4fdae6bd5b0570",
+      "evidenceRefs": ["H04", "H05"],
+      "evidenceScopeZh": "照片展示高平铁佛寺二十四诸天组像中的紫微大帝及邻近造像，可说明彩塑艺术背景；没有逐点证据时不绑定到具体游戏 Boss。",
+      "altZh": "高平铁佛寺彩塑群局部，中央为冠服繁复的紫微大帝造像，两侧可见其他诸天造像。",
+      "spoilerLevel": "none",
+      "useInPublicBuild": true
+    },
+    {
+      "id": "literature-xiyou2-01",
+      "localPath": "assets/source/literature/journey-to-the-west-illustration-xiyou2.png",
+      "assetRole": "historical-illustration",
+      "provenanceType": "public-domain-scan",
+      "licenseStatus": "public-domain",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-old",
+      "creator": "Anonymous",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Xiyou2.PNG",
+      "retrievedAt": "2026-09-19",
+      "dimensions": {
+        "width": 1726,
+        "height": 2526
+      },
+      "sha256": "db4146fb49dab28b580b7ffd0be331142fbac05915899b6e813ecf8ac5ab8267",
+      "evidenceRefs": [],
+      "evidenceScopeZh": "古本插图内容为云栈洞与猪八戒，可用于原著版本或猪八戒相关页面；不是第一回观音禅院故事插图。",
+      "altZh": "古本《西游记》插图，上方题有云栈洞，下方画猪八戒与人物相遇的场景。",
+      "spoilerLevel": "low",
+      "useInPublicBuild": true
+    },
+    {
+      "id": "official-black-wind-concept-01",
+      "remoteUrl": "https://gamesci.cn/wukong/img/Concept_heifenshan1.f6f2c857.jpg",
+      "sourcePage": "https://gamesci.cn/wukong/",
+      "assetRole": "game-reference",
+      "provenanceType": "official-game-media",
+      "licenseStatus": "permission-required",
+      "researchUseZh": "研究黑风山瀑布、岩窟与造像的空间层次。",
+      "useInPublicBuild": false
+    },
+    {
+      "id": "official-black-wind-concept-02",
+      "remoteUrl": "https://gamesci.cn/wukong/img/Concept_heifenshan2.d04a6e38.jpg",
+      "sourcePage": "https://gamesci.cn/wukong/",
+      "assetRole": "game-reference",
+      "provenanceType": "official-game-media",
+      "licenseStatus": "permission-required",
+      "researchUseZh": "研究洞口、寺门与路径纵深。",
+      "useInPublicBuild": false
+    },
+    {
+      "id": "official-black-wind-concept-03",
+      "remoteUrl": "https://gamesci.cn/wukong/img/Concept_heifenshan3.5efa4205.jpg",
+      "sourcePage": "https://gamesci.cn/wukong/",
+      "assetRole": "game-reference",
+      "provenanceType": "official-game-media",
+      "licenseStatus": "permission-required",
+      "researchUseZh": "研究夜色、墓地、灯笼和敌人剪影的氛围；不复制角色。",
+      "useInPublicBuild": false
+    },
+    {
+      "id": "official-black-wind-concept-04",
+      "remoteUrl": "https://gamesci.cn/wukong/img/Concept_heifenshan4.d60ece48.jpg",
+      "sourcePage": "https://gamesci.cn/wukong/",
+      "assetRole": "game-reference",
+      "provenanceType": "official-game-media",
+      "licenseStatus": "permission-required",
+      "researchUseZh": "研究密林山路、雾气和人物尺度；不复制构图。",
+      "useInPublicBuild": false
+    }
+  ]
+}
