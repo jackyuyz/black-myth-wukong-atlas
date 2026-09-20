@@ -1,0 +1,298 @@
+{
+  "chapterId": "chapter-06",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "reviewedAt": "2026-09-20",
+  "scopeZh": "高层路线、分支与条件关系；坐标仅为插画布局，不是游戏地理坐标。",
+  "nodes": [
+    {
+      "id": "stone-monkey",
+      "name": "石猴",
+      "position": {
+        "x": 0.93,
+        "y": 0.36
+      },
+      "isMarker": true
+    },
+    {
+      "id": "supreme-inspector",
+      "name": "王灵官",
+      "position": {
+        "x": 0.14,
+        "y": 0.45
+      },
+      "isMarker": true
+    },
+    {
+      "id": "gold-armored-rhino",
+      "name": "金甲犀",
+      "position": {
+        "x": 0.34,
+        "y": 0.2
+      },
+      "isMarker": true
+    },
+    {
+      "id": "cloudtreading-deer",
+      "name": "步云鹿",
+      "position": {
+        "x": 0.34,
+        "y": 0.7
+      },
+      "isMarker": true
+    },
+    {
+      "id": "feng-tail-general",
+      "name": "凤翅将军",
+      "position": {
+        "x": 0.49,
+        "y": 0.2
+      },
+      "isMarker": true
+    },
+    {
+      "id": "emerald-armed-mantis",
+      "name": "碧臂螂",
+      "position": {
+        "x": 0.49,
+        "y": 0.7
+      },
+      "isMarker": true
+    },
+    {
+      "id": "water-curtain-cave",
+      "name": "水帘洞",
+      "position": {
+        "x": 0.71,
+        "y": 0.45
+      },
+      "isMarker": true
+    },
+    {
+      "id": "great-sages-broken-shell",
+      "name": "大圣残躯",
+      "position": {
+        "x": 0.93,
+        "y": 0.61
+      },
+      "isMarker": true
+    },
+    {
+      "id": "giant-shigandang",
+      "name": "大石敢当",
+      "position": {
+        "x": 0.48,
+        "y": 0.88
+      },
+      "isMarker": true
+    },
+    {
+      "id": "verdant-path",
+      "name": "青嶂道",
+      "position": {
+        "x": 0.07,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "cloud-open",
+      "name": "筋斗云开放",
+      "position": {
+        "x": 0.23,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "armor-complete",
+      "name": "遗物齐备",
+      "position": {
+        "x": 0.61,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "peak-innocence",
+      "name": "天真顶",
+      "position": {
+        "x": 0.8,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "heart-birthstone",
+      "name": "石卵核心",
+      "position": {
+        "x": 0.87,
+        "y": 0.45
+      },
+      "isMarker": false
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "verdant-path",
+      "toId": "supreme-inspector",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09",
+        "G20"
+      ]
+    },
+    {
+      "fromId": "supreme-inspector",
+      "toId": "cloud-open",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G20"
+      ]
+    },
+    {
+      "fromId": "cloud-open",
+      "toId": "gold-armored-rhino",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "cloud-open",
+      "toId": "cloudtreading-deer",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "cloud-open",
+      "toId": "feng-tail-general",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G20"
+      ]
+    },
+    {
+      "fromId": "cloud-open",
+      "toId": "emerald-armed-mantis",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "gold-armored-rhino",
+      "toId": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ]
+    },
+    {
+      "fromId": "cloudtreading-deer",
+      "toId": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ]
+    },
+    {
+      "fromId": "feng-tail-general",
+      "toId": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ]
+    },
+    {
+      "fromId": "emerald-armed-mantis",
+      "toId": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ]
+    },
+    {
+      "fromId": "armor-complete",
+      "toId": "water-curtain-cave",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G20"
+      ]
+    },
+    {
+      "fromId": "water-curtain-cave",
+      "toId": "peak-innocence",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G20"
+      ]
+    },
+    {
+      "fromId": "peak-innocence",
+      "toId": "heart-birthstone",
+      "kind": "main",
+      "mode": "teleport",
+      "sources": [
+        "G08",
+        "G20"
+      ],
+      "label": "进入石卵",
+      "condition": "沿水帘洞与天真顶推进，在终点进入石卵核心。"
+    },
+    {
+      "fromId": "heart-birthstone",
+      "toId": "stone-monkey",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G20"
+      ]
+    },
+    {
+      "fromId": "stone-monkey",
+      "toId": "great-sages-broken-shell",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G20"
+      ],
+      "label": "终局后段"
+    },
+    {
+      "fromId": "cloud-open",
+      "toId": "giant-shigandang",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ],
+      "label": "五蕴支线",
+      "condition": "需先取得前四蕴，再前往开放山体中的峡谷。"
+    }
+  ]
+}

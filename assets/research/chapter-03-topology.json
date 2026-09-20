@@ -1,0 +1,235 @@
+{
+  "chapterId": "chapter-03",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "reviewedAt": "2026-09-20",
+  "scopeZh": "高层路线、分支与条件关系；坐标仅为插画布局，不是游戏地理坐标。",
+  "nodes": [
+    {
+      "id": "kang-jin-loong",
+      "name": "亢金龙",
+      "position": {
+        "x": 0.17,
+        "y": 0.45
+      },
+      "isMarker": true
+    },
+    {
+      "id": "yellowbrow",
+      "name": "黄眉",
+      "position": {
+        "x": 0.93,
+        "y": 0.45
+      },
+      "isMarker": true
+    },
+    {
+      "id": "kang-jin-star",
+      "name": "亢金星君",
+      "position": {
+        "x": 0.46,
+        "y": 0.28
+      },
+      "isMarker": true
+    },
+    {
+      "id": "melon-field",
+      "name": "瓜田",
+      "position": {
+        "x": 0.7,
+        "y": 0.78
+      },
+      "isMarker": true
+    },
+    {
+      "id": "great-pagoda",
+      "name": "浮屠塔",
+      "position": {
+        "x": 0.54,
+        "y": 0.1
+      },
+      "isMarker": true
+    },
+    {
+      "id": "erlang-sacred-divinity",
+      "name": "二郎显圣真君",
+      "position": {
+        "x": 0.79,
+        "y": 0.1
+      },
+      "isMarker": true
+    },
+    {
+      "id": "frost-clad-path",
+      "name": "披霜道",
+      "position": {
+        "x": 0.07,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "lower-pagoda",
+      "name": "浮屠界下层",
+      "position": {
+        "x": 0.28,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "warding-temple",
+      "name": "安身寺",
+      "position": {
+        "x": 0.4,
+        "y": 0.3
+      },
+      "isMarker": false
+    },
+    {
+      "id": "north-shore",
+      "name": "苦海北岸",
+      "position": {
+        "x": 0.56,
+        "y": 0.5
+      },
+      "isMarker": false
+    },
+    {
+      "id": "forest-of-felicity",
+      "name": "快活林",
+      "position": {
+        "x": 0.69,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "temple-entrance",
+      "name": "寺门",
+      "position": {
+        "x": 0.84,
+        "y": 0.45
+      },
+      "isMarker": false
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "frost-clad-path",
+      "toId": "kang-jin-loong",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "kang-jin-loong",
+      "toId": "lower-pagoda",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "lower-pagoda",
+      "toId": "warding-temple",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "warding-temple",
+      "toId": "kang-jin-star",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "kang-jin-star",
+      "toId": "north-shore",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "north-shore",
+      "toId": "forest-of-felicity",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "forest-of-felicity",
+      "toId": "temple-entrance",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "temple-entrance",
+      "toId": "yellowbrow",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09",
+        "G15"
+      ]
+    },
+    {
+      "fromId": "forest-of-felicity",
+      "toId": "melon-field",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G15"
+      ],
+      "label": "极乐谷支路",
+      "condition": "由快活林向谷底支路探索，并推进翠笠武师相关事件。"
+    },
+    {
+      "fromId": "warding-temple",
+      "toId": "great-pagoda",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G16"
+      ],
+      "label": "浮屠界支路"
+    },
+    {
+      "fromId": "great-pagoda",
+      "toId": "erlang-sacred-divinity",
+      "kind": "optional",
+      "mode": "teleport",
+      "sources": [
+        "G16"
+      ],
+      "label": "后期条件传送至梅山",
+      "condition": "需完成第一、二、四、五回隐藏区域及第三回翠笠武师支线，再回到浮屠塔。"
+    }
+  ]
+}

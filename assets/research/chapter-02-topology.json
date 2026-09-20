@@ -1,0 +1,243 @@
+{
+  "chapterId": "chapter-02",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "reviewedAt": "2026-09-20",
+  "scopeZh": "高层路线、分支与条件关系；坐标仅为插画布局，不是游戏地理坐标。",
+  "nodes": [
+    {
+      "id": "tiger-vanguard",
+      "name": "虎先锋",
+      "position": {
+        "x": 0.46,
+        "y": 0.25
+      },
+      "isMarker": true
+    },
+    {
+      "id": "yellow-wind-sage",
+      "name": "黄风大圣",
+      "position": {
+        "x": 0.91,
+        "y": 0.43
+      },
+      "isMarker": true
+    },
+    {
+      "id": "stone-vanguard",
+      "name": "石先锋",
+      "position": {
+        "x": 0.46,
+        "y": 0.66
+      },
+      "isMarker": true
+    },
+    {
+      "id": "yellow-robed-squire",
+      "name": "黄袍员外",
+      "position": {
+        "x": 0.41,
+        "y": 0.84
+      },
+      "isMarker": true
+    },
+    {
+      "id": "fuban",
+      "name": "蝜蝂",
+      "position": {
+        "x": 0.78,
+        "y": 0.84
+      },
+      "isMarker": true
+    },
+    {
+      "id": "wind-tamer",
+      "name": "定风珠",
+      "position": {
+        "x": 0.91,
+        "y": 0.76
+      },
+      "isMarker": true
+    },
+    {
+      "id": "village-entrance",
+      "name": "村口",
+      "position": {
+        "x": 0.08,
+        "y": 0.43
+      },
+      "isMarker": false
+    },
+    {
+      "id": "valley-of-despair",
+      "name": "不济谷",
+      "position": {
+        "x": 0.23,
+        "y": 0.43
+      },
+      "isMarker": false
+    },
+    {
+      "id": "rockrest-flat",
+      "name": "枕石坪",
+      "position": {
+        "x": 0.31,
+        "y": 0.66
+      },
+      "isMarker": false
+    },
+    {
+      "id": "cellar",
+      "name": "地窖",
+      "position": {
+        "x": 0.65,
+        "y": 0.27
+      },
+      "isMarker": false
+    },
+    {
+      "id": "windseal-gate",
+      "name": "定风桥",
+      "position": {
+        "x": 0.7,
+        "y": 0.58
+      },
+      "isMarker": false
+    },
+    {
+      "id": "kingdom-gate",
+      "name": "斯哈哩国石门",
+      "position": {
+        "x": 0.58,
+        "y": 0.84
+      },
+      "isMarker": false
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "village-entrance",
+      "toId": "valley-of-despair",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "valley-of-despair",
+      "toId": "tiger-vanguard",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "valley-of-despair",
+      "toId": "rockrest-flat",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "rockrest-flat",
+      "toId": "stone-vanguard",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "tiger-vanguard",
+      "toId": "cellar",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "stone-vanguard",
+      "toId": "windseal-gate",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "cellar",
+      "toId": "yellow-wind-sage",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "windseal-gate",
+      "toId": "yellow-wind-sage",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G13"
+      ]
+    },
+    {
+      "fromId": "rockrest-flat",
+      "toId": "yellow-robed-squire",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G14"
+      ],
+      "label": "黄袍员外支线"
+    },
+    {
+      "fromId": "yellow-robed-squire",
+      "toId": "kingdom-gate",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G14"
+      ],
+      "label": "完成交付与遭遇后开门",
+      "condition": "需推进黄袍员外支线，并完成相应物品交付与战斗。"
+    },
+    {
+      "fromId": "kingdom-gate",
+      "toId": "fuban",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G14"
+      ],
+      "label": "隐·斯哈哩国"
+    },
+    {
+      "fromId": "fuban",
+      "toId": "wind-tamer",
+      "kind": "optional",
+      "mode": "reward",
+      "sources": [
+        "G11",
+        "G14"
+      ],
+      "label": "完成隐藏区域后取得",
+      "condition": "击败蝜蝂并完成隐·斯哈哩国流程。"
+    }
+  ]
+}

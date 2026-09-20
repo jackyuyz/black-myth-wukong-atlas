@@ -345,7 +345,9 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
             <span className="eyebrow">
               {mapped ? "在此入卷" : "本回文化选读"}
             </span>
-            <h2>{mapped ? "沿着线索，读懂黑风山" : "先识其意，再入山川"}</h2>
+            <h2>
+              {mapped ? `沿着线索，读懂${chapter.regionZh}` : "先识其意，再入山川"}
+            </h2>
             <p>{chapter.readingGuideZh}</p>
           </div>
           <fieldset className="filter-group">

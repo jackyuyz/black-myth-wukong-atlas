@@ -172,11 +172,15 @@ export function InteractiveMap({
                       <span className="marker-label">{m.nameZh}</span>
                     </a>
                   ))}
-                <div className="map-note note-teleport">
-                  三钟齐鸣 · 条件传送
-                </div>
-                <div className="map-note note-return">完成后返回</div>
-                <div className="map-note note-reward">完成支线后领取</div>
+                {chapter.routes.some((route) => route.mode === "teleport") && (
+                  <div className="map-note note-teleport">条件传送</div>
+                )}
+                {chapter.routes.some((route) => route.mode === "return") && (
+                  <div className="map-note note-return">回行路线</div>
+                )}
+                {chapter.routes.some((route) => route.mode === "reward") && (
+                  <div className="map-note note-reward">条件取得</div>
+                )}
                 <span className="map-seal" aria-hidden="true">
                   山川
                   <br />
@@ -228,7 +232,7 @@ export function RouteConditions({ chapter }: { chapter: Chapter }) {
       {chapter.routes
         .filter((r) => r.conditionZh)
         .map((r) => (
-          <p key={r.to}>
+          <p key={`${r.from}-${r.to}`}>
             <strong>{r.labelZh}：</strong>
             {r.conditionZh}
           </p>

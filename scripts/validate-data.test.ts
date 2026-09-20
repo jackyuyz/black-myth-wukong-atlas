@@ -41,7 +41,7 @@ rejects(
 );
 rejects(
   "未经核验的总览不能携带坐标",
-  (d) => (d.chapters[1].markers[0].position = { x: 0.5, y: 0.5 }),
+  (d) => (d.chapters[1].topologyStatus = "unverified"),
 );
 rejects(
   "路线核验不能作为地理坐标核验",

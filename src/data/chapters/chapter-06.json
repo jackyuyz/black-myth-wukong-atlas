@@ -9,9 +9,11 @@
   "readingGuideZh": "先重读石猴出世，再区分游戏石猴与原著起源的关系。",
   "sources": ["G09", "W001"],
   "atmosphereMediaId": "atmosphere-06",
+  "mapMediaId": "chapter-06-map",
   "mapMode": "schematic",
-  "topologyStatus": "unverified",
-  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "topologyStatus": "verified-high-level",
+  "topologyLog": "assets/research/chapter-06-topology.json",
+  "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
   "markers": [
     {
       "id": "stone-monkey",
@@ -33,10 +35,178 @@
         "summaryZh": "原著开篇写花果山仙石孕育石猴，之后石猴发现水帘洞。",
         "adaptationNoteZh": "游戏第六回属于独立的结局创作，不能把新的遭遇补写进小说原文。",
         "sources": ["W001"]
-      }
+      },
+      "position": { "x": 0.93, "y": 0.36 }
+    },
+    {
+      "id": "supreme-inspector",
+      "nameZh": "王灵官",
+      "type": "boss",
+      "areaZh": "山脚 · 青嶂道",
+      "summaryZh": "花果山开放探索前的门槛。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "王灵官位于花果山山脚青嶂道，是第六回开启大范围探索前的主线遭遇。战胜后取得的移动能力让后续四处遗物路线得以展开。",
+        "sources": ["G08", "G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G20"],
+      "noDirectNovelZh": "这里只按游戏中的具体角色与流程介绍；不能凭“灵官”称谓直接拼接小说身份。",
+      "position": { "x": 0.14, "y": 0.45 }
+    },
+    {
+      "id": "gold-armored-rhino",
+      "nameZh": "金甲犀",
+      "type": "boss",
+      "areaZh": "山脚 · 望犀坡",
+      "summaryZh": "四件大圣遗物中的一条开放探索支路。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "金甲犀位于望犀坡，是取得大圣遗物的四个关键遭遇之一。路线图从筋斗云开放点分出多条主线，表示四处目标可以在开放区域中选择顺序。",
+        "sources": ["G08", "G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G20"],
+      "noDirectNovelZh": "金甲犀及其遗物关卡属于游戏设计，没有可直接对应的《西游记》角色。",
+      "position": { "x": 0.34, "y": 0.2 }
+    },
+    {
+      "id": "cloudtreading-deer",
+      "nameZh": "步云鹿",
+      "type": "boss",
+      "areaZh": "山脚 · 见鹿林",
+      "summaryZh": "湖畔红林中的另一件大圣遗物。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "步云鹿位于见鹿林，是大圣遗物路线的四个关键节点之一。它与金甲犀并列为开放探索目标，图中上下分支不代表固定先后。",
+        "sources": ["G08", "G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G20"],
+      "noDirectNovelZh": "本条没有可直接对应的《西游记》人物或情节。",
+      "position": { "x": 0.34, "y": 0.7 }
+    },
+    {
+      "id": "feng-tail-general",
+      "nameZh": "凤翅将军",
+      "type": "boss",
+      "areaZh": "山脚 · 捕螂汀",
+      "summaryZh": "跨湖跃动的遗物考验。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "凤翅将军活动于捕螂汀一带，是大圣遗物路线之一。地图只标记其流程归属，不把不断移动的遭遇伪装成一个精确地理点。",
+        "sources": ["G08", "G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G20"],
+      "noDirectNovelZh": "凤翅将军及其挑战机制属于游戏创作。",
+      "position": { "x": 0.49, "y": 0.2 }
+    },
+    {
+      "id": "emerald-armed-mantis",
+      "nameZh": "碧臂螂",
+      "type": "boss",
+      "areaZh": "山脚 · 捕螂汀",
+      "summaryZh": "前三件遗物之后出现的第四个节点。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "碧臂螂位于捕螂汀。它在其他三件遗物相关遭遇完成后出现，因此路线图把三条分支与它共同汇向“遗物齐备”，但不声称开放区域只有一种探索顺序。",
+        "sources": ["G08", "G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G20"],
+      "noDirectNovelZh": "碧臂螂及其遗物关卡属于游戏设计。",
+      "position": { "x": 0.49, "y": 0.7 }
+    },
+    {
+      "id": "water-curtain-cave",
+      "nameZh": "水帘洞",
+      "type": "location",
+      "areaZh": "水帘洞 · 峰回路",
+      "summaryZh": "从小说开篇的洞天，走向游戏终局。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "集齐相关遗物后，天命人进入水帘洞，并沿峰回路、天真顶走向石卵。游戏把悟空起点改造成终局通道，位置与作用都服务于新的叙事。",
+        "sources": ["G08", "G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G20", "W001"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [1],
+        "chapterTitlesZh": ["灵根育孕源流出　心性修持大道生"],
+        "summaryZh": "原著第一回写石猴穿过瀑布发现水帘洞，群猴随后尊他为王。",
+        "adaptationNoteZh": "游戏沿用花果山与水帘洞意象，却把这里重构为走向最终战的空间。",
+        "sources": ["W001"]
+      },
+      "position": { "x": 0.71, "y": 0.45 }
+    },
+    {
+      "id": "great-sages-broken-shell",
+      "nameZh": "大圣残躯",
+      "type": "boss",
+      "areaZh": "石卵 · 核心",
+      "summaryZh": "游戏续写的最终对照面。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "大圣残躯紧接石猿之后，是第六回最终遭遇的一部分。它属于游戏对“大圣遗留之物”与继承问题的独立创作，不能被写成《西游记》结尾。",
+        "sources": ["G09", "G20"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "G20"],
+      "noDirectNovelZh": "原著没有孙悟空死后留下“大圣残躯”作为最终头目的情节。",
+      "spoiler": {
+        "warningZh": "含第六回终局信息",
+        "textZh": "大圣残躯在石猿阶段之后出现。",
+        "sources": ["G09", "G20"]
+      },
+      "position": { "x": 0.93, "y": 0.61 }
+    },
+    {
+      "id": "giant-shigandang",
+      "nameZh": "大石敢当",
+      "type": "boss",
+      "areaZh": "山脚 · 青嶂道支路",
+      "summaryZh": "五蕴线索汇聚出的可选巨像。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "大石敢当位于花果山开放区域的一条峡谷支路，需要此前收集的四蕴才会出现。它与四件大圣遗物不是同一条前置链，地图因此单独画成可选分支。",
+        "sources": ["G09"]
+      },
+      "funFacts": [],
+      "sources": ["G09"],
+      "noDirectNovelZh": "大石敢当与五蕴收集线属于游戏机制，不是《西游记》原有情节。",
+      "position": { "x": 0.48, "y": 0.88 }
     }
   ],
-  "areas": [],
-  "routes": [],
-  "anchors": []
+  "areas": [
+    { "id": "foothills", "nameZh": "山脚 · 开放山体", "position": { "x": 0.28, "y": 0.09 } },
+    { "id": "curtain", "nameZh": "水帘洞", "position": { "x": 0.72, "y": 0.09 } },
+    { "id": "birthstone", "nameZh": "石卵", "position": { "x": 0.91, "y": 0.09 } }
+  ],
+  "routes": [
+    { "from": "verdant-path", "to": "supreme-inspector", "kind": "main", "mode": "route", "sources": ["G08", "G09", "G20"] },
+    { "from": "supreme-inspector", "to": "cloud-open", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
+    { "from": "cloud-open", "to": "gold-armored-rhino", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
+    { "from": "cloud-open", "to": "cloudtreading-deer", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
+    { "from": "cloud-open", "to": "feng-tail-general", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
+    { "from": "cloud-open", "to": "emerald-armed-mantis", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
+    { "from": "gold-armored-rhino", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
+    { "from": "cloudtreading-deer", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
+    { "from": "feng-tail-general", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
+    { "from": "emerald-armed-mantis", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
+    { "from": "armor-complete", "to": "water-curtain-cave", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
+    { "from": "water-curtain-cave", "to": "peak-innocence", "kind": "main", "mode": "route", "sources": ["G08", "G20"] },
+    { "from": "peak-innocence", "to": "heart-birthstone", "kind": "main", "mode": "teleport", "labelZh": "进入石卵", "conditionZh": "沿水帘洞与天真顶推进，在终点进入石卵核心。", "sources": ["G08", "G20"] },
+    { "from": "heart-birthstone", "to": "stone-monkey", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
+    { "from": "stone-monkey", "to": "great-sages-broken-shell", "kind": "main", "mode": "route", "labelZh": "终局后段", "sources": ["G09", "G20"] },
+    { "from": "cloud-open", "to": "giant-shigandang", "kind": "optional", "mode": "route", "labelZh": "五蕴支线", "conditionZh": "需先取得前四蕴，再前往开放山体中的峡谷。", "sources": ["G09"] }
+  ],
+  "anchors": [
+    { "id": "verdant-path", "nameZh": "青嶂道", "position": { "x": 0.07, "y": 0.45 }, "sources": ["G08", "G20"] },
+    { "id": "cloud-open", "nameZh": "筋斗云开放", "position": { "x": 0.23, "y": 0.45 }, "sources": ["G09", "G20"] },
+    { "id": "armor-complete", "nameZh": "遗物齐备", "position": { "x": 0.61, "y": 0.45 }, "sources": ["G09", "G20"] },
+    { "id": "peak-innocence", "nameZh": "天真顶", "position": { "x": 0.8, "y": 0.45 }, "sources": ["G08", "G20"] },
+    { "id": "heart-birthstone", "nameZh": "石卵核心", "position": { "x": 0.87, "y": 0.45 }, "sources": ["G08", "G20"] }
+  ]
 }

@@ -1,0 +1,260 @@
+{
+  "chapterId": "chapter-04",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "reviewedAt": "2026-09-20",
+  "scopeZh": "高层路线、分支与条件关系；坐标仅为插画布局，不是游戏地理坐标。",
+  "nodes": [
+    {
+      "id": "violet-spider",
+      "name": "紫蛛儿",
+      "position": {
+        "x": 0.61,
+        "y": 0.46
+      },
+      "isMarker": true
+    },
+    {
+      "id": "hundred-eyed-daoist",
+      "name": "百眼魔君",
+      "position": {
+        "x": 0.93,
+        "y": 0.46
+      },
+      "isMarker": true
+    },
+    {
+      "id": "zhu-bajie",
+      "name": "猪八戒",
+      "position": {
+        "x": 0.49,
+        "y": 0.48
+      },
+      "isMarker": true
+    },
+    {
+      "id": "venom-daoist",
+      "name": "黑手道人",
+      "position": {
+        "x": 0.38,
+        "y": 0.2
+      },
+      "isMarker": true
+    },
+    {
+      "id": "duskveil",
+      "name": "晦月魔君",
+      "position": {
+        "x": 0.88,
+        "y": 0.82
+      },
+      "isMarker": true
+    },
+    {
+      "id": "weavers-needle",
+      "name": "绣花针",
+      "position": {
+        "x": 0.96,
+        "y": 0.68
+      },
+      "isMarker": true
+    },
+    {
+      "id": "estate-zhu",
+      "name": "朱家大院",
+      "position": {
+        "x": 0.08,
+        "y": 0.46
+      },
+      "isMarker": false
+    },
+    {
+      "id": "upper-hollow",
+      "name": "盘丝洞上层",
+      "position": {
+        "x": 0.22,
+        "y": 0.46
+      },
+      "isMarker": false
+    },
+    {
+      "id": "pool-shattered-jade",
+      "name": "碎玉池",
+      "position": {
+        "x": 0.32,
+        "y": 0.2
+      },
+      "isMarker": false
+    },
+    {
+      "id": "hut-immortality",
+      "name": "若仙庵",
+      "position": {
+        "x": 0.42,
+        "y": 0.48
+      },
+      "isMarker": false
+    },
+    {
+      "id": "mountain-trail",
+      "name": "山道",
+      "position": {
+        "x": 0.69,
+        "y": 0.46
+      },
+      "isMarker": false
+    },
+    {
+      "id": "court-illumination",
+      "name": "金光苑",
+      "position": {
+        "x": 0.82,
+        "y": 0.46
+      },
+      "isMarker": false
+    },
+    {
+      "id": "purple-cloud-entry",
+      "name": "紫云山入口",
+      "position": {
+        "x": 0.7,
+        "y": 0.82
+      },
+      "isMarker": false
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "estate-zhu",
+      "toId": "upper-hollow",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08"
+      ]
+    },
+    {
+      "fromId": "upper-hollow",
+      "toId": "hut-immortality",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08"
+      ]
+    },
+    {
+      "fromId": "hut-immortality",
+      "toId": "zhu-bajie",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "zhu-bajie",
+      "toId": "violet-spider",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09"
+      ]
+    },
+    {
+      "fromId": "violet-spider",
+      "toId": "mountain-trail",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08"
+      ]
+    },
+    {
+      "fromId": "mountain-trail",
+      "toId": "court-illumination",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08"
+      ]
+    },
+    {
+      "fromId": "court-illumination",
+      "toId": "hundred-eyed-daoist",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ]
+    },
+    {
+      "fromId": "upper-hollow",
+      "toId": "pool-shattered-jade",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G17"
+      ],
+      "label": "碎玉池支路"
+    },
+    {
+      "fromId": "pool-shattered-jade",
+      "toId": "venom-daoist",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G17"
+      ],
+      "label": "第一次遭遇",
+      "condition": "先在碎玉池附近击破怪茧，完成第一次黑手道人遭遇。"
+    },
+    {
+      "fromId": "court-illumination",
+      "toId": "venom-daoist",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G17"
+      ],
+      "label": "第二次遭遇",
+      "condition": "在黄花观末段找到黑手道人并再次战胜他。"
+    },
+    {
+      "fromId": "venom-daoist",
+      "toId": "purple-cloud-entry",
+      "kind": "optional",
+      "mode": "teleport",
+      "sources": [
+        "G17"
+      ],
+      "label": "进入隐·紫云山",
+      "condition": "完成黑手道人两次遭遇后，调查墙面进入隐藏区域。"
+    },
+    {
+      "fromId": "purple-cloud-entry",
+      "toId": "duskveil",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G17"
+      ],
+      "label": "紫云山主路"
+    },
+    {
+      "fromId": "duskveil",
+      "toId": "weavers-needle",
+      "kind": "optional",
+      "mode": "reward",
+      "sources": [
+        "G11",
+        "G17"
+      ],
+      "label": "完成隐藏区域后取得",
+      "condition": "击败晦月魔君后获得法宝绣花针。"
+    }
+  ]
+}

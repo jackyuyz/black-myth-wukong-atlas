@@ -9,9 +9,11 @@
   "readingGuideZh": "重点观察：原著解释故事，彩塑照片展示文物，政府报道说明二者与游戏形象的联系。",
   "sources": ["G09", "W065", "H01", "H04"],
   "atmosphereMediaId": "atmosphere-03",
+  "mapMediaId": "chapter-03-map",
   "mapMode": "schematic",
-  "topologyStatus": "unverified",
-  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "topologyStatus": "verified-high-level",
+  "topologyLog": "assets/research/chapter-03-topology.json",
+  "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
   "markers": [
     {
       "id": "kang-jin-loong",
@@ -46,7 +48,8 @@
           "sources": ["H01", "H04"],
           "mediaIds": ["heritage-yuhuang-kang-jin-long-01"]
         }
-      ]
+      ],
+      "position": { "x": 0.17, "y": 0.45 }
     },
     {
       "id": "yellowbrow",
@@ -71,10 +74,118 @@
         "summaryZh": "原著的黄眉原是弥勒座前童子，使用金铙与人种袋，最终被弥勒收伏。",
         "adaptationNoteZh": "游戏里天命人的遭遇与寺中故事是重新创作，不是原著文字的逐场复现。",
         "sources": ["W065", "W066"]
-      }
+      },
+      "position": { "x": 0.93, "y": 0.45 }
+    },
+    {
+      "id": "kang-jin-star",
+      "nameZh": "亢金星君",
+      "type": "character",
+      "areaZh": "浮屠界 · 安身寺",
+      "summaryZh": "同一星宿名目，在游戏中被扩写成新的形象。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "亢金星君出现在浮屠界后段、安身寺通往苦海的路径上。她与前段亢金龙共享星宿线索，但地图将两次遭遇分开，避免把不同形态和剧情压成同一个节点。",
+        "sources": ["G08", "G09", "G15"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "G15", "W065"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [65],
+        "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
+        "summaryZh": "原著写二十八宿协助悟空脱离金铙，其中有亢金龙之名。",
+        "adaptationNoteZh": "游戏以“星君”形象扩写角色经历；原著没有与游戏完全相同的人物生平。",
+        "sources": ["W065"]
+      },
+      "position": { "x": 0.46, "y": 0.28 }
+    },
+    {
+      "id": "melon-field",
+      "nameZh": "瓜田",
+      "type": "location",
+      "areaZh": "极乐谷 · 瓜田",
+      "summaryZh": "雪谷支路中的一处条件地点。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "瓜田位于极乐谷的可选探索分支，与翠笠武师支线及禁字法相关。路线图从快活林分出虚线，表示它不在通往小雷音寺的直线主路上。",
+        "sources": ["G03", "G08", "G15"]
+      },
+      "funFacts": [],
+      "sources": ["G03", "G08", "G15"],
+      "noDirectNovelZh": "这处瓜田及其任务是游戏事件，不是《西游记》小雷音寺故事中的地点。",
+      "position": { "x": 0.7, "y": 0.78 }
+    },
+    {
+      "id": "great-pagoda",
+      "nameZh": "浮屠塔",
+      "type": "architecture",
+      "areaZh": "浮屠界 · 浮屠塔",
+      "summaryZh": "第三回留下的入口，连接后期的梅山支线。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "浮屠塔从照鉴湖后的浮屠界支路进入。初次到达时并不会立刻展开梅山事件；满足多个隐藏区域与支线条件后，玩家才会由此进入隐·梅山。",
+        "sources": ["G08", "G16"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G16"],
+      "noDirectNovelZh": "浮屠塔作为这套游戏路线机关，没有可直接对应的小说地点。",
+      "position": { "x": 0.54, "y": 0.1 }
+    },
+    {
+      "id": "erlang-sacred-divinity",
+      "nameZh": "二郎显圣真君",
+      "type": "boss",
+      "areaZh": "隐·梅山 · 梅见峰",
+      "summaryZh": "入口在第三回，文学母题却回到花果山斗法。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "二郎显圣真君的隐藏遭遇发生在梅山，但入口位于第三回浮屠塔。地图把它放在条件传送的末端，并明确不把梅山误画成第六回花果山上的本地洞穴。",
+        "sources": ["G06", "G09", "G16"]
+      },
+      "funFacts": [],
+      "sources": ["G06", "G09", "G16", "W006"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [6],
+        "chapterTitlesZh": ["观音赴会问原因　小圣施威降大圣"],
+        "summaryZh": "原著第六回写二郎神与悟空在花果山斗武艺、斗变化。",
+        "adaptationNoteZh": "游戏借用人物与斗法母题，重新安排发生时间、地点与结局。",
+        "sources": ["W006"]
+      },
+      "spoiler": {
+        "warningZh": "含后期隐藏路线信息",
+        "textZh": "梅山入口需要完成多回隐藏内容与第三回支线后才会开启。",
+        "sources": ["G16"]
+      },
+      "position": { "x": 0.79, "y": 0.1 }
     }
   ],
-  "areas": [],
-  "routes": [],
-  "anchors": []
+  "areas": [
+    { "id": "snowhill", "nameZh": "雪山径", "position": { "x": 0.13, "y": 0.09 } },
+    { "id": "pagoda", "nameZh": "浮屠界", "position": { "x": 0.38, "y": 0.09 } },
+    { "id": "lake-valley", "nameZh": "苦海 · 极乐谷", "position": { "x": 0.67, "y": 0.09 } },
+    { "id": "temple", "nameZh": "小雷音寺", "position": { "x": 0.9, "y": 0.09 } }
+  ],
+  "routes": [
+    { "from": "frost-clad-path", "to": "kang-jin-loong", "kind": "main", "mode": "route", "sources": ["G08", "G09", "G15"] },
+    { "from": "kang-jin-loong", "to": "lower-pagoda", "kind": "main", "mode": "route", "sources": ["G08", "G15"] },
+    { "from": "lower-pagoda", "to": "warding-temple", "kind": "main", "mode": "route", "sources": ["G08", "G15"] },
+    { "from": "warding-temple", "to": "kang-jin-star", "kind": "main", "mode": "route", "sources": ["G09", "G15"] },
+    { "from": "kang-jin-star", "to": "north-shore", "kind": "main", "mode": "route", "sources": ["G08", "G15"] },
+    { "from": "north-shore", "to": "forest-of-felicity", "kind": "main", "mode": "route", "sources": ["G08", "G15"] },
+    { "from": "forest-of-felicity", "to": "temple-entrance", "kind": "main", "mode": "route", "sources": ["G08", "G15"] },
+    { "from": "temple-entrance", "to": "yellowbrow", "kind": "main", "mode": "route", "sources": ["G08", "G09", "G15"] },
+    { "from": "forest-of-felicity", "to": "melon-field", "kind": "optional", "mode": "route", "labelZh": "极乐谷支路", "conditionZh": "由快活林向谷底支路探索，并推进翠笠武师相关事件。", "sources": ["G08", "G15"] },
+    { "from": "warding-temple", "to": "great-pagoda", "kind": "optional", "mode": "route", "labelZh": "浮屠界支路", "sources": ["G08", "G16"] },
+    { "from": "great-pagoda", "to": "erlang-sacred-divinity", "kind": "optional", "mode": "teleport", "labelZh": "后期条件传送至梅山", "conditionZh": "需完成第一、二、四、五回隐藏区域及第三回翠笠武师支线，再回到浮屠塔。", "sources": ["G16"] }
+  ],
+  "anchors": [
+    { "id": "frost-clad-path", "nameZh": "披霜道", "position": { "x": 0.07, "y": 0.45 }, "sources": ["G08", "G15"] },
+    { "id": "lower-pagoda", "nameZh": "浮屠界下层", "position": { "x": 0.28, "y": 0.45 }, "sources": ["G08", "G15"] },
+    { "id": "warding-temple", "nameZh": "安身寺", "position": { "x": 0.4, "y": 0.3 }, "sources": ["G08", "G15"] },
+    { "id": "north-shore", "nameZh": "苦海北岸", "position": { "x": 0.56, "y": 0.5 }, "sources": ["G08", "G15"] },
+    { "id": "forest-of-felicity", "nameZh": "快活林", "position": { "x": 0.69, "y": 0.45 }, "sources": ["G08", "G15"] },
+    { "id": "temple-entrance", "nameZh": "寺门", "position": { "x": 0.84, "y": 0.45 }, "sources": ["G08", "G15"] }
+  ]
 }

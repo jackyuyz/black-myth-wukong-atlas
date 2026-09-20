@@ -1,0 +1,304 @@
+{
+  "chapterId": "chapter-05",
+  "mapMode": "schematic",
+  "topologyStatus": "verified-high-level",
+  "reviewedAt": "2026-09-20",
+  "scopeZh": "高层路线、分支与条件关系；坐标仅为插画布局，不是游戏地理坐标。",
+  "nodes": [
+    {
+      "id": "bishui-beast",
+      "name": "璧水金睛兽",
+      "position": {
+        "x": 0.94,
+        "y": 0.82
+      },
+      "isMarker": true
+    },
+    {
+      "id": "plantain-fan",
+      "name": "芭蕉扇",
+      "position": {
+        "x": 0.64,
+        "y": 0.69
+      },
+      "isMarker": true
+    },
+    {
+      "id": "pale-axe-stalwart",
+      "name": "皓斧力士",
+      "position": {
+        "x": 0.15,
+        "y": 0.7
+      },
+      "isMarker": true
+    },
+    {
+      "id": "five-element-carts",
+      "name": "五行战车",
+      "position": {
+        "x": 0.36,
+        "y": 0.24
+      },
+      "isMarker": true
+    },
+    {
+      "id": "keeper-flaming-mountains",
+      "name": "火焰山土地",
+      "position": {
+        "x": 0.61,
+        "y": 0.45
+      },
+      "isMarker": true
+    },
+    {
+      "id": "red-boy",
+      "name": "红孩儿",
+      "position": {
+        "x": 0.9,
+        "y": 0.43
+      },
+      "isMarker": true
+    },
+    {
+      "id": "yaksha-king",
+      "name": "夜叉王",
+      "position": {
+        "x": 0.97,
+        "y": 0.43
+      },
+      "isMarker": true
+    },
+    {
+      "id": "ashen-pass-one",
+      "name": "火燎一关",
+      "position": {
+        "x": 0.08,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "ashen-pass-two",
+      "name": "火燎二关",
+      "position": {
+        "x": 0.25,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "valley-entrance",
+      "name": "谷口",
+      "position": {
+        "x": 0.43,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "emerald-hall",
+      "name": "翠云殿",
+      "position": {
+        "x": 0.55,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "ashen-pass-three",
+      "name": "火燎三关",
+      "position": {
+        "x": 0.72,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "fallen-crater",
+      "name": "陨砖坑",
+      "position": {
+        "x": 0.83,
+        "y": 0.45
+      },
+      "isMarker": false
+    },
+    {
+      "id": "cooling-slope",
+      "name": "清凉坡",
+      "position": {
+        "x": 0.76,
+        "y": 0.82
+      },
+      "isMarker": false
+    },
+    {
+      "id": "bishui-depths",
+      "name": "洞天深处",
+      "position": {
+        "x": 0.87,
+        "y": 0.82
+      },
+      "isMarker": false
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "ashen-pass-one",
+      "toId": "ashen-pass-two",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "ashen-pass-two",
+      "toId": "five-element-carts",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G18",
+        "G19"
+      ]
+    },
+    {
+      "fromId": "five-element-carts",
+      "toId": "valley-entrance",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "valley-entrance",
+      "toId": "emerald-hall",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "emerald-hall",
+      "toId": "keeper-flaming-mountains",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "keeper-flaming-mountains",
+      "toId": "ashen-pass-three",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "ashen-pass-three",
+      "toId": "fallen-crater",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "fallen-crater",
+      "toId": "red-boy",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G18"
+      ]
+    },
+    {
+      "fromId": "red-boy",
+      "toId": "yaksha-king",
+      "kind": "main",
+      "mode": "route",
+      "sources": [
+        "G09"
+      ]
+    },
+    {
+      "fromId": "ashen-pass-one",
+      "toId": "pale-axe-stalwart",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G09",
+        "G19"
+      ],
+      "label": "战车支线起点"
+    },
+    {
+      "fromId": "pale-axe-stalwart",
+      "toId": "five-element-carts",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G19"
+      ],
+      "label": "跨区域追寻战车",
+      "condition": "需多次与皓斧力士交谈，并推进分布在本回各区的战车遭遇。"
+    },
+    {
+      "fromId": "keeper-flaming-mountains",
+      "toId": "plantain-fan",
+      "kind": "optional",
+      "mode": "reward",
+      "sources": [
+        "G11",
+        "G09"
+      ],
+      "label": "主线战斗后取得",
+      "condition": "完成翠云殿的火焰山土地与阴阳鱼遭遇。"
+    },
+    {
+      "fromId": "fallen-crater",
+      "toId": "cooling-slope",
+      "kind": "optional",
+      "mode": "return",
+      "sources": [
+        "G08",
+        "G19"
+      ],
+      "label": "回行至清凉坡",
+      "condition": "推进五行战车支线后，从陨砖坑回行并进入新开的岔路。"
+    },
+    {
+      "fromId": "cooling-slope",
+      "toId": "bishui-depths",
+      "kind": "optional",
+      "mode": "teleport",
+      "sources": [
+        "G19"
+      ],
+      "label": "进入隐·璧水洞",
+      "condition": "完成皓斧力士与五行战车相关条件后，由清凉坡穿过冰封大门。"
+    },
+    {
+      "fromId": "bishui-depths",
+      "toId": "bishui-beast",
+      "kind": "optional",
+      "mode": "route",
+      "sources": [
+        "G08",
+        "G09",
+        "G19"
+      ],
+      "label": "隐藏区域末段"
+    }
+  ]
+}

@@ -278,5 +278,61 @@
     "url": "https://www.gamersky.com/handbook/202411/1850941.shtml",
     "type": "game-guide",
     "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+  },
+  "G13": {
+    "titleZh": "第二回完整流程时间线",
+    "publisherZh": "IGN 攻略频道",
+    "url": "https://www.youtube.com/watch?v=k_Ryz-0kOxY",
+    "type": "game-guide",
+    "scopeZh": "核对第二回各区域先后与主线汇合关系；不证明文学出处或现实取景。"
+  },
+  "G14": {
+    "titleZh": "第二回黄袍员外支线与隐·斯哈哩国",
+    "publisherZh": "派瓦派克游戏攻略站",
+    "url": "https://www.powerpyx.com/black-myth-wukong-boar-questline-how-to-reach-secret-kingdom-of-sahi/",
+    "type": "game-guide",
+    "scopeZh": "核对黄袍员外支线、斯哈哩国入口、蝜蝂与定风珠关系；不证明文学出处。"
+  },
+  "G15": {
+    "titleZh": "第三回雪山径至小雷音寺流程",
+    "publisherZh": "Game8 攻略站",
+    "url": "https://game8.co/games/Black-Myth-Wukong/archives/468746",
+    "type": "game-guide",
+    "scopeZh": "核对第三回区域先后、瓜田支线与小雷音寺流程；不证明文学或文物关系。"
+  },
+  "G16": {
+    "titleZh": "第三回隐·梅山解锁条件",
+    "publisherZh": "派瓦派克游戏攻略站",
+    "url": "https://www.powerpyx.com/black-myth-wukong-how-to-unlock-chapter-3-secret-area-mount-mei/",
+    "type": "game-guide",
+    "scopeZh": "核对浮屠塔与梅山之间的条件传送；不把梅山误画成第六回本地支线。"
+  },
+  "G17": {
+    "titleZh": "第四回隐·紫云山解锁路线",
+    "publisherZh": "派瓦派克游戏攻略站",
+    "url": "https://www.powerpyx.com/black-myth-wukong-how-to-reach-chapter-4-secret-area/",
+    "type": "game-guide",
+    "scopeZh": "核对黑手道人两次遭遇、紫云山入口、晦月魔君与绣花针关系；不证明文学出处。"
+  },
+  "G18": {
+    "titleZh": "第五回灰烬林至火光地流程",
+    "publisherZh": "Game8 攻略站",
+    "url": "https://game8.co/games/Black-Myth-Wukong/archives/468231",
+    "type": "game-guide",
+    "scopeZh": "核对第五回大区先后与主线节点；不证明文学出处或现实取景。"
+  },
+  "G19": {
+    "titleZh": "第五回隐·璧水洞解锁路线",
+    "publisherZh": "派瓦派克游戏攻略站",
+    "url": "https://www.powerpyx.com/black-myth-wukong-how-to-reach-chapter-5-secret-area-bishui-cave/",
+    "type": "game-guide",
+    "scopeZh": "核对皓斧力士、五行战车、清凉坡与璧水洞的条件关系；不证明文学出处。"
+  },
+  "G20": {
+    "titleZh": "第六回花果山完整流程时间线",
+    "publisherZh": "IGN 攻略频道",
+    "url": "https://www.youtube.com/watch?v=8tDy65zeuc8",
+    "type": "game-guide",
+    "scopeZh": "核对山脚开放探索、水帘洞、未竟峰与石卵最终战的先后；不证明文学出处。"
   }
 }

@@ -9,9 +9,11 @@
   "readingGuideZh": "留意人物姓名和家族故事：同一组文学元素，可以被重新组织。",
   "sources": ["G09", "W072", "W073"],
   "atmosphereMediaId": "atmosphere-04",
+  "mapMediaId": "chapter-04-map",
   "mapMode": "schematic",
-  "topologyStatus": "unverified",
-  "mapNoticeZh": "章节意境总览，非游戏地图；路线核验完成后开放地图标记。",
+  "topologyStatus": "verified-high-level",
+  "topologyLog": "assets/research/chapter-04-topology.json",
+  "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
   "markers": [
     {
       "id": "violet-spider",
@@ -33,7 +35,8 @@
         "summaryZh": "原著第七十二回有盘丝洞七蜘蛛精及濯垢泉的故事。",
         "adaptationNoteZh": "紫蛛儿的姓名、家族和与猪八戒的过往属于游戏扩写。",
         "sources": ["W072"]
-      }
+      },
+      "position": { "x": 0.61, "y": 0.46 }
     },
     {
       "id": "hundred-eyed-daoist",
@@ -55,10 +58,123 @@
         "summaryZh": "黄花观的多目怪为蜈蚣精，设毒茶害取经人，最终由毗蓝婆菩萨协助降伏。",
         "adaptationNoteZh": "游戏重新创作他的目标、势力关系与命运。",
         "sources": ["W073"]
-      }
+      },
+      "position": { "x": 0.93, "y": 0.46 }
+    },
+    {
+      "id": "zhu-bajie",
+      "nameZh": "猪八戒",
+      "type": "character",
+      "areaZh": "盘丝洞 · 若仙庵",
+      "summaryZh": "同一位取经人，在盘丝岭遇到新的旧事。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "猪八戒在盘丝洞后段与天命人发生重要遭遇。地图把这一节点放在若仙庵与濯垢泉之间，只说明流程位置；人物过往与紫蛛儿的关系必须按游戏叙事理解。",
+        "sources": ["G08", "G09"]
+      },
+      "funFacts": [],
+      "sources": ["G08", "G09", "W072"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [72],
+        "chapterTitlesZh": ["盘丝洞七情迷本　濯垢泉八戒忘形"],
+        "summaryZh": "原著第七十二回写猪八戒在濯垢泉撞见七蜘蛛精，并参与盘丝洞一难。",
+        "adaptationNoteZh": "游戏把人物与蜘蛛精故事重新组织成新的前缘和冲突，不能当作小说原有身世。",
+        "sources": ["W072"]
+      },
+      "position": { "x": 0.49, "y": 0.48 }
+    },
+    {
+      "id": "venom-daoist",
+      "nameZh": "黑手道人",
+      "type": "boss",
+      "areaZh": "盘丝洞 · 碎玉池／黄花观",
+      "summaryZh": "两次遭遇，才显出紫云山入口。",
+      "layers": ["game"],
+      "game": {
+        "descriptionZh": "黑手道人需要在碎玉池附近与黄花观末段分别遭遇。路线图用两条虚线同时指向这一张卡，强调它是跨越本回前后段的条件链，而不是一条普通岔路。",
+        "sources": ["G09", "G17"]
+      },
+      "funFacts": [],
+      "sources": ["G09", "G17"],
+      "noDirectNovelZh": "黑手道人及其开启紫云山的具体经历属于游戏创作。",
+      "position": { "x": 0.38, "y": 0.2 }
+    },
+    {
+      "id": "duskveil",
+      "nameZh": "晦月魔君",
+      "type": "boss",
+      "areaZh": "隐·紫云山 · 巢云顶",
+      "summaryZh": "昴日星官与蝎子精母题，在游戏里被重新编织。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "晦月魔君位于隐·紫云山末段。理解这一形象时，可以同时回看原著昴日星官降蝎子精，以及毗蓝婆与百眼魔君的两段故事；游戏把原本分开的关系编织成新的遭遇。",
+        "sources": ["G04", "G09", "G17"]
+      },
+      "funFacts": [],
+      "sources": ["G04", "G09", "G17", "W055", "W073"],
+      "journeyToTheWest": {
+        "relationship": "recombined",
+        "chapterNumbers": [55, 73],
+        "chapterTitlesZh": ["色邪淫戏唐三藏　性正修持不坏身", "情因旧恨生灾毒　心主遭魔幸破光"],
+        "summaryZh": "第五十五回写昴日星官降蝎子精；第七十三回又写毗蓝婆以绣花针破多目怪金光。",
+        "adaptationNoteZh": "晦月魔君的变异经历与盘丝岭势力关系属于游戏重组，原著没有同样人物线。",
+        "sources": ["W055", "W073"]
+      },
+      "position": { "x": 0.88, "y": 0.82 }
+    },
+    {
+      "id": "weavers-needle",
+      "nameZh": "绣花针",
+      "type": "item",
+      "areaZh": "隐·紫云山",
+      "summaryZh": "小说中的破光之针，成为游戏法宝。",
+      "layers": ["game", "journey-to-the-west"],
+      "game": {
+        "descriptionZh": "完成隐·紫云山并战胜晦月魔君后，可以取得法宝绣花针。地图把它画成奖励关系，不伪装成紫云山中的普通拾取点。",
+        "sources": ["G11", "G17"]
+      },
+      "funFacts": [],
+      "sources": ["G11", "G17", "W073"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [73],
+        "chapterTitlesZh": ["情因旧恨生灾毒　心主遭魔幸破光"],
+        "summaryZh": "原著第七十三回中，毗蓝婆用一枚绣花针破除多目怪放出的金光。",
+        "adaptationNoteZh": "游戏沿用名称与克制金光的意象，重新设计了获得方式和法宝机制。",
+        "sources": ["W073"]
+      },
+      "position": { "x": 0.96, "y": 0.68 }
     }
   ],
-  "areas": [],
-  "routes": [],
-  "anchors": []
+  "areas": [
+    { "id": "lanxi", "nameZh": "兰喜村", "position": { "x": 0.12, "y": 0.09 } },
+    { "id": "webbed", "nameZh": "盘丝洞", "position": { "x": 0.45, "y": 0.09 } },
+    { "id": "yellow-flower", "nameZh": "黄花观", "position": { "x": 0.78, "y": 0.09 } },
+    { "id": "purple-cloud", "nameZh": "隐 · 紫云山", "position": { "x": 0.82, "y": 0.94 } }
+  ],
+  "routes": [
+    { "from": "estate-zhu", "to": "upper-hollow", "kind": "main", "mode": "route", "sources": ["G08"] },
+    { "from": "upper-hollow", "to": "hut-immortality", "kind": "main", "mode": "route", "sources": ["G08"] },
+    { "from": "hut-immortality", "to": "zhu-bajie", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
+    { "from": "zhu-bajie", "to": "violet-spider", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
+    { "from": "violet-spider", "to": "mountain-trail", "kind": "main", "mode": "route", "sources": ["G08"] },
+    { "from": "mountain-trail", "to": "court-illumination", "kind": "main", "mode": "route", "sources": ["G08"] },
+    { "from": "court-illumination", "to": "hundred-eyed-daoist", "kind": "main", "mode": "route", "sources": ["G09"] },
+    { "from": "upper-hollow", "to": "pool-shattered-jade", "kind": "optional", "mode": "route", "labelZh": "碎玉池支路", "sources": ["G08", "G17"] },
+    { "from": "pool-shattered-jade", "to": "venom-daoist", "kind": "optional", "mode": "route", "labelZh": "第一次遭遇", "conditionZh": "先在碎玉池附近击破怪茧，完成第一次黑手道人遭遇。", "sources": ["G17"] },
+    { "from": "court-illumination", "to": "venom-daoist", "kind": "optional", "mode": "route", "labelZh": "第二次遭遇", "conditionZh": "在黄花观末段找到黑手道人并再次战胜他。", "sources": ["G17"] },
+    { "from": "venom-daoist", "to": "purple-cloud-entry", "kind": "optional", "mode": "teleport", "labelZh": "进入隐·紫云山", "conditionZh": "完成黑手道人两次遭遇后，调查墙面进入隐藏区域。", "sources": ["G17"] },
+    { "from": "purple-cloud-entry", "to": "duskveil", "kind": "optional", "mode": "route", "labelZh": "紫云山主路", "sources": ["G08", "G17"] },
+    { "from": "duskveil", "to": "weavers-needle", "kind": "optional", "mode": "reward", "labelZh": "完成隐藏区域后取得", "conditionZh": "击败晦月魔君后获得法宝绣花针。", "sources": ["G11", "G17"] }
+  ],
+  "anchors": [
+    { "id": "estate-zhu", "nameZh": "朱家大院", "position": { "x": 0.08, "y": 0.46 }, "sources": ["G08"] },
+    { "id": "upper-hollow", "nameZh": "盘丝洞上层", "position": { "x": 0.22, "y": 0.46 }, "sources": ["G08"] },
+    { "id": "pool-shattered-jade", "nameZh": "碎玉池", "position": { "x": 0.32, "y": 0.2 }, "sources": ["G08", "G17"] },
+    { "id": "hut-immortality", "nameZh": "若仙庵", "position": { "x": 0.42, "y": 0.48 }, "sources": ["G08", "G09"] },
+    { "id": "mountain-trail", "nameZh": "山道", "position": { "x": 0.69, "y": 0.46 }, "sources": ["G08"] },
+    { "id": "court-illumination", "nameZh": "金光苑", "position": { "x": 0.82, "y": 0.46 }, "sources": ["G08", "G17"] },
+    { "id": "purple-cloud-entry", "nameZh": "紫云山入口", "position": { "x": 0.7, "y": 0.82 }, "sources": ["G17"] }
+  ]
 }
