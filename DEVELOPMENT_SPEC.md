@@ -6,6 +6,8 @@
 **Project type:** Frontend-only interactive cultural atlas  
 **Primary goal:** Help users explore *Black Myth: Wukong* through an interactive chapter map while learning how locations, characters, artifacts, architecture, and visual design connect to *Journey to the West* and real-world Chinese cultural heritage.
 
+**v1 language:** Simplified Chinese. English filenames, route segments, IDs, component names, and data keys are allowed, but every user-facing label, navigation item, explanation, error, empty state, image alt text, and accessibility label must be Chinese in v1. English UI is a later localization phase, not an MVP requirement.
+
 This is **not** a strategy guide, combat wiki, completion tracker, or account-based community product. The experience should prioritize cultural exploration, visual storytelling, and source-backed connections between:
 
 1. the game world,
@@ -32,7 +34,18 @@ A user should be able to:
 8. view verified real-world filming/modeling/reference sources where available,
 9. follow citations to original or authoritative sources.
 
-### 2.2 Scope boundaries
+The experience must be understandable to a visitor who has never played the game and has little prior knowledge of Chinese literature or religion. The homepage and first marker opened should make the three-layer reading model explicit: **游戏中的呈现 →《西游记》中的出处或差异 → 现实文化与实地遗产**. Specialized terms such as 悬塑、二十八宿、道观、法宝、影神图 should receive a short plain-Chinese explanation on first use. Do not assume familiarity with the plot, Buddhist/Daoist systems, or Chinese architectural vocabulary.
+
+### 2.2 Chinese-first content and localization
+
+- The primary project title shown in v1 is **黑神话：悟空文化地图**. `Black Myth Wukong Atlas` may appear as a small repository/project identifier, not as the dominant UI title.
+- All visible chapter, filter, panel, evidence, source, control, and status labels must use Chinese.
+- Chinese copy should favor clear modern prose over unexplained classical or academic language. Necessary classical quotations must be followed by a concise modern-Chinese explanation.
+- Names from the game use the official Chinese spelling in `KNOWLEDGE_BASE.md`. English names may be stored in optional `*En` fields for future localization but should not be required or shown by default.
+- The data model must leave room for a future English locale without duplicating evidence records, media metadata, IDs, coordinates, or source URLs.
+- Do not mix Chinese and English merely as decoration. English text must not become a substitute for a deliberate future translation pass.
+
+### 2.3 Scope boundaries
 
 Do **not** build the following unless explicitly requested later:
 
@@ -112,12 +125,13 @@ Introduce the project and provide access to the six game chapters.
 
 ### 5.2 Required elements
 
-- project title: **Black Myth Wukong Atlas**
+- primary project title: **黑神话：悟空文化地图**
 - short subtitle/tagline
 - short project explanation
 - six chapter cards
 - clear disclaimer that this is a fan-made educational/cultural project
-- navigation to About and Sources
+- Chinese navigation to “关于项目” and “资料来源”
+- a compact explanation of the three content layers: “游戏 / 原著 / 现实”
 
 ### 5.3 Chapter cards
 
@@ -126,18 +140,19 @@ Each chapter card should display:
 - chapter number
 - chapter Chinese title
 - primary region name
-- English title if available
 - representative image
 - optional short theme sentence
 
+English chapter titles may exist in data for future localization but are hidden in the default v1 interface.
+
 Expected six main regions:
 
-1. Black Wind Mountain / 黑风山
-2. Yellow Wind Ridge / 黄风岭
-3. The New West / 小西天
-4. Webbed Hollow / 盘丝岭
-5. Flaming Mountains / 火焰山
-6. Mount Huaguo / 花果山
+1. 第一回·火照黑云 / 黑风山
+2. 第二回·风起黄昏 / 黄风岭
+3. 第三回·夜生白露 / 小西天
+4. 第四回·曲度紫鸳 / 盘丝岭
+5. 第五回·日落红尘 / 火焰山
+6. 第六回·未竟 / 花果山
 
 ---
 
@@ -173,7 +188,9 @@ Do not store pixel coordinates.
 
 ### 6.3 Marker categories
 
-Recommended v1 categories:
+Keep **what the marker is** separate from **which knowledge layers it contains**.
+
+Recommended v1 entity types:
 
 ```text
 location
@@ -181,20 +198,31 @@ character
 boss
 architecture
 item
-heritage
 story
 ```
 
-The UI may combine some categories visually if needed.
+Recommended content layers:
 
-Suggested user-facing filters:
+```text
+game
+journey-to-the-west
+real-world
+```
 
-- Places
-- Characters & Bosses
-- Artifacts
-- Architecture
-- Journey to the West
-- Real-World Heritage
+A temple in the game remains an `architecture` or `location` marker even when it contains a `real-world` connection. Do not change the entity type to `heritage`, and do not treat the literary/real-world layers as interchangeable evidence.
+
+Suggested user-facing entity filters:
+
+- 地点
+- 人物与妖王
+- 器物
+- 建筑
+
+Suggested user-facing layer filters/badges:
+
+- 游戏
+- 《西游记》
+- 现实文化遗产
 
 ### 6.4 Marker visual language
 
@@ -204,12 +232,14 @@ Recommended concepts:
 
 - place: gate / mountain / temple icon
 - boss: horned mask / creature icon
+- character: profile / seal icon
 - artifact: talisman / vessel / relic icon
 - architecture: pavilion / column icon
-- literature: scroll icon
-- heritage: map pin / monument icon
+- story: flame / knot icon
+- Journey-to-the-West layer badge: scroll / thread-bound book icon
+- real-world layer badge: map pin / monument icon
 
-Avoid modern flat SaaS-style marker graphics. Visual design should feel influenced by Chinese ink, bronze, stone rubbing, parchment, seal carving, or restrained game-inspired fantasy aesthetics.
+Avoid modern flat SaaS-style marker graphics. The UI must feel recognizably inspired by the visual world of *Black Myth: Wukong*: restrained dark Chinese fantasy, ink wash, weathered stone and bronze, temple wood, carved seals, smoke and cinematic chapter atmosphere. It must remain an original fan-project design rather than copying the official logo, HUD, icons, layouts, or proprietary artwork.
 
 ---
 
@@ -223,13 +253,13 @@ Every marker may contain some or all of the following sections.
 
 #### A. Header
 
-- Chinese name
-- English name
-- category badge
-- chapter / region
+- Chinese name (primary)
+- category badge in Chinese
+- chapter / region in Chinese
 - hero image if available
+- optional English name field reserved for the future locale; hidden by default in v1
 
-#### B. In the Game
+#### B. 游戏中的呈现
 
 Concise explanation of:
 
@@ -240,7 +270,7 @@ Concise explanation of:
 
 Avoid turning this section into a full strategy guide.
 
-#### C. Journey to the West
+#### C. 《西游记》中的出处与改编
 
 Where relevant:
 
@@ -251,7 +281,7 @@ Where relevant:
 - explanation of how the game adapts, expands, reverses, or reinterprets the original
 - citation
 
-#### D. Real-World Heritage
+#### D. 现实文化与实地遗产
 
 Where relevant:
 
@@ -273,6 +303,16 @@ speculative
 unknown
 ```
 
+These are internal data keys. Display them in Chinese as:
+
+| Key | v1 label |
+|---|---|
+| `confirmed` | 已确认 |
+| `high-confidence` | 高可信 |
+| `probable` | 可能相关 |
+| `speculative` | 仅视觉推测 |
+| `unknown` | 尚未核实 |
+
 Suggested evidence labels:
 
 ```text
@@ -285,9 +325,11 @@ visual-comparison
 community-theory
 ```
 
+Evidence-type keys must likewise receive Chinese display labels and short explanations. Never expose raw English enum values in the v1 interface.
+
 Only the first five should be treated as strong evidence.
 
-#### E. Fun Facts
+#### E. 文化小知识
 
 1–4 short details that are:
 
@@ -296,20 +338,20 @@ Only the first five should be treated as strong evidence.
 - visually memorable
 - useful to students learning culture/history
 
-#### F. Sources
+#### F. 资料来源
 
 Display a compact source list with source type.
 
 Example labels:
 
 ```text
-Primary Text
-Developer Source
-Government / Heritage
-Museum
-Academic
-Game Reference
-Community Reference
+古籍原文
+开发者资料
+政府 / 文博资料
+博物馆资料
+学术资料
+游戏资料
+社区资料
 ```
 
 ---
@@ -340,7 +382,7 @@ src/data/chapters/
   "regionZh": "黑风山",
   "regionEn": "Black Wind Mountain",
   "mapImage": "/maps/chapter-01.webp",
-  "overview": "...",
+  "overviewZh": "...",
   "markers": []
 }
 ```
@@ -351,43 +393,44 @@ src/data/chapters/
 {
   "id": "guanyin-temple",
   "type": "architecture",
+  "layers": ["game", "journey-to-the-west"],
   "nameZh": "观音禅院",
   "nameEn": "Guanyin Temple",
   "position": {
     "x": 0.50,
     "y": 0.44
   },
-  "summary": "...",
+  "summaryZh": "...",
   "game": {
-    "description": "...",
+    "descriptionZh": "...",
     "images": [
       "/images/game/ch1/guanyin-temple-01.webp"
     ]
   },
   "journeyToTheWest": {
     "chapterNumbers": [16, 17],
-    "chapterTitles": ["..."],
-    "summary": "...",
-    "excerpt": "...",
-    "adaptationNote": "...",
+    "chapterTitlesZh": ["..."],
+    "summaryZh": "...",
+    "excerptZh": "...",
+    "adaptationNoteZh": "...",
     "sources": ["src-jttw-016"]
   },
   "realWorld": [
     {
       "nameZh": "...",
       "nameEn": "...",
-      "location": "Shanxi, China",
+      "locationZh": "中国山西",
       "connection": "visual reference",
       "confidence": "confirmed",
       "evidenceType": "government-source",
-      "description": "...",
+      "descriptionZh": "...",
       "images": ["/images/heritage/example.webp"],
       "sources": ["src-heritage-001"]
     }
   ],
   "funFacts": [
     {
-      "text": "...",
+      "textZh": "...",
       "sources": ["src-heritage-001"]
     }
   ],
@@ -418,6 +461,8 @@ Example:
 ```
 
 This prevents repeating full URLs and metadata in every marker.
+
+For future English support, either add parallel `*En` fields or introduce a locale dictionary keyed by the same stable entity ID. Do not fork coordinates, source records, evidence levels, or media provenance by language.
 
 ---
 
@@ -458,6 +503,15 @@ Use wording such as:
 
 When a biography or relationship comes from the in-game portrait / journal / codex system, identify it as game lore rather than original novel canon.
 
+### 9.5 Writing for visitors from any cultural background
+
+- Each card must first answer “这是什么、在游戏哪里、为什么值得看” before introducing specialist detail.
+- Clearly state when a game entity has no direct counterpart in the novel.
+- Do not use “大家都知道”“显然”“原作党”等 insider phrasing.
+- Do not require the reader to recognize a deity, constellation, Buddhist object, Daoist practice, dynasty, province, or architectural component from its name alone.
+- Spoilers beyond the current chapter must be collapsed behind a Chinese spoiler warning.
+- A real-world site is shown only when the specific connection has evidence; the absence of a verified site is valid and must not be filled with a guess.
+
 ---
 
 ## 10. Image Handling
@@ -480,7 +534,7 @@ public/
 
 Prefer WebP or AVIF for large web images.
 
-Each image should ideally have metadata in the content record:
+Each production image must have metadata in `src/data/media.json`:
 
 - alt text
 - credit
@@ -529,13 +583,20 @@ Required:
 
 ## 13. Visual Direction
 
-The experience should feel:
+The experience should use an original **“《黑神话：悟空》气质的文化展览 UI”**. This is a required product attribute, not an optional mood-board suggestion. It should feel:
 
 - cinematic
 - scholarly but not academic-looking
 - mysterious
 - tactile
 - inspired by ink, stone, parchment, bronze, smoke, temple architecture, carved seals, and Chinese landscape painting
+- cinematic and chapter-specific: forest fire, yellow sand, snow, cave silk, furnace ash, or cloud-wrapped mountains may tint the atmosphere without hurting readability
+- restrained and tactile: warm bone-colored text, soot-black surfaces, oxidized metal, muted mineral colors, and a limited cinnabar-red accent
+- composed with generous negative space, vertical or seal-like headings where appropriate, and subtle asymmetry inspired by scroll painting
+
+Interaction details should support the same language: seal-press selection, light ink diffusion, drifting mist, and short brush-like reveals are appropriate when performant and reduced-motion-safe. Core UI chrome, filters, tabs, and citations must remain easy to identify; atmosphere must never obscure navigation or evidence status.
+
+This direction is an homage, not a replica. Do not trace or reproduce the official game logo, type treatment, HUD, menu layout, item frames, iconography, screenshots, or promotional key art. Do not label generated imagery as official game imagery.
 
 Avoid:
 
@@ -588,6 +649,8 @@ SearchOverlay
 A successful v1 should include:
 
 - polished homepage
+- complete Chinese-first UI with no English-only controls, errors, or accessibility labels
+- a clear “游戏 / 原著 / 现实” onboarding explanation for visitors unfamiliar with the subject
 - six chapter cards
 - one fully implemented chapter map: Chapter 1
 - at least 8–15 markers for Chapter 1
@@ -595,7 +658,8 @@ A successful v1 should include:
 - responsive info panel
 - source links
 - at least one *Journey to the West* excerpt connection
-- at least one verified real-world heritage connection
+- at least one verified real-world heritage connection somewhere in the v1 experience; it may be a clearly labeled Chapter 3 preview (for example, 隰县小西天 or 府城玉皇庙) and must not be falsely attached to Chapter 1
+- a visibly *Black Myth: Wukong*-inspired but original interface as defined in Section 13
 - mobile support
 
 The remaining five chapters can then reuse the same data and UI structure.
@@ -611,13 +675,15 @@ Agents working on this repository should follow these rules:
 3. Keep chapter content in JSON, not hard-coded in components.
 4. Do not invent historical, literary, or game facts.
 5. Preserve normalized map coordinates.
-6. Use bilingual names where provided.
+6. Ship a Chinese-only visible interface for v1; retain optional English fields only for future localization.
 7. Keep citations and source IDs intact.
 8. Treat speculative real-world connections as speculative.
 9. Prioritize map usability over decorative UI.
 10. Keep components reusable across all six chapters.
 11. Avoid large new dependencies when a lightweight implementation is sufficient.
 12. Any new content field should be documented before broad use.
+13. Do not force a real-world heritage block onto a marker when `KNOWLEDGE_BASE.md` says the connection is unverified.
+14. Preserve media provenance and license status; generated, documentary, official-game, and comparison images must never be conflated.
 
 ---
 
@@ -638,6 +704,7 @@ black-myth-wukong-atlas/
 │   ├── components/
 │   ├── data/
 │   │   ├── chapters/
+│   │   ├── media.json
 │   │   └── sources.json
 │   ├── pages/
 │   ├── hooks/

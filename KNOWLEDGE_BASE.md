@@ -1,771 +1,449 @@
-# Black Myth Wukong Atlas — Knowledge Base Guide
+# 《黑神话：悟空》西游文化地图知识库
 
-## 1. Purpose
+> 仓库：`black-myth-wukong-atlas`  
+> 文档版本：**2.0（中文核对整合版）**  
+> 整理日期：**2026-09-19**  
+> 定位：交互式文化探索地图的**研究底稿**，不是全收集攻略、正式地图坐标表或已完成的可发布百科。  
+> 内容原则：**游戏是什么 → 《西游记》怎么写 → 游戏如何改编 → 现实文化原型在哪里 → 具体来源是什么。**
 
-This document records the research scope and knowledge model for the `black-myth-wukong-atlas` project.
+## 0. 如何使用这份知识库
 
-The website is designed to help students and general audiences understand *Black Myth: Wukong* through three connected layers:
+本文件供内容研究 agent、素材 agent、前端 coding agent 共用。网站默认**全中文呈现**；仓库名和机器可读 ID 可以保持英文。正文中用 `[W016]`、`[G01]`、`[H01]` 等**来源编号**引用，文末“来源目录”含**可复制网址**。在网页展示时，将编号转换成可点开的“原著第十六回 / 晋城市政府报道”等链接。没有来源的事实不能为了填满卡片而编造。
 
-1. **The Game** — places, characters, bosses, artifacts, architecture, visual motifs, and narrative role.
-2. **Journey to the West** — original episodes, chapter references, characters, objects, places, and adaptation differences.
-3. **The Real World** — Chinese heritage sites, architecture, sculpture, religious imagery, mythology, folk culture, and confirmed or probable visual references used in the game.
+本知识库包含：六回主区域和精选候选标记、主要人物与原著关系、重要物品、文化和建筑考据线索、跨章节关系、待考证清单及资料编写规范。**尚未完成**：逐个土地庙、全部小妖与所有精魄的实机逐项盘点；六张真实地图的标记坐标；所有游戏内影神图的逐字校对；所有古建与具体游戏模型的逐点视觉比对。此三项需要素材、实机和地图研究 agent 补充，不能把候选清单当作已验证的“全图”。
 
-The goal is not to reproduce a complete gameplay wiki. Research should prioritize cultural and narrative relevance.
+### 0.1 信息状态与证据级别
 
----
+| 标记 | 在本文件中的含义 | 网站发布规则 |
+|---|---|---|
+| **已核实·原著** | 原著指定回目中能直接读到的人物/情节/器物 | 写清《西游记》第几回，并提供原文链接；不可把现代改编当原著 |
+| **已核实·游戏** | 游戏画面、道具页面、影神图等能直接观察到；或多份可靠攻略一致 | 标明游戏中的名称、位置；关键条件最好再由实机检查 |
+| **已核实·现实关联** | 开发者、景区/文博机构或权威公开资料直接指认某一项联系 | 写明证据究竟确认了“采风”“扫描”“场景取景”还是“造型借鉴” |
+| **相关文化原型** | 古籍、宗教体系或文物能证实文化背景，但未证明开发团队参考过它 | 写作“可用于理解……”，**不要写**“游戏直接取材于……” |
+| **待考证** | 社区猜测、近似画面、未核准掉率/技术参数、未定位的建筑对应 | 研究端保留；公开端隐藏或明确注明“尚无直接证据” |
 
-## 2. Core Research Question
+**绝不混同的四种关联**：`原著直接出现`、`原著元素重新组合/游戏原创扩写`、`现实文化对照`、`开发者确认采用/扫描`。例如“亢金龙的原著典故”和“亢金龙的玉皇庙彩塑视觉联系”分别引用两条来源，不能互证。
 
-For every important map marker, ask:
+### 0.2 地图点与内容卡的最小要求
 
-> What is this in the game, where does it come from in *Journey to the West* or Chinese tradition, and does it connect to a real-world cultural site, artwork, building, sculpture, or historical source?
+一张可发布地图卡建议至少有：① 中文名称和分类；② 所属章节与可确认的区域；③ 60—150 字游戏介绍；④ 原著回目与简短对照（**确无直接出处须直说**）；⑤ 至少一个可打开的来源 URL。只有存在独立证据才增加现实取景卡。坐标 `x/y` 只在有真实地图底图后填写；没有坐标时使用 `待定位`，不得虚构归一化坐标。
 
-This question should guide all research.
-
----
-
-## 3. Six-Chapter Research Framework
-
-### Chapter 1 — 黑风山 / Black Wind Mountain
-
-Primary literary focus:
-
-- *Journey to the West*, Chapters 16–17
-
-Core themes:
-
-- Guanyin Monastery / 观音院
-- Elder Jinchi / 金池长老
-- Black Bear Guai / 黑熊精
-- stolen kasaya / 袈裟
-- monastery fire
-- Black Wind Mountain and Black Wind Cave
-
-Important game research targets may include:
-
-- Black Wind Mountain
-- Forest of Wolves / 苍狼林
-- Bamboo Grove / 翠竹林
-- Guanyin Temple / 观音禅院
-- Black Wind Cave / 黑风洞
-- Elder Jinchi
-- Black Bear Guai
-- Lingxuzi / 灵虚子
-- Guangzhi / 广智
-- Guangmou / 广谋
-- Whiteclad Noble / 白衣秀士
-- Red Loong if included in chapter-layer discovery
-- major bells, shrines, flames, temple architecture, relics, and chapter-relevant items
-
-Research focus:
-
-- direct comparison between original novel episode and game aftermath/reinterpretation
-- Buddhist temple visual language
-- possible/confirmed real-world architectural references
+原著节选应逐字核对所链接版本，每张卡只引必要的短句，最好配一段原创白话转述。不同版本有异体字、回目写法或标点差异时记录所用版本；不得复制现代译本或整段影神图原文。文化解读要明确用“可以理解为”“游戏中的改写表现为”，不把个人解读写成主创原意。
 
 ---
 
-### Chapter 2 — 黄风岭 / Yellow Wind Ridge
+## 1. 六回总览与文学索引
 
-Primary literary focus:
+| 游戏回目 | 地图主线结构（高层级；不是所有土地庙） | 核心原著 | 文化入口 |
+|---|---|---|---|
+| **第一回·火照黑云** | 苍狼林 → 翠竹林 → 黑风洞；隐·旧观音禅院 | 第十六—十七回 [W016][W017] | 贪念、袈裟、禅院、黑熊精、辟火罩 |
+| **第二回·风起黄昏** | 沙门村、挟魂崖、卧虎寺、黄风阵；隐·斯哈哩国 | 第二十—二十一回 [W020][W021]；其他典故另引 | 黄风怪、虎先锋、灵吉菩萨、失落国度、石敢当 |
+| **第三回·夜生白露** | 雪山径 → 浮屠界 → 苦海 → 极乐谷 → 小雷音寺；浮屠塔是重要特殊地点 | 第六十五—六十六回 [W065][W066]；四渎龙见第四十三回 [W043] | 黄眉、弥勒、二十八宿、悬塑、佛寺与假佛境 |
+| **第四回·曲度紫鸳** | 兰喜村 → 盘丝洞 → 黄花观；隐·紫云山 | 第七十二—七十三回 [W072][W073]；蝎子精见第五十五回 [W055] | 蜘蛛精、百眼魔君、绣花针、昴日星官 |
+| **第五回·日落红尘** | 灰烬林 → 丹灶谷 → 火光地；隐·璧水洞 | 第五十九—六十一回 [W059][W060][W061]；红孩儿见第四十—四十二回 [W040][W042] | 牛魔王一家、芭蕉扇、辟水金睛兽、火焰山 |
+| **第六回·未竟** | 花果山山脚、开放山体探索、水帘洞及最终战；隐·梅山**入口在第三回浮屠塔** | 第一—七回，尤第一回石猴出世与第六回二郎神斗法 [W001][W006] | 石猴、金箍棒、大圣遗物、二郎神、游戏原创续写 |
 
-- *Journey to the West*, Chapters 20–21
-
-Core literary entities:
-
-- Yellow Wind Ridge / 黄风岭
-- Yellow Wind Demon / 黄风怪
-- Tiger Vanguard / 虎先锋
-- Lingji Bodhisattva / 灵吉菩萨
-- Samadhi-like divine wind episode
-- Wind-Stopping Pearl / 定风珠, where relevant to discussion
-
-Important game research targets may include:
-
-- Yellow Wind Ridge
-- Sandgate Village / 沙门村
-- Crouching Tiger Temple / 卧虎寺
-- Fright Cliff / 挟魂崖
-- Kingdom of Sahali / 斯哈哩国
-- Yellow Wind Sage / 黄风大圣
-- Tiger Vanguard variants / lineage
-- Stone Vanguard / 石先锋
-- Shigandang / 石敢当
-- Fuban / 蝜蝂
-- Headless Singer / 无头僧 and related narrative role
-- Buddha-head / stone / cliff sculpture motifs
-
-Research focus:
-
-- how the game expands minor or short original-novel material into a fallen kingdom
-- Buddhist desert imagery
-- stone sculpture, grotto, and temple references
-- relationships among wind, desertification, faith, sacrifice, and corruption
+**区域特别说明**：六六村通过如意画轴进入，是跨章节功能区域，不是第三回主线地图内的一段普通路径；隐·梅山的触发入口位于第三回的浮屠塔，相关剧情却与第六回结局紧密相连。[G03][G06]
 
 ---
 
-### Chapter 3 — 小西天 / The New West
+## 2. 第一回｜火照黑云：黑风山
 
-Primary literary focus:
+### 2.1 地图和优先标记
 
-- *Journey to the West*, Chapters 65–66
+- **苍狼林**：前期林地；候选点包括广智、幽魂、灵虚子及瀑布后的赤髯龙（涉及后续获取的飞龙鳞片）。
+- **翠竹林**：候选点包括蛇径、白衣秀士、广谋、波里个浪和通往黑风洞的路径。
+- **黑风洞**：黑熊精所在的核心区域；与黑风山、袈裟事件关联。
+- **隐·旧观音禅院**：与钟声机制及金池长老战斗关联；地图上要与主线寺院/现实寺庙分开标注。[G01]
 
-Additional traditional focus:
+以上是**候选地图标记**；具体前后顺序、土地庙所属分区与坐标需参照实机截图复核。[G01]
 
-- Twenty-Eight Mansions / 二十八宿
-- Maitreya / 弥勒
-- Buddhist parody / false temple motif
+### 2.2 人物、原著和游戏改编
 
-Core literary entities:
+| 地图卡 | 原著中可以直接确认的事实 | 游戏层如何写 / 注意点 | 来源 |
+|---|---|---|---|
+| **广智** | 第十六回写观音院僧人广智提出杀唐僧夺袈裟。 | **原著已有其人**；游戏中的妖怪造型、战斗和后续生平是改编，不能称“全原创”。 | [W016][G01] |
+| **广谋** | 第十六回明确为广智师弟，提出纵火烧禅堂的方案。 | 同上；可以与广智做两张互链卡。 | [W016][G01] |
+| **金池长老** | 第十六回的观音院老僧，自述二百七十岁；因袈裟起贪念，火起后寺院被毁。 | 游戏旧观音禅院中的形象属于对原著悲剧的再现/重构。年龄应引用原文口述，不说经现实考证活了270岁。 | [W016][G01] |
+| **黑熊精** | 黑风山黑风洞妖怪，因观音院失火前来查看，发现袈裟而盗走；第十七回被观音收伏。 | “从金池处偷走袈裟”不够精确；应写“趁寺院火乱从院内取走袈裟”。游戏里的后续经历以影神图为准。 | [W016][W017] |
+| **白衣秀士** | 第十七回黑熊精同伴，原形为**白花蛇**，不是“百花蛇”。 | 可做白蛇/白衣文人形象对照，切勿引出未经证实的具体佛教原型。 | [W017][G01] |
+| **灵虚子** | 第十七回有黑熊精友人**凌虚子**，为苍狼所化。 | **原著“凌虚子”≠游戏字面名称“灵虚子”**；游戏身份及经历要单独注明为改写。 | [W017][G01] |
+| **赤髯龙** | 第四十三回列为泾河龙王九子之一、镇守河渎。 | 第一次出现在第一回可探索区域，但原著出处不是第十六回；做跨章节“四渎龙”卡。 | [W043][G01] |
 
-- Yellowbrow / 黄眉
-- Little Thunderclap Temple / 小雷音寺
-- Golden Cymbals / 金铙
-- Human Seed Bag / 人种袋
-- Maitreya
-- Twenty-Eight Mansions
+**原著可用定位短句**：“有一個小和尚，名喚廣智”“又有一個小和尚，名喚廣謀”（正式上线前按所用文本版本重校标点）。[W016]
 
-Important game research targets may include:
+### 2.3 法宝、器物与文化说明
 
-- Snowhill Path / 雪山径
-- Pagoda Realm / 浮屠界
-- Bitter Lake / 苦海
-- Valley of Ecstasy / 极乐谷
-- New Thunderclap Temple / 小雷音寺
-- Yellowbrow
-- Kang-Jin Loong / 亢金龙
-- Kang-Jin Star / 亢金星君
-- Cyan Loong / 青背龙
-- Captain Wise-Voice and other captains
-- Non-Able / 不净 / 不白 / related disciples and Buddhist parody figures
-- Maitreya
+| 卡片 | 游戏/地图信息 | 原著关系 | 来源 |
+|---|---|---|---|
+| **辟火罩** | 第一回隐·旧观音禅院击败金池长老后可获得；归入**法宝**。 | 第十六回中悟空向广目天王借辟火罩保护唐僧；游戏不是凭空创造该名称。**勿写“避火罩”。** | [W016][G01] |
+| **锦襕袈裟** | 第一回剧情核心器物；可作为剧情标记而非误标为可装备法宝。 | 第十六回金池长老生贪、黑熊精趁乱盗袈裟。 | [W016] |
+| **幽魂、广谋、波里个浪精魄** | 可作为所在地点的关联条目；精魄属于独立收集类别。 | 不等于三者都有原著出处；没有则填“无直接原著对应”。 | [G01] |
+| **博山炉** | 赤髯龙相关隐藏收集；需要后续探索条件，不能标注为首次进入苍狼林即可获取。 | 名称可延伸讨论传统博山香炉，但**尚无证据证明此珍玩直接扫描某件博山炉文物**。 | [G01][W043] |
 
-Real-world research priorities:
+### 2.4 建筑、现实来源及趣闻
 
-- Xiaoxitian Temple, Xixian, Shanxi / 山西隰县小西天
-- hanging sculpture / 悬塑
-- Yuhuang Temple / 玉皇庙 and Twenty-Eight Mansion sculptures where relevant
-- pagoda, Buddhist hall, guardian, and celestial imagery
-
-Strong known research lead:
-
-- Shanxi cultural and government sources have publicly connected multiple heritage sites and scanned architectural/sculptural assets to the game.
+- **观音禅院**是原著第十六回的故事地点；“游戏参考了1986年电视剧《祸起观音院》的具体建筑设计”**待考证**。可以对比两种改编如何讲同一故事，不应写成开发团队确认使用了电视剧场景。[W016]
+- **真实观音禅院模型的具体寺庙原型**目前未在本库中核定；禁止将别的章节使用的山西寺庙自动绑定到这一地点。
+- **适合发布的 Fun Fact**：在原著里，辟火罩保护了唐僧，而悟空又借风使火势更盛；黑熊精原本看到火光是准备救火，见到袈裟才起贪心。这一因果关系比“黑熊精主动放火抢袈裟”更准确。[W016]
 
 ---
 
-### Chapter 4 — 盘丝岭 / Webbed Hollow
+## 3. 第二回｜风起黄昏：黄风岭
 
-Primary literary focus:
+### 3.1 地图和优先标记
 
-- *Journey to the West*, Chapters 72–73
+沙门村、挟魂崖、卧虎寺、黄风阵为主要探索层；**隐·斯哈哩国**经黄袍员外相关支线进入。虎先锋、石先锋、黄风大圣、石敢当、蝜蝂、沙国王父子、无头僧和佛头石雕均值得做图钉。所谓“虎之锋/石之锋”可用于表示两条探索路径和关键道具，不要称为官方命名的“两条大型支线”。[G02]
 
-Core literary entities:
+### 3.2 人物与古籍对照
 
-- Seven Spider Demons / 七蜘蛛
-- Webbed Hollow / 盘丝洞
-- Hundred-Eyed Demon Lord / 百眼魔君
-- Yellow Flower Temple / 黄花观
-- Pilanpo Bodhisattva / 毗蓝婆菩萨
-- Dawnstar / Rooster-related celestial imagery / 昴日星官
+| 地图卡 | 来源与故事对应 | 内容边界 | 来源 |
+|---|---|---|---|
+| **虎先锋** | 第二十回黄风怪手下虎先锋抓走唐僧。 | 游戏中的形象、与其他虎妖的亲缘故事需要引用影神图，不能直接说原著已有同样家族。 | [W020][G02] |
+| **黄风大圣** | 原著第二十—二十一回为黄风岭黄风洞黄风怪；第二十一回交代其与灵山清油、黄风的关系。 | 原著称呼与游戏“黄风大圣”区分；不把游戏黄金之国完整历史写成原著。 | [W020][W021] |
+| **灵吉菩萨 / 无头僧** | 灵吉菩萨在原著第二十一回协助降伏黄风怪。 | 无头僧属于游戏叙事形象；二者在游戏中的关系必须以游戏剧情为准。 | [W021][G02] |
+| **沙国王父子** | 原著第五十九回由猪八戒谈及“斯哈哩国”为日落之处；第六十六回小张太子自述出身**流沙国**，其父为沙国王。这是**两个不同地名、两处不同叙述**。 | 游戏沿用“斯哈哩国”地名，并扩写沙国王父子及黄金之国往事；**不能直接断定**游戏沙国王、沙二郎/沙大郎就是原著第六十六回的王族。 | [W059][W066][G02] |
+| **石敢当** | “石敢当”可与民俗镇石观念做文化对照。 | 游戏关于佛头、石精的生平属于游戏世界观；“民俗启发”不是已证实的制作团队直接引文。 | [G02] |
+| **蝜蝂** | 柳宗元《蝜蝂传》记述善负物而不肯舍负的小虫；可做贪欲寓言。 | 游戏中巨大虫妖及背负的佛头是视觉与叙事扩写；**“《尔雅》一定收录此虫”的说法需先给出篇目原文**。 | [L01][G02] |
+| **地狼** | 用户资料提供《尸子》“地中有犬，名曰地狼”的研究线索。 | **待考证**：需要核定存世辑本具体卷篇，并区分“古书同名记载”和“开发者证实借鉴”。不要作为已确认制作趣闻发布。 | [待补古籍页码] |
 
-Important game research targets may include:
+**斯哈哩国与流沙国不得合并**：第五十九回猪八戒讲述“西方路上有个斯哈哩国”；第六十六回小张太子说“祖居西土流沙国”。这两句原文确有出处，**但原著没有说两地是同一国家**，也没有出现游戏中相同的沙国王父子故事。站内游戏地图使用“斯哈哩国”，原著关系卡应并列两条来源，分别解释游戏对哪些元素作了重新组合。[W059][W066][G02]
 
-- Webbed Hollow / 盘丝洞
-- Purple Cloud Mountain / 紫云山
-- Village of Lanxi / 兰喜村
-- Temple of Yellow Flowers / 黄花观
-- Fourth Sister / 四妹
-- Violet Spider / 紫蛛儿
-- Venom Daoist / 毒敌大王
-- Scorpionlord / 毒敌大王 or related naming distinction in localization
-- Duskveil / 晦月魔君
-- Hundred-Eyed Daoist Master / 百眼魔君
-- Daoist talismans and alchemical motifs
+### 3.3 物品与地图交互
 
-Research focus:
+- **定风珠**：本回隐藏区域击败蝜蝂后可获得的**法宝**；关联黄风大圣。原著第二十一回有灵吉菩萨降风之事，但**不要自动将游戏定风珠的外观、获取方式等同于原著叙事**。[W021][G02]
+- **醒酒石**：黄袍员外任务相关；除从石中人处购买，也存在探索拾取线索，若做双点位，两处地图标记共用一张物品卡。[G02]
+- **金花玉萼**：石中人商店相关珍玩；购买前置和精确位置待实机确认，不必把价格写入文化网站。[G02]
+- **卧虎寺、佛头、沙化国度**：目前可描述为游戏中的宗教/荒漠视觉语汇；**没有被本库核定的某个真实石窟对照**，不要写“黄风岭直接取景某某石窟”。
 
-- expansion of the spider-demon episode into a family history
-- reinterpretation of Bajie / Zhu Bajie relationships and memory
-- Daoist/Buddhist tension and transformation
-- insect symbolism
-- real temple and painted/sculpted iconography where verifiable
+**趣闻主题**：把原著中的黄风怪故事与游戏新增的黄金之国兴衰并排展示；“蝜蝂背负财物”的寓言可以为游戏里背负巨大佛头的意象提供阅读角度，但不声明这就是主创明确的寓意。[W020][W021][L01]
 
 ---
 
-### Chapter 5 — 火焰山 / Flaming Mountains
+## 4. 第三回｜夜生白露：小西天
 
-Primary literary focus:
+### 4.1 地图和优先标记
 
-- *Journey to the West*, Chapters 59–61
+**五个主要阶段**：雪山径 → 浮屠界 → 苦海 → 极乐谷 → 小雷音寺。龟岛归在苦海探索；浮屠塔单独标记为特殊剧情地点；**六六村是跨章节画中区域**。第三回地形层数复杂，不能凭“面积最大”这类未经定义的比较确定地图比例。[G03]
 
-Additional literary backstory:
+建议卡片：黄眉、亢金龙、亢金星君、赤尻马猴、青背龙、小骊龙、辰龙、寅虎、弥勒、金铙、人种袋、浮屠塔、浮屠界狱卒、瓜田、隰县小西天悬塑与府城玉皇庙亢金龙彩塑。[W043][W058][W065][W066][H01][H02]
 
-- Red Boy / 红孩儿 episode from earlier chapters
-- Bull Demon King / 牛魔王 relationship network
+### 4.2 人物、原著与文化原型
 
-Core literary entities:
+| 地图卡 | 原著/文化事实 | 游戏层与不能混同之处 | 来源 |
+|---|---|---|---|
+| **黄眉** | 第六十五—六十六回小雷音寺假佛及金铙、人种袋情节；原为弥勒座前童子。 | 游戏中黄眉的执念、寺中故事和天命人遭遇是后续重构。 | [W065][W066] |
+| **亢金龙** | 第六十五回二十八宿参与破金铙，亢金龙将角伸入金铙，悟空设法借此脱身。 | 游戏的龙形态、人格及其独立战斗为改编；亢金龙也联系中国传统二十八宿。 | [W065][G03] |
+| **亢金星君** | “亢”属于东方七宿，原著有亢金龙；游戏以星君形象大幅扩写。 | 不要说《西游记》写了与游戏完全相同的亢金星君生平。 | [W065][H01] |
+| **赤尻马猴** | 第五十八回如来谈到混世四猴，其中有赤尻马猴。 | 原著的类属描述不能直接等同游戏中具体 Boss 的遭遇。 | [W058][G03] |
+| **寅虎** | 第十三回有寅将军。 | 可讨论虎与地支“寅”的文化联系；**不能直接确认寅虎＝原著寅将军**。 | [W013][G03] |
+| **青背龙、小骊龙** | 第四十三回分别记泾河龙王九子中的第三子居江渎、第二子居济渎；赤髯龙为第四子居河渎。 | 游戏四渎龙是跨章节可探索角色；四渎线索与黄眉原著是**不同回目**。 | [W043][G03] |
+| **弥勒** | 第六十六回弥勒亲自收伏黄眉。 | 游戏中的具体对话、瓜田任务和禁字法属于独立的游戏事件。 | [W066][G03] |
 
-- Princess Iron Fan / 铁扇公主
-- Bull Demon King / 牛魔王
-- Red Boy / 红孩儿
-- Plantain Fan / 芭蕉扇
-- Flaming Mountains / 火焰山
-- Rakshasa / 罗刹女 naming tradition
+### 4.3 法术、物品与不可逆提示
 
-Important game research targets may include:
+- **禁字法**：第三回瓜田支线获得，属于**法术/奇术，不是法宝**；具体线索关联翠笠武师和弥勒。[G03]
+- **想蕴**：五蕴任务中的要紧物事，位于极乐谷一念壁相关探索路线；**不是隐藏结局开启钥匙**。[G03][G06]
+- **吉祥灯**：珍玩。相关攻略记载击败魔将·妙音前需处理浮屠界九名掌灯狱使，否则本轮回可能错过；该时限提示在发布前建议实机或版本攻略再复核一次。[G03]
+- **金铙、人种袋**：原著第五十五回没有它们的黄眉用途；应准确链接**第六十五—六十六回**。它们是角色故事重要法器，**不等于玩家可装备的四件“法宝”**。[W065][W066]
 
-- Woods of Ember / 灰烬林
-- Furnace Valley / 丹灶谷
-- Field of Fire / 火光地
-- Bishui Cave / 璧水洞
-- Flaming Mountains
-- Bull Demon King
-- Rakshasi / Princess Iron Fan
-- Red Boy
-- Yaksha King / 夜叉王
-- Keeper of Flaming Mountains / 火焰山土地
-- Five Element Carts / 五行战车
-- Bishui Golden-Eyed Beast / 璧水金睛兽
+### 4.4 现实建筑重点
 
-Research focus:
+1. **山西临汾隰县小西天（千佛庵）**：大雄宝殿悬塑与游戏“既见未来，为何不拜”场景有媒体及政府系统报道的公开对照。网站应展示悬塑构图的具体局部，不要把“小雷音寺整个建筑群＝隰县小西天原样扫描”当作已经证实的事实。[H02][H03]
+2. **山西晋城泽州府城玉皇庙二十八宿彩塑**：亢金龙等视觉造型与游戏人物有晋城市政府公开对照，是**角色形象/彩塑联系**，而不是证明小雷音寺寺院建筑出自玉皇庙。[H01][H04]
+3. **佛光寺经幢、应县木塔、朔州崇福寺**：可列入相关古建的继续研究清单；“第三回雪地佛塔＝佛光寺唐代经幢”“浮屠塔＝应县木塔”“极乐谷寺庙＝崇福寺”这些**具体的一一对应尚未在本库逐点核实**。[H05]
 
-- family tragedy and post-pilgrimage reinterpretation
-- the fan as literary object versus game narrative symbol
-- Daoist furnace / alchemy imagery
-- fire deities and folk iconography
+**可用趣闻**：二十八宿不仅是一组游戏角色，也是中国传统天象体系；晋城玉皇庙以动物意象结合人物的星宿彩塑，为理解亢金龙造型提供了可观看的真实艺术对象。[H01][H04]
+
+**暂不发布的技术数字**：“万生华态微米级扫描”“8K—16K、120 帧实时渲染”“大足石刻12亿面”等说法，本次没有取得能直接支持具体数字和技术语境的一手材料。将它们保留在研究待办，不进入网站 Fun Fact。
 
 ---
 
-### Chapter 6 — 花果山 / Mount Huaguo
+## 5. 第四回｜曲度紫鸳：盘丝岭
 
-Primary literary focus:
+### 5.1 地图和优先标记
 
-- *Journey to the West*, Chapters 1–7
-- especially Chapter 6 for Erlang Shen versus Sun Wukong
+兰喜村 → 盘丝洞 → 黄花观；**隐·紫云山**经黑手道人相关隐藏流程进入。高价值卡片：紫蛛儿、四妹、百眼魔君、毒敌大王、晦月魔君、黑手道人、琴螂仙、绣花针、蜘蛛洞穴及道观内的道教仪式/符箓元素。[G04]
 
-Core literary entities:
+### 5.2 角色与文学关系
 
-- Mount Huaguo / 花果山
-- Water Curtain Cave / 水帘洞
-- Monkey King / 美猴王 / 孙悟空
-- Erlang Shen / 二郎神
-- celestial army
-- transformation duel
-- Great Sage identity
+| 地图卡 | 原著可证事实 | 游戏改编和边界 | 来源 |
+|---|---|---|---|
+| **七蜘蛛精 / 紫蛛儿** | 第七十二回有盘丝洞七蜘蛛精及濯垢泉事件。 | 游戏“紫蛛儿”的姓名、家族经历、与猪八戒的过往故事为扩写；不能声称原著已写出四妹的经历。 | [W072][G04] |
+| **百眼魔君** | 第七十三回黄花观多目怪/蜈蚣精，设毒茶害取经人；毗蓝婆菩萨协助降伏。 | 游戏对百眼魔君的目标、盘丝岭势力及命运重新创作。 | [W073][G04] |
+| **毒敌大王** | 原著第五十五回有毒敌山琵琶洞**雌性蝎子精**，被昴日星官降伏。 | **毒敌大王不是原著第54回直接出现的雄性妖怪**；游戏把他写成蝎子精相关的复仇人物，原著没有同样的丈夫故事。 | [W055][G04] |
+| **晦月魔君** | 原著第五十五回有昴日星官降蝎子精，第七十三回毗蓝婆的绣花针与其子昴日星官有关。 | 游戏以昴日星官相关意象写出晦月魔君的变异遭遇；“金茧侵蚀、与百眼魔君的纠葛”**不是原著情节**。 | [W055][W073][G04] |
+| **四妹、黑手道人** | 本库尚未确认其整套人物经历在《西游记》有直接同名原型。 | 以游戏影神图与过场为主；如做动物、道教图像对照，另加文化来源。 | [G04] |
 
-Important game research targets may include:
+**文学衔接趣闻**：第五十五回的昴日星官与蝎子精故事、第七十三回的毗蓝婆与百眼魔君故事在原著中分处不同情节；游戏把相关人物关系编织成毒敌大王与晦月魔君的叙事网络。务必把“原著事实”与“游戏重组”分屏呈现。[W055][W073]
 
-- Foothills / 山脚
-- Mount Huaguo
-- Water Curtain Cave
-- Great Sage’s Broken Shell / 大圣残躯
-- Erlang Shen
-- Four Heavenly Kings / 四大天王
-- Stone Monkey / stone birth imagery
-- Jingubang / 如意金箍棒
-- Great Sage armor/relic system
+### 5.3 物品和造型
 
-Research focus:
+- **绣花针**：游戏隐·紫云山击败晦月魔君后获得的**法宝**；原著第七十三回毗蓝婆持针破百眼魔君放出的金光。区别于第一回《西游记》里悟空把金箍棒变成“绣花针”般大小的普通形容。[W073][G04]
+- **琴螂原体/琴螂仙精魄**：辰龙、茧圆等属于游戏专属养成/隐藏玩法；详细喂养次数与步骤发布前核对版本，不需要将其强行挂到《西游记》。[G04]
+- **虎筋绦子**：可记作蛇捕头相关随机掉落珍玩；**删除未经来源核准的“3.6%”精确概率**。[G04]
 
-- what comes directly from the early novel
-- what is post-novel game-original mythology
-- “Destined One” as game-original framework
-- interpretation of Wukong’s identity, freedom, memory, and inheritance
+### 5.4 建筑和标题考据
+
+- **黄花观**是《西游记》第七十三回直接出现的道观名称；游戏的具体建筑构件是否取自某座真实道观，需要独立证据。[W073]
+- **盘丝洞**的复杂洞穴可作为洞窟视觉文化研究对象；“直接取景于中国南方某座喀斯特溶洞”尚未核实。
+- **紫云山＝四川安岳茗山寺具体石刻**暂列待考证，仅可做视觉比较，不能宣称确认扫描。
+- “曲度紫鸳”与李白《代别情人》“风吹绿琴去，曲度紫鸳鸯”存在可核对的**字句联系**；**游戏为什么用它作回目**仍需主创出处支持，暂不作直接开发意图描述。[L02]
 
 ---
 
-## 4. Entity Types to Research
+## 6. 第五回｜日落红尘：火焰山
 
-The website does not need every gameplay entity. Prioritize entities with cultural, literary, historical, mythological, religious, or visual significance.
+### 6.1 地图和优先标记
 
-### 4.1 Locations
+**灰烬林 → 丹灶谷 → 火光地**；另有**隐·璧水洞**。优先标记皓斧力士、五行战车/赤金战车、红孩儿、夜叉王、牛魔王、铁扇公主、火焰山土地、璧水金睛兽、芭蕉扇及火焰山环境。燧先锋不应一概写作进入隐·璧水洞的硬性前置条件。[G05]
 
-Examples:
+### 6.2 人物与原著
 
-- mountains
-- caves
-- villages
-- temples
-- shrines
-- halls
-- pagodas
-- bridges
-- battlefields
-- secret areas
+| 地图卡 | 原著线索 | 网站编辑要点 | 来源 |
+|---|---|---|---|
+| **红孩儿** | 第四十—四十二回，牛魔王与铁扇公主之子，后由观音收为善财童子。 | 游戏红孩儿/夜叉王的连续剧情是新编，不等于原著经历。 | [W040][W042][G05] |
+| **牛魔王** | 第五十九—六十一回芭蕉扇争夺，住积雷山摩云洞并与玉面狐狸同居。 | 不要把“与玉面公主成婚”推成与铁扇公主已经正式离婚；按原著措辞转述。 | [W059][W060][W061] |
+| **铁扇公主 / 罗刹女** | 第五十九回关联翠云山芭蕉洞、芭蕉扇及红孩儿身世。 | 游戏中的家庭悲剧是后续改编，应与取经中的三调芭蕉扇事件分开。 | [W059][W061][G05] |
+| **璧水金睛兽** | 原著第六十回**辟水金睛兽**是牛魔王坐骑；悟空曾借其冒充牛魔王。 | 游戏专名使用“**璧**水金睛兽”，作为隐·璧水洞妖王；**不可列为纯游戏原创**，也不要与原著“辟”字混写。 | [W060][G05] |
+| **火焰山土地、皓斧力士、五行战车** | 并非都能在原著相应回目找到同名同故事的人物。 | 游戏背景依据实际剧情/影神图撰写；民俗、道教火神或炼丹联系须另证。 | [G05] |
 
-For each location, research:
+### 6.3 宝物与文化
 
-- game role
-- chapter/region
-- narrative significance
-- important characters
-- related item(s)
-- literary reference
-- real-world influence if any
-- visual motifs
+- **芭蕉扇**：第五回的重要**游戏法宝**；《西游记》第五十九至六十一回围绕“三调芭蕉扇”讲述灭火焰山的过程。[W059][W060][W061][G05]
+- **辟火罩**：第一回得到的法宝，在第五回火焰环境中也有玩法关联；**不是第五回新增第五件法宝**。[W016][G01][G05]
+- **火焰山场景的真实古建绑定**：鹳雀楼、永乐宫、关帝庙等确属可研究的山西文化遗产，但本库**尚未核定**它们各自对应灰烬林/丹灶谷/火光地的哪一个游戏模型，不能按照地理位置臆定。[H05]
+
+**趣闻**：原著的辟水金睛兽原是“坐骑和身份伪装线索”，游戏却让它成为需要玩家独立应战的强大妖王；这是展示“保留名称、改变叙事职能”的好例子。[W060][G05]
 
 ---
 
-### 4.2 Characters and Bosses
+## 7. 第六回｜未竟：花果山与梅山
 
-Recommended origin categories:
+### 7.1 地图和优先标记
 
-```text
-journey-to-the-west
-chinese-mythology
-buddhist
- daoist
-folklore
-game-original
-mixed
-uncertain
+花果山山脚、开放探索区域、水帘洞及最终战；优先卡片：山顶/石卵意象、石猿、大圣残躯、如意金箍棒、大圣遗物、浪波波、仙胞石片、大石敢当、五蕴、二郎显圣真君、四大天王。**隐·梅山**的入口在第三回浮屠塔，网站应以跨章节跳转指向它，而非将它伪装成花果山本地支线洞穴。[G06]
+
+### 7.2 石猴、二郎神与原创叙事
+
+| 地图卡 | 原著出处 | 游戏改编及边界 | 来源 |
+|---|---|---|---|
+| **花果山 / 石猴出世** | 第一回：花果山仙石孕育石猴，发现水帘洞并成为美猴王。 | 游戏“天命人”“大圣残躯”和遗物继承是新叙事，原著没有“孙悟空取经后死去留下最终 Boss”的故事。 | [W001][G06] |
+| **二郎显圣真君** | 第六回玉帝调二郎神与悟空在花果山斗武艺、斗变化。 | 游戏隐·梅山对战借用原著人物与母题，但事件背景、台词和最终结局是原创续写。 | [W006][G06] |
+| **梅山六兄弟** | 原著第六回出现真君身边的四太尉、二将军；文本中列康、张、姚、李、郭申、直健等名。 | **不得与《封神演义》梅山七怪的七个动物妖怪混为同一套原著名单**。游戏各隐藏角色的影射要各自举证。 | [W006][F01][G06] |
+| **梅山七怪** | 《封神演义》中有袁洪、戴礼、金大升、朱子真、吴龙、常昊、杨显等角色。 | 与《西游记》梅山六兄弟并列对比时，清楚标注**不同作品**；不能写“《西游记》直接记载七怪身份”。 | [F01] |
+| **大石敢当 / 浪波波** | 本库没有找到它们在《西游记》中同名同故事的直接段落。 | 其任务与掉落以游戏为准；名称中的石敢当可另做民俗专题。 | [G06] |
+
+### 7.3 五蕴丹与隐藏结局：两条独立任务线
+
+**五蕴相关**：搜集色、受、想、行、识五蕴；第六回大石敢当相关战斗是获得识蕴的环节；集齐后可去找戌狗炼制五蕴丹。**不能写“使用五蕴丹触发大石敢当”**。[G06]
+
+**隐·梅山相关**：前往并完成第一、二、四、五回相关隐藏区域；完成第三回翠笠武师/瓜田任务；返回第三回浮屠塔满足相应剧情条件后进入隐·梅山，完成二郎神相关战斗，再推进最终战。**五蕴丹、全珍玩、全部法宝并非本库列出的额外必要条件**。具体顺序和不同版本的重返路径，以游戏实际触发为准。[G06]
+
+**剧透处理建议**：地图默认仅显示“梅山隐藏故事”提示；用户主动展开后才展示触发路线及结局差异，避免影响初次游玩者。
+
+### 7.4 音乐与配音资料
+
+用户资料提到许镜清、翟锦彦、黄风起兮及若干配音人员。**目前本库没有逐条收齐官方专辑署名、授权文件及主创采访的稳定网址**，故不把“许镜清参与全部原创配乐”“所有片尾歌词均由某一人作词”“某种地方说唱传承人姓名及身份”等写成已核实 Fun Fact。研究 agent 应优先收集官方 OST 曲目版权页、主创采访或演员/音乐家本人公开资料，再逐项补入；“经典电视剧音乐获授权使用”与“参与本作原创配乐”是两种不同关系。
+
+---
+
+## 8. 真实世界文化遗产研究专区
+
+### 8.1 可以优先制作的三张现实对照卡
+
+| 现实地点 / 文物 | 能公开描述的联系 | 必须避免的表述 | 来源 |
+|---|---|---|---|
+| **山西晋城泽州府城玉皇庙·二十八宿彩塑** | 晋城市政府公开把游戏亢金龙形象与庙内亢金龙泥塑并列对照，并介绍制作团队在晋城采风/建模。建议展示同角度的脸部、姿态或动物属性对照。 | “整个小雷音寺就是玉皇庙扫描复制”“所有二十八宿都作为同章 Boss 出场”。 | [H01][H04] |
+| **山西临汾隰县小西天·大雄宝殿悬塑** | 央视新闻转载报道及政府系统文章把当地悬塑和游戏“既见未来，为何不拜”画面对应；可介绍“悬塑”与层叠天宫楼阁视觉。 | “第三回所有寺庙均由小西天逐一复制”“已有完整证据证实全部构件被扫描”。 | [H02][H03] |
+| **山西高平铁佛寺·二十四诸天彩塑** | 晋城市政府介绍杨奇对铁佛寺诸天彩塑的实地采风；可讲彩塑服饰、神将表现与美术灵感。 | 未拿出逐点证据前，不将某尊彩塑与游戏某 Boss 的具体脸部模型写成确定一一映射。 | [H04][H05] |
+
+### 8.2 地理清单：**已进入公开取景讨论 ≠ 已完成本网站逐点验证**
+
+根据2024年山西地方政府报道，**“国内36处取景地，山西27处”是当时公开披露资料的“不完全统计”**，并非游戏全部资产的永久总数，也不能证明名单内每座建筑都对应本网站特定回目。[H01][H05]
+
+| 地区 | 后续值得调查的地点（仅作研究索引） |
+|---|---|
+| **大同** | 云冈石窟、华严寺、善化寺、悬空寺、永安寺、觉山寺；逐处核对行政区与具体游戏画面 |
+| **朔州** | 应县木塔、崇福寺 |
+| **忻州** | 佛光寺、南禅寺、金阁寺等 |
+| **晋中** | 镇国寺、双林寺 |
+| **临汾** | 隰县小西天、广胜寺 |
+| **长治** | 观音堂、崇庆寺 |
+| **晋城** | 府城玉皇庙、高平铁佛寺、西溪二仙庙 |
+| **运城** | 鹳雀楼、永乐宫、关帝庙 |
+| **山西以外** | 重庆大足石刻、陕西西安水陆庵、四川安岳相关石刻、浙江相关古建、山东灵岩寺等；来源、具体模型、名称及行政区逐一核查 |
+
+**提示**：这是研究入口而非“本网站确认已使用的全部取景表”。例如某个地区的真实古建被列入相关宣传，尚不能据此断言它来自第几回；也不据此推断某个道观/佛头必定取自该处。[H05][H06]
+
+### 8.3 现实取景记录必须回答的五个问题
+
+1. **现实对象是什么？** 写全名、所在省市县、若有则写具体殿宇/塑像/壁画，避免整寺与某尊雕塑混称。
+2. **游戏对象是什么？** 精确到章节、地图点、建筑部件或人物，不只写“大量游戏画面”。
+3. **关系类型是什么？** `制作团队采风` / `实景扫描取模` / `文博方公开确认视觉关联` / `媒体对照` / `仅外形相似`。
+4. **证据说到了哪一步？** 政府报道提及“取景”，不自动推导“1:1扫描整个模型”；媒体对比不是开发团队原始模型文件。
+5. **图片是否可用？** 网页内容的“引用链接”并不代表该网页照片可任意下载放到网站；向图片/版权 agent 核对许可，并保存摄影者、机构、授权状况。
+
+---
+
+## 9. 跨章节知识关系：网站可以做的专题
+
+| 专题 | 连接的地图点 | 能得到的研究内容 | 引用 |
+|---|---|---|---|
+| **四渎龙** | 第一回赤髯龙、其他章节的四渎龙、第三回青背龙和小骊龙 | 第四十三回泾河龙王九子的排序与江河淮济；原著亲缘关系与游戏独立 Boss 的差异 | [W043][G01][G03] |
+| **火与辟火罩** | 第一回观音禅院、第五回火焰山 | 原著辟火罩的救人功能与游戏的法宝用途；不要混入不存在的“五法宝”系统 | [W016][W059][G01][G05] |
+| **黄眉—弥勒—小西天** | 第三回小雷音寺、瓜田、浮屠塔 | 原著“假佛寺”故事与游戏人物命运、佛教视觉艺术之间的对照 | [W065][W066][G03][H02] |
+| **昴日星官—蝎子精—百眼魔君** | 第四回毒敌大王、晦月魔君、绣花针、百眼魔君 | 原著第五十五与七十三回的关联，及游戏如何补写复仇关系 | [W055][W073][G04] |
+| **牛魔王一家** | 第五回红孩儿、铁扇公主、牛魔王、芭蕉扇、璧水金睛兽 | 第四十—四十二、五十九—六十一回与游戏后西游家族故事对比 | [W040][W042][W059][W060][W061] |
+| **二郎神与多部经典** | 第一至五回相关隐藏角色、第六回二郎神、第三回隐·梅山入口 | 《西游记》梅山六兄弟、《封神演义》梅山七怪和游戏的可能呼应，必须分源 | [W006][F01][G06] |
+
+---
+
+## 10. 游戏物品与统计：只作附录，不作为文化事实核心
+
+### 10.1 游戏分类必须正确
+
+- **法宝（本篇四件）**：辟火罩、定风珠、绣花针、芭蕉扇。[G01][G02][G04][G05]
+- **法术/奇术**：禁字法（第三回瓜田支线），**不列入四件法宝**。[G03]
+- **剧情器物**：锦襕袈裟、金铙、人种袋等，不能因为在文学中称“宝贝”，就录成可装备的游戏法宝。[W016][W065]
+- **珍玩**：博山炉、吉祥灯、仙胞石片、虎筋绦子等；区分掉落、商店与奖励方式。[G01][G03][G04][G06]
+- **要紧物事**：色/受/想/行/识五蕴及任务物品；五蕴丹是收集任务的结果，不是梅山必要钥匙。[G06]
+
+### 10.2 暂不把下列数字作为最终站内统计
+
+用户稿列出的“武器8把、披挂18套、珍玩37、影神图203、精魄54、葫芦10、酒9、泡酒物27、金丹16、打坐蒲团24”等数据可能采用不同版本/奖励/升级形态/收集口径。**本项目不做全收集率功能时，首页无需显示总数。** 如将来展示，请为每一类别声明“基础游戏或豪华版”“每种形态是否分别计数”“同一周目或多个周目”及最新可核验的清单链接，而不要沿用未校验数字。
+
+---
+
+## 11. 纠错与待考证清单（合并两个旧底稿后的统一口径）
+
+### 11.1 已更正或需要始终遵守的写法
+
+1. 广智、广谋**原著第十六回已有其人**；游戏改编其妖怪造型和生平，不是凭空原创。[W016]
+2. 原著**凌虚子**、游戏**灵虚子**；原著白衣秀士真身为**白花蛇**，不是“百花蛇”。[W017]
+3. 游戏正式物品写**辟火罩**；第十六回原著同样出现辟火罩。[W016][G01]
+4. 黄风岭游戏地名“斯哈哩国”和原著中的“流沙国”**不得直接等同**，人物族谱也不要硬接。[W066][G02]
+5. 第三回五个主要地理阶段，六六村为跨章节画中区域；**禁字法是法术**。[G03]
+6. 寅虎与寅将军只能写“名称及虎文化可能相呼应”，不可当成同一个原著角色。[W013][G03]
+7. 第四回毒敌大王是游戏扩写的雄性蝎妖；原著第五十五回的蝎子精是雌性，原著**没有毒敌大王丈夫故事**。[W055][G04]
+8. 第五回主线包含**丹灶谷**；游戏隐区写**璧水洞**、妖王写**璧水金睛兽**；原著其坐骑名写**辟水金睛兽**。[W060][G05]
+9. 全篇可装备法宝不是“五件”；**五蕴丹不是隐藏结局条件**。[G06]
+10. 《西游记》二郎神身边的**梅山六兄弟**与《封神演义》的**梅山七怪**分别引用，不把二者混为原著同一组人物。[W006][F01]
+
+### 11.2 继续研究但尚不能写入网页的细节
+
+| 待证说法 | 需要找到的材料 | 当前处理 |
+|---|---|---|
+| 观音禅院建筑直接模仿1986年电视剧 | 主创采访/制作分镜或公开对照记录 | 仅描述两者改编了相同原著事件 |
+| 黄风岭“地狼”直接来自《尸子》 | 可靠《尸子》辑本具体出处＋制作团队引用证据 | 古籍同名与官方灵感分开考证 |
+| 蝜蝂在《尔雅》中的特定记载 | 《尔雅》明确篇目、字词与可靠版本 | 只把柳宗元《蝜蝂传》作为已确定的古文研究线索 |
+| 浮屠塔＝应县木塔、极乐谷＝崇福寺 | 精确的游戏画面、建筑构件与直接制作/文博说明 | 列入候选，不建立确定的两点连线 |
+| 紫云山＝安岳茗山寺，火焰山＝运城指定古建 | 开发者/文博/权威媒体对具体场景的直接确认 | 暂不放“已确认取景”图钉 |
+| 3.6% 掉率、扫描微米精度、12 亿面、8K—16K/120fps | 有版本、方法、设备指标的可靠技术资料或游戏数据 | 删去精确数字 |
+| 章节大小“全游戏最大”、全部收集品精确总数 | 统一的测量和版本/统计口径 | 不作为站内结论 |
+| 许镜清参与原创配乐、所有词均某人填写等 | OST 官方署名及授权说明、原始采访 | 不作为已确认制作 Fun Fact |
+| 六回**每个**怪物、宝物、地图坐标 | 对照影神图/实机、分区地图、逐点位校验 | 后续采集；本文件只提供重点候选 |
+
+---
+
+## 12. 可复制到网站的中文资料卡模板
+
+```yaml
+编号: 黑风山-观音禅院-01
+名称: 观音禅院
+类别: 游戏建筑与剧情地点
+章节: 第一回·火照黑云
+游戏位置: 黑风山（具体地图坐标待标记）
+游戏介绍: "游戏中的禅院与金池长老、旧观音禅院及锦襕袈裟的故事相关。"
+原著出处:
+  作品: 西游记
+  回目: 第十六回
+  关系: 原著直接出现
+  内容摘要: "金池长老见袈裟起贪念，弟子设计纵火，黑熊精趁乱盗取袈裟。"
+  原文节选: "需按引用版本逐字核准后补入"
+游戏改编: "游戏将观音禅院事件重构为天命人可探索的地点和隐藏战斗。"
+现实原型:
+  状态: 未核定
+  说明: "不可把同名禅院或其他章节的山西寺院当成已确认原型。"
+趣闻: "原著第十六回还出现广智、广谋与辟火罩。"
+资料来源:
+  - W016
+  - G01
+是否剧透: 否
+素材版权状态: 待核查
+地图坐标: 待定位
 ```
 
-For each character:
-
-- Chinese and English name
-- game category
-- game narrative role
-- game journal/portrait lore when available
-- original novel identity
-- original chapter numbers
-- adaptation differences
-- religious/mythological background if relevant
-- associated real-world iconography
-- related artifact/location/character
-
-Important distinction:
-
-> A detailed biography in the game does not mean the same biography exists in the original novel.
-
-Always separate game lore from novel canon.
+**给 coding agent**：以上 YAML 仅是**中文内容模板，不是强制的数据格式**；实际前端可按照开发 SPEC 用章节 JSON，只需把引用编号解析到文末 URL。网页卡片通常显示“游戏介绍—原著对应—改编差异—现实原型（有据才展示）—趣闻—引用”；地图筛选按地点、人物、器物、古建设置。
 
 ---
 
-### 4.3 Artifacts and Objects
+## 13. 来源目录（公开页面网址，供站内 Citation 使用）
 
-Research only culturally/narratively meaningful objects for the map experience.
+> **引用规则**：原著链接证明的只是“古籍中写了什么”；攻略链接证明的主要是“游戏中怎样走/获得”；政府/文博报道证明的，是报道**明确描述**的现实地点、造型对照、采风或扫描，不能外推到未提及的具体模型。引用前打开链接确认页面未失效。维基文库所展示的《西游记》全文页为便于查阅的在线版本，页面标点、异体字可能与其他整理本不同；其作者署名和历史版本问题请在正式学术引文时依照所采用版本处理。
 
-High-priority examples:
+### 13.1 《西游记》原文
 
-- kasaya / 锦襕袈裟
-- Plantain Fan / 芭蕉扇
-- Golden Cymbals / 金铙
-- Human Seed Bag / 人种袋
-- Jingubang / 如意金箍棒
-- bells
-- relics
-- talismans
-- Buddhist vessels
-- Daoist ritual objects
-- major quest items
+| 编号 | 回目 / 用途 | 网址 |
+|---|---|---|
+| **[W001]** | 第一回：花果山、仙石、石猴、水帘洞 | https://zh.wikisource.org/wiki/西遊記/第001回 |
+| **[W006]** | 第六回：二郎神、梅山六兄弟、斗法 | https://zh.wikisource.org/wiki/西遊記/第006回 |
+| **[W013]** | 第十三回：寅将军与取经早期故事 | https://zh.wikisource.org/wiki/西遊記/第013回 |
+| **[W016]** | 第十六回：观音禅院、广智广谋、金池、辟火罩、袈裟失窃 | https://zh.wikisource.org/wiki/西遊記/第016回 |
+| **[W017]** | 第十七回：凌虚子、白衣秀士、黑熊精归宿 | https://zh.wikisource.org/wiki/西遊記/第017回 |
+| **[W020]** | 第二十回：黄风岭、虎先锋 | https://zh.wikisource.org/wiki/西遊記/第020回 |
+| **[W021]** | 第二十一回：黄风怪、灵吉菩萨 | https://zh.wikisource.org/wiki/西遊記/第021回 |
+| **[W040]** | 第四十回：红孩儿故事起始 | https://zh.wikisource.org/wiki/西遊記/第040回 |
+| **[W042]** | 第四十二回：观音收红孩儿 | https://zh.wikisource.org/wiki/西遊記/第042回 |
+| **[W043]** | 第四十三回：泾河龙王九子与四渎龙 | https://zh.wikisource.org/wiki/西遊記/第043回 |
+| **[W055]** | 第五十五回：毒敌山蝎子精、昴日星官 | https://zh.wikisource.org/wiki/西遊記/第055回 |
+| **[W058]** | 第五十八回：混世四猴、赤尻马猴 | https://zh.wikisource.org/wiki/西遊記/第058回 |
+| **[W059]** | 第五十九回：铁扇公主、火焰山、借芭蕉扇 | https://zh.wikisource.org/wiki/西遊記/第059回 |
+| **[W060]** | 第六十回：牛魔王、辟水金睛兽、再借芭蕉扇 | https://zh.wikisource.org/wiki/西遊記/第060回 |
+| **[W061]** | 第六十一回：牛魔王、三调芭蕉扇 | https://zh.wikisource.org/wiki/西遊記/第061回 |
+| **[W065]** | 第六十五回：小雷音寺、黄眉、金铙、二十八宿 | https://zh.wikisource.org/wiki/西遊記/第065回 |
+| **[W066]** | 第六十六回：黄眉归宿、弥勒；小张太子自述“流沙国”“沙国王” | https://zh.wikisource.org/wiki/西遊記/第066回 |
+| **[W072]** | 第七十二回：盘丝洞七蜘蛛、濯垢泉 | https://zh.wikisource.org/wiki/西遊記/第072回 |
+| **[W073]** | 第七十三回：黄花观、百眼魔君、毗蓝婆、绣花针 | https://zh.wikisource.org/wiki/西遊記/第073回 |
 
-Optional secondary categories:
+### 13.2 其他文学、神话和民俗
 
-- gourds
-- curios
-- important armor sets
-- significant weapons
-- transformations
-- spirits
+| 编号 | 资料 | 网址与限制 |
+|---|---|---|
+| **[F01]** | 《封神演义》原文总入口；用于查找梅山七怪并确定其出场回目 | https://zh.wikisource.org/wiki/封神演義 （请在正式人物卡中补**具体回目**，不要以总入口代替逐项原文证据） |
+| **[L01]** | 柳宗元《蝜蝂传》原文；“遇物即负、负重不止”的寓言 | https://zh.wikisource.org/wiki/蝜蝂傳 （正文页；维基文库注为《全唐文》卷592） |
+| **[L02]** | 李白《代别情人》原文；“风吹绿琴去，曲度紫鸳鸯” | https://zh.wikisource.org/wiki/代別情人 （正文页；维基文库注为《全唐诗》卷184） |
 
-Avoid flooding the map with ordinary consumables and crafting materials.
+### 13.3 游戏机制、剧情位置：**攻略资料，非文学/文物证据**
 
----
+| 编号 | 用途 | 网址 |
+|---|---|---|
+| **[G01]** | 第一回收集/Boss 线索与后续进入隐藏探索的资料入口 | https://www.gamersky.com/handbook/202408/1803178.shtml （《全BOSS打法指南》；具体条目须进一步定位） |
+| **[G02]** | 第二回地图、支线及道具后续核对入口 | https://wiki.biligame.com/wukong/ （社区百科首页；**需要逐条换成具体词条/实机证据**） |
+| **[G03]** | 第三回隐藏区域、六六村、瓜田与禁字法 | https://gl.ali213.net/html/2024-8/1481507.html ；https://www.gamersky.com/handbook/202408/1805206.shtml |
+| **[G04]** | 第四回 Boss / 物品研究入口 | https://www.gamersky.com/handbook/202408/1803178.shtml （总攻略入口；需按每个词条补页） |
+| **[G05]** | 第五回璧水金睛兽等位置与关卡机制 | https://www.gamersky.com/handbook/202409/1816109.shtml |
+| **[G06]** | 梅山触发与第六回结局路线线索 | https://gl.ali213.net/html/2024-8/1481507.html （支线条件依据攻略，建议实机复核） |
 
-### 4.4 Architecture and Visual Culture
+### 13.4 现实文物、场景与制作相关公开资料
 
-Priority subjects:
+| 编号 | 发布方与内容 | 可证明到什么程度 / URL |
+|---|---|---|
+| **[H01]** | 晋城市人民政府转载晋城新闻客户端，2024-08-27：玉皇庙亢金龙彩塑与游戏形象并列对照；“36处、山西27处”为不完全统计。 | https://jcgov.gov.cn/dtxx/jcdt/202408/t20240827_2026026.shtml |
+| **[H02]** | 央视新闻稿（永州新闻网转载），2024-08-22：隰县小西天悬塑与游戏“既见未来，为何不拜”的场景对照。 | https://news.yongzhou.gov.cn/mixmedia/content/WS66c6a02ee4b0005f4ec30d1c.html |
+| **[H03]** | 隰县小西天文化遗产与游戏场景：检察日报稿，检察机关网站转载，2024-08-28。 | https://www.sx.jcy.gov.cn/jcxwlm/mtbb/202408/t20240828_6627169.shtml |
+| **[H04]** | 晋城市人民政府《晋城文物闪耀游戏世界》，2024-08-22：杨奇赴晋城采风，提及铁佛寺二十四诸天、玉皇庙二十八宿及相关建模。 | https://www.jcgov.gov.cn/dtxx/jcdt/202408/t20240822_2024024.shtml |
+| **[H05]** | 高平市人民政府，2024-08-21：公开**不完整**的取景地名单与山西相关统计。 | https://www.sxgp.gov.cn/zjgp/dmgp_423/202408/t20240821_2023289.shtml |
+| **[H06]** | 黑龙江省文旅厅转载展览报道，2025-04：展览中依据陕西蓝田水陆庵实景1:1复刻 3D 打印的悬塑与游戏场景对照。 | https://wlt.hlj.gov.cn/wlt/c114253/202504/c00_31834742.shtml （注意描述的**展览复制品**与游戏原始制作流程不是一回事） |
 
-- Buddhist temples
-- Daoist temples
-- pagodas
-- monastery gates
-- roof forms
-- bracket sets / dougong
-- grottoes
-- hanging sculpture / 悬塑
-- painted clay sculpture / 彩塑
-- guardian figures
-- celestial generals
-- murals
-- cliff carvings
-- stone steles
-- ritual altars
-- furnaces
-- cave-temple environments
-
-For every real-world connection, record whether it is:
-
-- confirmed scanned/modeling reference
-- confirmed filming/reference visit
-- officially noted visual source
-- probable comparison
-- speculative resemblance only
-
----
-
-## 5. High-Priority Real-World Heritage Leads
-
-The following locations have been publicly associated with the game or broader Black Myth heritage-location discussion and deserve verification from authoritative sources before use.
-
-### Shanxi
-
-- Yungang Grottoes / 云冈石窟
-- Huayan Temple / 华严寺
-- Hanging Temple / 悬空寺
-- Shanhua Temple / 善化寺
-- Jueshan Temple / 觉山寺
-- Yong’an Temple / 永安寺
-- Foguang Temple / 佛光寺
-- Nanchan Temple / 南禅寺
-- Jinge Temple / 金阁寺
-- Yingxian Wooden Pagoda / 应县木塔
-- Chongfu Temple / 崇福寺
-- Zhenguo Temple, Pingyao / 平遥镇国寺
-- Shuanglin Temple / 双林寺
-- Xiaoxitian, Xixian / 隰县小西天
-- Guangsheng Temple / 广胜寺
-- Tiefosi / 铁佛寺
-- Yuhuang Temple, Zezhou / 泽州玉皇庙
-- Xixi Erxian Temple / 西溪二仙庙
-
-Reported figures from Shanxi official channels have stated that a substantial majority of publicly disclosed Chinese reference locations are in Shanxi; exact counts should always be cited with the source and described as incomplete where the source itself says so.
+**来源有效性说明**：上表中的古籍正文及 H01—H06 核心公开页经过本轮检索/打开确认；G01—G06 部分为**攻略入口**，不代表页面已为本文件列出的每一个掉落点、人物故事或任务步骤提供逐项证据。后续内容 agent 若要把某条“已核实·游戏”做成公开地图卡，仍应增加对应的实机画面、具体攻略子页或影神图截图。只有网址列表不等于每一句都得到来源支持。
 
 ---
 
-## 6. Particularly Strong Cultural Case Studies
+## 14. 给后续研究 agent 的交付清单
 
-### 6.1 Xiaoxitian / 隰县小西天
+每完成一章，提交一个“已核实可发布标记表”，每行包含：**地图标记名、类别、游戏区域、游戏事实及其来源、原著直接对应或明确无对应、原著回目和原文短摘、游戏改编说明、文化背景来源、现实原型状态及其对应证据、趣闻及其来源、素材版权状态、剧透级别、地图坐标是否已实机标定**。没有证据的格子填“待考证/无直接对应”，不得自动补成确定表述。
 
-Why it matters:
+优先制作顺序：① 第一回观音禅院—广智/广谋—黑熊精—辟火罩的原著事件链；② 第三回亢金龙—府城玉皇庙，黄眉—隰县小西天的两组现实对照；③ 第四回昴日星官—毒敌大王—绣花针跨回目关系；④ 第五回辟水金睛兽原著坐骑与游戏妖王对照；⑤ 第六回《西游记》梅山六兄弟与《封神演义》梅山七怪的分源对照。
 
-- iconic hanging-sculpture environment
-- dense suspended Buddhist sculptural composition
-- commonly discussed in relation to the game’s Buddhist visual world
-
-Research topics:
-
-- temple history
-- Ming/Qing period development
-- suspended sculpture technique
-- number and arrangement of figures
-- celestial architecture represented in sculpture
-- official confirmation of game connection if available
-
----
-
-### 6.2 Yuhuang Temple / 府城玉皇庙
-
-Why it matters:
-
-- Twenty-Eight Mansion painted sculptures
-- especially relevant to Kang-Jin / celestial-star imagery
-
-Research topics:
-
-- temple history
-- dating
-- artistic style
-- Twenty-Eight Mansions
-- animal-symbol associations
-- which game characters/assets were publicly linked to scans or modeling
-
----
-
-### 6.3 Tiefosi / 高平铁佛寺
-
-Why it matters:
-
-- Twenty-Four Devas / guardian sculptures
-- highly expressive painted sculpture tradition
-- published discussions have linked specific visual motifs to game designs
-
-Research topics:
-
-- hall history
-- sculptural program
-- guardian iconography
-- confirmed visual borrowing details
-
----
-
-## 7. Journey to the West Citation Strategy
-
-### 7.1 Minimum citation fields
-
-Each literary reference should record:
-
-- work title: 西游记 / *Journey to the West*
-- chapter number
-- chapter title
-- original Chinese excerpt where appropriate
-- source URL
-- edition/source platform
-
-### 7.2 Preferred source hierarchy
-
-1. reliable digital edition of the Chinese text
-2. established publisher edition
-3. academic edition
-4. Wikisource as convenient public-access text source
-
-Modern English translations may be copyrighted; do not reproduce long passages without permission.
-
-### 7.3 Excerpt length
-
-Use short excerpts only.
-
-The purpose is to show a literary connection, not reproduce the novel.
-
----
-
-## 8. Source Quality Hierarchy
-
-### Level A — Primary / authoritative
-
-- game itself
-- in-game journal / portrait / codex text
-- Game Science interviews or official publications
-- original *Journey to the West* text
-- museum websites
-- heritage management institutions
-- government cultural-heritage pages
-- official site documentation
-
-### Level B — Scholarly / institutional
-
-- academic journals
-- university publications
-- museum scholarship
-- reputable books and exhibition catalogues
-
-### Level C — Professional reference
-
-- established game journalism
-- specialist architecture/culture publications
-- high-quality guide sites used for location discovery
-
-### Level D — Community
-
-- fandom wiki
-- Bilibili wiki
-- Reddit
-- forums
-- fan videos
-
-Community sources may be used to discover leads, but should not be the only basis for historical or heritage claims.
-
----
-
-## 9. Research Confidence Labels
-
-Every real-world visual-reference claim should use one of these labels.
-
-### Confirmed
-
-Use when there is a direct statement from:
-
-- Game Science
-- developer interview
-- government heritage body
-- museum/site authority
-- documented scanning/modeling report
-
-### High Confidence
-
-Multiple strong independent sources support the same connection, but no direct developer statement is available.
-
-### Probable
-
-Strong visual/contextual evidence exists but documentation is incomplete.
-
-### Speculative
-
-Community comparison or visual resemblance only.
-
-### Unknown
-
-No reliable conclusion yet.
-
----
-
-## 10. Recommended Marker Content Template
-
-Each map marker should ideally contain research answering the following.
-
-### Identity
-
-- Chinese name
-- English name
-- category
-- chapter
-- exact map point
-
-### In the Game
-
-- what it is
-- what happens here
-- why it matters
-- related characters/objects
-
-### From Journey to the West
-
-- source chapter(s)
-- original role
-- short excerpt
-- game adaptation difference
-
-### In Chinese Culture
-
-Where relevant:
-
-- Buddhist significance
-- Daoist significance
-- mythology
-- folk belief
-- symbolic meaning
-- art-historical tradition
-
-### In the Real World
-
-- site/artwork name
-- location
-- date/period
-- what visual feature connects it to the game
-- confidence
-- evidence source
-
-### Fun Facts
-
-Examples:
-
-- unusual sculptural technique
-- hidden iconographic meaning
-- naming origin
-- animal/celestial association
-- architectural age
-- rare surviving example
-- behind-the-scenes scan/model fact
-
-### Sources
-
-Every factual research claim should map to one or more source IDs.
-
----
-
-## 11. Content Style
-
-Target audience:
-
-- students
-- gamers curious about the novel
-- people interested in Chinese culture
-- international viewers with limited background knowledge
-
-Writing should be:
-
-- concise
-- clear
-- accurate
-- culturally respectful
-- visually readable
-- source-backed
-
-Avoid:
-
-- excessive academic jargon
-- unmarked fan theories
-- “this definitely means…” interpretive overclaiming
-- strategy-guide language
-- long plot summaries
-
----
-
-## 12. Important Knowledge Distinctions
-
-### Game original vs. original novel
-
-Examples of concepts that require careful labeling:
-
-- Destined One / 天命人 — game-original framing
-- Great Sage’s Broken Shell / 大圣残躯 — game narrative invention
-- many expanded character biographies — game-specific
-- post-pilgrimage political/religious interpretation — game-specific reinterpretation
-
-### Direct novel characters
-
-Examples:
-
-- Black Bear Guai
-- Elder Jinchi
-- Yellow Wind Demon
-- Tiger Vanguard
-- Yellowbrow
-- Seven Spider Demons
-- Hundred-Eyed Demon Lord
-- Princess Iron Fan
-- Bull Demon King
-- Red Boy
-- Erlang Shen
-
-### Traditional systems used or expanded by the game
-
-Examples:
-
-- Twenty-Eight Mansions
-- Four Heavenly Kings
-- Buddhist guardian deities
-- Daoist celestial bureaucracy
-- temple sculpture programs
-- Chinese astrology
-
-These traditions may predate *Journey to the West* and should not automatically be described as originating from the novel.
-
----
-
-## 13. Research Deliverables by Chapter
-
-For each chapter, the content-research agent should produce:
-
-1. chapter overview
-2. map-location list
-3. 8–25 high-value map markers
-4. key characters/bosses
-5. key artifacts
-6. key architecture
-7. related *Journey to the West* chapters
-8. short literary excerpts
-9. adaptation notes
-10. real-world reference candidates
-11. verified real-world references
-12. fun facts
-13. source list
-14. unresolved research questions
-
-The target should be quality and clarity, not exhaustive collection of every enemy or inventory item.
-
----
-
-## 14. Recommended First Research Milestone
-
-Fully complete **Chapter 1 — Black Wind Mountain** before researching all six chapters at equal depth.
-
-Suggested first-pass marker set:
-
-- Black Wind Mountain
-- Forest of Wolves
-- Bamboo Grove
-- Guanyin Temple
-- Black Wind Cave
-- Elder Jinchi
-- Black Bear Guai
-- Lingxuzi
-- Guangzhi
-- Guangmou
-- Whiteclad Noble
-- kasaya / 袈裟
-- three-bell mystery/ritual if culturally useful
-- relevant Buddhist visual or real-world architecture connections
-
-This chapter should become the template for all later content.
+**发布门槛**：对每一条“某游戏地点/怪物的实景原型就是某寺庙/某彩塑”的断言，研究 agent 必须在相应卡片中附**具体证据页面 URL**，明确该资料是否真的说到了该游戏对象。找不到证据就保留“不确定”，也不要为了凑齐每回的实地取景强行关联。
