@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import type { Chapter, Marker } from "../types/schema";
 import { media, chapters } from "../data";
+const MAP_WIDTH = 1400;
+const MAP_HEIGHT = 820;
 export function MapSymbol({ type }: { type: string }) {
   return (
     <svg
@@ -42,6 +44,7 @@ export function InteractiveMap({
   const [scale, setScale] = useState(1);
   const [height, setHeight] = useState(610);
   const [reduced, setReduced] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   useEffect(() => {
     if (!host.current) return;
     setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -52,33 +55,61 @@ export function InteractiveMap({
     observer.observe(host.current);
     return () => observer.disconnect();
   }, []);
+  useEffect(() => {
+    if (!expanded) return;
+    const old = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const close = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setExpanded(false);
+    };
+    window.addEventListener("keydown", close);
+    return () => {
+      document.body.style.overflow = old;
+      window.removeEventListener("keydown", close);
+    };
+  }, [expanded]);
   const initialScale =
     width < 700
-      ? 0.68
+      ? 0.62
       : Math.max(
           0.5,
-          Math.min((width - 35) / 1200, (height - 100) / 700, 0.94),
+          Math.min(
+            (width - 35) / MAP_WIDTH,
+            (height - 90) / MAP_HEIGHT,
+            expanded ? 1.18 : 1.02,
+          ),
         );
   const positionFor = (id: string) =>
     chapter.markers.find((m) => m.id === id)?.position ??
     chapter.anchors.find((a) => a.id === id)!.position;
   return (
-    <div className="map-frame" ref={host}>
+    <div
+      className={`map-frame${expanded ? " is-expanded" : ""}`}
+      ref={host}
+    >
       <div className="map-topline">
-        <span>拖拽移图 · 点选印记</span>
-        <span>原创路线插画</span>
+        <span>按住拖拽 · 滚轮缩放 · 点选印记</span>
+        <button
+          className="map-expand-toggle"
+          type="button"
+          onClick={() => setExpanded((value) => !value)}
+          aria-label={expanded ? "退出大图模式" : "放大地图"}
+          aria-pressed={expanded}
+        >
+          {expanded ? "退出大图" : "展开大图"}
+        </button>
       </div>
       <TransformWrapper
-        key={initialScale}
+        key={`${initialScale}-${expanded}`}
         initialScale={initialScale}
-        minScale={0.35}
-        maxScale={2.5}
+        minScale={0.3}
+        maxScale={3.2}
         centerOnInit={width >= 700}
         initialPositionX={width < 700 ? 24 : 0}
         initialPositionY={width < 700 ? (height - 700 * initialScale) / 2 : 0}
         limitToBounds={false}
-        wheel={{ activationKeys: ["Control", "Meta"], step: 0.12 }}
-        panning={{ excluded: ["map-marker"] }}
+        wheel={{ step: 0.1 }}
+        panning={{ excluded: ["map-marker", "map-expand-toggle"] }}
         doubleClick={{ disabled: true }}
         onTransformed={(_, state) => setScale(state.scale)}
       >
@@ -217,7 +248,7 @@ export function InteractiveMap({
       </TransformWrapper>
       <div className="map-bottomline">
         <span>{chapter.mapNoticeZh}</span>
-        <span>拖拽移动 · 双指缩放</span>
+        <span>鼠标滚轮 / 双指缩放 · Esc 退出大图</span>
       </div>
     </div>
   );

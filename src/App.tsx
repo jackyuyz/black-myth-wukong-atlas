@@ -206,9 +206,9 @@ function Home() {
               <h2>一回一境，一境一问。</h2>
             </div>
             <p>
-              第一回开放路线探索
+              六回均可拖拽探索
               <br />
-              其余五回可先读文化选篇
+              左右滑动切换山川
             </p>
           </div>
           <ChapterCards />
@@ -244,7 +244,7 @@ function ChaptersPage() {
       <p className="eyebrow">展卷 · 六回山川</p>
       <h1>选择一回，循迹而行。</h1>
       <p className="page-lede">
-        第一回可在路线示意图中探索。其余五回先以文化选读开启，待路线核验完成后展开地图。
+        六回均已展开路线示意图。可拖拽、缩放地图，从一个地点、人物或器物开始阅读。
       </p>
       <ChapterCards />
       <LayerGuide />
@@ -302,10 +302,77 @@ const filters = [
   ["architecture", "建筑"],
   ["story", "故事"],
 ];
+function ChapterRail({ chapter }: { chapter: Chapter }) {
+  const rail = useRef<HTMLDivElement>(null);
+  const previous = chapters[chapter.order - 2];
+  const next = chapters[chapter.order];
+  useEffect(() => {
+    rail.current
+      ?.querySelector<HTMLAnchorElement>("a.active")
+      ?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  }, [chapter.id]);
+  return (
+    <div className="chapter-rail-shell">
+      {previous ? (
+        <Link
+          className="chapter-rail-arrow"
+          to={`/chapter/${previous.id}`}
+          state={{ chapterDirection: "previous" }}
+          aria-label={`上一回：${previous.regionZh}`}
+        >
+          ‹
+        </Link>
+      ) : (
+        <span className="chapter-rail-arrow disabled" aria-hidden="true">
+          ‹
+        </span>
+      )}
+      <div className="chapter-tabs" aria-label="章节选择" ref={rail}>
+        {chapters.map((c) => (
+          <NavLink
+            key={c.id}
+            to={`/chapter/${c.id}`}
+            state={{
+              chapterDirection:
+                c.order === chapter.order
+                  ? "current"
+                  : c.order > chapter.order
+                    ? "next"
+                    : "previous",
+            }}
+          >
+            <span>第{c.numeralZh}回</span>
+            {c.regionZh}
+          </NavLink>
+        ))}
+      </div>
+      {next ? (
+        <Link
+          className="chapter-rail-arrow"
+          to={`/chapter/${next.id}`}
+          state={{ chapterDirection: "next" }}
+          aria-label={`下一回：${next.regionZh}`}
+        >
+          ›
+        </Link>
+      ) : (
+        <span className="chapter-rail-arrow disabled" aria-hidden="true">
+          ›
+        </span>
+      )}
+    </div>
+  );
+}
 function ChapterPage({ chapter }: { chapter: Chapter }) {
+  const location = useLocation();
   const [category, setCategory] = useState("all");
   const [layer, setLayer] = useState("all");
   const [selected, setSelected] = useState<Marker | null>(null);
+  const previous = chapters[chapter.order - 2];
+  const next = chapters[chapter.order];
+  const direction =
+    (location.state as { chapterDirection?: string } | null)
+      ?.chapterDirection ?? "current";
   const visible = chapter.markers.filter(
     (m) =>
       (category === "all" ||
@@ -316,15 +383,11 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
   );
   const mapped = chapter.topologyStatus !== "unverified";
   return (
-    <main id="main-content" className="chapter-page">
-      <div className="chapter-tabs" aria-label="章节选择">
-        {chapters.map((c) => (
-          <NavLink key={c.id} to={`/chapter/${c.id}`}>
-            <span>第{c.numeralZh}回</span>
-            {c.regionZh}
-          </NavLink>
-        ))}
-      </div>
+    <main
+      id="main-content"
+      className={`chapter-page chapter-motion-${direction}`}
+    >
+      <ChapterRail chapter={chapter} />
       <div className="chapter-heading">
         <div>
           <p className="eyebrow">
@@ -335,9 +398,36 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
             <span>{chapter.themeZh}</span>
           </h1>
         </div>
-        <Link to="/chapters" className="text-link">
-          返回六回山川 ↗
-        </Link>
+        <div className="chapter-heading-actions">
+          <nav className="chapter-stepper" aria-label="切换前后回目">
+            {previous ? (
+              <Link
+                to={`/chapter/${previous.id}`}
+                state={{ chapterDirection: "previous" }}
+                aria-label={`上一回：${previous.regionZh}`}
+              >
+                ←
+              </Link>
+            ) : (
+              <span aria-hidden="true">—</span>
+            )}
+            <small>{chapter.order} / 6</small>
+            {next ? (
+              <Link
+                to={`/chapter/${next.id}`}
+                state={{ chapterDirection: "next" }}
+                aria-label={`下一回：${next.regionZh}`}
+              >
+                →
+              </Link>
+            ) : (
+              <span aria-hidden="true">—</span>
+            )}
+          </nav>
+          <Link to="/chapters" className="text-link">
+            返回六回山川 ↗
+          </Link>
+        </div>
       </div>
       <div className={mapped ? "exploration-layout" : "overview-layout"}>
         <aside className="explore-sidebar">
@@ -478,14 +568,20 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
       </section>
       <nav className="next-chapter page-container" aria-label="前后回目">
         {chapter.order > 1 ? (
-          <Link to={`/chapter/${chapters[chapter.order - 2].id}`}>
+          <Link
+            to={`/chapter/${chapters[chapter.order - 2].id}`}
+            state={{ chapterDirection: "previous" }}
+          >
             ← 上一回 · {chapters[chapter.order - 2].regionZh}
           </Link>
         ) : (
           <Link to="/">← 回到首页</Link>
         )}
         {chapter.order < 6 && (
-          <Link to={`/chapter/${chapters[chapter.order].id}`}>
+          <Link
+            to={`/chapter/${chapters[chapter.order].id}`}
+            state={{ chapterDirection: "next" }}
+          >
             下一回 · {chapters[chapter.order].regionZh} →
           </Link>
         )}
@@ -538,7 +634,7 @@ function About() {
       </ul>
       <h2>这幅图怎样阅读</h2>
       <p>
-        第一回使用路线示意图，呈现主要区域的先后与部分可选关联。它不是地理比例图，也不是官方地图。其他章节在路线核验完成前提供意境总览和文化选读。
+        六回均使用路线示意图，呈现主要区域的先后与部分可选关联。它们不是地理比例图，也不是官方地图；可在图中拖拽、缩放并点选文化印记。
       </p>
       <p>
         文化卡片中的“影神图”指游戏内介绍角色故事的资料系统。即使来自影神图，也应归于游戏设定，不能自动当作小说原文。

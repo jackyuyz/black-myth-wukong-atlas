@@ -602,24 +602,53 @@ small {
 .standalone .layer-guide {
   margin-top: 60px;
 }
-.chapter-tabs {
-  padding: 0 4.5%;
-  display: flex;
+.chapter-rail-shell {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  align-items: stretch;
   border-bottom: 1px solid var(--line);
+  background: #121813;
+}
+.chapter-rail-arrow {
+  display: grid;
+  place-items: center;
+  border-inline: 1px solid var(--line);
+  color: #d8c498;
+  font: 26px/1 var(--serif);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.chapter-rail-arrow:hover {
+  background: #c3ad7c10;
+  color: #fff0cf;
+}
+.chapter-rail-arrow.disabled {
+  color: #777867;
+  opacity: 0.35;
+}
+.chapter-tabs {
+  display: flex;
   overflow-x: auto;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-inline: contain;
+}
+.chapter-tabs::-webkit-scrollbar {
+  display: none;
 }
 .chapter-tabs a {
   display: flex;
   gap: 14px;
-  flex: 1;
-  min-width: 160px;
+  flex: 0 0 clamp(190px, 17vw, 245px);
   justify-content: center;
   padding: 19px 12px;
   font: 16px var(--serif);
   color: #acae9e;
   border-right: 1px solid var(--line);
   white-space: nowrap;
+  scroll-snap-align: center;
 }
 .chapter-tabs a:first-child {
   border-left: 1px solid var(--line);
@@ -642,6 +671,35 @@ small {
   justify-content: space-between;
   align-items: center;
 }
+.chapter-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.chapter-stepper {
+  display: grid;
+  grid-template-columns: 36px auto 36px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: #1a211a;
+}
+.chapter-stepper a,
+.chapter-stepper > span {
+  display: grid;
+  place-items: center;
+  height: 36px;
+  font-size: 16px;
+}
+.chapter-stepper a:hover {
+  background: #c3ad7c12;
+}
+.chapter-stepper small {
+  min-width: 48px;
+  text-align: center;
+  color: #b9aa84;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
 .chapter-heading h1 {
   font-size: 43px;
   letter-spacing: 5px;
@@ -656,8 +714,8 @@ small {
 .exploration-layout,
 .overview-layout {
   display: grid;
-  grid-template-columns: 245px minmax(0, 1fr);
-  margin: 0 3%;
+  grid-template-columns: 230px minmax(0, 1fr);
+  margin: 0 1.5%;
   border: 1px solid var(--line);
 }
 .explore-sidebar {
@@ -724,7 +782,7 @@ small {
   padding: 17px 0 10px;
 }
 .marker-list {
-  max-height: 265px;
+  max-height: clamp(285px, calc(72vh - 310px), 510px);
   overflow: auto;
   scrollbar-color: #60664a #1b221a;
   scrollbar-width: thin;
@@ -766,10 +824,19 @@ small {
   background: #18231b;
 }
 .map-frame {
-  height: 610px;
+  height: clamp(680px, 72vh, 900px);
   position: relative;
   background: #1a251c;
   overflow: hidden;
+  box-shadow: inset 0 0 0 1px #ffffff08;
+}
+.map-frame.is-expanded {
+  position: fixed;
+  inset: 12px;
+  z-index: 80;
+  height: auto;
+  border: 1px solid #bca36e66;
+  box-shadow: 0 30px 100px #000b;
 }
 .map-topline,
 .map-bottomline {
@@ -791,6 +858,18 @@ small {
   top: 0;
   border-bottom: 1px solid #ffffff10;
 }
+.map-expand-toggle {
+  pointer-events: auto;
+  border: 0;
+  color: #d7c79e;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 0 3px;
+}
+.map-expand-toggle:hover {
+  color: #fff0cf;
+  background: transparent;
+}
 .map-bottomline {
   bottom: 0;
   border-top: 1px solid #ffffff15;
@@ -801,13 +880,15 @@ small {
   height: 100% !important;
   touch-action: none;
   cursor: grab;
+  user-select: none;
 }
-.map-viewport:active {
+.map-viewport:active,
+.map-viewport[data-grabbing="true"] {
   cursor: grabbing;
 }
 .map-canvas {
-  width: 1200px;
-  height: 700px;
+  width: 1400px;
+  height: 820px;
   position: relative;
   background-size: cover;
   isolation: isolate;
@@ -961,9 +1042,9 @@ small {
   z-index: 2;
 }
 .map-controls button {
-  height: 40px;
-  min-width: 40px;
-  font-size: 18px;
+  height: 44px;
+  min-width: 44px;
+  font-size: 20px;
   border: 0;
 }
 .map-controls button:last-child {
@@ -974,8 +1055,26 @@ small {
 .map-controls > span {
   font-size: 10px;
   color: #b3b99d;
-  min-width: 40px;
+  min-width: 48px;
   text-align: center;
+}
+@keyframes chapter-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+@keyframes chapter-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+}
+.chapter-motion-next {
+  animation: chapter-from-right 0.32s ease-out;
+}
+.chapter-motion-previous {
+  animation: chapter-from-left 0.32s ease-out;
 }
 .route-explanation {
   padding: 12px 20px;
@@ -1398,7 +1497,7 @@ small {
     width: 43%;
   }
   .map-frame {
-    height: 700px;
+    height: min(80vh, 900px);
   }
 }
 @media (max-width: 1100px) {
@@ -1431,21 +1530,21 @@ small {
   }
   .exploration-layout,
   .overview-layout {
-    grid-template-columns: 220px minmax(0, 1fr);
-    margin: 0 2%;
+    grid-template-columns: 210px minmax(0, 1fr);
+    margin: 0 1%;
   }
   .chapter-heading h1 span {
     font-size: 12px;
     margin-left: 16px;
   }
   .map-frame {
-    height: 570px;
+    height: clamp(620px, 70vh, 760px);
   }
   .map-bottomline {
     flex-wrap: wrap;
   }
   .chapter-tabs {
-    padding: 0 2%;
+    padding: 0;
   }
   .chapter-tabs a {
     min-width: 150px;
@@ -1668,6 +1767,7 @@ small {
   }
   .chapter-heading {
     padding: 24px 5%;
+    align-items: flex-start;
   }
   .chapter-heading h1 {
     font-size: 36px;
@@ -1679,10 +1779,27 @@ small {
     font-size: 12px;
     letter-spacing: 1px;
   }
-  .chapter-heading > .text-link {
+  .chapter-heading-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+  }
+  .chapter-heading-actions > .text-link {
     font-size: 10px;
-    align-self: flex-start;
     margin-top: 7px;
+  }
+  .chapter-stepper {
+    grid-template-columns: 34px auto 34px;
+  }
+  .chapter-stepper a,
+  .chapter-stepper > span {
+    height: 34px;
+  }
+  .chapter-rail-shell {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+  }
+  .chapter-rail-arrow {
+    font-size: 23px;
   }
   .chapter-tabs {
     padding: 0;
@@ -1700,7 +1817,7 @@ small {
   .overview-layout {
     display: flex;
     flex-direction: column;
-    margin: 0 3%;
+    margin: 0;
     border: none;
   }
   .map-column {
@@ -1748,7 +1865,11 @@ small {
     padding: 9px 2px;
   }
   .map-frame {
-    height: 480px;
+    height: 620px;
+  }
+  .map-frame.is-expanded {
+    inset: 0;
+    border: 0;
   }
   .map-topline {
     font-size: 9px;
@@ -1930,7 +2051,7 @@ small {
     bottom: 12px;
   }
   .map-frame {
-    height: 560px;
+    height: 620px;
   }
   .marker-label {
     font-size: 22px;
