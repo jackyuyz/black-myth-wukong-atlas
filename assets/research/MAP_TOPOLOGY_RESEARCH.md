@@ -32,7 +32,7 @@
 
 | 来源 | 用途 | 权利处理 |
 |---|---|---|
-| [Steam 官方更新公告](https://store.steampowered.com/news/posts/?enddate=1734142184&feed=steam_community_announcements) | 确认行旅图的加入与黑风山解锁方式 | 只引用文字，不复制公告图片 |
+| [Steam 官方 1.0.13.16669 更新公告](https://store.steampowered.com/news/app/2358720/view/527580578293220145?l=schinese) | 确认行旅图的加入、黑风山解锁方式与后续土地庙购买机制 | 只引用文字；公告头图只有 800×450 且不展示行旅图界面，未收入高质量素材库 |
 | [游民星空第一章路线指引](https://www.gamersky.com/handbook/202412/1858397.shtml) | 核对苍狼林、翠竹林、黑风洞的主线和三口钟顺序 | 第三方路线参考，不复制地图图片 |
 | [Game8 区域地图入口](https://game8.co/games/Black-Myth-Wukong/archives/470912) | 英文区域名与章节范围交叉核对 | 第三方参考，不复制图片 |
 | [PowerPyx 土地庙清单](https://www.powerpyx.com/black-myth-wukong-all-shrines-fast-travel-points/) | 核对土地庙与快速旅行节点 | 第三方参考，不复制图片 |

@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19",
-  "notesZh": "source 条目可以在遵守许可和证据边界的前提下进入页面；link-only 条目只供研究；generated 条目永远不能作为纪实证据。",
+  "updatedAt": "2026-09-20",
+  "notesZh": "source 中已清权利的条目可以在遵守许可和证据边界的前提下进入页面；source/game/official-reference、source/game/community-reference 与 link-only 条目只供研究且必须排除出公开构建；generated 条目永远不能作为纪实证据。",
   "catalogs": {
     "sourceAssets": "assets/research/source-assets.json",
     "localFileInventory": "assets/research/local-file-inventory.json",
+    "gameReferenceAssets": "assets/research/game-reference-assets.json",
+    "communityGameplayAssets": "assets/research/community-gameplay-assets.json",
     "officialGameMediaLinks": "assets/research/official-game-media-links.json",
     "restrictedDocumentaryLinks": "assets/research/restricted-documentary-links.json"
   },

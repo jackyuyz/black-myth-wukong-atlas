@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-20",
   "items": [
     {
       "path": "assets/generated/homepage-atmosphere-hero-v1.png",
@@ -9,6 +9,1118 @@
       "height": 941,
       "bytes": 2500398,
       "sha256": "ccbe04ad9c8e4b2f6a556ac5f792375112f6587da8aa4987f0774f61022796aa"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/destructoid/chapter-1/fireproof-mantle-bell.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 62926,
+      "sha256": "df06c46e64f1f4e9245cde6b49a8f67d7d236656edebab3a2e2da1bff742ceb3"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/destructoid/chapter-1/fireproof-mantle-elder-jinchi.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 96044,
+      "sha256": "3db0b4630c18138bf0bd3bca7ce6171ae68762965c4df82af6b45061d394d810"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/destructoid/chapter-1/fireproof-mantle-overview.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 20566,
+      "sha256": "3f3c86b634428eb0af14aea0483c5daf320e2fd1c1499cd2ab51119337f34033"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/escapist/chapter-1/fireproof-mantle-icon.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 30328,
+      "sha256": "0ed2fa12122671ae9294ddb99360cdd14e2cffca7cf5ac392a46805204b045d0"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/escapist/chapter-1/fireproof-mantle-item.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 75554,
+      "sha256": "5531688582648f549a6dbe1ddf59eada8bcf19584ab179bacbba48781115ff93"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/escapist/chapter-1/wandering-wight-battle.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 85370,
+      "sha256": "e7f17e4aadaf7c53799bb86cc13d7fa28212bec24ef02ec41cebdc7d48018879"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/escapist/chapter-1/wandering-wight-portrait.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 81482,
+      "sha256": "c8e453ebd7120255259d55990d49f2c5125661ae83963e79ff3c95a54e60545e"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/game8/chapter-1/baw-li-guhh-lang-banner.webp",
+      "kind": "research-preview-community-reference",
+      "width": 728,
+      "height": 381,
+      "bytes": 79802,
+      "sha256": "f8038b4af0308f710cae9ce3334ba3b86e0af9dede10eb2f5245c381461d88ce"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/game8/chapter-1/baw-li-guhh-lang-battle.webp",
+      "kind": "research-preview-community-reference",
+      "width": 728,
+      "height": 410,
+      "bytes": 18914,
+      "sha256": "49ff13a1601776049e96dc76a307e28f7b9e6053091f5e16da39da6553bc7db9"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamersky/chapter-1/black-wind-mountain-journeyers-chart.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 1064,
+      "bytes": 273762,
+      "sha256": "bc7fab122056d91c14bc8a77706752a7d2c959e068bafa058e9a60ecf1deb03b"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamersky/chapter-1/secret-ancient-guanyin-temple-chart.webp",
+      "kind": "research-preview-community-reference",
+      "width": 567,
+      "height": 459,
+      "bytes": 62938,
+      "sha256": "05583807b7abb6bf4b333101d26dcad9c5f950873d6ee0f9c98b0d3dccce9bde"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/black-bear-guai.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 119822,
+      "sha256": "d98e441a0641ee7ec450fcb8829dbbc61857000c49a358d0ff5d7275136e56f1"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/black-wind-king.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 42104,
+      "sha256": "857bb6193990c79bbfe869db3a7f4e4654691ca1678896f6f0d8dc6e29f87f5b"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/elder-jinchi.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 136498,
+      "sha256": "fc00d0b9352b9557c54fb0c130b8365bf42747f1e272ac2100dfe4e5a499b591"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/guangzhi.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 103322,
+      "sha256": "a8292d5defdd3695f9fdd21c01dee770c0e7b2a0a6d2991e01f09bc493555e68"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/lingxuzi.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 141892,
+      "sha256": "ee9c7b63b4583cb0b5136b5fe7c6e38a65c5e9364519fe61ef0f9bf3a705710a"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/red-loong.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84058,
+      "sha256": "1abc6fc9bf032c7a0a83f2a25474cc7d0d5bd767ba3025130b5758092c263261"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-1/whiteclad-noble.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 92758,
+      "sha256": "af885dbb0350a1ac6422f28174ffdedd6a11973db669ff924b1bdcd31e548039"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-2/fuban.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 109784,
+      "sha256": "a3d5dcb99fabded07354c9600cc4fdbec7d47aba617fc36389446c3d59e88438"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-2/shigandang.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 209918,
+      "sha256": "d429c2bcaa2621ecf35cb74c2a26fbae41ed1d92999071c7e5f61a3292337832"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-2/stone-vanguard.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 143272,
+      "sha256": "6837cc2e87f203914c37ad7439df97433bfd9d6e9fd2db30d7484bec24417d0b"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-2/tiger-vanguard.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 61238,
+      "sha256": "d8b0e0ca899f9f72f9b66951a06960941d4308d6df2e0a80bc2c6912e0fd6c89"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-2/yellow-robed-squire.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 147426,
+      "sha256": "d69e4bc74656a0f462ad8bc08dba7e2502369ae25774cae0650aa4b47065d5b7"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-2/yellow-wind-sage.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 115608,
+      "sha256": "255d8c359e26a78c845102509eb52d28c4dcc23c608efc07e61cc58d8e0b62d7"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-3/captain-wise-voice.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 96514,
+      "sha256": "a6a84a6b3657153dd502941fc43ee16dc67c79555096882e6d20950ea45acf6e"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-3/kang-jin-loong.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 122370,
+      "sha256": "14ac543080bb512a53768d15acbcf59995e1741bfa64c052df153c0bf99dd53f"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-3/kang-jin-star.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 54848,
+      "sha256": "b875174cc69a5dc658760583e9d92863fab7c6dfa4118213f80ee6609eba9dd9"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-3/macaque-chief.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 63738,
+      "sha256": "553f7bf0745ac995c84c22f6aa077f7f1e55893fffb4f24869922b4ec2f66045"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-3/yellowbrow.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 135578,
+      "sha256": "7226ab19b55383ebae0b4214ecc90d46365bdb99b0b94d341264019da5932510"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/duskveil.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 62920,
+      "sha256": "c658fbfbb1c28232809113ebac2d6f3d475d212c4fce6bcaa23cd1f8ce7b5dde"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/hundred-eyed-daoist-master.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 58312,
+      "sha256": "d3af3824db70fd8ec87f33e1bd50833f475ebd376680d62c0eec8c41e65ea359"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/scorpionlord.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 227852,
+      "sha256": "066f35d757125bf9010dbc0f997a9ca5d5be569cb130089c92f44df9165342b3"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/second-sister.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 192612,
+      "sha256": "f4465bf09a63d0b74ae0282cf8f61f7d8818b794ee0487bfef33b7bec6d69283"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/venom-daoist.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 87562,
+      "sha256": "c93b8d27a9f1d9d4ce1bd7bdf92b98f8cfc3c4a385b63175155d4ca2c7c0f3e3"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/violet-spider.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 180896,
+      "sha256": "9d541e6fe2febc0dffc5ccbfe5e983b2d8747e7403976f705bbfb9ee881e4e0d"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-4/zhu-bajie.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 58716,
+      "sha256": "9623cbded895e93c523a308fdd95aa1edb3387f30ba39dfbf462938179de774c"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-5/bishui-golden-eyed-beast.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 95918,
+      "sha256": "5b8165818bba98c500ba8b934ccb5172bf5e026dca97de4ccb11151a0f1fae39"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-5/five-element-carts.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 124918,
+      "sha256": "ce0a001860ebf7846a09967c5041365c458e6269bb835a0a78c2f2c53ec50ca9"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-5/keeper-of-flaming-mountains.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 47584,
+      "sha256": "badedb0bf0b5efbaeb8f3089b08ddbbadec03aa7f5adf6e6a2bdbb138b2ca037"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-5/pale-axe-stalwart.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 204436,
+      "sha256": "d86aaf61f182f19108bda2d2f5fd35f158fc5a6fa8117de8b4864aed6424074e"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-5/red-boy-yaksha-king.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 101952,
+      "sha256": "2b987d6044a67a36e271618ce9af5049e218991e8143fbacc2dac45d0af4e4fc"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-6/erlang-sacred-divinity.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 133634,
+      "sha256": "9b4764bebbf6d2b5d1560a07e7c84139810a2a5f84eada78d25f05d50a001480"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-6/erlang-transformed.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 48670,
+      "sha256": "5e0a055cf6fc67489eb368e88799c3110376ff32c1e590824ab0b60aa9620e4b"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-6/four-heavenly-kings.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84158,
+      "sha256": "e4f2763c2f8c2d251814b73d2538518af0a2a2979dee0f21fe6b84a6e0e9cfc3"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-6/great-sages-broken-shell.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 53620,
+      "sha256": "66e016c4f5ab0e924dc84e4b642b44be2ee42ee6dd8e98f8d30a3fc7256e2024"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-6/stone-monkey.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 75894,
+      "sha256": "6c4255534c7ddda54157033f703aad2cdadc1ea9970da07702d3056a03497ce1"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamespot/chapter-6/supreme-inspector.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 128952,
+      "sha256": "099814f17091a6ce06dda6b50471f9ab2763c2d4a4f82d80935d0ef2328c37b5"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/gamestar/chapter-1/baw-li-guhh-lang.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 95338,
+      "sha256": "ba03f23e388cfa6aafd666d8ec7cbfc3f4482e74acf91ab1cce6689acbd54741"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/pc-gamer/chapter-1/bell-one.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 90024,
+      "sha256": "32c8b19eff3faded1da4c5bc91b4a3b1f5c607642a4638a7dd6137d8683ff291"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/pc-gamer/chapter-1/bell-three.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84248,
+      "sha256": "b8b35466e1ca2cb8ea5705a1b9eb55b801700426031e371a3663bb098450efef"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/pc-gamer/chapter-1/bell-two.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 133754,
+      "sha256": "df09324629581569a0f690b4afc9c82baf9c4e9e54cc429afbf0b55b2e5e223d"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/pc-gamer/chapter-1/fireproof-mantle-corpse.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 123206,
+      "sha256": "43cf5e0b2515442cc218afa3b598a90968596737eed74263b1abf8ad1b2caab4"
+    },
+    {
+      "path": "assets/optimized/game/community-reference/pc-invasion/chapter-1/guangmou-feature.webp",
+      "kind": "research-preview-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 46178,
+      "sha256": "668281db0ace79e0d707648bd615a1955e1f06b6533609ccf3ce99263b1ed037"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_06.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 73582,
+      "sha256": "cc72cf487ab031fe7fe061f562b6f0bc13770d0f8f52bfb6c358879054d34b5e"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_07.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 108848,
+      "sha256": "1183d7a1e12ea6dea413b6bbe2a1c522a499ebdca2b1272889fe3410cda9b647"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_08.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 117616,
+      "sha256": "69181a31c25e155ebb82f945cf888a74285d4be0ef2584f210c182995a766844"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_09.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 203112,
+      "sha256": "52007a4a21e4ec2effd8214417bfe1685e253efa5892056abed893faf7842f76"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_02.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 98984,
+      "sha256": "707f294055fa3d9c532a2a5f35da61269026159ef9a96f702bf85a84401bb127"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_03.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 170142,
+      "sha256": "7ff09701c9b1fba11e3089ebd65718660aae3c562f5f154b403d866278dd08bb"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_04.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 199744,
+      "sha256": "0b49883bd61d7cecc9785e97554b4ae4b04b0f4eb66aea0ec79eeaf9c9d1e73d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_05.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 139856,
+      "sha256": "0d62c89708fe79c91d4c2d6df496119d7dc4b50d0f303cb7971bb376f3451850"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_06.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 126850,
+      "sha256": "75a95ae40313210186aa327cf7cc3ba95dbdb5bb55bdd18a7a446f5d185cb5f3"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_07.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 160882,
+      "sha256": "fd5381620ce945f53a9bfc3b1da645d610be764642d49e865f55d7921b5708a9"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_08.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 193562,
+      "sha256": "e8d8e00ddd9cbf8221dabba5714f1321676bb816ea57763f04e21bcbe28aaeb9"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_09.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 162432,
+      "sha256": "db1e7e7d11cabcc49176ae80e9d3dc1e2d6e6e0532616e40af23d994cc73b741"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_guishiwei.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 794,
+      "bytes": 86232,
+      "sha256": "dfd759dc82fcc1e5810e2e701913fb2d88f7d69e9152ef6187f8be665b45e02c"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_heifenshan1.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 94522,
+      "sha256": "a33df5496689b6e838f05d991b5671563bce7c46347101adb832a49e9d79671d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_heifenshan2.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 103508,
+      "sha256": "fb191671153f696cd60e356c03b541e8ea6076c8e0d60827ec4a3e22465c6e87"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_heifenshan3.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 120396,
+      "sha256": "84d110f9517490a8224bacc59c945fe06c0912c3096e586de1724df444acc277"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_heifenshan4.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 187770,
+      "sha256": "be618cc3f0f6c97712d210038051aff1c1b422964870c0889e8657bf0ca4fb2b"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_huodaolang.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 1651,
+      "bytes": 210146,
+      "sha256": "3db56e56a0ad2c113964c26f345cfc61af825bd1c888d62fb3fc42752699f25f"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_landscape1.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 110742,
+      "sha256": "b14053f4f30eda0e3d426ec26cf18acea615a2e65750b02a2b84cb343adb8f33"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_landscape2.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 97858,
+      "sha256": "63057c8b8d642e54a99e8e45fec4d7d5d99d3198e927b6f54d1ebdcc8c16f72b"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_landscape3.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 133420,
+      "sha256": "e10ea5fa9d9ab7f86325755b6068c2afe94e5f20236372279b1c0b56d50d722d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_landscape6.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 140798,
+      "sha256": "e05a4673c6bcf6e1ca35155737c85b1343043fc8e8675a145c859f65c2e84eea"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_langren.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 77038,
+      "sha256": "219a14b85acf2abe1bb85260a0a8098fbecf474d3aba3ef3ace7a20783e35fa3"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_lingxudaozhang.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 794,
+      "bytes": 83550,
+      "sha256": "f7f06ccd3138f05d8e71a50f3262603d6aae6097fbed410bbb5163f4554b3855"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_tudi.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 89942,
+      "sha256": "5e7bca2723a3cdce803f20d7f0e613bdfc6ee2b152ed5f9f4fa8498a796f1188"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/early-concepts/Concept_wukong.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 78812,
+      "sha256": "38168ee185ae7f4514565a88d229626bef50c606e6b5661e67b00ff221c2d2cf"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_013.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 98866,
+      "sha256": "c18e9687052c990fb8ba5ed1d6dda906535721678fbb6d62278daf4aefeabc98"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_014.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 121598,
+      "sha256": "71967ec6bd75ec720941abe6fc7fbaef8cb66e50da7060ff73b689924f806644"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_015.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 104434,
+      "sha256": "16f68b7ee7ef752dee7931541e686cfa82d94ca8d6d7077dc46027a427b6abbc"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_016.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 104250,
+      "sha256": "6815636f23d9e6d348b000c526e1b84113a1e83eafd7b49277ba59aa6c6543e5"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_017.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 143288,
+      "sha256": "703ee6403037399e98bf615fdda3df569241c2a3cf2992df12757a0ff36d998a"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_018.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 81984,
+      "sha256": "ebeeed05250d442d73cd6537edfcd7a4b12e3fb2c1daca60f990641047d24773"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_019.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 67714,
+      "sha256": "99f27d67325f7f456780c0099b9fb7b9a88a1a5e93b588510ab19500ed4c56f5"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_020.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 109238,
+      "sha256": "1ac126196fb69bb43f5b78c062b265a20516e1cd0b757064d818a8194ae632ff"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_021.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 132408,
+      "sha256": "3bc6e24c8f99cf57445fd1e9d0c39d6219e16fba3718b494af47cfb2a5abfea5"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_022.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 141898,
+      "sha256": "8ad39f81ea6184af58af3fdee2759c4ced95dc955fa293f24d6b79c8ed430a9b"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_023.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 105138,
+      "sha256": "06735b4eb027af224b842e9b9647718842763d602a740eec795da2e8c07bf51d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_024.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 142680,
+      "sha256": "269a8ca46d414962029929d648a7430a043bc43cbfc519e42e394d470451d583"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_025.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 124918,
+      "sha256": "b8819ba74ee8c34c1c11035033d0eeea134321b045e5e98825f8eac9bba0c597"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_026.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117450,
+      "sha256": "50a1ef663892932e44f89bc13808b08812ef61b1f51ab7e43765ceded69676fa"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_027.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 131498,
+      "sha256": "01006f8a1387f6e0d8b927b10c33d4b75c8ea311003036732122134f823873e8"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_028.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 81572,
+      "sha256": "976504ba6fed79503e12aa3a32ec594f664d185f854d4798bf4293ce188c656f"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_029.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 187368,
+      "sha256": "2a7558f03a454da654fb83f880c849c4f18cff8a441838b940c3ca4910c8a3e7"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_031.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 63878,
+      "sha256": "4a79167c9c52a6f5ffe78eb334aaa694d6fce5faeb41ffbe4f6ac45a2d93c436"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_032.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 35604,
+      "sha256": "b1f86499aaf6e6c23af92de73b6edf37d25eb2e64c5fc1d7667fb766e8735839"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper1.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 58634,
+      "sha256": "cd3f0fe85f6a5055b1e8df262bb3579a9302dae737f756f31b9b7cc34d859c6e"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper10.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 31896,
+      "sha256": "890b7c6cbdd4666e1fe346a14f9e283872698e38c8987a5e85f64366180244a2"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper2.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 82124,
+      "sha256": "1febd19ac742b5f16d3088f1eba41106d7677d061e4f93fd14d06e24fc7f8a34"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper4.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 93910,
+      "sha256": "9000a2d23cfdce15a746debb1824e654ab3c961755b09627f72d67ac1c906fcb"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper5.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 29798,
+      "sha256": "f512a6eeab694bafa15c69491228128251f98f086c315cf0c23677a84cfadd80"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper6.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 69394,
+      "sha256": "3b13a1787a2f8430fed1f89cfff4d5ac56bed0bf7aa380a42fa7330dbcc87ac6"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper7.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 30380,
+      "sha256": "a3e556ecb27f71e91e116e307fa36dda32ef239d990025356256da9203737ba8"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper8.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 88714,
+      "sha256": "5625ddd0f0de78d0fbc37bb4f35b74ba43e3102d2564217ca8c0c552e16d9534"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/Wallpaper9.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 64968,
+      "sha256": "41d3053714007d071b76a8693b8b708c359f3e0541417f805590f417e4dc6c5f"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_011.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 84354,
+      "sha256": "e73d404a065fc9c21894a303b55ea521e3b9e3c9693365037da70b3474a36f0d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_012.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 120476,
+      "sha256": "c5e66001674396e1a488c06a226dd96779e8876f12be7963dd7a1eedd01b5c4b"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_013.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 46554,
+      "sha256": "061cb4273a11255637162a155bbf5123caef02da80f05a1aa141d150724ed6b5"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_014.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 45576,
+      "sha256": "f1c727fc0fcf231bd12e506570cb5304480440556f701045e4b41bfba19ffe70"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_015.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 70420,
+      "sha256": "f3e22413afd870330f2c1b028947d2bff4982117192d21fa9dd3ffec0363cf7c"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_016.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 136862,
+      "sha256": "d141453541ee3949848ae3a2236e6ba5c936bd4bda92bcee0b365907bbaa1b25"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_019.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 95688,
+      "sha256": "c6a5d345d7562413f51bfa425a13930d90fe64d6fdf044ae558211e7e648e85c"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_020.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 97186,
+      "sha256": "127badfce4447ad569defe349720cdddecbe161495503d607c1b76b3787189b5"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_021.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 120416,
+      "sha256": "1e1791079267204df13a4cf4c9470af13bfcac654880ebd37fb3bdfd8cc21852"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_022.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 97142,
+      "sha256": "f0bf84cac740866d0f86ababdde0277c5f8f79a0f6302fbc2ff1501332c7898a"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_024.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 83530,
+      "sha256": "7b6807a3cb5eb79e8b54f4d43175d3310f6b129fda4930d2f5dcc9d97ffdc4e5"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_025.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 33434,
+      "sha256": "4bb5d036c7b13ccf62ee3a790bbe717ef5bb26d89ab26395635e4893b4327453"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_026.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 47066,
+      "sha256": "1b60a459e4d22a8f8236797b9600293c95826add7634b951b28b7a56316ec85d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_027.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 43652,
+      "sha256": "4838902e53abbc4d0e3967172d57e44b1c3d35160b6426b5432e2f8e90187530"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_028.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 76570,
+      "sha256": "9a2013b7bcca0bfe26251f25cc8ff7ab7849a1a5126b20261514d4aeac0e4075"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_029.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 88312,
+      "sha256": "ef17fe63ae353e2aed21e1adbc1a0c6bdbe411e70672d82139e525528952079e"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_030.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 130188,
+      "sha256": "0d36b4e9a3cfc5627426a55e329100b7bf3bb791fdd45e141eabb3f5a8198453"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_031.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 146432,
+      "sha256": "7b2d8a7e0e4c1f8a080d943a7801cb313f094377397ff5d2e179e733485941e6"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_032.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 93146,
+      "sha256": "4e2d667aa13fc4fb4017851de8a19ea8114320395825c818e9e82f76f3d13e20"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_033.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 121996,
+      "sha256": "f4c70a0c8f5322a45e1e32e6cfd653062bbf9c48aec31ffb541ad1b2de1fdf23"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_034.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 99522,
+      "sha256": "bbe9c6ae551e8a6b466c1d83caa09673c4f3cb563d676eaca63cd17a39c59a70"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_035.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 33378,
+      "sha256": "bdc9f0ac510a57687e786163179b39e64bbb65e44e4a23c78f71225144ed943d"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_036.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 85798,
+      "sha256": "7f1292820d6cb5beb5496db30d19fb8ebdc85bfa58036fb3308cdf1f9437718b"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_037.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 141490,
+      "sha256": "1a4dba0b8480361f5a710babbc0fec41370e70fff44a7dae0f0bf8d5bd4056b0"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_038.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 79458,
+      "sha256": "916d1494d6f7aa08909469669b13e9a134355936e0336e30cc06ecf3e2df8470"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_039.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 640,
+      "bytes": 47494,
+      "sha256": "7afa63fa8d507d08da55c596a88457de820a50027e2226a5789acce074a35a3e"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/steam/screenshots/steam-00.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 103840,
+      "sha256": "557eb4706ded3e3b2461e93ec96b1a65bd6e2593d5952a4d355fcd980748a4f7"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/steam/screenshots/steam-01.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84010,
+      "sha256": "ab07b1984a2b9c42520043ff5925595dce084668532bbb58afb5f853f6e5210f"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/steam/screenshots/steam-02.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 207592,
+      "sha256": "d7ca3bf46d1dfaf295f5197caa88a91c41ba5e9b28621965081b36dafbced140"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/steam/screenshots/steam-03.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 97206,
+      "sha256": "30ec56417601d9a0b7f4740111d7fa5db29540e718c8f07358b86522b5aef2e0"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/steam/screenshots/steam-04.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 53174,
+      "sha256": "b5da82d40c431035174757b3625046183334b97a096625548c1f6fdf8b6e92f1"
+    },
+    {
+      "path": "assets/optimized/game/official-reference/steam/screenshots/steam-05.webp",
+      "kind": "research-preview-official-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 83764,
+      "sha256": "f9dba79c0a5d9317c70bbe2bfd083f51eddcdc69403381cf043cc88293b89eaa"
     },
     {
       "path": "assets/optimized/generated/homepage-atmosphere-hero-v1.webp",
@@ -233,6 +1345,1118 @@
       "height": 1757,
       "bytes": 393386,
       "sha256": "33bff6572300c323f3336adc6784df0ed055999c3be47c8b95127c3aaeffe98d"
+    },
+    {
+      "path": "assets/source/game/community-reference/destructoid/chapter-1/fireproof-mantle-bell.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 97473,
+      "sha256": "08e7672e7b4da3a88e607c4d986df185a9df4fb5cd95692c2d78430b81b583e2"
+    },
+    {
+      "path": "assets/source/game/community-reference/destructoid/chapter-1/fireproof-mantle-elder-jinchi.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 125424,
+      "sha256": "a47a9dc53ed68fdf0546bb87c782b21e903fbdeb6f53bc05b454779f76761993"
+    },
+    {
+      "path": "assets/source/game/community-reference/destructoid/chapter-1/fireproof-mantle-overview.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 39662,
+      "sha256": "de5eb0f339c612720e308141bfb3f7b5c0483a083726520fee01f85c907bf780"
+    },
+    {
+      "path": "assets/source/game/community-reference/escapist/chapter-1/fireproof-mantle-icon.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 74430,
+      "sha256": "89b186d6d84c31426c489de1cbfa337460bfdbee8f23fd78ac238337bc555328"
+    },
+    {
+      "path": "assets/source/game/community-reference/escapist/chapter-1/fireproof-mantle-item.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 142817,
+      "sha256": "6f88480c62d6244d14088ebc31492e0ec663f6aa7636a85f7bfa328d2ba7268a"
+    },
+    {
+      "path": "assets/source/game/community-reference/escapist/chapter-1/wandering-wight-battle.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 170134,
+      "sha256": "9114b9028301b8388145e943ae1e63cd1148b5d21ffb07a8b0cc2b2a2e9750e8"
+    },
+    {
+      "path": "assets/source/game/community-reference/escapist/chapter-1/wandering-wight-portrait.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1200,
+      "height": 675,
+      "bytes": 174641,
+      "sha256": "8fb0a5728b4eb2883b999bc3d5ae3634154c025f93e3ffe7d8e85e697b518790"
+    },
+    {
+      "path": "assets/source/game/community-reference/game8/chapter-1/baw-li-guhh-lang-banner.png",
+      "kind": "research-only-community-reference",
+      "width": 728,
+      "height": 381,
+      "bytes": 596478,
+      "sha256": "0e0a9d658841f4a031354b9941d65850d8745efd23a60223cfaef66c00d2695e"
+    },
+    {
+      "path": "assets/source/game/community-reference/game8/chapter-1/baw-li-guhh-lang-battle.png",
+      "kind": "research-only-community-reference",
+      "width": 728,
+      "height": 410,
+      "bytes": 321935,
+      "sha256": "bad7073e178c605eb1a12db6d8dc2ee2cf73dede24bf2bb739c6c6d1711740c6"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamersky/chapter-1/black-wind-mountain-journeyers-chart.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1440,
+      "height": 1197,
+      "bytes": 348155,
+      "sha256": "4fbed9205d94c4071825586fac1f96df5779d79bb8757915f491568e47a7e5ac"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamersky/chapter-1/secret-ancient-guanyin-temple-chart.jpg",
+      "kind": "research-only-community-reference",
+      "width": 567,
+      "height": 459,
+      "bytes": 54627,
+      "sha256": "71102e3fee39949bcd66ac15977dac646f682a033d1fe1f8144a1ae1be7e3f9b"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/black-bear-guai.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 135060,
+      "sha256": "f5166acd0f2d1be3ebf89fc55f4bb3389817df3bab714bf79352ae7ba0dbb625"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/black-wind-king.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 61332,
+      "sha256": "f9a0c806c2325b25f049fca81f4c36cbb02b5b768879e86a6c6c5c01cc3c3d16"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/elder-jinchi.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 142885,
+      "sha256": "e7f73385898f62f5c0063c86baf69219cab1d476a041143341f4bcd804d8d157"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/guangzhi.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117862,
+      "sha256": "d7ab9a370d79747d0ee094dceb6b2aab85334146f5938f45a5e56ee918fc09df"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/lingxuzi.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 150971,
+      "sha256": "7944700bd067e1f2bca8c0aecfdab6f359021ea045f176d1fbe3504233672405"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/red-loong.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 98152,
+      "sha256": "1b82c3ab2078238d615b1078648f84eb9b7ac5a36d5c07cd5e017c00d6e94931"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-1/whiteclad-noble.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 111043,
+      "sha256": "b8750601bdffdd114c3620788c118d6591c9b5f89ff4ddb30157576c4f139959"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-2/fuban.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 119363,
+      "sha256": "c4b9d0a570bec5f766c1601f3710e2e7324e38d04c59f51f092c4dfd552f3f6f"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-2/shigandang.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 200203,
+      "sha256": "13aedf0bc0b8ba209fe17bb00c7dce5e66f2953c474caf7a4f672a23989f3f61"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-2/stone-vanguard.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 149111,
+      "sha256": "418fc04fe9c64d0cea8c6eb1a9ef633d10ae35f1153b5f2bce4e73fe08d151d4"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-2/tiger-vanguard.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 80086,
+      "sha256": "3ebab02bb1427f18c362b4ee8d01eff391d3f554f1f2665e5bf8197c0746bb90"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-2/yellow-robed-squire.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 144098,
+      "sha256": "524b3a02006c24fdda563d1c928cc2285fc350a158675bed30f3a0a7446aa80a"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-2/yellow-wind-sage.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 124996,
+      "sha256": "0b2acc3a52493831557cfbe3c2f417a84f547df05497fdf40bbafb00fd94ec57"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-3/captain-wise-voice.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 114553,
+      "sha256": "871799f1e215f63b16064559a651dce205a74a914060ea3af22f13e3bc8c3ab9"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-3/kang-jin-loong.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 133868,
+      "sha256": "f413af2ea94782fbedf953fc8ed6874b3745f83068c82be151810720690496a6"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-3/kang-jin-star.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 69288,
+      "sha256": "211f40731e909e3afd0a500283171251e2925a58dd6a83eebacf37ee2877b9ee"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-3/macaque-chief.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 85717,
+      "sha256": "8596d2f486e1a9fdd934370432da9abb5c2e1a56b9f3cf2e29ed64ae24c58cae"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-3/yellowbrow.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 146054,
+      "sha256": "80425325b77a57c7a2714765b14bfb0aef8212caf0b5cb7de6d552bfe3967118"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/duskveil.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 80667,
+      "sha256": "1fcad110c3ff306cfe40170d66c384a3a3a5e00649075f7c28f837b8425a95cc"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/hundred-eyed-daoist-master.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 72441,
+      "sha256": "be1c3357c7a383b9e95acc0914c1fa8d3db33c0126d17fc0e3962c41db1bae47"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/scorpionlord.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 211074,
+      "sha256": "dd19370f1c01b9eafb2a94524fa33d277f79d72c9f76f65777231ccea215cbe2"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/second-sister.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 184584,
+      "sha256": "941a20e9d73b4c257926c00cd672a7437361bce6b7ca5441adc5554ef39cd3f7"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/venom-daoist.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 103729,
+      "sha256": "6dedecfe8f5b940d838bac1a47866cacff11fd00f3f2e35920415d563ffec55d"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/violet-spider.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 178532,
+      "sha256": "9b6326fafa4369fde277a141a65be26edb3927106decb1e08b57b8c595176713"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-4/zhu-bajie.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 75921,
+      "sha256": "cc5c9c6edc6fd9d607b530c72caacfb981a6080e36c804ef7f86fc2a19ae5074"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-5/bishui-golden-eyed-beast.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 109663,
+      "sha256": "3907d8cf47d821d9df0d01067fa89b7279c4632fbaee8f9a17889c8785370db4"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-5/five-element-carts.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 137394,
+      "sha256": "a8938000c768dca815ee5ecab3ae76bda56393a55798e0d31f6b6b307c7b9e5e"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-5/keeper-of-flaming-mountains.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 62847,
+      "sha256": "49315ed1c8e0455bc3ffa99ff8a714999bcd09ebca8bcf0b30250a09dc973588"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-5/pale-axe-stalwart.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 188498,
+      "sha256": "67fbe6e81829ac660f3cdc864669b721e3a0d6256e89be525a46eac04f1e635e"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-5/red-boy-yaksha-king.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 116340,
+      "sha256": "a16748f7cde52fa14e91b73b1bb9e931dd8af880a9646cb289502c3001132dad"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-6/erlang-sacred-divinity.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 137223,
+      "sha256": "7b0bcafd8e94629ed27068f0d3d5e4a05646dcba57714f12b55e846797c51a2e"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-6/erlang-transformed.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 63803,
+      "sha256": "2cfe7f194afb0cb03ec5cb15a6b930b2b2d6b0ccd7e0d932853dfe4ed5e856d1"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-6/four-heavenly-kings.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 96426,
+      "sha256": "2e2fb247024cfbb100a9156256dd7af375e6736b768ef7730dd000a44c1a60e4"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-6/great-sages-broken-shell.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 70321,
+      "sha256": "f006bd4e295552a783aef0209f0ebf7f14ade6005f1883931af389eaab5e108d"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-6/stone-monkey.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 91841,
+      "sha256": "99373241a545387259e135a912e0cd789b70723a9b07c348f301103ea3a3f7b4"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamespot/chapter-6/supreme-inspector.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 135271,
+      "sha256": "1f8caa3bbc466d73eba68082a59719c3ca1209bc904aefa873f4dad17ab81640"
+    },
+    {
+      "path": "assets/source/game/community-reference/gamestar/chapter-1/baw-li-guhh-lang.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1440,
+      "height": 810,
+      "bytes": 205358,
+      "sha256": "6fdedb453b5519cf14471dcb3daff5d5c651a78e9a9b9608d383e63714e9cff8"
+    },
+    {
+      "path": "assets/source/game/community-reference/pc-gamer/chapter-1/bell-one.jpg",
+      "kind": "research-only-community-reference",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 732458,
+      "sha256": "5a152c92e297bae723fe2ceec87391165b97443a3381c4c35df588842a060b0a"
+    },
+    {
+      "path": "assets/source/game/community-reference/pc-gamer/chapter-1/bell-three.jpg",
+      "kind": "research-only-community-reference",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 626720,
+      "sha256": "61a1024c67d2da3441fc0a677eda506705e79b4e15f78f537be1e859db91aedf"
+    },
+    {
+      "path": "assets/source/game/community-reference/pc-gamer/chapter-1/bell-two.jpg",
+      "kind": "research-only-community-reference",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 927148,
+      "sha256": "f5f994b8c05ef8489d896eb35d175f24c8153ba4f042e2c7f356b35ccfdaf2e9"
+    },
+    {
+      "path": "assets/source/game/community-reference/pc-gamer/chapter-1/fireproof-mantle-corpse.jpg",
+      "kind": "research-only-community-reference",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 903072,
+      "sha256": "115d9c377da9a7b835f3ff364720087747c428f78ac1def8fe75523758a94b20"
+    },
+    {
+      "path": "assets/source/game/community-reference/pc-invasion/chapter-1/guangmou-feature.jpg",
+      "kind": "research-only-community-reference",
+      "width": 1280,
+      "height": 720,
+      "bytes": 54478,
+      "sha256": "041390dacbecf6b08a8f95f44ab41d6f381f8268981a94b2d31887bf067d68e0"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_06.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1612632,
+      "sha256": "1205e27bf1cb3e9b2bd6a42c72ca2b502b58deb9f0dcaada3f099898c4286752"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_07.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1653624,
+      "sha256": "e30271d8d638b211815a18a32940cd2aae11f2b97a863eeee91d6dded6e35ea8"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_08.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1710254,
+      "sha256": "710d73b96bfd785405a4c71608db1e6343e49c3462e78e1542096c0b519299bb"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_09.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2110770,
+      "sha256": "6817539ac7605bb2684de9020978216f4bb7f1aa48f839ad716d1db0ebd5e1b5"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_02.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 886771,
+      "sha256": "ca54cbe88bbb6b2ed4847dc9661e1f5be63b1131c4bc2a8a91b92887fb3c9a92"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_03.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1812220,
+      "sha256": "c6ad25425924addabe612a6db63ff2215147fbedc22bec271002f5be30a4c963"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_04.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1719642,
+      "sha256": "49016c692a95e02e2ac3c443f3762683ac8472d179ea7f32da48da983912be12"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_05.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1154950,
+      "sha256": "4f84751e4c33f1d117cc76fe85f215248bda5c98947c435bad4d0981f61a418f"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_06.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1072791,
+      "sha256": "b06374e465876a7dd8c1b6296caefaf1f68bc1a19d108ad8f3d7552ef64f7778"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_07.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1459552,
+      "sha256": "aa95efc240062e037062ff3b33bcff8a9cb44f2809500d9bcf541ca2764cccd2"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_08.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1552611,
+      "sha256": "d293cd4a7d09a880411c975645860dc0f6d0b8233546cabb8b2498348b1a24a5"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/concepts/blackmyth_wukong_concept_c_09.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1414761,
+      "sha256": "68751aafe79c46cbdf64e053257f30d561b62d923deee561b37c89a8c476097c"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_guishiwei.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1190,
+      "bytes": 1054074,
+      "sha256": "2690dd12ce7120d3c5913537cd3c23241bd62eac361fb5f30d4ddc76bd66adbe"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_heifenshan1.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1555914,
+      "sha256": "e0025bf568c232a13e3ccf11c8b056bc7672a18d39f4ee45dd4e3a83fe4367a3"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_heifenshan2.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2165629,
+      "sha256": "e978ec051e459d177c3a231f497838d30bf646118f9972c99df27731f670327b"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_heifenshan3.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2323710,
+      "sha256": "7383adbaa8ab37dca217b0202bad71eb0df8b8085685b90f53823b41165676ba"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_heifenshan4.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1987823,
+      "sha256": "3edf56e4ec73c530d328fa8a32edf72178d81542bfb74ad9ed91ad2a174d08fc"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_huodaolang.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1489,
+      "height": 1920,
+      "bytes": 1633653,
+      "sha256": "9547e412e672faac004647070dbbd25f9ea224afe1f2ea16c8c3b07c0ae05851"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_landscape1.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1865365,
+      "sha256": "f45ff3486826326e749f6f6b6f3087bfbda33dcd51cea2a0c5230d1c99e280cb"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_landscape2.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1652660,
+      "sha256": "c8b0ea42a26dc63c648230274ee6dd9881b3972ebc85d9689d8fe35cd741bfb5"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_landscape3.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1711299,
+      "sha256": "079acc6a745cb74cef0a4c1da3599bf271e04265091ce25f9cc61ff857456885"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_landscape6.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1484940,
+      "sha256": "f4e45abe62bc4fea9f28ea10da0c744539eaca7cd61a45b5c866a0dfcd4125d6"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_langren.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 813534,
+      "sha256": "a2ad1834cf1d66a9679ca4563043da540166896a90c9c4b58bd4ef8711348a30"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_lingxudaozhang.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1190,
+      "bytes": 917487,
+      "sha256": "fc8bc1a733cb2313bba3fa83eeacd5945776d7a203f2218ae97106441c0dc106"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_tudi.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 910465,
+      "sha256": "66a1cae5db737f5f1cb2bf31978201fed07311f8acc1440140fb864e79b1f2d6"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/early-concepts/Concept_wukong.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 880097,
+      "sha256": "1e4076b23cc9b494d19b3d87cabdc01d823d549419260e5c932af01a6473549b"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_013.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1053065,
+      "sha256": "700e2099b3c685436ff9e64f3724a0e7415cc60aa5eb7f171e36077a42c0a53e"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_014.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1252183,
+      "sha256": "636f612ff826ff163daa19bb58d1f67fd93117b6806b7c81bea351631208cd41"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_015.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1121813,
+      "sha256": "c73b445ba14853787e0f14e7f3937507386c597fb5dc3a6e2bd50b4d7addda32"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_016.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1125536,
+      "sha256": "a9700ef603720654f9663ed9550589490f253b9d3af46e4d01abe06c70938911"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_017.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1353433,
+      "sha256": "969436a9b939eef98aefcda4429004af767d45c2abc53766f8204a580f347bd7"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_018.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 951570,
+      "sha256": "97714e64ed78d7eda2aeee56e5d3aa949fed38e4bedbec3e7affe2744d207a61"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_019.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 877025,
+      "sha256": "2b9cac035ad9f8e4273452b11420af1878a0445d8071c7be998315c8d14a9f86"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_020.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1189850,
+      "sha256": "43943bddb4eb5d4501b3ae10b643c4a908ec26e6e05a5c04feea230e93d1ef16"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_021.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1354657,
+      "sha256": "ed7de54e4c0fa011ff981bf2a858b02b002dd40d83c218a503c232a75a069130"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_022.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1653748,
+      "sha256": "5065157504f4aaf1c174648d90b2eec8395117d4a7b852344355ac9bb9269e5b"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_023.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1376795,
+      "sha256": "05cbc8ea18d337c7c20be2eed04df59f2a8d99f431416a634880da7de1a22e68"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_024.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1574025,
+      "sha256": "2496c41e93749bb8c64adc0ad2f397e8b5153778af2871519d207db8f27a51f1"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_025.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1350356,
+      "sha256": "ecb04a30ec47a93aa9b684842f140eb3049cae1597707404d0f2266ae36b86e0"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_026.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1274672,
+      "sha256": "1ee8ad507f4e70af487417c89347ebc2b5c2264d3826577f957b92bb6cae9b86"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_027.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1522183,
+      "sha256": "30db63a417918e57d59239fd6b2d05a9a6100ea01fe33b83cb8c3743f610a037"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_028.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1008999,
+      "sha256": "4f2f198310447cc58abca93eaaa0306ad42309e44f37eef16bedc0c38c692088"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_029.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2283481,
+      "sha256": "e78119417dc7a21ae076e255665ef9195d5c29e15a05947fb7ea845a6781acb1"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_031.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 916532,
+      "sha256": "ae285383471b0f3ea5ca9e6db0465dc7562e46920f80ece927c515345d88f18d"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/screenshots/blackmyth_wukong_screenshot_032.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 594915,
+      "sha256": "eb149a0675e9d4a43b7845bf46610209ce0549b4bd97e5d8d61de8ed3f0f19a4"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper1.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1416101,
+      "sha256": "d7fb42e6049ca38d971b3e2f1338a21addb8b27461e6268247709a0fb47a1b53"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper10.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 667991,
+      "sha256": "0634118ab52a88a2a5f40e6281cf48294366c20590cf789866593a50a8ac79e9"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper2.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1689944,
+      "sha256": "64a81cbf04dd9dd1f4a5bd0a312309289762c470fd895408973a9002b5a64780"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper4.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1991852,
+      "sha256": "00eb8cbec60f47e9f300bd801441aedab8fe877ed396e1cf1e9bf28a2a78105c"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper5.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 780960,
+      "sha256": "c07248ab3eea4dc03e70f716534896ace9294cc1efdddd289a6aa587562422d9"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper6.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1210947,
+      "sha256": "0763f80cf877911a99faccbfc69246832b5d5fa2c9b9904ea3ac01cded7d3cb2"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper7.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 780592,
+      "sha256": "366ad9679a6d7d98b8ca6b2635aacfcb0f23f27c38d0a329cd2a46128c731451"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper8.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1248049,
+      "sha256": "87ccbf71c0ba01f87f1031c74cb064b919952620f7ae272c8e1578deeb634605"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/Wallpaper9.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1239914,
+      "sha256": "2ff86e280ff8c72f0dfdb82a34fb49e1bfb70cd4e8e47e7b90fab85e5af6fe5c"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_011.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1452061,
+      "sha256": "1da5a3c8b3abfdddd6b4e3bf719e8e5be7b3544eacbe48882650cb8fc0c85b86"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_012.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2048956,
+      "sha256": "504834a851608a19ad8a93906753c88c6704c84fe55bcdd82006862f4dface56"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_013.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1095580,
+      "sha256": "42fc716b0d4396a6369cb93eef83c42f0a6ea273cc7d4e5c73d71234469d04d8"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_014.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 982221,
+      "sha256": "821166c71ebe4ecdfe4daea3e6d10fb8db034932b366b65c79c98a41b32d01ec"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_015.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1388940,
+      "sha256": "f3906e29e1ece3c9dd4cf243cc66b0eb8ada466551160a4fd735035c225a235d"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_016.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2004090,
+      "sha256": "3637d443a7a51cf029ba2a6b9abd065e91b52a1b43c4b0193edbb841159bf1a1"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_019.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1758998,
+      "sha256": "fb9af9160eb4326c36e64f56578d1f330159a26b8276759f63a9a242925ad01f"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_020.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1900194,
+      "sha256": "fc69a25fe896236a346ead040d441e8bd49a04c502ac8984499a414cfc141dbe"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_021.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1135282,
+      "sha256": "01790f22c784ecf39976f201ae3d3ebea8e5106e037c9501fa0bf55f4ab02594"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_022.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1839989,
+      "sha256": "c40d3fede52a6bc0f8525a416a19e52bae5585ae4731e760f679f705f61b6444"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_024.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1535019,
+      "sha256": "261eab045b36e56725cd95e0e0d99d4ff695ad44cea91158757c1d6f9d28b7a2"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_025.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1084296,
+      "sha256": "9bf285b7b47c7edbf927617f5d52d83edbf7d8251182f5ea7b20947c2acc2622"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_026.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 903888,
+      "sha256": "b6346d8c05f994590650455d275ad3014687af92d531db88109ccad225f3c677"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_027.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 888414,
+      "sha256": "641a5a28bb0bc0c8b224b3a608d57105bb9f226fe76a37e82fc075938590d536"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_028.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1257755,
+      "sha256": "c32f50a46b8cff78b1b2e8ebc50581dd7a27cc0c2f625fbd27e9dadece7c03ce"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_029.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1430119,
+      "sha256": "369f3cefead8378052d546d5e6edad81beec56f8c8b15eaf5c953c833af6cdc4"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_030.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1882631,
+      "sha256": "77c1d80fe16a922837527617a55ecfebecf281f1f3a99b88c0bba197af365941"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_031.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2045467,
+      "sha256": "eebb834f89d2a160a5e5bc507161b9ba64fef2485f94dc085095027c39033cef"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_032.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2194864,
+      "sha256": "dd5a3e3622c9d05f5c0b6cb6977b270c1d0dea75579c18d3778ada84df38dc80"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_033.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 2165777,
+      "sha256": "3f3e9c04790a336b16f1fb09184dd2e2cc6b12822749131328a7fc476e7a44e2"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_034.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1808355,
+      "sha256": "db3d568b29946e4fe5eb9329ecff099e26d95ba52313d97bd989f8ff2d0388ee"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_035.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 878378,
+      "sha256": "01bb627578400c87d852f6b92284a8c8546f694865e6a12828ba300ffa06b09f"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_036.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1545358,
+      "sha256": "78256d47976d52e44469addbe8b1d86225403b8bcf5591e5960c116eec8c113e"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_037.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1789578,
+      "sha256": "94a86fcd1ccbf5a5d862e6abe2a5cc255ccc2a284a50812991e9d80b5d1979cc"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_038.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1503352,
+      "sha256": "9783f5cf56f75855322f8c2d8457c69224bdaeb6cfb74d450b55fcc9e6e63bfd"
+    },
+    {
+      "path": "assets/source/game/official-reference/game-science/wallpapers/blackmyth_wukong_wallpaper_039.jpg",
+      "kind": "research-only-official-reference",
+      "width": 2160,
+      "height": 1080,
+      "bytes": 1040530,
+      "sha256": "6b2d1c7789b2622f3a44702f64241821130ddc0f5d909ea8164ae359d6a3dea7"
+    },
+    {
+      "path": "assets/source/game/official-reference/steam/screenshots/steam-00.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 627955,
+      "sha256": "7e81922eae9e128aee898aa7b9176a7f9f9a32502e36060efd615f55ad22a2a7"
+    },
+    {
+      "path": "assets/source/game/official-reference/steam/screenshots/steam-01.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 539529,
+      "sha256": "d89234b96b32031aac011aaf96f550cd6e50eb261f13045c65d8b51ad7383ca4"
+    },
+    {
+      "path": "assets/source/game/official-reference/steam/screenshots/steam-02.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1071250,
+      "sha256": "595c3e2e52e719e9e38b689426d61e0a7c9fe6dc5f4cc9849f0e883f7e37f0cc"
+    },
+    {
+      "path": "assets/source/game/official-reference/steam/screenshots/steam-03.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 576454,
+      "sha256": "c35fe01b7adee359e5cf28916575c909ae578aa59a625aec3b73b33e19db9c39"
+    },
+    {
+      "path": "assets/source/game/official-reference/steam/screenshots/steam-04.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 366564,
+      "sha256": "6712ad944131792155876c37b4db90bba8e58fac4d49fc87049724ffb75bdc8f"
+    },
+    {
+      "path": "assets/source/game/official-reference/steam/screenshots/steam-05.jpg",
+      "kind": "research-only-official-reference",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 542680,
+      "sha256": "ab713caaf267201e5c2be824621bba3592a26841800fdf1d415e7d1135ff4c38"
     },
     {
       "path": "assets/source/heritage/tiefo-temple/deva-group-detail.jpg",

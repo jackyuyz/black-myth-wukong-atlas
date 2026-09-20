@@ -2,6 +2,8 @@
 
 本文件为当前可发布来源素材提供可直接复用的署名文字。页面上线时，应在图片说明或“资料来源”页展示作者、来源页和许可；若改编 CC BY-SA 4.0 图片，还需说明已作修改，并以相同许可分享该改编图。
 
+`source/game/official-reference/` 与 `source/game/community-reference/` 中的官方、第三方和玩家实机图片不是本文件所称的“可发布来源素材”。它们是 `permission-required` 的内部研究副本，不能靠署名替代授权，也不得进入公开构建。逐图出处只用于溯源，见 `research/game-reference-assets.json` 与 `research/community-gameplay-assets.json`。
+
 ## 实景与造像
 
 - **府城玉皇庙二十八宿彩塑组（4 张）** — Patrick20242023，来源：[Wikimedia Commons 分类](https://commons.wikimedia.org/wiki/Category:Statues_of_the_Twenty-Eight_Mansions_in_Jade_Emperor_Temple,_Fucheng)，许可：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。逐图来源见 `research/source-assets.json`。

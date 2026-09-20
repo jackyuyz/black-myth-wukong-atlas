@@ -75,7 +75,7 @@ Default decision rule:
 1. If the asset proves **what the game actually shows**, **what a real site looks like**, or **what a historical object/edition contains**, it must be searched, sourced, and licensed.
 2. If the asset only establishes mood, navigation, hierarchy, or atmosphere, it should be generated or built programmatically.
 3. If a generated map uses game geography, first research and record the route/landmark topology; generation may style that verified structure but may not invent it and call it accurate.
-4. When usage rights are unknown, keep the URL and metadata as research evidence but mark the image `link-only` or `permission-required`; do not commit the binary.
+4. When usage rights are unknown, default to keeping only the URL and metadata. If the team explicitly requests an internal research copy, it may be stored only in a clearly isolated `official-reference` or `community-reference` path with `permission-required`, `research-only`, and `useInPublicBuild: false`; the public build must exclude it.
 5. Never use generated visuals inside a “现实实景”“游戏实机”“原著版本” comparison slot.
 
 ### 3.2 Required asset classes and provenance
