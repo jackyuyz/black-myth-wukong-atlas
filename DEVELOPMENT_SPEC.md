@@ -26,7 +26,7 @@ A user should be able to:
 
 1. choose one of the six main chapters,
 2. enter a stylized interactive map,
-3. zoom and pan around the map,
+3. view the complete fixed route composition,
 4. click cultural or gameplay landmarks,
 5. open an information panel,
 6. read a concise game-context explanation,
@@ -78,7 +78,6 @@ Chosen implementation:
 - TypeScript, scoped to the data layer (see 3.1)
 - Tailwind CSS
 - React Router
-- React Zoom Pan Pinch or equivalent lightweight pan/zoom library
 - a build-time prerenderer such as `vite-react-ssg` (see 3.2)
 - Motion / Framer Motion only where animation materially improves the experience
 
@@ -191,12 +190,14 @@ Each chapter page should contain a large map or illustrated chapter overview ima
 
 Users must be able to:
 
-- drag/pan
-- zoom in/out
-- reset view
+- view the complete route composition without exposing an artificial canvas boundary
 - click map markers
 - filter marker categories
 - view marker names on hover/focus where practical
+
+The authored schematic composition remains fixed on desktop. On narrow screens,
+the readable-size map may scroll horizontally inside a labelled region; it must
+not support free two-dimensional dragging or zoom controls.
 
 ### 6.2 Map mode
 
@@ -605,7 +606,7 @@ Mobile:
 - full-width map
 - bottom sheet / full-screen info panel
 - simplified marker controls
-- pinch zoom support
+- horizontal overflow for the fixed, readable-size route composition
 
 ---
 

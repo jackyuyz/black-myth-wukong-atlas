@@ -1,9 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import type { Chapter, Marker } from "../types/schema";
 import { media, chapters } from "../data";
-const MAP_WIDTH = 1400;
-const MAP_HEIGHT = 820;
 export function MapSymbol({ type }: { type: string }) {
   return (
     <svg
@@ -39,221 +35,117 @@ export function InteractiveMap({
   visible: Marker[];
   onSelect: (marker: Marker) => void;
 }) {
-  const host = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(1000);
-  const [scale, setScale] = useState(1);
-  const [height, setHeight] = useState(610);
-  const [reduced, setReduced] = useState(false);
-  const [expanded, setExpanded] = useState(false);
-  useEffect(() => {
-    if (!host.current) return;
-    setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-    const observer = new ResizeObserver(([entry]) => {
-      setWidth(entry.contentRect.width);
-      setHeight(entry.contentRect.height);
-    });
-    observer.observe(host.current);
-    return () => observer.disconnect();
-  }, []);
-  useEffect(() => {
-    if (!expanded) return;
-    const old = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    const close = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setExpanded(false);
-    };
-    window.addEventListener("keydown", close);
-    return () => {
-      document.body.style.overflow = old;
-      window.removeEventListener("keydown", close);
-    };
-  }, [expanded]);
-  const initialScale =
-    width < 700
-      ? 0.62
-      : Math.max(
-          0.5,
-          Math.min(
-            (width - 35) / MAP_WIDTH,
-            (height - 90) / MAP_HEIGHT,
-            expanded ? 1.18 : 1.02,
-          ),
-        );
   const positionFor = (id: string) =>
     chapter.markers.find((m) => m.id === id)?.position ??
     chapter.anchors.find((a) => a.id === id)!.position;
   return (
-    <div
-      className={`map-frame${expanded ? " is-expanded" : ""}`}
-      ref={host}
-    >
+    <div className="map-frame">
       <div className="map-topline">
-        <span>按住拖拽 · 滚轮缩放 · 点选印记</span>
-        <button
-          className="map-expand-toggle"
-          type="button"
-          onClick={() => setExpanded((value) => !value)}
-          aria-label={expanded ? "退出大图模式" : "放大地图"}
-          aria-pressed={expanded}
-          data-sound={expanded ? "close" : "open"}
-        >
-          {expanded ? "退出大图" : "展开大图"}
-        </button>
+        <span>路线卷轴 · 点选印记阅读</span>
+        <span>固定构图 · 完整呈现</span>
       </div>
-      <TransformWrapper
-        key={`${initialScale}-${expanded}`}
-        initialScale={initialScale}
-        minScale={0.3}
-        maxScale={3.2}
-        centerOnInit={width >= 700}
-        initialPositionX={width < 700 ? 24 : 0}
-        initialPositionY={width < 700 ? (height - 700 * initialScale) / 2 : 0}
-        limitToBounds={false}
-        wheel={{ step: 0.1 }}
-        panning={{ excluded: ["map-marker", "map-expand-toggle"] }}
-        doubleClick={{ disabled: true }}
-        onTransformed={(_, state) => setScale(state.scale)}
+      <div
+        className="map-static-viewport"
+        tabIndex={0}
+        role="region"
+        aria-label={`${chapter.regionZh}路线图，可点选地图印记阅读`}
       >
-        {({ zoomIn, zoomOut, resetTransform, centerView, zoomToElement }) => (
-          <>
-            <TransformComponent
-              wrapperClass="map-viewport"
-              contentClass="map-content"
+        <div
+          className="map-canvas"
+          style={{
+            backgroundImage: `linear-gradient(to right, #1a251c 0%, transparent 7%, transparent 93%, #1a251c 100%), linear-gradient(to bottom, #1a251c 0%, transparent 7%, transparent 93%, #1a251c 100%), url(${media[chapter.mapMediaId!].file})`,
+          }}
+        >
+          <svg
+            className="route-lines"
+            viewBox="0 0 1200 700"
+            aria-hidden="true"
+          >
+            {chapter.routes.map((edge, i) => {
+              const a = positionFor(edge.from),
+                b = positionFor(edge.to);
+              return (
+                <path
+                  key={i}
+                  className={`route ${edge.kind} ${edge.mode}`}
+                  d={
+                    edge.mode === "return"
+                      ? `M${a.x * 1200} ${a.y * 700} C1150 492 892 405 ${b.x * 1200} ${b.y * 700}`
+                      : `M${a.x * 1200} ${a.y * 700} L${b.x * 1200} ${b.y * 700}`
+                  }
+                />
+              );
+            })}
+          </svg>
+          {chapter.areas.map((area) => (
+            <div
+              key={area.id}
+              className="map-area"
+              style={{
+                left: `${area.position.x * 100}%`,
+                top: `${area.position.y * 100}%`,
+              }}
             >
-              <div
-                className="map-canvas"
-                style={{
-                  backgroundImage: `url(${media[chapter.mapMediaId!].file})`,
-                }}
-              >
-                <svg
-                  className="route-lines"
-                  viewBox="0 0 1200 700"
-                  aria-hidden="true"
-                >
-                  {chapter.routes.map((edge, i) => {
-                    const a = positionFor(edge.from),
-                      b = positionFor(edge.to);
-                    return (
-                      <path
-                        key={i}
-                        className={`route ${edge.kind} ${edge.mode}`}
-                        d={
-                          edge.mode === "return"
-                            ? `M${a.x * 1200} ${a.y * 700} C1150 492 892 405 ${b.x * 1200} ${b.y * 700}`
-                            : `M${a.x * 1200} ${a.y * 700} L${b.x * 1200} ${b.y * 700}`
-                        }
-                      />
-                    );
-                  })}
-                </svg>
-                {chapter.areas.map((area) => (
-                  <div
-                    key={area.id}
-                    className="map-area"
-                    style={{
-                      left: `${area.position.x * 100}%`,
-                      top: `${area.position.y * 100}%`,
-                    }}
-                  >
-                    {area.nameZh}
-                  </div>
-                ))}
-                {chapter.anchors.map((a) => (
-                  <div
-                    className="map-anchor"
-                    key={a.id}
-                    style={{
-                      left: `${a.position.x * 100}%`,
-                      top: `${a.position.y * 100}%`,
-                    }}
-                  >
-                    <span>◇</span>
-                    {a.nameZh}
-                  </div>
-                ))}
-                {chapter.markers
-                  .filter((m) => m.position)
-                  .map((m) => (
-                    <a
-                      key={m.id}
-                      id={`map-${m.id}`}
-                      onFocus={(event) => {
-                        if (event.currentTarget.matches(":focus-visible"))
-                          zoomToElement(
-                            `map-${m.id}`,
-                            Math.max(initialScale, 0.8),
-                            0,
-                          );
-                      }}
-                      className={`map-marker ${visible.some((v) => v.id === m.id) ? "" : "filtered-out"}`}
-                      href={`#${m.id}`}
-                      aria-label={`阅读${m.nameZh}`}
-                      style={{
-                        left: `${m.position!.x * 100}%`,
-                        top: `${m.position!.y * 100}%`,
-                      }}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        onSelect(m);
-                      }}
-                      data-sound="marker"
-                    >
-                      <span className="marker-glyph">
-                        <MapSymbol type={m.type} />
-                      </span>
-                      <span className="marker-label">{m.nameZh}</span>
-                    </a>
-                  ))}
-                {chapter.routes.some((route) => route.mode === "teleport") && (
-                  <div className="map-note note-teleport">条件传送</div>
-                )}
-                {chapter.routes.some((route) => route.mode === "return") && (
-                  <div className="map-note note-return">回行路线</div>
-                )}
-                {chapter.routes.some((route) => route.mode === "reward") && (
-                  <div className="map-note note-reward">条件取得</div>
-                )}
-                <span className="map-seal" aria-hidden="true">
-                  山川
-                  <br />
-                  有据
-                </span>
-              </div>
-            </TransformComponent>
-            <div className="map-controls" aria-label="地图视图控制">
-              <button
-                onClick={() => zoomIn(0.2, reduced ? 0 : 200)}
-                aria-label="放大地图"
-                data-sound="click"
-              >
-                ＋
-              </button>
-              <span aria-live="off">{Math.round(scale * 100)}%</span>
-              <button
-                onClick={() => zoomOut(0.2, reduced ? 0 : 200)}
-                aria-label="缩小地图"
-                data-sound="click"
-              >
-                −
-              </button>
-              <button
-                onClick={() => {
-                  resetTransform(0);
-                  if (width >= 700) centerView(initialScale, 0);
-                }}
-                aria-label="重置地图视图"
-                data-sound="select"
-              >
-                复位
-              </button>
+              {area.nameZh}
             </div>
-          </>
-        )}
-      </TransformWrapper>
+          ))}
+          {chapter.anchors.map((a) => (
+            <div
+              className="map-anchor"
+              key={a.id}
+              style={{
+                left: `${a.position.x * 100}%`,
+                top: `${a.position.y * 100}%`,
+              }}
+            >
+              <span>◇</span>
+              {a.nameZh}
+            </div>
+          ))}
+          {chapter.markers
+            .filter((m) => m.position)
+            .map((m) => (
+              <a
+                key={m.id}
+                id={`map-${m.id}`}
+                className={`map-marker ${visible.some((v) => v.id === m.id) ? "" : "filtered-out"}`}
+                href={`#${m.id}`}
+                aria-label={`阅读${m.nameZh}`}
+                style={{
+                  left: `${m.position!.x * 100}%`,
+                  top: `${m.position!.y * 100}%`,
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onSelect(m);
+                }}
+                data-sound="marker"
+              >
+                <span className="marker-glyph">
+                  <MapSymbol type={m.type} />
+                </span>
+                <span className="marker-label">{m.nameZh}</span>
+              </a>
+            ))}
+          {chapter.routes.some((route) => route.mode === "teleport") && (
+            <div className="map-note note-teleport">条件传送</div>
+          )}
+          {chapter.routes.some((route) => route.mode === "return") && (
+            <div className="map-note note-return">回行路线</div>
+          )}
+          {chapter.routes.some((route) => route.mode === "reward") && (
+            <div className="map-note note-reward">条件取得</div>
+          )}
+          <span className="map-seal" aria-hidden="true">
+            山川
+            <br />
+            有据
+          </span>
+        </div>
+      </div>
       <div className="map-bottomline">
         <span>{chapter.mapNoticeZh}</span>
-        <span>鼠标滚轮 / 双指缩放 · Esc 退出大图</span>
+        <span className="map-mobile-hint">窄屏可左右滑动查看完整路线</span>
       </div>
     </div>
   );
