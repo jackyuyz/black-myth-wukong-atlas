@@ -322,8 +322,10 @@ function Drawer({
   const lang = useLang();
   const t = useUi();
   const dialog = useRef<HTMLDialogElement>(null);
+  const [expanded, setExpanded] = useState(false);
   useEffect(() => {
     if (!marker) return;
+    setExpanded(false);
     const previous = document.activeElement as HTMLElement;
     const old = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -338,7 +340,7 @@ function Drawer({
   return (
     <dialog
       ref={dialog}
-      className="info-drawer"
+      className={`info-drawer${expanded ? " expanded" : ""}`}
       aria-label={
         marker ? t.drawerLabel(pick(lang, marker, "name")) : t.drawerLabelFallback
       }
@@ -350,13 +352,25 @@ function Drawer({
       <div className="drawer-inner">
         <div className="drawer-toolbar">
           <span>{t.drawerToolbar}</span>
-          <button
-            onClick={onClose}
-            aria-label={t.drawerCloseLabel}
-            data-sound="close"
-          >
-            {t.drawerClose}
-          </button>
+          <div className="drawer-actions">
+            <button
+              className="drawer-size-toggle"
+              onClick={() => setExpanded((value) => !value)}
+              aria-label={
+                expanded ? t.drawerCollapseLabel : t.drawerExpandLabel
+              }
+              data-sound="select"
+            >
+              {expanded ? t.drawerCollapse : t.drawerExpand}
+            </button>
+            <button
+              onClick={onClose}
+              aria-label={t.drawerCloseLabel}
+              data-sound="close"
+            >
+              {t.drawerClose}
+            </button>
+          </div>
         </div>
         {marker && <ReadingCard marker={marker} />}
       </div>
