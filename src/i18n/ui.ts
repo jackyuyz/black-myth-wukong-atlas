@@ -249,7 +249,7 @@ const zh = {
 };
 type Dict = typeof zh;
 const en: Dict = {
-  siteTitle: "Black Myth: Wukong Cultural Atlas",
+  siteTitle: "Black Myth: Wukong Cultural Map",
   siteDescription:
     "Follow all six chapters of Black Myth: Wukong and read the game, its roots in Journey to the West, and the documented heritage behind them.",
   routeTitles: {
@@ -260,8 +260,8 @@ const en: Dict = {
   },
   documentTitle: (part?: string) =>
     part
-      ? `${part} · Black Myth: Wukong Cultural Atlas`
-      : "Black Myth: Wukong Cultural Atlas",
+      ? `${part} · Black Myth: Wukong Cultural Map`
+      : "Black Myth: Wukong Cultural Map",
   chapterOrdinal: (order: number) => `Chapter ${ordinalsEn[order - 1]}`,
   chapterDocumentTitle: (region: string, order: number) =>
     `${region} · Chapter ${ordinalsEn[order - 1]}`,
@@ -271,14 +271,14 @@ const en: Dict = {
       : `Chapter ${numbers[0]}`,
   skipToContent: "Skip to main content",
   brandName: "Black Myth: Wukong",
-  brandSub: "Cultural Atlas",
+  brandSub: "Cultural Map",
   navLabel: "Main navigation",
   navHome: "Home",
   navChapters: "Six Chapters",
   navSources: "Sources",
   navAbout: "About",
   headerNote: "Follow the game · find its sources",
-  footerName: "Black Myth: Wukong Cultural Atlas",
+  footerName: "Black Myth: Wukong Cultural Map",
   footerKind: "An independent cultural-education project",
   footerDisclaimer:
     "Unofficial. Not affiliated with Game Science. The game and all related marks belong to their respective owners.",
@@ -317,7 +317,7 @@ const en: Dict = {
   heroIntroA:
     "From one fire on Black Wind Mountain to the journey on the page.",
   heroIntroB:
-    "One cultural atlas: the game, the original novel, and heritage you can verify.",
+    "One cultural map: the game, the original novel, and heritage you can verify.",
   heroPrimary: "Open Black Wind Mountain",
   heroSecondary: "Browse all six chapters",
   heroFacts: [
@@ -327,7 +327,7 @@ const en: Dict = {
   ],
   heroSidewriting: "Landscapes have form · culture has a source",
   heroArtCaption: "Original illustration · not game footage",
-  introEyebrow: "How to read this atlas",
+  introEyebrow: "How to read this map",
   introTitle: "Not only look. Understand.",
   introText: "You do not need to have played the game. Start with one name.",
   chaptersEyebrow: "Six chapters · enter here",
@@ -436,11 +436,11 @@ const en: Dict = {
   gameSourceLink: "Image source ↗",
   licenseShareAlike: "CC BY-SA 4.0",
   licenseAttribution: "CC BY 4.0",
-  aboutEyebrow: "About this atlas",
+  aboutEyebrow: "About this map",
   aboutTitleA: "Let every exploration",
   aboutTitleB: "carry a cultural echo.",
   aboutLede:
-    "The Black Myth: Wukong Cultural Atlas is an educational project for general readers. You do not need to know the game's controls, and you do not need to have finished the hundred-chapter novel first.",
+    "The Black Myth: Wukong Cultural Map is an educational project for general readers. You do not need to know the game's controls, and you do not need to have finished the hundred-chapter novel first.",
   aboutLayersTitle: "Three layers, four kinds of connection",
   aboutLayersText:
     "The figures and stories in the game are, first of all, the game's own creation. The text of Journey to the West answers how the book tells it. Real artifacts and heritage sites need evidence of their own.",
