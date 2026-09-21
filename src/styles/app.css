@@ -676,6 +676,11 @@ small {
   scroll-snap-type: x mandatory;
   overscroll-behavior-inline: contain;
 }
+.chapter-tabs::before,
+.chapter-tabs::after {
+  content: "";
+  flex: 1 0 0;
+}
 .chapter-tabs::-webkit-scrollbar {
   display: none;
 }
