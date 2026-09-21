@@ -698,6 +698,25 @@ small {
   font-size: 10px;
   margin-left: auto;
 }
+.site-footer .footer-course {
+  flex-basis: 100%;
+  margin: 2px 0 0;
+  color: #bbb39f;
+  letter-spacing: 0.04em;
+}
+.footer-course a {
+  color: #d4c394;
+  text-decoration-color: #9e976988;
+  text-underline-offset: 3px;
+  transition:
+    color 160ms ease,
+    text-decoration-color 160ms ease;
+}
+.footer-course a:hover,
+.footer-course a:focus-visible {
+  color: #f0e4c8;
+  text-decoration-color: currentColor;
+}
 .site-footer > a {
   font-size: 10px;
   display: block;

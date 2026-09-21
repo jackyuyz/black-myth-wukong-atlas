@@ -100,6 +100,24 @@ function AppShell({ children }: { children: React.ReactNode }) {
           {t.footerName} <span className="footer-dot">·</span> {t.footerKind}
         </span>
         <p>{t.footerDisclaimer}</p>
+        <p className="footer-course">
+          {t.footerCoursePrefix}{" "}
+          <a
+            href="https://439blackmyth.github.io/439WukongWebsite/index.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.footerCourseName}
+          </a>{" "}
+          {t.footerCourseSuffix}
+          <span className="footer-dot" aria-hidden="true">
+            ·
+          </span>
+          {t.footerAuthorLabel}{" "}
+          <a href="https://github.com/jackyuyz" target="_blank" rel="noreferrer">
+            Jack Yu
+          </a>
+        </p>
         <LocaleLink to="/sources">{t.footerLink}</LocaleLink>
       </footer>
       <BackgroundMusic />

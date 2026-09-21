@@ -31,6 +31,10 @@ const zh = {
   footerKind: "民间文化科普项目",
   footerDisclaimer:
     "非官方作品，与游戏科学无隶属关系。游戏与相关标识权利归各自权利人所有。",
+  footerCoursePrefix: "为",
+  footerCourseName: "CMU 82-439《黑神话：悟空》和《西游记》课程",
+  footerCourseSuffix: "制作",
+  footerAuthorLabel: "作者",
   footerLink: "每一处关联，都有出处 ↗",
   languageNavLabel: "语言",
   switchToZh: "切换到中文界面",
@@ -269,6 +273,10 @@ const en: Dict = {
   footerKind: "An independent cultural-education project",
   footerDisclaimer:
     "Unofficial. Not affiliated with Game Science. The game and all related marks belong to their respective owners.",
+  footerCoursePrefix: "Created for",
+  footerCourseName: "CMU 82-439 Black Myth: Wukong and Journey to the West",
+  footerCourseSuffix: "course",
+  footerAuthorLabel: "By",
   footerLink: "Every connection has a source ↗",
   languageNavLabel: "Language",
   switchToZh: "切换到中文界面",
