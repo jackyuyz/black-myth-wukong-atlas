@@ -210,6 +210,9 @@ const zh = {
   sourcesLede:
     "原著、游戏资料与文物报道各自证明不同的事实。阅读卡中的引用指向这里同一份来源索引。",
   sourcesTextTitle: "文字与研究资料",
+  sourcesHeritageTitle: "现实遗产图像与证据边界",
+  sourcesHeritageLede:
+    "这里集中展示已经完成许可核验的纪实照片。玉皇庙与隰县小西天可回到第三回阅读卡；铁佛寺照片用于呈现公开报道中的采风背景，不强行绑定某一位游戏角色。每张照片下方都写明它能证明什么、不能证明什么。",
   sourcesMediaTitle: "图片、音乐与原创素材",
   sourceId: (id: string) => `来源编号 ${id}`,
   creditCreator: "创作者：",
@@ -471,6 +474,9 @@ const en: Dict = {
   sourcesLede:
     "The novel, game material, and heritage reporting each prove different things. Citations on the reading cards point to this one shared index.",
   sourcesTextTitle: "Texts and research material",
+  sourcesHeritageTitle: "Heritage images and evidence boundaries",
+  sourcesHeritageLede:
+    "This gallery collects documentary photographs whose licences have been checked. The Yuhuang Temple and Xiaoxitian entries connect back to Chapter Three reading cards. The Tiefo Temple photograph documents a field-research context described in public reporting without forcing it onto a particular game character. Every caption states what the image can and cannot establish.",
   sourcesMediaTitle: "Images, music and original artwork",
   sourceId: (id: string) => `Source ID ${id}`,
   creditCreator: "Creator: ",

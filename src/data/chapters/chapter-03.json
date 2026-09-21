@@ -8,11 +8,11 @@
   "regionEn": "New West",
   "themeZh": "一山雪色，万象有源。",
   "themeEn": "A mountain of snow; every image has a source.",
-  "overviewZh": "从亢金龙破金铙的文学典故，走到府城玉皇庙的星宿彩塑；在这里，把游戏、原著和现实艺术放在各自的证据里阅读。",
-  "overviewEn": "From the literary episode in which Kang-Jin-Loong pierces the golden cymbals to the painted constellation sculptures of the Yuhuang Temple at Fucheng: here the game, the novel and real art are each read against their own evidence.",
-  "readingGuideZh": "重点观察：原著解释故事，彩塑照片展示文物，政府报道说明二者与游戏形象的联系。",
-  "readingGuideEn": "What to watch for: the novel explains the story, the photograph shows the sculpture, and the government report is what links the two to the game's design.",
-  "sources": ["G09", "W065", "H01", "H04"],
+  "overviewZh": "从亢金龙破金铙的文学典故，走到府城玉皇庙的星宿彩塑；再从原著中的假佛寺，走近隰县小西天的悬塑艺术。在这里，把游戏、原著和现实遗产放在各自的证据里阅读。",
+  "overviewEn": "From the literary episode in which Kang-Jin-Loong pierces the golden cymbals to the painted constellation sculptures of the Yuhuang Temple at Fucheng, and from the novel's false Buddhist temple to the suspended sculptures of Xiaoxitian in Xi County: here the game, the novel and real heritage are each read against their own evidence.",
+  "readingGuideZh": "重点观察两组不同的证据链：亢金龙与玉皇庙彩塑，以及小雷音寺场景与隰县小西天悬塑；照片展示文物或环境，政府报道才说明与游戏的联系。",
+  "readingGuideEn": "Follow two separate chains of evidence: Kang-Jin-Loong and the sculptures of the Yuhuang Temple, then the Little Thunderclap Temple scene and the suspended sculptures of Xiaoxitian. The photographs document the artifacts or their setting; the government reports establish the connection to the game.",
+  "sources": ["G09", "W065", "H01", "H02", "H03", "H04", "H05"],
   "atmosphereMediaId": "atmosphere-03",
   "mapMediaId": "chapter-03-map",
   "mapMode": "schematic",
@@ -71,6 +71,62 @@
         }
       ],
       "position": { "x": 0.17, "y": 0.45 }
+    },
+    {
+      "id": "little-thunderclap-temple",
+      "nameZh": "小雷音寺",
+      "nameEn": "Little Thunderclap Temple",
+      "type": "architecture",
+      "areaZh": "第三回 · 小雷音寺",
+      "areaEn": "Chapter Three · Little Thunderclap Temple",
+      "summaryZh": "从原著中的假佛寺，走近现实悬塑形成的层叠天宫。",
+      "summaryEn": "From the false temple in the novel to a real suspended-sculpture world of layered heavenly halls.",
+      "layers": ["game", "journey-to-the-west", "real-world"],
+      "game": {
+        "descriptionZh": "小雷音寺位于第三回主线后段，是通往黄眉遭遇的核心建筑场景。游戏借用同名地点与假佛境母题，重新组织寺内空间、人物关系和叙事情境。",
+        "descriptionEn": "Little Thunderclap Temple stands near the end of Chapter Three's main route and forms the central architectural setting for the encounter with Yellowbrow. The game borrows the place-name and the motif of a false Buddha realm, then rebuilds the interior space, relationships and dramatic situation.",
+        "sources": ["G08", "G09", "G15"]
+      },
+      "funFacts": [
+        {
+          "textZh": "隰县小西天又名千佛庵；本页展示的是大雄宝殿外观，殿内悬塑的游戏对照由公开报道提供证据。",
+          "textEn": "Xiaoxitian in Xi County is also known as Qianfo An, the Thousand Buddha Nunnery. The photograph here shows the Great Buddha Hall's exterior; the comparison between the suspended sculptures inside and the game scene rests on the published reports.",
+          "sources": ["H02", "H03"]
+        }
+      ],
+      "sources": ["G08", "G09", "G15", "W065", "H02", "H03", "H05"],
+      "journeyToTheWest": {
+        "relationship": "direct",
+        "chapterNumbers": [65],
+        "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
+        "chapterTitlesEn": ["A Demon Sets Up a False Thunderclap Temple; All Four Pilgrims Meet Great Calamity"],
+        "summaryZh": "原著第六十五回写唐僧把小雷音寺误认作灵山佛境。悟空察觉凶气，寺内的黄眉却扮作佛祖，最终把悟空困入金铙。",
+        "summaryEn": "Chapter 65 has Tang Sanzang mistake Little Thunderclap Temple for the Buddha realm of Vulture Peak. Wukong senses an ominous presence, but Yellowbrow poses as a Buddha inside and eventually traps Wukong in the golden cymbals.",
+        "excerptZh": "那長老戰兢兢的爬起來再看，真個是四個字，乃「小雷音寺」。",
+        "excerptEn": "The elder scrambled up trembling and looked again. There really were four characters: ‘Little Thunderclap Temple.’",
+        "excerptSourceId": "W065",
+        "adaptationNoteZh": "游戏保留了小雷音寺、黄眉与假佛境的核心联系，但关卡空间、视觉艺术与天命人的经历不是原著场面的逐项复刻。",
+        "adaptationNoteEn": "The game keeps the core connection among Little Thunderclap Temple, Yellowbrow and the false Buddha realm, but its level space, visual art and the Destined One's experience are not a point-by-point reconstruction of the novel.",
+        "sources": ["W065"]
+      },
+      "realWorld": [
+        {
+          "nameZh": "隰县小西天 · 大雄宝殿悬塑",
+          "nameEn": "Xiaoxitian, Xi County · suspended sculptures of the Great Buddha Hall",
+          "locationZh": "山西省 · 临汾市 · 隰县",
+          "locationEn": "Xi County, Linfen, Shanxi Province",
+          "descriptionZh": "隰县小西天大雄宝殿以密集悬塑著称，人物、楼阁与祥云在高处层层展开。央视新闻稿转载及政府系统报道把这组悬塑与游戏中“既见未来，为何不拜”的场景并列讨论，为理解小雷音寺的层叠视觉提供了现实艺术对象。",
+          "descriptionEn": "The Great Buddha Hall at Xiaoxitian in Xi County is known for dense suspended sculptures in which figures, pavilions and clouds unfold in layers above the visitor. A reprinted CCTV report and government-system reporting set these sculptures beside the game's “Since you see the future, why not bow?” scene, providing a real work of art through which to read the layered imagery of Little Thunderclap Temple.",
+          "evidenceScopeZh": "公开资料支持的是悬塑构图与具体游戏场景的对照。它不证明第三回全部寺庙建筑都由隰县小西天逐件扫描，也不应把本页的建筑外观照片当成殿内悬塑细节。",
+          "evidenceScopeEn": "The public sources support a comparison between the suspended-sculpture composition and a specific game scene. They do not show that every temple building in Chapter Three was scanned piece by piece from Xiaoxitian, and the exterior photograph on this page must not be treated as a view of the sculptures inside.",
+          "relationship": "cultural-comparison",
+          "confidence": "high-confidence",
+          "evidenceType": "government-source",
+          "sources": ["H02", "H03", "H05"],
+          "mediaIds": ["heritage-xiaoxitian-exterior-01"]
+        }
+      ],
+      "position": { "x": 0.84, "y": 0.45 }
     },
     {
       "id": "yellowbrow",
@@ -295,13 +351,13 @@
     },
     {
       "from": "forest-of-felicity",
-      "to": "temple-entrance",
+      "to": "little-thunderclap-temple",
       "kind": "main",
       "mode": "route",
       "sources": ["G08", "G15"]
     },
     {
-      "from": "temple-entrance",
+      "from": "little-thunderclap-temple",
       "to": "yellowbrow",
       "kind": "main",
       "mode": "route",
@@ -373,13 +429,6 @@
       "nameZh": "快活林",
       "nameEn": "Forest of Felicity",
       "position": { "x": 0.69, "y": 0.45 },
-      "sources": ["G08", "G15"]
-    },
-    {
-      "id": "temple-entrance",
-      "nameZh": "寺门",
-      "nameEn": "Temple Gate",
-      "position": { "x": 0.84, "y": 0.45 },
       "sources": ["G08", "G15"]
     }
   ]

@@ -105,13 +105,13 @@
       "isMarker": false
     },
     {
-      "id": "temple-entrance",
-      "name": "寺门",
+      "id": "little-thunderclap-temple",
+      "name": "小雷音寺",
       "position": {
         "x": 0.84,
         "y": 0.45
       },
-      "isMarker": false
+      "isMarker": true
     }
   ],
   "edges": [
@@ -178,7 +178,7 @@
     },
     {
       "fromId": "forest-of-felicity",
-      "toId": "temple-entrance",
+      "toId": "little-thunderclap-temple",
       "kind": "main",
       "mode": "route",
       "sources": [
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "fromId": "temple-entrance",
+      "fromId": "little-thunderclap-temple",
       "toId": "yellowbrow",
       "kind": "main",
       "mode": "route",

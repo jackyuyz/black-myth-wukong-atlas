@@ -750,6 +750,9 @@ function About() {
 function SourcesPage() {
   const lang = useLang();
   const t = useUi();
+  const heritageMedia = Object.entries(media).filter(
+    ([, item]) => item.assetRole === "heritage-documentary",
+  );
   return (
     <main id="main-content" className="prose-page sources-page">
       <p className="eyebrow">{t.sourcesEyebrow}</p>
@@ -759,6 +762,21 @@ function SourcesPage() {
         {t.sourcesTitleB}
       </h1>
       <p className="page-lede">{t.sourcesLede}</p>
+      <h2>{t.sourcesHeritageTitle}</h2>
+      <p className="heritage-source-lede">{t.sourcesHeritageLede}</p>
+      <div className="heritage-source-gallery">
+        {heritageMedia.map(([id, item]) => (
+          <article className="heritage-source-card" key={id}>
+            <HeritagePhoto id={id} compact />
+            <p>
+              <Text>{pick(lang, item, "evidenceScope")}</Text>
+            </p>
+            {item.evidenceSourceIds.length > 0 && (
+              <SourceLinks ids={item.evidenceSourceIds} />
+            )}
+          </article>
+        ))}
+      </div>
       <h2>{t.sourcesTextTitle}</h2>
       <div className="source-index">
         {Object.entries(sources).map(([id, s]) => (
