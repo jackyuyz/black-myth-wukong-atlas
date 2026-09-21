@@ -200,81 +200,180 @@ small {
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 20;
-  width: min(390px, calc(100vw - 32px));
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas:
-    "copy controls"
-    "select controls";
-  gap: 8px 14px;
+  z-index: 40;
+  isolation: isolate;
+  width: 218px;
+  height: 86px;
+  display: flex;
+  gap: 9px;
   align-items: center;
-  padding: 13px 14px;
-  border: 1px solid #c3ad7c45;
-  background: #121813f2;
-  box-shadow: 0 12px 38px #0008;
-  backdrop-filter: blur(12px);
+  padding: 17px 13px 9px;
+  border: 1px solid #c3ad7c66;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 34% 42%, #7d49312b 0 18%, transparent 43%),
+    linear-gradient(135deg, #182019f5, #0f1411f7);
+  box-shadow:
+    0 15px 42px #000a,
+    inset 0 0 0 1px #ffffff08,
+    inset 0 0 28px #0007;
+  backdrop-filter: blur(14px);
+  user-select: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
-.music-copy {
-  grid-area: copy;
-  min-width: 0;
+.background-music::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  z-index: -1;
+  border: 1px solid #c3ad7c20;
+  border-radius: inherit;
+  pointer-events: none;
 }
-.music-copy > span {
-  display: block;
-  color: var(--gold);
-  font-size: 9px;
-  letter-spacing: 1.5px;
+.background-music.is-playing {
+  border-color: #d1b8798a;
+  box-shadow:
+    0 17px 48px #000b,
+    0 0 24px #a7493819,
+    inset 0 0 0 1px #ffffff0b,
+    inset 0 0 28px #0007;
 }
-.music-copy strong {
-  display: block;
-  overflow: hidden;
-  margin-top: 3px;
-  color: #e8dfcc;
-  font: 13px/1.35 var(--serif);
-  font-weight: 500;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.background-music.is-dragging {
+  box-shadow:
+    0 22px 58px #000c,
+    0 0 0 1px #d4bf8355,
+    inset 0 0 28px #0007;
 }
-.music-copy small {
-  display: block;
-  margin-top: 3px;
-  color: #c89f78;
-  font-size: 9px;
-  line-height: 1.35;
+.music-drag-handle {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  z-index: 3;
+  width: 52px;
+  height: 17px;
+  padding: 0;
+  transform: translateX(-50%);
+  border: 0;
+  color: #aa9b7885;
+  font: 9px/1 sans-serif;
+  letter-spacing: 3px;
+  cursor: grab;
+  touch-action: none;
 }
-.music-track-select {
-  grid-area: select;
-  min-width: 0;
-  width: 100%;
-  height: 25px;
-  padding: 2px 24px 2px 7px;
-  border: 1px solid #ffffff20;
-  color: #aeb3a2;
-  background: #171e18;
-  font-size: 9px;
+.music-drag-handle:hover {
+  border: 0;
+  color: #d5c496;
+  background: transparent;
+}
+.music-drag-handle:active,
+.is-dragging .music-drag-handle {
+  cursor: grabbing;
+}
+.music-orbit {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  z-index: -1;
+  width: 136px;
+  height: 58px;
+  border: 1px solid #c3ad7c24;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.is-playing .music-orbit {
+  animation: music-breathe 2.8s ease-in-out infinite;
+}
+@keyframes music-breathe {
+  50% {
+    border-color: #d2ba7f66;
+    box-shadow: 0 0 16px #a7493826;
+    transform: scale(1.035);
+  }
 }
 .music-controls {
-  grid-area: controls;
-  display: grid;
-  grid-template-columns: repeat(3, 30px);
-  gap: 5px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .music-controls button {
   display: grid;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   padding: 0;
   place-items: center;
+  border: 0;
+  border-radius: 50%;
   color: #c9bd9d;
-  font: 16px/1 var(--serif);
+  font: 20px/1 var(--serif);
+}
+.music-controls button:hover {
+  border: 0;
+  color: #f3e4c1;
+  background: #c3ad7c13;
 }
 .music-controls .music-toggle {
-  border-color: #c3ad7c66;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #c3ad7c70;
+  background: #1a211bf0;
   color: #f1e5cc;
+  font: 14px/1 sans-serif;
+  box-shadow:
+    0 5px 16px #0008,
+    inset 0 0 0 3px #0c100da8;
 }
 .music-controls .music-toggle[aria-pressed="true"] {
-  background: #914637;
+  background: radial-gradient(circle at 38% 34%, #b45a46, #713329);
   border-color: #b86351;
+  box-shadow:
+    0 5px 18px #0009,
+    0 0 16px #a749383f,
+    inset 0 0 0 3px #421f1ba0;
+}
+.floating-lang-toggle {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+}
+.floating-lang-toggle a {
+  display: flex;
+  width: 51px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: 1px solid #c3ad7c42;
+  border-radius: 18px;
+  color: #777d70;
+  background: #0d120fb3;
+  font: 9px/1 sans-serif;
+  letter-spacing: 0.2px;
+}
+.floating-lang-toggle a:hover {
+  border-color: #c3ad7c78;
+  color: #bdb6a3;
+  background: #c3ad7c0d;
+}
+.floating-lang-toggle i {
+  color: #6e715f;
+  font-style: normal;
+}
+.floating-lang-toggle a[data-current-lang="zh"] span:first-child,
+.floating-lang-toggle a[data-current-lang="en"] span:last-child {
+  color: #f0e3c8;
+  font-weight: 700;
+}
+.music-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 .page-container {
   width: min(1260px, 91%);
@@ -2558,18 +2657,29 @@ small {
     padding: 0 8px;
   }
   .background-music {
-    left: 12px;
+    left: auto;
     right: 12px;
     bottom: 12px;
-    width: auto;
-    padding: 11px 12px;
-  }
-  .music-controls {
-    grid-template-columns: repeat(3, 29px);
+    width: 204px;
+    height: 80px;
+    padding: 16px 11px 8px;
   }
   .music-controls button {
-    width: 29px;
-    height: 29px;
+    width: 31px;
+    height: 31px;
+  }
+  .music-controls .music-toggle {
+    width: 41px;
+    height: 41px;
+  }
+  .music-orbit {
+    left: 8px;
+    width: 126px;
+    height: 54px;
+  }
+  .floating-lang-toggle a {
+    width: 48px;
+    height: 32px;
   }
 }
 /* Chinese that stays on an English page keeps its own font stack. */

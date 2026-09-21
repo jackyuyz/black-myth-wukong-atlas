@@ -608,6 +608,13 @@ music enabled; returning visitors keep their last enabled state and selected
 track. The player attempts audible autoplay, then retries on the visitor's first
 interaction when browser autoplay policy blocks the initial request.
 
+The compact floating controller exposes only previous, play/pause, and next
+track controls; it does not expose a track selector. It also carries a second
+language switch that stays in sync with the header language control by deriving
+its state from the current localized route. Visitors may drag the controller,
+and its clamped viewport position persists locally. The drag handle is keyboard
+reachable and supports arrow-key movement.
+
 ---
 
 ## 11. Responsive Design

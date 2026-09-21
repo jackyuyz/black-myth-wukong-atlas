@@ -229,7 +229,7 @@ const zh = {
   soundOn: "开",
   soundOff: "关",
   soundAria: (enabled: boolean) => `界面声音：${enabled ? "开启" : "关闭"}`,
-  musicRegionLabel: "背景音乐播放器",
+  musicRegionLabel: "悬浮音乐与语言控制",
   musicLabel: "背景音乐",
   musicTrackLabel: "选择背景音乐曲目",
   musicPrevious: "上一首",
@@ -237,6 +237,8 @@ const zh = {
   musicPlay: "播放背景音乐",
   musicPause: "暂停背景音乐",
   musicAutoplayBlocked: "点击页面后开始播放",
+  musicDragHandle: "拖动悬浮控制；也可用方向键移动",
+  musicNowPlaying: "当前曲目",
 };
 type Dict = typeof zh;
 const en: Dict = {
@@ -489,7 +491,7 @@ const en: Dict = {
   soundOff: "Off",
   soundAria: (enabled: boolean) =>
     `Interface sound: ${enabled ? "on" : "off"}`,
-  musicRegionLabel: "Background music player",
+  musicRegionLabel: "Floating music and language controls",
   musicLabel: "Background music",
   musicTrackLabel: "Choose a background music track",
   musicPrevious: "Previous track",
@@ -497,5 +499,7 @@ const en: Dict = {
   musicPlay: "Play background music",
   musicPause: "Pause background music",
   musicAutoplayBlocked: "Starts after your first interaction",
+  musicDragHandle: "Drag the floating controls; arrow keys also move them",
+  musicNowPlaying: "Now playing",
 };
 export const ui: Record<Lang, Dict> = { zh, en };

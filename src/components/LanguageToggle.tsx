@@ -11,10 +11,34 @@ const options: { lang: Lang; label: string; lettering: string }[] = [
  * search string and hash travel with it, so a deep link to a reading card
  * opens the same card in the other language.
  */
-export function LanguageToggle() {
+export function LanguageToggle({
+  variant = "header",
+}: {
+  variant?: "header" | "floating";
+}) {
   const current = useLang();
   const t = useUi();
   const { pathname, search, hash } = useLocation();
+
+  if (variant === "floating") {
+    const target: Lang = current === "zh" ? "en" : "zh";
+    return (
+      <nav className="floating-lang-toggle" aria-label={t.languageNavLabel}>
+        <Link
+          to={swapLocale(pathname, target) + search + hash}
+          hrefLang={hrefLang[target]}
+          aria-label={target === "zh" ? t.switchToZh : t.switchToEn}
+          data-current-lang={current}
+          data-sound="select"
+        >
+          <span lang="zh-Hans">中</span>
+          <i aria-hidden="true">/</i>
+          <span lang="en">EN</span>
+        </Link>
+      </nav>
+    );
+  }
+
   return (
     <nav className="lang-toggle" aria-label={t.languageNavLabel}>
       {options.map((option) => {
