@@ -140,7 +140,8 @@ export const markerSchema = z
         chapterNumbers: z.array(z.number().int().min(1).max(100)).min(1),
         chapterTitlesZh: z.array(zh).min(1),
         summaryZh: zh,
-        excerptZh: zh.optional(),
+        excerptZh: zh,
+        excerptSourceId: z.string().regex(/^[WGHFL]\d{2,3}$/),
         adaptationNoteZh: zh,
         sources: refs,
       })

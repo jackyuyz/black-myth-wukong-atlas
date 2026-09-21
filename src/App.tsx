@@ -55,7 +55,12 @@ function AppShell({ children }: { children: React.ReactNode }) {
       </a>
       <header className="site-header">
         <Link className="brand" to="/">
-          <img src="/art/emblem.svg" width="35" height="35" alt="" />
+          <img
+            src="/art/wukong-header-logo.png"
+            width="46"
+            height="46"
+            alt=""
+          />
           <span>
             黑神话：悟空<small>文化地图</small>
           </span>

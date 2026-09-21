@@ -68,6 +68,23 @@ export function ReadingCard({ marker }: { marker: Marker }) {
         游戏中的呈现 → 原著中的出处与改编
         {marker.realWorld ? " → 现实文化与实地遗产" : ""}
       </p>
+      {novel && (
+        <blockquote className="novel-excerpt novel-excerpt-featured">
+          <span className="novel-excerpt-label">《西游记》原著原文</span>
+          <p>{novel.excerptZh}</p>
+          <cite>
+            原文节选 ·{" "}
+            <a
+              href={sources[novel.excerptSourceId]!.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {sources[novel.excerptSourceId]!.titleZh}
+              <span aria-hidden="true"> ↗</span>
+            </a>
+          </cite>
+        </blockquote>
+      )}
       <section>
         <h3>
           <span>一</span> 游戏中的呈现
@@ -95,12 +112,6 @@ export function ReadingCard({ marker }: { marker: Marker }) {
               </p>
             ))}
             <p>{novel.summaryZh}</p>
-            {novel.excerptZh && (
-              <blockquote>
-                {novel.excerptZh}
-                <cite>《西游记》原文节选</cite>
-              </blockquote>
-            )}
             <div className="adaptation">
               <strong>游戏怎样改写</strong>
               <p>{novel.adaptationNoteZh}</p>

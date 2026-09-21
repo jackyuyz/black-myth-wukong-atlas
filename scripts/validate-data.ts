@@ -106,6 +106,15 @@ export function validateData(
         fail("内容层标签与正文不一致");
       if (!marker.journeyToTheWest && !marker.noDirectNovelZh)
         fail("缺少原著关系说明");
+      if (marker.journeyToTheWest) {
+        const novel = marker.journeyToTheWest;
+        const excerptSource = sources[novel.excerptSourceId];
+        if (!excerptSource) fail(`原著摘引来源无法解析：${novel.excerptSourceId}`);
+        if (!novel.sources.includes(novel.excerptSourceId))
+          fail("原著摘引来源必须列入原著来源");
+        if (excerptSource.type !== "primary-text")
+          fail("原著摘引必须指向原始文本");
+      }
       for (const heritage of marker.realWorld ?? []) {
         if (
           heritage.confidence === "confirmed" &&

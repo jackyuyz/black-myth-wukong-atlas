@@ -102,21 +102,20 @@
     "modificationNoteZh": "项目以程序绘制的原创矢量山形。"
   },
   "emblem": {
-    "file": "/art/emblem.svg",
-    "titleZh": "山与杖项目标志",
-    "altZh": "方印中的抽象山形与竖线",
-    "usageNoteZh": "原创项目标志，不使用官方游戏标志。",
+    "file": "/art/wukong-header-logo.png",
+    "titleZh": "悟空人物页头标志",
+    "altZh": "红黑圆环中的披甲悟空半身像",
+    "usageNoteZh": "经授权用于本项目页头的装饰性人物图标。",
     "assetRole": "ui-icon",
-    "provenanceType": "original-vector",
+    "provenanceType": "sourced",
     "documentary": false,
-    "creator": "黑神话悟空文化地图项目",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Saif96",
+    "license": "经权利人授权用于本项目",
     "licenseStatus": "cleared",
-    "firstParty": true,
+    "sourceUrl": "https://www.deviantart.com/saif96/art/Black-Myth-Wukong-V2-1066573500",
     "evidenceSourceIds": [],
     "evidenceScopeZh": "仅营造章节氛围，不充当事实证据。",
-    "modificationNoteZh": "项目以程序绘制的原创矢量山形。"
+    "modificationNoteZh": "由用户提供的授权文件裁取无文字人物区域，以圆形透明蒙版移除白色背景；人物画面未重绘。"
   },
   "heritage-yuhuang-kang-jin-long-01": {
     "file": "/images/kang-jin-long.webp",

@@ -33,6 +33,8 @@
         "chapterNumbers": [20],
         "chapterTitlesZh": ["黄风岭唐僧有难　半山中八戒争先"],
         "summaryZh": "原著第二十回的虎先锋是黄风怪的手下，曾抓走唐僧。",
+        "excerptZh": "吾當不是別人，乃是黃風大王部下的前路先鋒。",
+        "excerptSourceId": "W020",
         "adaptationNoteZh": "游戏中的虎妖家族与人物经历属于游戏扩写。",
         "sources": ["W020"]
       },
@@ -59,6 +61,8 @@
           "护法设庄留大圣　须弥灵吉定风魔"
         ],
         "summaryZh": "原著写黄风岭黄风洞的黄风怪，第二十一回中灵吉菩萨协助降伏他。",
+        "excerptZh": "忽然間，一陣黃風，從空刮起。",
+        "excerptSourceId": "W021",
         "adaptationNoteZh": "游戏里的黄金之国往事是独立扩写，不等于原著已有同样完整的历史。",
         "sources": ["W020", "W021"]
       },
@@ -135,6 +139,8 @@
         "chapterNumbers": [21],
         "chapterTitlesZh": ["护法设庄留大圣　须弥灵吉定风魔"],
         "summaryZh": "原著第二十一回由灵吉菩萨出面降伏黄风怪，核心是如何克制黄风神通。",
+        "excerptZh": "如來賜了我一顆定風丹、一柄飛龍寶杖。",
+        "excerptSourceId": "W021",
         "adaptationNoteZh": "小说里的降风过程与游戏法宝系统不是同一件事；这里只说明母题重组。",
         "sources": ["W021"]
       },

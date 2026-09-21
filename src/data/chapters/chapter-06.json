@@ -33,6 +33,8 @@
         "chapterNumbers": [1],
         "chapterTitlesZh": ["灵根育孕源流出　心性修持大道生"],
         "summaryZh": "原著开篇写花果山仙石孕育石猴，之后石猴发现水帘洞。",
+        "excerptZh": "內育仙胞，一日迸裂，產一石卵，似圓毬樣大。因見風，化作一個石猴，五官俱備，四肢皆全。",
+        "excerptSourceId": "W001",
         "adaptationNoteZh": "游戏第六回属于独立的结局创作，不能把新的遭遇补写进小说原文。",
         "sources": ["W001"]
       },
@@ -136,6 +138,8 @@
         "chapterNumbers": [1],
         "chapterTitlesZh": ["灵根育孕源流出　心性修持大道生"],
         "summaryZh": "原著第一回写石猴穿过瀑布发现水帘洞，群猴随后尊他为王。",
+        "excerptZh": "只見正當中有一石碣，碣上有一行楷書大字，鐫著「花果山福地，水簾洞洞天」。",
+        "excerptSourceId": "W001",
         "adaptationNoteZh": "游戏沿用花果山与水帘洞意象，却把这里重构为走向最终战的空间。",
         "sources": ["W001"]
       },

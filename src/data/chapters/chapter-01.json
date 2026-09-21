@@ -31,6 +31,8 @@
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
         "summaryZh": "广智是观音院的小和尚。他看见唐僧的袈裟后，提出杀害唐僧、夺取袈裟的计策。",
+        "excerptZh": "正說話處，有一個小和尚，名喚廣智，出頭道：「公公要得長遠，也容易。」",
+        "excerptSourceId": "W016",
         "adaptationNoteZh": "名字与夺宝故事有直接出处；妖怪形象及游戏经历属于重新创作。",
         "sources": ["W016"]
       },
@@ -83,7 +85,8 @@
         "summaryZh": "唐僧与悟空在观音禅院借宿，袈裟引起老僧的贪念，随后发生谋害、纵火与失窃。",
         "adaptationNoteZh": "游戏把原著里的借宿与失火故事重构为玩家探索的空间；同名地点不等于已确认的现实寺院模型。",
         "sources": ["W016"],
-        "excerptZh": "那正殿上書四個大字，是「觀音禪院」。"
+        "excerptZh": "那正殿上書四個大字，是「觀音禪院」。",
+        "excerptSourceId": "W016"
       },
       "position": {
         "x": 0.26,
@@ -108,6 +111,8 @@
         "chapterNumbers": [17],
         "chapterTitlesZh": ["孙行者大闹黑风山　观世音收伏熊罴怪"],
         "summaryZh": "原著的凌虚子是黑熊精的友人，为苍狼所化，参与黑风山的故事。",
+        "excerptZh": "那個盤兒底下卻有字，刻道「凌虛子製」。",
+        "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏“灵虚子”的身份与遭遇需按游戏叙事理解；不能直接套用原著“凌虚子”的生平。",
         "sources": ["W017"]
       },
@@ -153,6 +158,8 @@
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
         "summaryZh": "广谋在原著中是广智的师弟，提出用纵火烧毁禅堂的方法谋害唐僧、留下袈裟。",
+        "excerptZh": "內中又有一個小和尚，名喚廣謀，就是那廣智的師弟。",
+        "excerptSourceId": "W016",
         "adaptationNoteZh": "原著提供人物与纵火计谋；游戏中的妖怪造型、战斗和后续经历是扩写。",
         "sources": ["W016"]
       },
@@ -179,6 +186,8 @@
         "chapterNumbers": [17],
         "chapterTitlesZh": ["孙行者大闹黑风山　观世音收伏熊罴怪"],
         "summaryZh": "原著中的白衣秀士是黑熊精的同伴，原形为白花蛇。",
+        "excerptZh": "只把個白衣秀士一棒打死。拖將過來看處，卻是一條白花蛇怪。",
+        "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏重新安排了他的遭遇与战斗。原著写的是“白花蛇”，不要误记成“百花蛇”。",
         "sources": ["W017"]
       },
@@ -205,6 +214,8 @@
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
         "summaryZh": "原著第十六回的寺院大火来自夺取袈裟的贪念。金池与僧人的选择推动了这场悲剧。",
+        "excerptZh": "須臾間，風狂火盛，把一座觀音院，處處通紅。",
+        "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏借用旧事与人物重构隐藏区域；三口钟开启隐藏场景是游戏机制，不是原著桥段。",
         "sources": ["W016"]
       },
@@ -231,6 +242,8 @@
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
         "summaryZh": "观音院的老僧见到袈裟后动了贪念。原著中他自述二百七十岁，这是小说人物的自述，不是现实寿命记录。",
+        "excerptZh": "我今年二百七十歲，空掙了幾百件袈裟。",
+        "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏中的金池形象和战斗属于对原著悲剧的重构，不能当作小说里的原貌。",
         "sources": ["W016"]
       },
@@ -257,6 +270,8 @@
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
         "summaryZh": "悟空向广目天王借来辟火罩保护唐僧，使唐僧在观音院的大火中免遭焚烧。",
+        "excerptZh": "只是借此罩，護住了唐僧無傷，其餘管他，盡他燒去。",
+        "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏沿用名称和避火意象，重新设计了获得方式与使用机制；规范名称是“辟火罩”。",
         "sources": ["W016"]
       },
@@ -286,6 +301,8 @@
           "孙行者大闹黑风山　观世音收伏熊罴怪"
         ],
         "summaryZh": "黑风山黑风洞是原著黑熊精活动的地方。袈裟失窃之后，悟空前往黑风山追寻，最终由观音收伏熊罴怪。",
+        "excerptZh": "一個是修正齊天聖，一個是成精黑大王。",
+        "excerptSourceId": "W017",
         "adaptationNoteZh": "洞内的游戏战斗是新的情境；黑风山、黑风洞与袈裟事件构成了文学背景。",
         "sources": ["W016", "W017"]
       },
@@ -315,6 +332,8 @@
           "孙行者大闹黑风山　观世音收伏熊罴怪"
         ],
         "summaryZh": "黑熊精看到观音院起火，原本准备救火；进入院中见到袈裟后起了贪念，趁乱取走。第十七回他被观音收伏。",
+        "excerptZh": "侍生熊羆頓首拜，啟上大闡金池老上人丹房。",
+        "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏续写了角色经历；原著提供的是火乱、窃衣与收伏的故事，二者应分层阅读。",
         "sources": ["W016", "W017"]
       },
@@ -341,6 +360,8 @@
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
         "summaryZh": "唐僧展示的袈裟让金池长老生贪，僧人随后设下计谋。寺院火乱时，黑熊精把袈裟取走。",
+        "excerptZh": "那和尚把袈裟騙到手，拿在後房燈下，對袈裟號咷痛哭。",
+        "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏以袈裟相关往事重构黑风山叙事；器物的叙事作用与玩家装备系统需要分开。",
         "sources": ["W016"]
       }

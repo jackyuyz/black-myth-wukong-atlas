@@ -33,6 +33,8 @@
         "chapterNumbers": [60],
         "chapterTitlesZh": ["牛魔王罢战赴华筵　孙行者二调芭蕉扇"],
         "summaryZh": "原著“辟水金睛兽”是牛魔王的坐骑，出现在赴宴与悟空设法借扇的情节里。",
+        "excerptZh": "牌樓下拴著那個辟水金睛獸。",
+        "excerptSourceId": "W060",
         "adaptationNoteZh": "注意名称用字：游戏妖王为“璧水金睛兽”，原著坐骑为“辟水金睛兽”；角色作用与故事也有所不同。",
         "sources": ["W060"]
       },
@@ -60,6 +62,8 @@
           "猪八戒助力败魔王　孙行者三调芭蕉扇"
         ],
         "summaryZh": "原著用三回篇幅讲悟空三调芭蕉扇，牵连铁扇公主、牛魔王与火焰山。",
+        "excerptZh": "在西方路上，難過火焰山，特來拜借芭蕉扇一用。",
+        "excerptSourceId": "W059",
         "adaptationNoteZh": "游戏借用器物和人物关系，重新安排天命人的经历。",
         "sources": ["W059", "W060", "W061"]
       },
@@ -131,6 +135,8 @@
         "chapterNumbers": [40, 42],
         "chapterTitlesZh": ["婴儿戏化禅心乱　猿马刀归木母空", "大圣殷勤拜南海　观音慈善缚红孩"],
         "summaryZh": "原著中的红孩儿是牛魔王与罗刹女之子，号圣婴大王，后来由观音收为善财童子。",
+        "excerptZh": "你今既受我戒，我卻也不慢你，稱你做善財童子，如何？",
+        "excerptSourceId": "W042",
         "adaptationNoteZh": "游戏中的夜叉王形态、家族冲突与结局属于续写，不能补进原著。",
         "sources": ["W040", "W042"]
       },

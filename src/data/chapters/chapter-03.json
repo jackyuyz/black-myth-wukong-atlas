@@ -33,6 +33,8 @@
         "chapterNumbers": [65],
         "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
         "summaryZh": "二十八宿参与解救困在金铙中的悟空。亢金龙把角伸入金铙，悟空设法借此脱身。金铙在这个故事里是一件能困住人的法器。",
+        "excerptZh": "亢金龍道：「大聖啊，且休焦躁。觀此寶定是個如意之物，斷然也能變化。」",
+        "excerptSourceId": "W065",
         "adaptationNoteZh": "游戏重新设计了形态、人格和遭遇；原著典故不能证明开发团队使用过哪一件文物。",
         "sources": ["W065"]
       },
@@ -72,6 +74,8 @@
           "诸神遭毒手　弥勒缚妖魔"
         ],
         "summaryZh": "原著的黄眉原是弥勒座前童子，使用金铙与人种袋，最终被弥勒收伏。",
+        "excerptZh": "他是我面前司磬的一個黃眉童兒。",
+        "excerptSourceId": "W066",
         "adaptationNoteZh": "游戏里天命人的遭遇与寺中故事是重新创作，不是原著文字的逐场复现。",
         "sources": ["W065", "W066"]
       },
@@ -95,6 +99,8 @@
         "chapterNumbers": [65],
         "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
         "summaryZh": "原著写二十八宿协助悟空脱离金铙，其中有亢金龙之名。",
+        "excerptZh": "亢金龍道：「大聖啊，且休焦躁。觀此寶定是個如意之物，斷然也能變化。」",
+        "excerptSourceId": "W065",
         "adaptationNoteZh": "游戏以“星君”形象扩写角色经历；原著没有与游戏完全相同的人物生平。",
         "sources": ["W065"]
       },
@@ -150,6 +156,8 @@
         "chapterNumbers": [6],
         "chapterTitlesZh": ["观音赴会问原因　小圣施威降大圣"],
         "summaryZh": "原著第六回写二郎神与悟空在花果山斗武艺、斗变化。",
+        "excerptZh": "真君與大聖鬥經三百餘合，不知勝負。",
+        "excerptSourceId": "W006",
         "adaptationNoteZh": "游戏借用人物与斗法母题，重新安排发生时间、地点与结局。",
         "sources": ["W006"]
       },

@@ -109,6 +109,12 @@ small {
   gap: 13px;
   flex-shrink: 0;
 }
+.brand img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px #0009);
+}
 .brand > span {
   font-family: var(--serif);
   font-size: 19px;
@@ -1260,16 +1266,27 @@ small {
   color: #d5cdb4;
   margin-bottom: 12px;
 }
-.reading-card blockquote {
+.reading-card .novel-excerpt {
   padding: 21px;
   margin: 22px 0;
   background: #d8caa50c;
   border-left: 2px solid #a99462;
+  color: #e4d5af;
+}
+.reading-card .novel-excerpt-label {
+  display: block;
+  margin-bottom: 9px;
+  font: 10px/1.4 "PingFang SC", sans-serif;
+  letter-spacing: 2px;
+  color: #c6ae75;
+}
+.reading-card .novel-excerpt p {
+  margin: 0;
   font: 19px/1.9 var(--serif);
   letter-spacing: 1px;
   color: #e4d5af;
 }
-.reading-card blockquote cite {
+.reading-card .novel-excerpt cite {
   display: block;
   font:
     10px "PingFang SC",
@@ -1277,6 +1294,12 @@ small {
   letter-spacing: 1px;
   color: #b8af96;
   margin-top: 12px;
+}
+.reading-card .novel-excerpt cite a {
+  color: #d0be91;
+}
+.reading-card .novel-excerpt cite a:hover {
+  text-decoration: underline;
 }
 .adaptation,
 .evidence-scope {
@@ -1577,8 +1600,8 @@ small {
     letter-spacing: 5px;
   }
   .brand img {
-    width: 31px;
-    height: 31px;
+    width: 38px;
+    height: 38px;
   }
   .site-header nav {
     margin-left: auto;

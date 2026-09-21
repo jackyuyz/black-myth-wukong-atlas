@@ -33,6 +33,8 @@
         "chapterNumbers": [72],
         "chapterTitlesZh": ["盘丝洞七情迷本　濯垢泉八戒忘形"],
         "summaryZh": "原著第七十二回有盘丝洞七蜘蛛精及濯垢泉的故事。",
+        "excerptZh": "原來此處喚做盤絲嶺，那莊村喚做盤絲洞。洞中有七個女怪，把我師父拿住，吊在洞裡。",
+        "excerptSourceId": "W072",
         "adaptationNoteZh": "紫蛛儿的姓名、家族和与猪八戒的过往属于游戏扩写。",
         "sources": ["W072"]
       },
@@ -56,6 +58,8 @@
         "chapterNumbers": [73],
         "chapterTitlesZh": ["情因旧恨生灾毒　心主遭魔幸破光"],
         "summaryZh": "黄花观的多目怪为蜈蚣精，设毒茶害取经人，最终由毗蓝婆菩萨协助降伏。",
+        "excerptZh": "他本是個百眼魔君，又喚做多目怪。",
+        "excerptSourceId": "W073",
         "adaptationNoteZh": "游戏重新创作他的目标、势力关系与命运。",
         "sources": ["W073"]
       },
@@ -79,6 +83,8 @@
         "chapterNumbers": [72],
         "chapterTitlesZh": ["盘丝洞七情迷本　濯垢泉八戒忘形"],
         "summaryZh": "原著第七十二回写猪八戒在濯垢泉撞见七蜘蛛精，并参与盘丝洞一难。",
+        "excerptZh": "八戒笑道：「女菩薩，在這裡洗澡哩？也攜帶我和尚洗洗，何如？」",
+        "excerptSourceId": "W072",
         "adaptationNoteZh": "游戏把人物与蜘蛛精故事重新组织成新的前缘和冲突，不能当作小说原有身世。",
         "sources": ["W072"]
       },
@@ -118,6 +124,8 @@
         "chapterNumbers": [55, 73],
         "chapterTitlesZh": ["色邪淫戏唐三藏　性正修持不坏身", "情因旧恨生灾毒　心主遭魔幸破光"],
         "summaryZh": "第五十五回写昴日星官降蝎子精；第七十三回又写毗蓝婆以绣花针破多目怪金光。",
+        "excerptZh": "你去東天門裡光明宮告求昴日星官，方能降伏。",
+        "excerptSourceId": "W055",
         "adaptationNoteZh": "晦月魔君的变异经历与盘丝岭势力关系属于游戏重组，原著没有同样人物线。",
         "sources": ["W055", "W073"]
       },
@@ -141,6 +149,8 @@
         "chapterNumbers": [73],
         "chapterTitlesZh": ["情因旧恨生灾毒　心主遭魔幸破光"],
         "summaryZh": "原著第七十三回中，毗蓝婆用一枚绣花针破除多目怪放出的金光。",
+        "excerptZh": "毘藍道：「我有個繡花針兒，能破那廝。」",
+        "excerptSourceId": "W073",
         "adaptationNoteZh": "游戏沿用名称与克制金光的意象，重新设计了获得方式和法宝机制。",
         "sources": ["W073"]
       },

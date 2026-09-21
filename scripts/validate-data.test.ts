@@ -25,6 +25,19 @@ rejects(
   "无回目的原著卡必须失败",
   (d) => (d.chapters[0].markers[0].journeyToTheWest.chapterNumbers = []),
 );
+rejects("没有原文摘引的原著卡必须失败", (d) => {
+  delete d.chapters[0].markers[0].journeyToTheWest.excerptZh;
+});
+rejects(
+  "原文摘引来源必须列入原著来源",
+  (d) =>
+    (d.chapters[0].markers[0].journeyToTheWest.excerptSourceId = "W017"),
+);
+rejects("原文摘引必须指向原始文本", (d) => {
+  const novel = d.chapters[0].markers[0].journeyToTheWest;
+  novel.sources.push("G01");
+  novel.excerptSourceId = "G01";
+});
 rejects(
   "无来源的实地关联必须失败",
   (d) => (d.chapters[2].markers[0].realWorld[0].sources = []),
