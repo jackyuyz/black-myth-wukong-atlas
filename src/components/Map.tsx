@@ -95,6 +95,7 @@ export function InteractiveMap({
           onClick={() => setExpanded((value) => !value)}
           aria-label={expanded ? "退出大图模式" : "放大地图"}
           aria-pressed={expanded}
+          data-sound={expanded ? "close" : "open"}
         >
           {expanded ? "退出大图" : "展开大图"}
         </button>
@@ -196,6 +197,7 @@ export function InteractiveMap({
                         e.preventDefault();
                         onSelect(m);
                       }}
+                      data-sound="marker"
                     >
                       <span className="marker-glyph">
                         <MapSymbol type={m.type} />
@@ -223,6 +225,7 @@ export function InteractiveMap({
               <button
                 onClick={() => zoomIn(0.2, reduced ? 0 : 200)}
                 aria-label="放大地图"
+                data-sound="click"
               >
                 ＋
               </button>
@@ -230,6 +233,7 @@ export function InteractiveMap({
               <button
                 onClick={() => zoomOut(0.2, reduced ? 0 : 200)}
                 aria-label="缩小地图"
+                data-sound="click"
               >
                 −
               </button>
@@ -239,6 +243,7 @@ export function InteractiveMap({
                   if (width >= 700) centerView(initialScale, 0);
                 }}
                 aria-label="重置地图视图"
+                data-sound="select"
               >
                 复位
               </button>
@@ -256,7 +261,7 @@ export function InteractiveMap({
 export function RouteConditions({ chapter }: { chapter: Chapter }) {
   return (
     <details className="route-explanation">
-      <summary>读图说明：主线、可选探索与条件传送</summary>
+      <summary data-sound="open">读图说明：主线、可选探索与条件传送</summary>
       <p>
         实线表示主要区域先后，虚线表示可选探索，点线表示传送与返回。连线省略了中间路段，不代表直达路线；人物点的布局也不表示实际岔路。
       </p>
@@ -309,6 +314,7 @@ export function HomeMapPreview() {
       <a
         className="preview-temple"
         href={`/chapter/${chapter.id}#guanyin-temple`}
+        data-sound="marker"
       >
         <MapSymbol type="architecture" />
         {chapter.markers.find((m) => m.id === "guanyin-temple")!.nameZh}{" "}

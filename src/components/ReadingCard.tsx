@@ -251,7 +251,7 @@ export function ReadingCard({ marker }: { marker: Marker }) {
       )}
       {marker.spoiler && (
         <details className="spoiler">
-          <summary>{marker.spoiler.warningZh}</summary>
+          <summary data-sound="open">{marker.spoiler.warningZh}</summary>
           <p>{marker.spoiler.textZh}</p>
           <SourceLinks ids={marker.spoiler.sources} />
         </details>

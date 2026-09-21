@@ -21,6 +21,7 @@ import {
   MapSymbol,
   RouteConditions,
 } from "./components/Map";
+import { InterfaceSounds } from "./components/InterfaceSounds";
 function PageEffects() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
@@ -54,7 +55,7 @@ function AppShell({ children }: { children: React.ReactNode }) {
         跳到正文
       </a>
       <header className="site-header">
-        <Link className="brand" to="/">
+        <Link className="brand" to="/" data-sound="navigate">
           <img
             src="/art/wukong-header-logo.png"
             width="46"
@@ -66,14 +67,23 @@ function AppShell({ children }: { children: React.ReactNode }) {
           </span>
         </Link>
         <nav aria-label="主导航">
-          <NavLink to="/" end>
+          <NavLink to="/" end data-sound="navigate">
             首页
           </NavLink>
-          <NavLink to="/chapters">六回山川</NavLink>
-          <NavLink to="/sources">资料来源</NavLink>
-          <NavLink to="/about">关于项目</NavLink>
+          <NavLink to="/chapters" data-sound="navigate">
+            六回山川
+          </NavLink>
+          <NavLink to="/sources" data-sound="navigate">
+            资料来源
+          </NavLink>
+          <NavLink to="/about" data-sound="navigate">
+            关于项目
+          </NavLink>
         </nav>
-        <span className="header-note">循游戏之迹 · 见文化之源</span>
+        <div className="header-actions">
+          <span className="header-note">循游戏之迹 · 见文化之源</span>
+          <InterfaceSounds />
+        </div>
       </header>
       {children}
       <footer className="site-footer">
@@ -124,6 +134,7 @@ function ChapterCards() {
           className={`chapter-card chapter-${c.order}`}
           to={`/chapter/${c.id}`}
           key={c.id}
+          data-sound="navigate"
         >
           <img
             src={media[c.atmosphereMediaId].file}
@@ -170,10 +181,14 @@ function Home() {
             在一幅文化地图里，读懂游戏、原著与真实遗产。
           </p>
           <div className="hero-actions">
-            <Link className="button primary" to="/chapter/chapter-01">
+            <Link
+              className="button primary"
+              to="/chapter/chapter-01"
+              data-sound="navigate"
+            >
               展开黑风山 <span>↗</span>
             </Link>
-            <Link className="text-link" to="/chapters">
+            <Link className="text-link" to="/chapters" data-sound="navigate">
               览六回山川 <span>→</span>
             </Link>
           </div>
@@ -234,7 +249,11 @@ function Home() {
               <span className="badge">现实文化对照</span>
               <span className="badge">政府公开资料</span>
             </div>
-            <Link className="text-link" to="/chapter/chapter-03#kang-jin-loong">
+            <Link
+              className="text-link"
+              to="/chapter/chapter-03#kang-jin-loong"
+              data-sound="navigate"
+            >
               阅读{featured.nameZh}的文化联系 <span>→</span>
             </Link>
           </div>
@@ -290,7 +309,11 @@ function Drawer({
       <div className="drawer-inner">
         <div className="drawer-toolbar">
           <span>循迹 · 阅读</span>
-          <button onClick={onClose} aria-label="关闭文化阅读">
+          <button
+            onClick={onClose}
+            aria-label="关闭文化阅读"
+            data-sound="close"
+          >
             关闭 ×
           </button>
         </div>
@@ -324,6 +347,7 @@ function ChapterRail({ chapter }: { chapter: Chapter }) {
           to={`/chapter/${previous.id}`}
           state={{ chapterDirection: "previous" }}
           aria-label={`上一回：${previous.regionZh}`}
+          data-sound="navigate"
         >
           ‹
         </Link>
@@ -337,6 +361,7 @@ function ChapterRail({ chapter }: { chapter: Chapter }) {
           <NavLink
             key={c.id}
             to={`/chapter/${c.id}`}
+            data-sound="navigate"
             state={{
               chapterDirection:
                 c.order === chapter.order
@@ -357,6 +382,7 @@ function ChapterRail({ chapter }: { chapter: Chapter }) {
           to={`/chapter/${next.id}`}
           state={{ chapterDirection: "next" }}
           aria-label={`下一回：${next.regionZh}`}
+          data-sound="navigate"
         >
           ›
         </Link>
@@ -410,6 +436,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
                 to={`/chapter/${previous.id}`}
                 state={{ chapterDirection: "previous" }}
                 aria-label={`上一回：${previous.regionZh}`}
+                data-sound="navigate"
               >
                 ←
               </Link>
@@ -422,6 +449,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
                 to={`/chapter/${next.id}`}
                 state={{ chapterDirection: "next" }}
                 aria-label={`下一回：${next.regionZh}`}
+                data-sound="navigate"
               >
                 →
               </Link>
@@ -429,7 +457,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
               <span aria-hidden="true">—</span>
             )}
           </nav>
-          <Link to="/chapters" className="text-link">
+          <Link to="/chapters" className="text-link" data-sound="navigate">
             返回六回山川 ↗
           </Link>
         </div>
@@ -453,6 +481,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
                   key={id}
                   aria-pressed={category === id}
                   onClick={() => setCategory(id)}
+                  data-sound="select"
                 >
                   {label}
                 </button>
@@ -461,7 +490,11 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
           </fieldset>
           <label className="layer-select">
             读哪一层
-            <select value={layer} onChange={(e) => setLayer(e.target.value)}>
+            <select
+              value={layer}
+              onChange={(e) => setLayer(e.target.value)}
+              data-sound="select"
+            >
               <option value="all">全部知识层</option>
               {Object.entries(layerLabels).map(([key, label]) => (
                 <option value={key} key={key}>
@@ -485,6 +518,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
                   e.preventDefault();
                   setSelected(m);
                 }}
+                data-sound="marker"
               >
                 <MapSymbol type={m.type} />
                 <span>
@@ -502,6 +536,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
             <div className="empty-state">
               <p>此分类暂无可显示的标记</p>
               <button
+                data-sound="select"
                 onClick={() => {
                   setCategory("all");
                   setLayer("all");
@@ -546,7 +581,9 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
               <br />
               <small>游戏中的呈现 → 原著出处与改编 → 有据可查的现实文化</small>
             </p>
-            <a href="#chapter-reading">顺序阅读 ↓</a>
+            <a href="#chapter-reading" data-sound="open">
+              顺序阅读 ↓
+            </a>
           </div>
         </div>
       </div>
@@ -559,7 +596,7 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
         <div className="reading-index">
           {chapter.markers.map((m) => (
             <details key={m.id} id={m.id}>
-              <summary>
+              <summary data-sound="open">
                 <span className="index-type">{typeLabels[m.type]}</span>
                 <strong>{m.nameZh}</strong>
                 <span className="index-summary">{m.summaryZh}</span>
@@ -576,16 +613,20 @@ function ChapterPage({ chapter }: { chapter: Chapter }) {
           <Link
             to={`/chapter/${chapters[chapter.order - 2].id}`}
             state={{ chapterDirection: "previous" }}
+            data-sound="navigate"
           >
             ← 上一回 · {chapters[chapter.order - 2].regionZh}
           </Link>
         ) : (
-          <Link to="/">← 回到首页</Link>
+          <Link to="/" data-sound="navigate">
+            ← 回到首页
+          </Link>
         )}
         {chapter.order < 6 && (
           <Link
             to={`/chapter/${chapters[chapter.order].id}`}
             state={{ chapterDirection: "next" }}
+            data-sound="navigate"
           >
             下一回 · {chapters[chapter.order].regionZh} →
           </Link>
@@ -655,7 +696,11 @@ function About() {
       <p>
         这是民间教育与文化探索项目，与游戏科学无隶属关系。游戏及相关标识的权利归各自权利人所有。
       </p>
-      <Link className="button primary" to="/chapter/chapter-01">
+      <Link
+        className="button primary"
+        to="/chapter/chapter-01"
+        data-sound="navigate"
+      >
         从黑风山开始 ↗
       </Link>
     </main>
@@ -732,7 +777,7 @@ function NotFound() {
       <p className="eyebrow">此处尚未入卷</p>
       <h1>没有找到这一页。</h1>
       <p>回到六回山川，重新选择一处文化入口。</p>
-      <Link className="button primary" to="/chapters">
+      <Link className="button primary" to="/chapters" data-sound="navigate">
         查看六回山川 →
       </Link>
     </main>
