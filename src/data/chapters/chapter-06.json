@@ -24,7 +24,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "石猴是第六回故事中的重要形象。读到这里，可以回望小说开篇，再区分游戏中的具体角色与原著的石猴起源。名称和意象产生呼应，却不意味着两部作品有完全相同的结局。",
-        "sources": ["G09"]
+        "sources": ["G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-6-stone-monkey"]
       },
       "funFacts": [],
       "sources": ["G09", "W001"],
@@ -35,6 +36,7 @@
         "summaryZh": "原著开篇写花果山仙石孕育石猴，之后石猴发现水帘洞。",
         "excerptZh": "內育仙胞，一日迸裂，產一石卵，似圓毬樣大。因見風，化作一個石猴，五官俱備，四肢皆全。",
         "excerptSourceId": "W001",
+        "mediaIds": ["historical-jttw-sun-wukong-1590"],
         "adaptationNoteZh": "游戏第六回属于独立的结局创作，不能把新的遭遇补写进小说原文。",
         "sources": ["W001"]
       },
@@ -49,7 +51,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "王灵官位于花果山山脚青嶂道，是第六回开启大范围探索前的主线遭遇。战胜后取得的移动能力让后续四处遗物路线得以展开。",
-        "sources": ["G08", "G09", "G20"]
+        "sources": ["G08", "G09", "G20"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-6-supreme-inspector"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G20"],
@@ -154,7 +157,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "大圣残躯紧接石猿之后，是第六回最终遭遇的一部分。它属于游戏对“大圣遗留之物”与继承问题的独立创作，不能被写成《西游记》结尾。",
-        "sources": ["G09", "G20"]
+        "sources": ["G09", "G20"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-6-great-sages-broken-shell"]
       },
       "funFacts": [],
       "sources": ["G09", "G20"],
@@ -184,33 +188,171 @@
     }
   ],
   "areas": [
-    { "id": "foothills", "nameZh": "山脚 · 开放山体", "position": { "x": 0.28, "y": 0.09 } },
-    { "id": "curtain", "nameZh": "水帘洞", "position": { "x": 0.72, "y": 0.09 } },
-    { "id": "birthstone", "nameZh": "石卵", "position": { "x": 0.91, "y": 0.09 } }
+    {
+      "id": "foothills",
+      "nameZh": "山脚 · 开放山体",
+      "position": { "x": 0.28, "y": 0.09 }
+    },
+    {
+      "id": "curtain",
+      "nameZh": "水帘洞",
+      "position": { "x": 0.72, "y": 0.09 }
+    },
+    {
+      "id": "birthstone",
+      "nameZh": "石卵",
+      "position": { "x": 0.91, "y": 0.09 }
+    }
   ],
   "routes": [
-    { "from": "verdant-path", "to": "supreme-inspector", "kind": "main", "mode": "route", "sources": ["G08", "G09", "G20"] },
-    { "from": "supreme-inspector", "to": "cloud-open", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
-    { "from": "cloud-open", "to": "gold-armored-rhino", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
-    { "from": "cloud-open", "to": "cloudtreading-deer", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
-    { "from": "cloud-open", "to": "feng-tail-general", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
-    { "from": "cloud-open", "to": "emerald-armed-mantis", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
-    { "from": "gold-armored-rhino", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
-    { "from": "cloudtreading-deer", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
-    { "from": "feng-tail-general", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
-    { "from": "emerald-armed-mantis", "to": "armor-complete", "kind": "main", "mode": "route", "sources": ["G09"] },
-    { "from": "armor-complete", "to": "water-curtain-cave", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
-    { "from": "water-curtain-cave", "to": "peak-innocence", "kind": "main", "mode": "route", "sources": ["G08", "G20"] },
-    { "from": "peak-innocence", "to": "heart-birthstone", "kind": "main", "mode": "teleport", "labelZh": "进入石卵", "conditionZh": "沿水帘洞与天真顶推进，在终点进入石卵核心。", "sources": ["G08", "G20"] },
-    { "from": "heart-birthstone", "to": "stone-monkey", "kind": "main", "mode": "route", "sources": ["G09", "G20"] },
-    { "from": "stone-monkey", "to": "great-sages-broken-shell", "kind": "main", "mode": "route", "labelZh": "终局后段", "sources": ["G09", "G20"] },
-    { "from": "cloud-open", "to": "giant-shigandang", "kind": "optional", "mode": "route", "labelZh": "五蕴支线", "conditionZh": "需先取得前四蕴，再前往开放山体中的峡谷。", "sources": ["G09"] }
+    {
+      "from": "verdant-path",
+      "to": "supreme-inspector",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G09", "G20"]
+    },
+    {
+      "from": "supreme-inspector",
+      "to": "cloud-open",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G20"]
+    },
+    {
+      "from": "cloud-open",
+      "to": "gold-armored-rhino",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G09"]
+    },
+    {
+      "from": "cloud-open",
+      "to": "cloudtreading-deer",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G09"]
+    },
+    {
+      "from": "cloud-open",
+      "to": "feng-tail-general",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G20"]
+    },
+    {
+      "from": "cloud-open",
+      "to": "emerald-armed-mantis",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G09"]
+    },
+    {
+      "from": "gold-armored-rhino",
+      "to": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09"]
+    },
+    {
+      "from": "cloudtreading-deer",
+      "to": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09"]
+    },
+    {
+      "from": "feng-tail-general",
+      "to": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09"]
+    },
+    {
+      "from": "emerald-armed-mantis",
+      "to": "armor-complete",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09"]
+    },
+    {
+      "from": "armor-complete",
+      "to": "water-curtain-cave",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G20"]
+    },
+    {
+      "from": "water-curtain-cave",
+      "to": "peak-innocence",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G20"]
+    },
+    {
+      "from": "peak-innocence",
+      "to": "heart-birthstone",
+      "kind": "main",
+      "mode": "teleport",
+      "labelZh": "进入石卵",
+      "conditionZh": "沿水帘洞与天真顶推进，在终点进入石卵核心。",
+      "sources": ["G08", "G20"]
+    },
+    {
+      "from": "heart-birthstone",
+      "to": "stone-monkey",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G20"]
+    },
+    {
+      "from": "stone-monkey",
+      "to": "great-sages-broken-shell",
+      "kind": "main",
+      "mode": "route",
+      "labelZh": "终局后段",
+      "sources": ["G09", "G20"]
+    },
+    {
+      "from": "cloud-open",
+      "to": "giant-shigandang",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "五蕴支线",
+      "conditionZh": "需先取得前四蕴，再前往开放山体中的峡谷。",
+      "sources": ["G09"]
+    }
   ],
   "anchors": [
-    { "id": "verdant-path", "nameZh": "青嶂道", "position": { "x": 0.07, "y": 0.45 }, "sources": ["G08", "G20"] },
-    { "id": "cloud-open", "nameZh": "筋斗云开放", "position": { "x": 0.23, "y": 0.45 }, "sources": ["G09", "G20"] },
-    { "id": "armor-complete", "nameZh": "遗物齐备", "position": { "x": 0.61, "y": 0.45 }, "sources": ["G09", "G20"] },
-    { "id": "peak-innocence", "nameZh": "天真顶", "position": { "x": 0.8, "y": 0.45 }, "sources": ["G08", "G20"] },
-    { "id": "heart-birthstone", "nameZh": "石卵核心", "position": { "x": 0.87, "y": 0.45 }, "sources": ["G08", "G20"] }
+    {
+      "id": "verdant-path",
+      "nameZh": "青嶂道",
+      "position": { "x": 0.07, "y": 0.45 },
+      "sources": ["G08", "G20"]
+    },
+    {
+      "id": "cloud-open",
+      "nameZh": "筋斗云开放",
+      "position": { "x": 0.23, "y": 0.45 },
+      "sources": ["G09", "G20"]
+    },
+    {
+      "id": "armor-complete",
+      "nameZh": "遗物齐备",
+      "position": { "x": 0.61, "y": 0.45 },
+      "sources": ["G09", "G20"]
+    },
+    {
+      "id": "peak-innocence",
+      "nameZh": "天真顶",
+      "position": { "x": 0.8, "y": 0.45 },
+      "sources": ["G08", "G20"]
+    },
+    {
+      "id": "heart-birthstone",
+      "nameZh": "石卵核心",
+      "position": { "x": 0.87, "y": 0.45 },
+      "sources": ["G08", "G20"]
+    }
   ]
 }

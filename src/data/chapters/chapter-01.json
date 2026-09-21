@@ -22,7 +22,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "广智是天命人在苍狼林可以遇到的头目，所在区域还与第一口钟有关。游戏赋予了这个名字新的造型与战斗经历。读这张卡，可以先记住名字，再把游戏里的妖怪与原著里提出夺宝计划的小和尚分开。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-1-guangzhi"]
       },
       "funFacts": [],
       "sources": ["G07", "G09", "W016"],
@@ -36,10 +37,7 @@
         "adaptationNoteZh": "名字与夺宝故事有直接出处；妖怪形象及游戏经历属于重新创作。",
         "sources": ["W016"]
       },
-      "position": {
-        "x": 0.1,
-        "y": 0.2
-      }
+      "position": { "x": 0.1, "y": 0.2 }
     },
     {
       "id": "wandering-wight",
@@ -50,15 +48,13 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "幽魂出现在苍狼林林外的探索区域，是第一回可遇到的头目。这里先学习如何区分角色：即使形象使人联想到另一位人物，也不能仅凭长相推断原著身份。幽魂与金池长老在阅读目录中分别列卡。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-escapist-chapter-1-wandering-wight-portrait"]
       },
       "funFacts": [],
       "sources": ["G07", "G09"],
       "noDirectNovelZh": "本条没有可直接对应的《西游记》人物或情节；请把这里的形象作为游戏创作来理解。",
-      "position": {
-        "x": 0.2,
-        "y": 0.66
-      }
+      "position": { "x": 0.2, "y": 0.66 }
     },
     {
       "id": "guanyin-temple",
@@ -69,7 +65,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "观音禅院是苍狼林中的游戏地点，与灵虚子所在区域相连。在第一回的文化阅读中，它也是连接广智、广谋、金池长老与袈裟故事的入口。注意区分这里与通过三口钟进入的隐·旧观音禅院。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-gamersky-chapter-1-black-wind-mountain-journeyers-chart"]
       },
       "funFacts": [
         {
@@ -86,12 +83,10 @@
         "adaptationNoteZh": "游戏把原著里的借宿与失火故事重构为玩家探索的空间；同名地点不等于已确认的现实寺院模型。",
         "sources": ["W016"],
         "excerptZh": "那正殿上書四個大字，是「觀音禪院」。",
-        "excerptSourceId": "W016"
+        "excerptSourceId": "W016",
+        "mediaIds": ["historical-jttw-guanyin-1590"]
       },
-      "position": {
-        "x": 0.26,
-        "y": 0.43
-      }
+      "position": { "x": 0.26, "y": 0.43 }
     },
     {
       "id": "lingxuzi",
@@ -102,7 +97,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "灵虚子是观音禅院的头目。游戏中的名字写作“灵虚子”，原著人物却写作“凌虚子”。阅读时先留意这个字的差别：它提醒我们，即便借用了苍狼与黑风山的元素，也不能把两者的身份经历直接合并。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-1-lingxuzi"]
       },
       "funFacts": [],
       "sources": ["G07", "G09", "W017"],
@@ -116,10 +112,7 @@
         "adaptationNoteZh": "游戏“灵虚子”的身份与遭遇需按游戏叙事理解；不能直接套用原著“凌虚子”的生平。",
         "sources": ["W017"]
       },
-      "position": {
-        "x": 0.36,
-        "y": 0.43
-      }
+      "position": { "x": 0.36, "y": 0.43 }
     },
     {
       "id": "baw-li-guhh-lang",
@@ -130,15 +123,13 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "波里个浪是翠竹林蛇径附近河流支线的头目。这里将它作为游戏世界的一部分介绍，不替它补造《西游记》中的同名角色。名字与造型可以引起联想，但联想本身不能充当文学出处。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-game8-chapter-1-baw-li-guhh-lang-banner"]
       },
       "funFacts": [],
       "sources": ["G07", "G09"],
       "noDirectNovelZh": "本条没有可直接对应的《西游记》人物或情节；请把这里的形象作为游戏创作来理解。",
-      "position": {
-        "x": 0.42,
-        "y": 0.76
-      }
+      "position": { "x": 0.42, "y": 0.76 }
     },
     {
       "id": "guangmou",
@@ -149,7 +140,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "广谋出现在翠竹林的探索途中，其所在位置与第二口钟相连。游戏让一个原著里参与计谋的人物成为可以面对的头目。把他与广智并排阅读，会发现游戏借用了人物名字，却为他们添加了不同的表现。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-pc-invasion-chapter-1-guangmou-feature"]
       },
       "funFacts": [],
       "sources": ["G07", "G09", "W016"],
@@ -163,10 +155,7 @@
         "adaptationNoteZh": "原著提供人物与纵火计谋；游戏中的妖怪造型、战斗和后续经历是扩写。",
         "sources": ["W016"]
       },
-      "position": {
-        "x": 0.52,
-        "y": 0.45
-      }
+      "position": { "x": 0.52, "y": 0.45 }
     },
     {
       "id": "whiteclad-noble",
@@ -177,7 +166,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "白衣秀士出现在白雾泽一带，靠近第三口钟所在的探索分支，也处于通往黑风洞的阶段。这个称呼既带有人物形象，也保留文学线索：回到原著，才能看清他与黑熊精以及白花蛇的关系。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-1-whiteclad-noble"]
       },
       "funFacts": [],
       "sources": ["G07", "G09", "W017"],
@@ -191,10 +181,7 @@
         "adaptationNoteZh": "游戏重新安排了他的遭遇与战斗。原著写的是“白花蛇”，不要误记成“百花蛇”。",
         "sources": ["W017"]
       },
-      "position": {
-        "x": 0.64,
-        "y": 0.43
-      }
+      "position": { "x": 0.64, "y": 0.43 }
     },
     {
       "id": "ancient-guanyin-temple",
@@ -205,7 +192,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "隐·旧观音禅院是第一回的隐藏区域。敲响三口钟之后，玩家经传送进入这里并遇到金池长老。它与主线观音禅院分开呈现；图上的虚线表示带条件的关联，不表示一条普通步行道路。",
-        "sources": ["G10", "G12"]
+        "sources": ["G10", "G12"],
+        "mediaIds": ["community-gameplay-gamersky-chapter-1-secret-ancient-guanyin-temple-chart"]
       },
       "funFacts": [],
       "sources": ["G10", "G12", "W016"],
@@ -219,10 +207,7 @@
         "adaptationNoteZh": "游戏借用旧事与人物重构隐藏区域；三口钟开启隐藏场景是游戏机制，不是原著桥段。",
         "sources": ["W016"]
       },
-      "position": {
-        "x": 0.67,
-        "y": 0.86
-      }
+      "position": { "x": 0.67, "y": 0.86 }
     },
     {
       "id": "elder-jinchi",
@@ -233,7 +218,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "金池长老出现在隐·旧观音禅院，是隐藏区域中可以遇到的头目。对于不熟悉游戏的读者，先把他看成理解袈裟故事的关键人物：原著讲他的贪念，游戏则把这段往事改写成天命人能够进入的遭遇。",
-        "sources": ["G10", "G12"]
+        "sources": ["G10", "G12"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-1-elder-jinchi"]
       },
       "funFacts": [],
       "sources": ["G10", "G12", "W016"],
@@ -247,10 +233,7 @@
         "adaptationNoteZh": "游戏中的金池形象和战斗属于对原著悲剧的重构，不能当作小说里的原貌。",
         "sources": ["W016"]
       },
-      "position": {
-        "x": 0.88,
-        "y": 0.86
-      }
+      "position": { "x": 0.88, "y": 0.86 }
     },
     {
       "id": "fireproof-mantle",
@@ -261,7 +244,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "辟火罩是第一回可以获得的法宝。法宝在这里指具有特殊效用的器物类别。它与三口钟、旧观音禅院和金池长老相关；击败金池后，需返回第三口钟旁调查悬尸领取。它的名字有明确的原著来源。",
-        "sources": ["G11", "G10"]
+        "sources": ["G11", "G10"],
+        "mediaIds": ["community-gameplay-escapist-chapter-1-fireproof-mantle-item"]
       },
       "funFacts": [],
       "sources": ["G11", "G10", "W016"],
@@ -275,10 +259,7 @@
         "adaptationNoteZh": "游戏沿用名称和避火意象，重新设计了获得方式与使用机制；规范名称是“辟火罩”。",
         "sources": ["W016"]
       },
-      "position": {
-        "x": 0.8,
-        "y": 0.65
-      }
+      "position": { "x": 0.8, "y": 0.65 }
     },
     {
       "id": "black-wind-king",
@@ -289,27 +270,22 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黑风大王在黑风洞洞内出现，随后探索路径继续通往洞外与见谛峰。阅读这张卡时，可以把黑风洞当作游戏和原著共同的故事地名，同时留意：游戏的战斗阶段安排，并不是原著章节的原样复现。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-1-black-wind-king"]
       },
       "funFacts": [],
       "sources": ["G07", "G09", "W016", "W017"],
       "journeyToTheWest": {
         "relationship": "recombined",
         "chapterNumbers": [16, 17],
-        "chapterTitlesZh": [
-          "观音院僧谋宝贝　黑风山怪窃袈裟",
-          "孙行者大闹黑风山　观世音收伏熊罴怪"
-        ],
+        "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟", "孙行者大闹黑风山　观世音收伏熊罴怪"],
         "summaryZh": "黑风山黑风洞是原著黑熊精活动的地方。袈裟失窃之后，悟空前往黑风山追寻，最终由观音收伏熊罴怪。",
         "excerptZh": "一個是修正齊天聖，一個是成精黑大王。",
         "excerptSourceId": "W017",
         "adaptationNoteZh": "洞内的游戏战斗是新的情境；黑风山、黑风洞与袈裟事件构成了文学背景。",
         "sources": ["W016", "W017"]
       },
-      "position": {
-        "x": 0.8,
-        "y": 0.36
-      }
+      "position": { "x": 0.8, "y": 0.36 }
     },
     {
       "id": "black-bear-guai",
@@ -320,27 +296,22 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黑熊精出现在第一回见谛峰阶段，是黑风山故事的重要角色。游戏重新讲述了与他相关的遭遇。要理解这个人物，值得回到原著看一眼他为何来到观音院，而不是把“放火”和“偷袈裟”草率归给同一个人。",
-        "sources": ["G07", "G09"]
+        "sources": ["G07", "G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-1-black-bear-guai"]
       },
       "funFacts": [],
       "sources": ["G07", "G09", "W016", "W017"],
       "journeyToTheWest": {
         "relationship": "direct",
         "chapterNumbers": [16, 17],
-        "chapterTitlesZh": [
-          "观音院僧谋宝贝　黑风山怪窃袈裟",
-          "孙行者大闹黑风山　观世音收伏熊罴怪"
-        ],
+        "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟", "孙行者大闹黑风山　观世音收伏熊罴怪"],
         "summaryZh": "黑熊精看到观音院起火，原本准备救火；进入院中见到袈裟后起了贪念，趁乱取走。第十七回他被观音收伏。",
         "excerptZh": "侍生熊羆頓首拜，啟上大闡金池老上人丹房。",
         "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏续写了角色经历；原著提供的是火乱、窃衣与收伏的故事，二者应分层阅读。",
         "sources": ["W016", "W017"]
       },
-      "position": {
-        "x": 0.91,
-        "y": 0.22
-      }
+      "position": { "x": 0.91, "y": 0.22 }
     },
     {
       "id": "kasaya",
@@ -371,26 +342,17 @@
     {
       "id": "forest",
       "nameZh": "苍狼林",
-      "position": {
-        "x": 0.17,
-        "y": 0.08
-      }
+      "position": { "x": 0.17, "y": 0.08 }
     },
     {
       "id": "bamboo",
       "nameZh": "翠竹林",
-      "position": {
-        "x": 0.5,
-        "y": 0.12
-      }
+      "position": { "x": 0.5, "y": 0.12 }
     },
     {
       "id": "cave",
       "nameZh": "黑风洞",
-      "position": {
-        "x": 0.82,
-        "y": 0.08
-      }
+      "position": { "x": 0.82, "y": 0.08 }
     }
   ],
   "routes": [
@@ -514,28 +476,19 @@
     {
       "id": "forest-outside",
       "nameZh": "林外",
-      "position": {
-        "x": 0.1,
-        "y": 0.43
-      },
+      "position": { "x": 0.1, "y": 0.43 },
       "sources": ["G07", "G08"]
     },
     {
       "id": "snake-trail",
       "nameZh": "蛇径",
-      "position": {
-        "x": 0.44,
-        "y": 0.52
-      },
+      "position": { "x": 0.44, "y": 0.52 },
       "sources": ["G07", "G08"]
     },
     {
       "id": "third-bell",
       "nameZh": "第三口钟",
-      "position": {
-        "x": 0.66,
-        "y": 0.65
-      },
+      "position": { "x": 0.66, "y": 0.65 },
       "sources": ["G10", "G12"]
     }
   ],

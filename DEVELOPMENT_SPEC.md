@@ -453,6 +453,7 @@ src/data/chapters/
     "summaryZh": "...",
     "excerptZh": "...",
     "excerptSourceId": "src-jttw-016",
+    "mediaIds": ["historical-jttw-guanyin-1590"],
     "adaptationNoteZh": "...",
     "sources": ["src-jttw-016"]
   },
@@ -717,7 +718,7 @@ The single verified heritage connection required above therefore ships as a self
 
 ### 15.2 Text-first marker cards
 
-Almost all Chapter 1 game imagery currently carries `licenseStatus: permission-required` and is excluded from the public build. Marker cards must therefore be designed to work with no photographic image at all: original silhouette or seal motif, Chinese prose, a short 原著 excerpt, and source links. Do not ship grey image placeholders, broken frames, or layouts that collapse without a hero image.
+Selected game captures were cleared for this project by the user on 2026-09-20 and are registered individually in `src/data/media.json` before use. A marker may display an exact-match capture inside “游戏中的呈现”; the frame must label it as authorized game imagery and keep it visually separate from historical illustrations and real-world heritage photography. Cards without an exact-match capture remain text-first and must not show a placeholder, a near-match, or a layout that collapses without a hero image.
 
 ---
 
@@ -803,7 +804,7 @@ The executable schema lives in `src/types/schema.ts`. All content fields below a
 
 - Chapter: `numeralZh`, `themeZh`, `overviewZh`, `readingGuideZh`, `sources`, `atmosphereMediaId`, optional `mapMediaId`, `mapNoticeZh`, `mapMode`, `topologyStatus`, `markers`, `routes` and `areas`. The existing `id`, `order`, `titleZh`, `regionZh` remain. Other chapters can have reading cards without `position`; these are not map markers.
 - `areas`: `{ id, nameZh, position }` for verified schematic areas. `routes`: `{ from, to, kind: main | optional, sources }`, referencing marker IDs; connections only represent researched route relationships. All positions use normalized coordinates and pass the map gate. A topological map needs a local `topologyLog` path. Unverified chapters have no areas, routes, map media or coordinates.
-- Marker: `areaZh`, `summaryZh`, `sources`, optional `position`, `game: { descriptionZh, sources }`, optional `journeyToTheWest`, optional `realWorld`, `funFacts`, optional `spoiler: { warningZh, textZh, sources }`. `journeyToTheWest` contains `relationship: direct | recombined`, chapter numbers, chapter titles, summary, adaptation note, a required original-text excerpt, its exact `excerptSourceId`, and sources. The excerpt source must resolve to `primary-text` and also appear in that block's `sources`. These are shown as 原著直接出现 / 原著元素重组. Markers without a literary block must carry `noDirectNovelZh`; do not fabricate a chapter reference.
+- Marker: `areaZh`, `summaryZh`, `sources`, optional `position`, `game: { descriptionZh, optional mediaIds, sources }`, optional `journeyToTheWest`, optional `realWorld`, `funFacts`, optional `spoiler: { warningZh, textZh, sources }`. Game media must resolve to a cleared, documentary `game-reference` record with `game-capture` provenance and must portray that exact node. `journeyToTheWest` contains `relationship: direct | recombined`, chapter numbers, chapter titles, summary, adaptation note, a required original-text excerpt, its exact `excerptSourceId`, optional `mediaIds`, and sources. The excerpt source must resolve to `primary-text` and also appear in that block's `sources`; literary media must resolve to licensed `historical-documentary` or `historical-analogue` records and is labeled as historical imagery rather than a game depiction. These are shown as 原著直接出现 / 原著元素重组. Markers without a literary block must carry `noDirectNovelZh`; do not fabricate a chapter reference.
 - Heritage: `nameZh`, `locationZh`, `descriptionZh`, `evidenceScopeZh`, `relationship: cultural-comparison | developer-confirmed`, `confidence`, `evidenceType`, `sources`, optional `mediaIds`. Explicit evidence scope prevents a visual comparison from becoming a claim about scanning. `developer-confirmed` requires developer evidence; `confirmed` cannot use visual-comparison/community-theory evidence.
 - Media index: keyed by stable ID, using local `file`, Chinese title/alt/usage note, asset role, documentary flag, provenance, creator, license/license URL/status, source URL, evidence source IDs/scope, modification note. Original vectors have `firstParty: true` and a production license. Documentary photos retain attribution and share-alike terms. Original atmosphere vectors are non-documentary and do not portray an exact game location.
 - Source index: keyed by original W/G/H/L/F IDs or new G07+ research IDs; each has `titleZh`, `publisherZh`, `url`, `type`, `scopeZh`. Source types map to Chinese labels. Existing IDs are never repurposed.

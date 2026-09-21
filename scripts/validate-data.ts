@@ -106,6 +106,15 @@ export function validateData(
         fail("内容层标签与正文不一致");
       if (!marker.journeyToTheWest && !marker.noDirectNovelZh)
         fail("缺少原著关系说明");
+      marker.game.mediaIds?.forEach(mediaRef);
+      marker.game.mediaIds?.forEach((ref) => {
+        if (
+          !media[ref].documentary ||
+          media[ref].assetRole !== "game-reference" ||
+          media[ref].provenanceType !== "game-capture"
+        )
+          fail("游戏配图必须是已授权的实机画面素材");
+      });
       if (marker.journeyToTheWest) {
         const novel = marker.journeyToTheWest;
         const excerptSource = sources[novel.excerptSourceId];
@@ -114,6 +123,16 @@ export function validateData(
           fail("原著摘引来源必须列入原著来源");
         if (excerptSource.type !== "primary-text")
           fail("原著摘引必须指向原始文本");
+        novel.mediaIds?.forEach(mediaRef);
+        novel.mediaIds?.forEach((ref) => {
+          if (
+            !media[ref].documentary ||
+            !["historical-documentary", "historical-analogue"].includes(
+              media[ref].assetRole,
+            )
+          )
+            fail("原著配图必须是历史图像素材");
+        });
       }
       for (const heritage of marker.realWorld ?? []) {
         if (

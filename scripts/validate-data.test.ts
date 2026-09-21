@@ -38,6 +38,12 @@ rejects("原文摘引必须指向原始文本", (d) => {
   novel.sources.push("G01");
   novel.excerptSourceId = "G01";
 });
+rejects("原著配图不能使用游戏研究图或装饰图", (d) => {
+  d.chapters[0].markers[0].journeyToTheWest.mediaIds = ["atmosphere-01"];
+});
+rejects("游戏配图不能使用原著图像或装饰图", (d) => {
+  d.chapters[0].markers[0].game.mediaIds = ["atmosphere-01"];
+});
 rejects(
   "无来源的实地关联必须失败",
   (d) => (d.chapters[2].markers[0].realWorld[0].sources = []),

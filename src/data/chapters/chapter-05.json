@@ -24,7 +24,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "璧水金睛兽出现在第五回隐藏区域璧水洞。它是比较“同一文学意象如何改变叙事作用”的好入口。游戏强调的是隐藏区域中的妖王遭遇，原著则把相近名称的异兽放在牛魔王的出行故事中。",
-        "sources": ["G05", "G09"]
+        "sources": ["G05", "G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-5-bishui-golden-eyed-beast"]
       },
       "funFacts": [],
       "sources": ["G05", "G09", "W060"],
@@ -56,11 +57,7 @@
       "journeyToTheWest": {
         "relationship": "direct",
         "chapterNumbers": [59, 60, 61],
-        "chapterTitlesZh": [
-          "唐三藏路阻火焰山　孙行者一调芭蕉扇",
-          "牛魔王罢战赴华筵　孙行者二调芭蕉扇",
-          "猪八戒助力败魔王　孙行者三调芭蕉扇"
-        ],
+        "chapterTitlesZh": ["唐三藏路阻火焰山　孙行者一调芭蕉扇", "牛魔王罢战赴华筵　孙行者二调芭蕉扇", "猪八戒助力败魔王　孙行者三调芭蕉扇"],
         "summaryZh": "原著用三回篇幅讲悟空三调芭蕉扇，牵连铁扇公主、牛魔王与火焰山。",
         "excerptZh": "在西方路上，難過火焰山，特來拜借芭蕉扇一用。",
         "excerptSourceId": "W059",
@@ -78,7 +75,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "皓斧力士出现在灰烬林前段，与五行战车支线相连。图上把他画在主路旁，随后用条件线通向清凉坡；这表示任务线会跨越多个区域，不表示能够从起点直接走到隐藏洞口。",
-        "sources": ["G09", "G19"]
+        "sources": ["G09", "G19"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-5-pale-axe-stalwart"]
       },
       "funFacts": [],
       "sources": ["G09", "G19"],
@@ -94,7 +92,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "五行战车不是集中在同一处的单一头目，而是跨越灰烬林、丹灶谷与火光地的一组遭遇。路线图用一个汇总节点表示支线进度，不伪造每辆战车的地理坐标。",
-        "sources": ["G05", "G18", "G19"]
+        "sources": ["G05", "G18", "G19"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-5-five-element-carts"]
       },
       "funFacts": [],
       "sources": ["G05", "G18", "G19"],
@@ -110,7 +109,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "火焰山土地与阴阳鱼的遭遇位于丹灶谷翠云殿，是通往火光地之前的主线节点。这里按游戏身份介绍，不从传统土地神概念反推一段不存在的小说人物经历。",
-        "sources": ["G08", "G09", "G18"]
+        "sources": ["G08", "G09", "G18"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-5-keeper-of-flaming-mountains"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G18"],
@@ -126,7 +126,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "红孩儿出现在火光地末段，并与夜叉王构成连续遭遇。游戏把牛魔王一家放到取经之后的新处境中；地图只标明流程先后，不提前替读者解释结局。",
-        "sources": ["G09", "G18"]
+        "sources": ["G09", "G18"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-5-red-boy-yaksha-king"]
       },
       "funFacts": [],
       "sources": ["G09", "G18", "W040", "W042"],
@@ -151,7 +152,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "夜叉王紧接红孩儿之后出现，是第五回末段的连续遭遇。它与原著红孩儿的关系需要按游戏剧情理解，不能因为名称带有“夜叉”便为其拼接一段古典小说身世。",
-        "sources": ["G09", "G18"]
+        "sources": ["G09", "G18"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-5-red-boy-yaksha-king"]
       },
       "funFacts": [],
       "sources": ["G09", "G18"],
@@ -165,36 +167,192 @@
     }
   ],
   "areas": [
-    { "id": "ember", "nameZh": "灰烬林", "position": { "x": 0.16, "y": 0.09 } },
-    { "id": "furnace", "nameZh": "丹灶谷", "position": { "x": 0.5, "y": 0.09 } },
-    { "id": "fire-field", "nameZh": "火光地", "position": { "x": 0.82, "y": 0.09 } },
-    { "id": "bishui-cave", "nameZh": "隐 · 璧水洞", "position": { "x": 0.86, "y": 0.94 } }
+    {
+      "id": "ember",
+      "nameZh": "灰烬林",
+      "position": { "x": 0.16, "y": 0.09 }
+    },
+    {
+      "id": "furnace",
+      "nameZh": "丹灶谷",
+      "position": { "x": 0.5, "y": 0.09 }
+    },
+    {
+      "id": "fire-field",
+      "nameZh": "火光地",
+      "position": { "x": 0.82, "y": 0.09 }
+    },
+    {
+      "id": "bishui-cave",
+      "nameZh": "隐 · 璧水洞",
+      "position": { "x": 0.86, "y": 0.94 }
+    }
   ],
   "routes": [
-    { "from": "ashen-pass-one", "to": "ashen-pass-two", "kind": "main", "mode": "route", "sources": ["G08", "G18"] },
-    { "from": "ashen-pass-two", "to": "five-element-carts", "kind": "main", "mode": "route", "sources": ["G18", "G19"] },
-    { "from": "five-element-carts", "to": "valley-entrance", "kind": "main", "mode": "route", "sources": ["G08", "G18"] },
-    { "from": "valley-entrance", "to": "emerald-hall", "kind": "main", "mode": "route", "sources": ["G08", "G18"] },
-    { "from": "emerald-hall", "to": "keeper-flaming-mountains", "kind": "main", "mode": "route", "sources": ["G09", "G18"] },
-    { "from": "keeper-flaming-mountains", "to": "ashen-pass-three", "kind": "main", "mode": "route", "sources": ["G08", "G18"] },
-    { "from": "ashen-pass-three", "to": "fallen-crater", "kind": "main", "mode": "route", "sources": ["G08", "G18"] },
-    { "from": "fallen-crater", "to": "red-boy", "kind": "main", "mode": "route", "sources": ["G09", "G18"] },
-    { "from": "red-boy", "to": "yaksha-king", "kind": "main", "mode": "route", "sources": ["G09"] },
-    { "from": "ashen-pass-one", "to": "pale-axe-stalwart", "kind": "optional", "mode": "route", "labelZh": "战车支线起点", "sources": ["G09", "G19"] },
-    { "from": "pale-axe-stalwart", "to": "five-element-carts", "kind": "optional", "mode": "route", "labelZh": "跨区域追寻战车", "conditionZh": "需多次与皓斧力士交谈，并推进分布在本回各区的战车遭遇。", "sources": ["G19"] },
-    { "from": "keeper-flaming-mountains", "to": "plantain-fan", "kind": "optional", "mode": "reward", "labelZh": "主线战斗后取得", "conditionZh": "完成翠云殿的火焰山土地与阴阳鱼遭遇。", "sources": ["G11", "G09"] },
-    { "from": "fallen-crater", "to": "cooling-slope", "kind": "optional", "mode": "return", "labelZh": "回行至清凉坡", "conditionZh": "推进五行战车支线后，从陨砖坑回行并进入新开的岔路。", "sources": ["G08", "G19"] },
-    { "from": "cooling-slope", "to": "bishui-depths", "kind": "optional", "mode": "teleport", "labelZh": "进入隐·璧水洞", "conditionZh": "完成皓斧力士与五行战车相关条件后，由清凉坡穿过冰封大门。", "sources": ["G19"] },
-    { "from": "bishui-depths", "to": "bishui-beast", "kind": "optional", "mode": "route", "labelZh": "隐藏区域末段", "sources": ["G08", "G09", "G19"] }
+    {
+      "from": "ashen-pass-one",
+      "to": "ashen-pass-two",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G18"]
+    },
+    {
+      "from": "ashen-pass-two",
+      "to": "five-element-carts",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G18", "G19"]
+    },
+    {
+      "from": "five-element-carts",
+      "to": "valley-entrance",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G18"]
+    },
+    {
+      "from": "valley-entrance",
+      "to": "emerald-hall",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G18"]
+    },
+    {
+      "from": "emerald-hall",
+      "to": "keeper-flaming-mountains",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G18"]
+    },
+    {
+      "from": "keeper-flaming-mountains",
+      "to": "ashen-pass-three",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G18"]
+    },
+    {
+      "from": "ashen-pass-three",
+      "to": "fallen-crater",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G18"]
+    },
+    {
+      "from": "fallen-crater",
+      "to": "red-boy",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G18"]
+    },
+    {
+      "from": "red-boy",
+      "to": "yaksha-king",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09"]
+    },
+    {
+      "from": "ashen-pass-one",
+      "to": "pale-axe-stalwart",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "战车支线起点",
+      "sources": ["G09", "G19"]
+    },
+    {
+      "from": "pale-axe-stalwart",
+      "to": "five-element-carts",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "跨区域追寻战车",
+      "conditionZh": "需多次与皓斧力士交谈，并推进分布在本回各区的战车遭遇。",
+      "sources": ["G19"]
+    },
+    {
+      "from": "keeper-flaming-mountains",
+      "to": "plantain-fan",
+      "kind": "optional",
+      "mode": "reward",
+      "labelZh": "主线战斗后取得",
+      "conditionZh": "完成翠云殿的火焰山土地与阴阳鱼遭遇。",
+      "sources": ["G11", "G09"]
+    },
+    {
+      "from": "fallen-crater",
+      "to": "cooling-slope",
+      "kind": "optional",
+      "mode": "return",
+      "labelZh": "回行至清凉坡",
+      "conditionZh": "推进五行战车支线后，从陨砖坑回行并进入新开的岔路。",
+      "sources": ["G08", "G19"]
+    },
+    {
+      "from": "cooling-slope",
+      "to": "bishui-depths",
+      "kind": "optional",
+      "mode": "teleport",
+      "labelZh": "进入隐·璧水洞",
+      "conditionZh": "完成皓斧力士与五行战车相关条件后，由清凉坡穿过冰封大门。",
+      "sources": ["G19"]
+    },
+    {
+      "from": "bishui-depths",
+      "to": "bishui-beast",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "隐藏区域末段",
+      "sources": ["G08", "G09", "G19"]
+    }
   ],
   "anchors": [
-    { "id": "ashen-pass-one", "nameZh": "火燎一关", "position": { "x": 0.08, "y": 0.45 }, "sources": ["G08", "G18"] },
-    { "id": "ashen-pass-two", "nameZh": "火燎二关", "position": { "x": 0.25, "y": 0.45 }, "sources": ["G08", "G18"] },
-    { "id": "valley-entrance", "nameZh": "谷口", "position": { "x": 0.43, "y": 0.45 }, "sources": ["G08", "G18"] },
-    { "id": "emerald-hall", "nameZh": "翠云殿", "position": { "x": 0.55, "y": 0.45 }, "sources": ["G08", "G18"] },
-    { "id": "ashen-pass-three", "nameZh": "火燎三关", "position": { "x": 0.72, "y": 0.45 }, "sources": ["G08", "G18"] },
-    { "id": "fallen-crater", "nameZh": "陨砖坑", "position": { "x": 0.83, "y": 0.45 }, "sources": ["G08", "G18"] },
-    { "id": "cooling-slope", "nameZh": "清凉坡", "position": { "x": 0.76, "y": 0.82 }, "sources": ["G08", "G19"] },
-    { "id": "bishui-depths", "nameZh": "洞天深处", "position": { "x": 0.87, "y": 0.82 }, "sources": ["G08", "G19"] }
+    {
+      "id": "ashen-pass-one",
+      "nameZh": "火燎一关",
+      "position": { "x": 0.08, "y": 0.45 },
+      "sources": ["G08", "G18"]
+    },
+    {
+      "id": "ashen-pass-two",
+      "nameZh": "火燎二关",
+      "position": { "x": 0.25, "y": 0.45 },
+      "sources": ["G08", "G18"]
+    },
+    {
+      "id": "valley-entrance",
+      "nameZh": "谷口",
+      "position": { "x": 0.43, "y": 0.45 },
+      "sources": ["G08", "G18"]
+    },
+    {
+      "id": "emerald-hall",
+      "nameZh": "翠云殿",
+      "position": { "x": 0.55, "y": 0.45 },
+      "sources": ["G08", "G18"]
+    },
+    {
+      "id": "ashen-pass-three",
+      "nameZh": "火燎三关",
+      "position": { "x": 0.72, "y": 0.45 },
+      "sources": ["G08", "G18"]
+    },
+    {
+      "id": "fallen-crater",
+      "nameZh": "陨砖坑",
+      "position": { "x": 0.83, "y": 0.45 },
+      "sources": ["G08", "G18"]
+    },
+    {
+      "id": "cooling-slope",
+      "nameZh": "清凉坡",
+      "position": { "x": 0.76, "y": 0.82 },
+      "sources": ["G08", "G19"]
+    },
+    {
+      "id": "bishui-depths",
+      "nameZh": "洞天深处",
+      "position": { "x": 0.87, "y": 0.82 },
+      "sources": ["G08", "G19"]
+    }
   ]
 }

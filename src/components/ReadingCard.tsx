@@ -55,6 +55,67 @@ export function HeritagePhoto({
     </figure>
   );
 }
+function HistoricalImage({ id }: { id: string }) {
+  const item = media[id];
+  return (
+    <figure className="historical-image">
+      <div className="historical-image-mat">
+        <img
+          src={item.file}
+          alt={item.altZh}
+          loading="lazy"
+          width="720"
+          height="540"
+        />
+      </div>
+      <figcaption>
+        <strong>{item.titleZh}</strong>
+        <span>{item.usageNoteZh}</span>
+        <span>
+          {item.creator} ·{" "}
+          <a href={item.sourceUrl} target="_blank" rel="noreferrer">
+            图像来源 ↗
+          </a>
+          {item.licenseUrl && (
+            <>
+              {" · "}
+              <a href={item.licenseUrl} target="_blank" rel="noreferrer">
+                {item.license}
+              </a>
+            </>
+          )}
+        </span>
+      </figcaption>
+    </figure>
+  );
+}
+function GameImage({ id }: { id: string }) {
+  const item = media[id];
+  return (
+    <figure className="game-image">
+      <div className="game-image-frame">
+        <img
+          src={item.file}
+          alt={item.altZh}
+          loading="lazy"
+          width="1280"
+          height="720"
+        />
+        <span className="game-image-stamp">授权画面</span>
+      </div>
+      <figcaption>
+        <strong>{item.titleZh}</strong>
+        <span>{item.usageNoteZh}</span>
+        <span>
+          {item.creator} ·{" "}
+          <a href={item.sourceUrl} target="_blank" rel="noreferrer">
+            图片出处 ↗
+          </a>
+        </span>
+      </figcaption>
+    </figure>
+  );
+}
 export function ReadingCard({ marker }: { marker: Marker }) {
   const novel = marker.journeyToTheWest;
   return (
@@ -69,27 +130,55 @@ export function ReadingCard({ marker }: { marker: Marker }) {
         {marker.realWorld ? " → 现实文化与实地遗产" : ""}
       </p>
       {novel && (
-        <blockquote className="novel-excerpt novel-excerpt-featured">
-          <span className="novel-excerpt-label">《西游记》原著原文</span>
-          <p>{novel.excerptZh}</p>
-          <cite>
-            原文节选 ·{" "}
-            <a
-              href={sources[novel.excerptSourceId]!.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {sources[novel.excerptSourceId]!.titleZh}
-              <span aria-hidden="true"> ↗</span>
-            </a>
-          </cite>
-        </blockquote>
+        <div className="novel-frontispiece">
+          <blockquote className="novel-excerpt novel-excerpt-featured">
+            <span className="novel-excerpt-label">《西游记》原著原文</span>
+            <p>{novel.excerptZh}</p>
+            <cite>
+              原文节选 ·{" "}
+              <a
+                href={sources[novel.excerptSourceId]!.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {sources[novel.excerptSourceId]!.titleZh}
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            </cite>
+          </blockquote>
+          {!!novel.mediaIds?.length && (
+            <div className="historical-gallery" aria-label="原著历史图像参考">
+              <div className="historical-gallery-label">
+                <span>原著图像参考</span>
+                <small>历史版本图像 · 非游戏造型</small>
+              </div>
+              <div className="historical-gallery-grid">
+                {novel.mediaIds.map((id) => (
+                  <HistoricalImage key={id} id={id} />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       )}
       <section>
         <h3>
           <span>一</span> 游戏中的呈现
         </h3>
         <p>{marker.game.descriptionZh}</p>
+        {!!marker.game.mediaIds?.length && (
+          <div className="game-gallery" aria-label="游戏画面参考">
+            <div className="game-gallery-label">
+              <span>游戏画面参考</span>
+              <small>授权素材 · 对应当前节点</small>
+            </div>
+            <div className="game-gallery-grid">
+              {marker.game.mediaIds.map((id) => (
+                <GameImage key={id} id={id} />
+              ))}
+            </div>
+          </div>
+        )}
         <SourceLinks ids={marker.game.sources} />
       </section>
       <section>

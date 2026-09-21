@@ -13,7 +13,7 @@
 
 ## 运行
 
-需要 Node.js 22+。
+需要 Node.js 22.x。版本由 `package.json` 的 `engines` 字段锁定，本地、GitHub Actions 与 Vercel 共用这一处声明。
 
 ```bash
 npm ci

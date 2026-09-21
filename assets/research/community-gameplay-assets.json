@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-09-20",
-  "rightsNoteZh": "本清单保存第三方攻略媒体发布的《黑神话：悟空》实机截图、游戏界面与行旅图研究副本。它们均为 permission-required、research-only、useInPublicBuild: false；公开页面使用前必须另行取得许可或替换为团队自有截图。",
+  "rightsNoteZh": "本清单保存第三方攻略媒体发布的《黑神话：悟空》实机截图、游戏界面与行旅图。用户于 2026-09-20 确认本项目已取得使用授权；只有逐图标记为 cleared、public-build、useInPublicBuild: true 并同步登记至 src/data/media.json 的条目进入公开页面，其余继续留在研究库。",
   "qualityNoteZh": "所有图片均已人工核对画面主体；第三方标题用于身份交叉确认。优化版最长边不超过原图，宽图最大宽度为 1280 像素，WebP 质量 82。",
   "count": 53,
   "items": [
@@ -141,8 +141,8 @@
       "chapter": 1,
       "subjectType": "item-ui",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1200,
@@ -151,9 +151,9 @@
       "bytes": 142817,
       "sha256": "6f88480c62d6244d14088ebc31492e0ec663f6aa7636a85f7bfa328d2ba7268a",
       "altZh": "游戏法宝装备界面中选中的辟火罩。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-escapist-chapter-1-wandering-wight-battle",
@@ -201,8 +201,8 @@
       "chapter": 1,
       "subjectType": "boss-portrait",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1200,
@@ -211,9 +211,9 @@
       "bytes": 174641,
       "sha256": "8fb0a5728b4eb2883b999bc3d5ae3634154c025f93e3ffe7d8e85e697b518790",
       "altZh": "第一回头目幽魂的近距离实机画面。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-game8-chapter-1-baw-li-guhh-lang-banner",
@@ -231,8 +231,8 @@
       "chapter": 1,
       "subjectType": "boss-portrait",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 728,
@@ -241,9 +241,9 @@
       "bytes": 596478,
       "sha256": "0e0a9d658841f4a031354b9941d65850d8745efd23a60223cfaef66c00d2695e",
       "altZh": "第一回蛤蟆头目波里个浪的攻略横幅近景。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-game8-chapter-1-baw-li-guhh-lang-battle",
@@ -291,8 +291,8 @@
       "chapter": 1,
       "subjectType": "world-map-ui",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1440,
@@ -301,9 +301,9 @@
       "bytes": 348155,
       "sha256": "4fbed9205d94c4071825586fac1f96df5779d79bb8757915f491568e47a7e5ac",
       "altZh": "游戏内黑风山行旅图，显示山体、水系、寺院与区域路径。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamersky-chapter-1-secret-ancient-guanyin-temple-chart",
@@ -321,8 +321,8 @@
       "chapter": 1,
       "subjectType": "world-map-ui",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 567,
@@ -331,9 +331,9 @@
       "bytes": 54627,
       "sha256": "71102e3fee39949bcd66ac15977dac646f682a033d1fe1f8144a1ae1be7e3f9b",
       "altZh": "游戏内隐·旧观音禅院行旅图，显示寺院布局与周边地形。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-1-black-bear-guai",
@@ -351,8 +351,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -361,9 +361,9 @@
       "bytes": 135060,
       "sha256": "f5166acd0f2d1be3ebf89fc55f4bb3389817df3bab714bf79352ae7ba0dbb625",
       "altZh": "天命人在燃烧的山顶战场面对巨大黑熊精。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-1-black-wind-king",
@@ -381,8 +381,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -391,9 +391,9 @@
       "bytes": 61332,
       "sha256": "f9a0c806c2325b25f049fca81f4c36cbb02b5b768879e86a6c6c5c01cc3c3d16",
       "altZh": "天命人在洞府内与黑风大王的人形形态交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-1-elder-jinchi",
@@ -411,8 +411,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -421,9 +421,9 @@
       "bytes": 142885,
       "sha256": "e7f73385898f62f5c0063c86baf69219cab1d476a041143341f4bcd804d8d157",
       "altZh": "天命人在隐·旧观音禅院与金池长老及周围尸众交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-1-guangzhi",
@@ -441,8 +441,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -451,9 +451,9 @@
       "bytes": 117862,
       "sha256": "d7ab9a370d79747d0ee094dceb6b2aab85334146f5938f45a5e56ee918fc09df",
       "altZh": "天命人在林中寺院场景与手持火焰长柄武器的广智交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-1-lingxuzi",
@@ -471,8 +471,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -481,9 +481,9 @@
       "bytes": 150971,
       "sha256": "7944700bd067e1f2bca8c0aecfdab6f359021ea045f176d1fbe3504233672405",
       "altZh": "天命人在观音禅院与大型白狼灵虚子交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-1-red-loong",
@@ -531,8 +531,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -541,9 +541,9 @@
       "bytes": 111043,
       "sha256": "b8750601bdffdd114c3620788c118d6591c9b5f89ff4ddb30157576c4f139959",
       "altZh": "天命人在白雾泽水域与白衣秀士交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-2-fuban",
@@ -561,8 +561,8 @@
       "chapter": 2,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -571,9 +571,9 @@
       "bytes": 119363,
       "sha256": "c4b9d0a570bec5f766c1601f3710e2e7324e38d04c59f51f092c4dfd552f3f6f",
       "altZh": "巨型甲虫蝜蝂从沙海中现身。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-2-shigandang",
@@ -621,8 +621,8 @@
       "chapter": 2,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -631,9 +631,9 @@
       "bytes": 149111,
       "sha256": "418fc04fe9c64d0cea8c6eb1a9ef633d10ae35f1153b5f2bce4e73fe08d151d4",
       "altZh": "天命人在黄风岭岩石场地与石先锋交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-2-tiger-vanguard",
@@ -651,8 +651,8 @@
       "chapter": 2,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -661,9 +661,9 @@
       "bytes": 80086,
       "sha256": "3ebab02bb1427f18c362b4ee8d01eff391d3f554f1f2665e5bf8197c0746bb90",
       "altZh": "天命人在卧虎寺血池场景与虎先锋交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-2-yellow-robed-squire",
@@ -681,8 +681,8 @@
       "chapter": 2,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -691,9 +691,9 @@
       "bytes": 144098,
       "sha256": "524b3a02006c24fdda563d1c928cc2285fc350a158675bed30f3a0a7446aa80a",
       "altZh": "天命人在荒漠空地与黄袍员外交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-2-yellow-wind-sage",
@@ -711,8 +711,8 @@
       "chapter": 2,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -721,9 +721,9 @@
       "bytes": 124996,
       "sha256": "0b2acc3a52493831557cfbe3c2f417a84f547df05497fdf40bbafb00fd94ec57",
       "altZh": "天命人在黄沙战场与黄风大圣交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-3-captain-wise-voice",
@@ -771,8 +771,8 @@
       "chapter": 3,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -781,9 +781,9 @@
       "bytes": 133868,
       "sha256": "f413af2ea94782fbedf953fc8ed6874b3745f83068c82be151810720690496a6",
       "altZh": "白色亢金龙盘旋在冰湖战场上方。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-3-kang-jin-star",
@@ -801,8 +801,8 @@
       "chapter": 3,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -811,9 +811,9 @@
       "bytes": 69288,
       "sha256": "211f40731e909e3afd0a500283171251e2925a58dd6a83eebacf37ee2877b9ee",
       "altZh": "亢金星君在人形状态下施展雷电攻击。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-3-macaque-chief",
@@ -861,8 +861,8 @@
       "chapter": 3,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -871,9 +871,9 @@
       "bytes": 146054,
       "sha256": "80425325b77a57c7a2714765b14bfb0aef8212caf0b5cb7de6d552bfe3967118",
       "altZh": "天命人在小雷音寺场景与黄眉交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-4-duskveil",
@@ -891,8 +891,8 @@
       "chapter": 4,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -901,9 +901,9 @@
       "bytes": 80667,
       "sha256": "1fcad110c3ff306cfe40170d66c384a3a3a5e00649075f7c28f837b8425a95cc",
       "altZh": "晦月魔君在紫云山血色战场展开大型身躯。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-4-hundred-eyed-daoist-master",
@@ -921,8 +921,8 @@
       "chapter": 4,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -931,9 +931,9 @@
       "bytes": 72441,
       "sha256": "be1c3357c7a383b9e95acc0914c1fa8d3db33c0126d17fc0e3962c41db1bae47",
       "altZh": "天命人在黄花观区域与百眼魔君交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-4-scorpionlord",
@@ -1011,8 +1011,8 @@
       "chapter": 4,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1021,9 +1021,9 @@
       "bytes": 103729,
       "sha256": "6dedecfe8f5b940d838bac1a47866cacff11fd00f3f2e35920415d563ffec55d",
       "altZh": "天命人与施展毒术的黑手道人交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-4-violet-spider",
@@ -1041,8 +1041,8 @@
       "chapter": 4,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1051,9 +1051,9 @@
       "bytes": 178532,
       "sha256": "9b6326fafa4369fde277a141a65be26edb3927106decb1e08b57b8c595176713",
       "altZh": "巨大蜘蛛形态的紫蛛儿位于盘丝洞战场。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-4-zhu-bajie",
@@ -1071,8 +1071,8 @@
       "chapter": 4,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1081,9 +1081,9 @@
       "bytes": 75921,
       "sha256": "cc5c9c6edc6fd9d607b530c72caacfb981a6080e36c804ef7f86fc2a19ae5074",
       "altZh": "受法术影响的猪八戒在盘丝洞场景与天命人交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-5-bishui-golden-eyed-beast",
@@ -1101,8 +1101,8 @@
       "chapter": 5,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1111,9 +1111,9 @@
       "bytes": 109663,
       "sha256": "3907d8cf47d821d9df0d01067fa89b7279c4632fbaee8f9a17889c8785370db4",
       "altZh": "天命人在熔岩洞窟与璧水金睛兽交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-5-five-element-carts",
@@ -1131,8 +1131,8 @@
       "chapter": 5,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1141,9 +1141,9 @@
       "bytes": 137394,
       "sha256": "a8938000c768dca815ee5ecab3ae76bda56393a55798e0d31f6b6b307c7b9e5e",
       "altZh": "火焰山中的五行战车向战场喷吐火焰。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-5-keeper-of-flaming-mountains",
@@ -1161,8 +1161,8 @@
       "chapter": 5,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1171,9 +1171,9 @@
       "bytes": 62847,
       "sha256": "49315ed1c8e0455bc3ffa99ff8a714999bcd09ebca8bcf0b30250a09dc973588",
       "altZh": "天命人在水墨般的异空间与火焰山土地交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-5-pale-axe-stalwart",
@@ -1191,8 +1191,8 @@
       "chapter": 5,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1201,9 +1201,9 @@
       "bytes": 188498,
       "sha256": "67fbe6e81829ac660f3cdc864669b721e3a0d6256e89be525a46eac04f1e635e",
       "altZh": "天命人在灰烬林与持斧的皓斧力士交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "medium",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-5-red-boy-yaksha-king",
@@ -1221,8 +1221,8 @@
       "chapter": 5,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1231,9 +1231,9 @@
       "bytes": 116340,
       "sha256": "a16748f7cde52fa14e91b73b1bb9e931dd8af880a9646cb289502c3001132dad",
       "altZh": "红孩儿或其夜叉王阶段在火焰山战场发动攻击。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-6-erlang-sacred-divinity",
@@ -1251,8 +1251,8 @@
       "chapter": 6,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1261,9 +1261,9 @@
       "bytes": 137223,
       "sha256": "7b0bcafd8e94629ed27068f0d3d5e4a05646dcba57714f12b55e846797c51a2e",
       "altZh": "天命人在梅山秘境与二郎显圣真君交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-6-erlang-transformed",
@@ -1341,8 +1341,8 @@
       "chapter": 6,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1351,9 +1351,9 @@
       "bytes": 70321,
       "sha256": "f006bd4e295552a783aef0209f0ebf7f14ade6005f1883931af389eaab5e108d",
       "altZh": "大圣残躯在终局战场与天命人交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-6-stone-monkey",
@@ -1371,8 +1371,8 @@
       "chapter": 6,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1381,9 +1381,9 @@
       "bytes": 91841,
       "sha256": "99373241a545387259e135a912e0cd789b70723a9b07c348f301103ea3a3f7b4",
       "altZh": "终局战场中的石猿与天命人对峙。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamespot-chapter-6-supreme-inspector",
@@ -1401,8 +1401,8 @@
       "chapter": 6,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1411,9 +1411,9 @@
       "bytes": 135271,
       "sha256": "1f8caa3bbc466d73eba68082a59719c3ca1209bc904aefa873f4dad17ab81640",
       "altZh": "天命人与手掌形头部、驾驭火轮的王灵官交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "high",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     },
     {
       "id": "community-gameplay-gamestar-chapter-1-baw-li-guhh-lang",
@@ -1581,8 +1581,8 @@
       "chapter": 1,
       "subjectType": "boss-battle",
       "identityConfidence": "high-source-captioned-and-visually-checked",
-      "licenseStatus": "permission-required",
-      "storageScope": "research-only",
+      "licenseStatus": "cleared",
+      "storageScope": "public-build",
       "copyrightOwner": "Game Science / screenshot publisher or uploader",
       "dimensions": {
         "width": 1280,
@@ -1591,9 +1591,9 @@
       "bytes": 54478,
       "sha256": "041390dacbecf6b08a8f95f44ab41d6f381f8268981a94b2d31887bf067d68e0",
       "altZh": "天命人在竹林蛇径附近与施放蛇毒法术的广谋交战。",
-      "evidenceScopeZh": "仅用于内部画面核验、章节叙事、角色识别与 UI 研究；来源页公开展示不等于获得再发布许可。不能单独证明现实取景关联，也不得直接进入公开构建。",
+      "evidenceScopeZh": "经用户确认已获授权，可在本项目公开构建中作为对应游戏节点的画面参考；图片本身不证明原著或现实原型关联。",
       "spoilerLevel": "low",
-      "useInPublicBuild": false
+      "useInPublicBuild": true
     }
   ]
 }

@@ -24,7 +24,8 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "虎先锋是黄风岭卧虎寺的头目。把游戏中的形象与原著对照，可以看见改编沿用了称谓，却发展出新的角色关系。这里不将游戏中虎妖的亲缘故事写成原著事实。",
-        "sources": ["G09"]
+        "sources": ["G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-2-tiger-vanguard"]
       },
       "funFacts": [],
       "sources": ["G09", "W020"],
@@ -49,17 +50,15 @@
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黄风大圣是黄风岭的重要妖王。游戏使用“大圣”的称呼，并把他的故事与此地的历史联系起来。先读原著中的黄风怪，再理解游戏增加的情境，能避免将两个作品的叙事混成一段。",
-        "sources": ["G09"]
+        "sources": ["G09"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-2-yellow-wind-sage"]
       },
       "funFacts": [],
       "sources": ["G09", "W020", "W021"],
       "journeyToTheWest": {
         "relationship": "direct",
         "chapterNumbers": [20, 21],
-        "chapterTitlesZh": [
-          "黄风岭唐僧有难　半山中八戒争先",
-          "护法设庄留大圣　须弥灵吉定风魔"
-        ],
+        "chapterTitlesZh": ["黄风岭唐僧有难　半山中八戒争先", "护法设庄留大圣　须弥灵吉定风魔"],
         "summaryZh": "原著写黄风岭黄风洞的黄风怪，第二十一回中灵吉菩萨协助降伏他。",
         "excerptZh": "忽然間，一陣黃風，從空刮起。",
         "excerptSourceId": "W021",
@@ -77,7 +76,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "石先锋位于挟魂崖一线，是黄风岭两条主要探索路径中的关键遭遇之一。路线图把它与卧虎寺的虎先锋并列，表示两条路径都通向本回后段，不把二者误画成必须依次挑战。",
-        "sources": ["G08", "G09", "G13"]
+        "sources": ["G08", "G09", "G13"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-2-stone-vanguard"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G13"],
@@ -93,7 +93,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "黄袍员外相关支线从枕石坪附近展开。完成物品交付与后续遭遇后，玩家可以经一座石门进入隐·斯哈哩国。图上的支线只表示条件关系，不把斯哈哩国画成普通步行岔路。",
-        "sources": ["G14"]
+        "sources": ["G14"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-2-yellow-robed-squire"]
       },
       "funFacts": [],
       "sources": ["G14"],
@@ -109,7 +110,8 @@
       "layers": ["game"],
       "game": {
         "descriptionZh": "蝜蝂是隐·斯哈哩国末段的妖王。游戏把这个古老虫名塑造成背负巨大构件的沙中巨兽；古文可以提供一个阅读角度，但不能反过来证明游戏剧情就是柳宗元寓言的复述。",
-        "sources": ["G09", "G14"]
+        "sources": ["G09", "G14"],
+        "mediaIds": ["community-gameplay-gamespot-chapter-2-fuban"]
       },
       "funFacts": [
         {
@@ -141,6 +143,7 @@
         "summaryZh": "原著第二十一回由灵吉菩萨出面降伏黄风怪，核心是如何克制黄风神通。",
         "excerptZh": "如來賜了我一顆定風丹、一柄飛龍寶杖。",
         "excerptSourceId": "W021",
+        "mediaIds": ["historical-jttw-rulai-1590"],
         "adaptationNoteZh": "小说里的降风过程与游戏法宝系统不是同一件事；这里只说明母题重组。",
         "sources": ["W021"]
       },
@@ -148,31 +151,155 @@
     }
   ],
   "areas": [
-    { "id": "sandgate", "nameZh": "沙门村", "position": { "x": 0.13, "y": 0.09 } },
-    { "id": "cliff-temple", "nameZh": "挟魂崖 · 卧虎寺", "position": { "x": 0.43, "y": 0.09 } },
-    { "id": "formation", "nameZh": "黄风阵", "position": { "x": 0.82, "y": 0.09 } },
-    { "id": "sahi", "nameZh": "隐 · 斯哈哩国", "position": { "x": 0.62, "y": 0.94 } }
+    {
+      "id": "sandgate",
+      "nameZh": "沙门村",
+      "position": { "x": 0.13, "y": 0.09 }
+    },
+    {
+      "id": "cliff-temple",
+      "nameZh": "挟魂崖 · 卧虎寺",
+      "position": { "x": 0.43, "y": 0.09 }
+    },
+    {
+      "id": "formation",
+      "nameZh": "黄风阵",
+      "position": { "x": 0.82, "y": 0.09 }
+    },
+    {
+      "id": "sahi",
+      "nameZh": "隐 · 斯哈哩国",
+      "position": { "x": 0.62, "y": 0.94 }
+    }
   ],
   "routes": [
-    { "from": "village-entrance", "to": "valley-of-despair", "kind": "main", "mode": "route", "sources": ["G08", "G13"] },
-    { "from": "valley-of-despair", "to": "tiger-vanguard", "kind": "main", "mode": "route", "sources": ["G09", "G13"] },
-    { "from": "valley-of-despair", "to": "rockrest-flat", "kind": "main", "mode": "route", "sources": ["G08", "G13"] },
-    { "from": "rockrest-flat", "to": "stone-vanguard", "kind": "main", "mode": "route", "sources": ["G09", "G13"] },
-    { "from": "tiger-vanguard", "to": "cellar", "kind": "main", "mode": "route", "sources": ["G08", "G09"] },
-    { "from": "stone-vanguard", "to": "windseal-gate", "kind": "main", "mode": "route", "sources": ["G08", "G13"] },
-    { "from": "cellar", "to": "yellow-wind-sage", "kind": "main", "mode": "route", "sources": ["G09", "G13"] },
-    { "from": "windseal-gate", "to": "yellow-wind-sage", "kind": "main", "mode": "route", "sources": ["G09", "G13"] },
-    { "from": "rockrest-flat", "to": "yellow-robed-squire", "kind": "optional", "mode": "route", "labelZh": "黄袍员外支线", "sources": ["G14"] },
-    { "from": "yellow-robed-squire", "to": "kingdom-gate", "kind": "optional", "mode": "route", "labelZh": "完成交付与遭遇后开门", "conditionZh": "需推进黄袍员外支线，并完成相应物品交付与战斗。", "sources": ["G14"] },
-    { "from": "kingdom-gate", "to": "fuban", "kind": "optional", "mode": "route", "labelZh": "隐·斯哈哩国", "sources": ["G08", "G14"] },
-    { "from": "fuban", "to": "wind-tamer", "kind": "optional", "mode": "reward", "labelZh": "完成隐藏区域后取得", "conditionZh": "击败蝜蝂并完成隐·斯哈哩国流程。", "sources": ["G11", "G14"] }
+    {
+      "from": "village-entrance",
+      "to": "valley-of-despair",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G13"]
+    },
+    {
+      "from": "valley-of-despair",
+      "to": "tiger-vanguard",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G13"]
+    },
+    {
+      "from": "valley-of-despair",
+      "to": "rockrest-flat",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G13"]
+    },
+    {
+      "from": "rockrest-flat",
+      "to": "stone-vanguard",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G13"]
+    },
+    {
+      "from": "tiger-vanguard",
+      "to": "cellar",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G09"]
+    },
+    {
+      "from": "stone-vanguard",
+      "to": "windseal-gate",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G08", "G13"]
+    },
+    {
+      "from": "cellar",
+      "to": "yellow-wind-sage",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G13"]
+    },
+    {
+      "from": "windseal-gate",
+      "to": "yellow-wind-sage",
+      "kind": "main",
+      "mode": "route",
+      "sources": ["G09", "G13"]
+    },
+    {
+      "from": "rockrest-flat",
+      "to": "yellow-robed-squire",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "黄袍员外支线",
+      "sources": ["G14"]
+    },
+    {
+      "from": "yellow-robed-squire",
+      "to": "kingdom-gate",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "完成交付与遭遇后开门",
+      "conditionZh": "需推进黄袍员外支线，并完成相应物品交付与战斗。",
+      "sources": ["G14"]
+    },
+    {
+      "from": "kingdom-gate",
+      "to": "fuban",
+      "kind": "optional",
+      "mode": "route",
+      "labelZh": "隐·斯哈哩国",
+      "sources": ["G08", "G14"]
+    },
+    {
+      "from": "fuban",
+      "to": "wind-tamer",
+      "kind": "optional",
+      "mode": "reward",
+      "labelZh": "完成隐藏区域后取得",
+      "conditionZh": "击败蝜蝂并完成隐·斯哈哩国流程。",
+      "sources": ["G11", "G14"]
+    }
   ],
   "anchors": [
-    { "id": "village-entrance", "nameZh": "村口", "position": { "x": 0.08, "y": 0.43 }, "sources": ["G08", "G13"] },
-    { "id": "valley-of-despair", "nameZh": "不济谷", "position": { "x": 0.23, "y": 0.43 }, "sources": ["G08", "G13"] },
-    { "id": "rockrest-flat", "nameZh": "枕石坪", "position": { "x": 0.31, "y": 0.66 }, "sources": ["G08", "G14"] },
-    { "id": "cellar", "nameZh": "地窖", "position": { "x": 0.65, "y": 0.27 }, "sources": ["G08", "G13"] },
-    { "id": "windseal-gate", "nameZh": "定风桥", "position": { "x": 0.7, "y": 0.58 }, "sources": ["G08", "G13"] },
-    { "id": "kingdom-gate", "nameZh": "斯哈哩国石门", "position": { "x": 0.58, "y": 0.84 }, "sources": ["G14"] }
+    {
+      "id": "village-entrance",
+      "nameZh": "村口",
+      "position": { "x": 0.08, "y": 0.43 },
+      "sources": ["G08", "G13"]
+    },
+    {
+      "id": "valley-of-despair",
+      "nameZh": "不济谷",
+      "position": { "x": 0.23, "y": 0.43 },
+      "sources": ["G08", "G13"]
+    },
+    {
+      "id": "rockrest-flat",
+      "nameZh": "枕石坪",
+      "position": { "x": 0.31, "y": 0.66 },
+      "sources": ["G08", "G14"]
+    },
+    {
+      "id": "cellar",
+      "nameZh": "地窖",
+      "position": { "x": 0.65, "y": 0.27 },
+      "sources": ["G08", "G13"]
+    },
+    {
+      "id": "windseal-gate",
+      "nameZh": "定风桥",
+      "position": { "x": 0.7, "y": 0.58 },
+      "sources": ["G08", "G13"]
+    },
+    {
+      "id": "kingdom-gate",
+      "nameZh": "斯哈哩国石门",
+      "position": { "x": 0.58, "y": 0.84 },
+      "sources": ["G14"]
+    }
   ]
 }

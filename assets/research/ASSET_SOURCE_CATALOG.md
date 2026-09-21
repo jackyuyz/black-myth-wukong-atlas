@@ -22,7 +22,7 @@
 
 官方总入口：<https://gamesci.cn/wukong/>；Steam 商店：<https://store.steampowered.com/app/2358720/Black_Myth_Wukong/>。逐图来源、身份判断与权利边界见 `game-reference-assets.json`，详细规则见 `OFFICIAL_GAME_MEDIA_README.md`。
 
-## C. 第三方实机、界面与行旅图：研究副本，禁止公开构建
+## C. 第三方实机、界面与行旅图：逐图授权入库
 
 已从 GameSpot、The Escapist、PC Gamer、Destructoid、Game8、GamerSky、PC Invasion / Prima Games 和 GameStar 保存 53 张经画面核验的研究副本，并生成 53 张 WebP 预览。素材覆盖：
 
@@ -30,7 +30,7 @@
 - 三口钟、辟火罩获得与装备界面、黑风山和隐·旧观音禅院行旅图；
 - 第二至六回 29 张代表性头目战斗帧。
 
-这些图片全部为 `permission-required`、`research-only`、`useInPublicBuild: false`。第三方网页公开展示不等于本项目获得再发布权。逐图页面、原始图片 URL、页面署名、中文 alt、尺寸和哈希见 `community-gameplay-assets.json`；隔离规则见 `source/game/community-reference/README.md`。
+用户于 2026-09-20 确认这些收集图片已获得本项目使用授权。当前只把其中 34 张与既有节点精确对应的素材登记为 `cleared`、`public-build`、`useInPublicBuild: true`，其余素材继续留在研究库，避免为了“有图”而使用近似画面。逐图页面、原始图片 URL、页面署名、中文 alt、尺寸、哈希与发布状态见 `community-gameplay-assets.json`；公开构建中的副本同时登记在 `src/data/media.json`。
 
 ## D. 证据页与地图研究
 
@@ -41,5 +41,5 @@
 ## E. 仍然存在的权利缺口
 
 1. **小西天大雄宝殿内部悬塑**：关联报道已记录，但仍未找到许可明确的可下载内部照片。
-2. **游戏人物、Boss、法宝和对照画面**：官方及第三方研究图已保存，但仍需要授权或团队自有截图才能公开；不能用生成图替代准确角色与物品图。
+2. **尚未精确匹配的游戏节点**：已授权素材覆盖 35 个既有节点；其余人物、地点与法宝没有准确画面时继续采用文字卡，不能用近似图或生成图替代。
 3. **第一回地图最终底图**：已保存黑风山与隐·旧观音禅院行旅图研究参考，但必须以最新版游戏中的团队自有截图和完整走图核实拓扑，再重新绘制项目地图。

@@ -1301,6 +1301,178 @@ small {
 .reading-card .novel-excerpt cite a:hover {
   text-decoration: underline;
 }
+.novel-frontispiece {
+  margin: 20px 0 26px;
+}
+.novel-frontispiece .novel-excerpt {
+  margin: 0;
+}
+.historical-gallery {
+  padding: 14px;
+  border: 1px solid #b3a16a2b;
+  border-top: 0;
+  background: #0d120ee0;
+}
+.historical-gallery-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  color: #d2bb84;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+.historical-gallery-label small {
+  color: #8f927f;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+.historical-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
+  gap: 12px;
+}
+.historical-image {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid #bda87326;
+  background: #151812;
+}
+.historical-image-mat {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  padding: 10px;
+  overflow: hidden;
+  background: #c7b98f12;
+}
+.historical-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: sepia(0.18) contrast(1.06) brightness(0.86);
+}
+.historical-image figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 11px 12px 12px;
+  border-top: 1px solid #bda8731f;
+  color: #9da08d;
+  font-size: 9px;
+  line-height: 1.65;
+}
+.historical-image figcaption strong {
+  color: #d8c9a4;
+  font: 13px/1.5 var(--serif);
+  letter-spacing: 0.5px;
+}
+.historical-image figcaption span:first-of-type {
+  color: #aeb09d;
+}
+.historical-image figcaption a {
+  color: #c5ae78;
+}
+.historical-image figcaption a:hover {
+  text-decoration: underline;
+}
+.game-gallery {
+  margin: 20px 0 18px;
+  padding: 13px;
+  border: 1px solid #bb9b6538;
+  background:
+    linear-gradient(145deg, #171c16f2, #0d120ff5),
+    radial-gradient(circle at 88% 12%, #9f65321a, transparent 42%);
+}
+.game-gallery-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 11px;
+  color: #d7bc83;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+.game-gallery-label small {
+  color: #8f998b;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+.game-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 12px;
+}
+.game-image {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #d1ad6e2e;
+  background: #0a0d0b;
+  box-shadow: 0 14px 32px #00000029;
+}
+.game-image-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #0a0d0b;
+}
+.game-image-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px #f2d7a20a, inset 0 -48px 55px #05070552;
+}
+.game-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.06) brightness(0.9);
+  transition: filter 220ms ease, transform 450ms ease;
+}
+.game-image:hover img {
+  filter: saturate(0.98) contrast(1.05) brightness(0.98);
+  transform: scale(1.018);
+}
+.game-image-stamp {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  padding: 4px 7px;
+  border: 1px solid #dac28a66;
+  background: #111711d9;
+  color: #e2c98f;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.game-image figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 12px 13px 13px;
+  border-top: 1px solid #bda87326;
+  color: #969d90;
+  font-size: 9px;
+  line-height: 1.65;
+}
+.game-image figcaption strong {
+  color: #dfceb0;
+  font: 14px/1.5 var(--serif);
+  letter-spacing: 0.5px;
+}
+.game-image figcaption span:first-of-type {
+  color: #abb0a1;
+}
+.game-image figcaption a {
+  color: #c9ae76;
+}
+.game-image figcaption a:hover {
+  text-decoration: underline;
+}
 .adaptation,
 .evidence-scope {
   padding: 15px 18px;
@@ -1960,6 +2132,11 @@ small {
   .reading-card section > p,
   .reading-card section > div > p {
     font-size: 14px;
+  }
+  .game-gallery-label {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
   }
   .drawer-inner {
     padding: 0 22px 35px;

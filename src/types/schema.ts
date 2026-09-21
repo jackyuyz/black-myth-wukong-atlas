@@ -133,7 +133,13 @@ export const markerSchema = z
     areaZh: zh,
     summaryZh: zh,
     position: position.optional(),
-    game: z.object({ descriptionZh: zh, sources: refs }).strict(),
+    game: z
+      .object({
+        descriptionZh: zh,
+        mediaIds: z.array(id).min(1).optional(),
+        sources: refs,
+      })
+      .strict(),
     journeyToTheWest: z
       .object({
         relationship: z.enum(["direct", "recombined"]),
@@ -142,6 +148,7 @@ export const markerSchema = z
         summaryZh: zh,
         excerptZh: zh,
         excerptSourceId: z.string().regex(/^[WGHFL]\d{2,3}$/),
+        mediaIds: z.array(id).min(1).optional(),
         adaptationNoteZh: zh,
         sources: refs,
       })
