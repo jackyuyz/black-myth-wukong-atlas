@@ -196,6 +196,86 @@ small {
   background: #9d4637;
   color: #f2e6ce;
 }
+.background-music {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 20;
+  width: min(390px, calc(100vw - 32px));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "copy controls"
+    "select controls";
+  gap: 8px 14px;
+  align-items: center;
+  padding: 13px 14px;
+  border: 1px solid #c3ad7c45;
+  background: #121813f2;
+  box-shadow: 0 12px 38px #0008;
+  backdrop-filter: blur(12px);
+}
+.music-copy {
+  grid-area: copy;
+  min-width: 0;
+}
+.music-copy > span {
+  display: block;
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+.music-copy strong {
+  display: block;
+  overflow: hidden;
+  margin-top: 3px;
+  color: #e8dfcc;
+  font: 13px/1.35 var(--serif);
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.music-copy small {
+  display: block;
+  margin-top: 3px;
+  color: #c89f78;
+  font-size: 9px;
+  line-height: 1.35;
+}
+.music-track-select {
+  grid-area: select;
+  min-width: 0;
+  width: 100%;
+  height: 25px;
+  padding: 2px 24px 2px 7px;
+  border: 1px solid #ffffff20;
+  color: #aeb3a2;
+  background: #171e18;
+  font-size: 9px;
+}
+.music-controls {
+  grid-area: controls;
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  gap: 5px;
+}
+.music-controls button {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  place-items: center;
+  color: #c9bd9d;
+  font: 16px/1 var(--serif);
+}
+.music-controls .music-toggle {
+  border-color: #c3ad7c66;
+  color: #f1e5cc;
+}
+.music-controls .music-toggle[aria-pressed="true"] {
+  background: #914637;
+  border-color: #b86351;
+}
 .page-container {
   width: min(1260px, 91%);
   margin: auto;
@@ -2457,6 +2537,20 @@ small {
   }
   .lang-toggle a {
     padding: 0 8px;
+  }
+  .background-music {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+    padding: 11px 12px;
+  }
+  .music-controls {
+    grid-template-columns: repeat(3, 29px);
+  }
+  .music-controls button {
+    width: 29px;
+    height: 29px;
   }
 }
 /* Chinese that stays on an English page keeps its own font stack. */

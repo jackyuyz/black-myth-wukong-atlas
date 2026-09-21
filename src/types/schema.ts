@@ -126,6 +126,10 @@ export const licenseLabels: Record<string, Record<Lang, string>> = {
     zh: "经权利人授权用于本项目（2026-09-20 确认）",
     en: "Licensed to this project by the rights holder (confirmed 2026-09-20)",
   },
+  "已确认可用于本项目公开发布（2026-09-21）": {
+    zh: "已确认可用于本项目公开发布（2026-09-21）",
+    en: "Cleared for public release in this project (confirmed 2026-09-21)",
+  },
 };
 export const licenseLabel = (license: string, lang: Lang) =>
   licenseLabels[license]?.[lang] ?? license;
@@ -185,7 +189,7 @@ export const sourceSchema = z
   .strict();
 export const mediaSchema = z
   .object({
-    file: z.string().regex(/^\/(art|images|maps)\/[a-z0-9/.-]+$/),
+    file: z.string().regex(/^\/(art|audio|images|maps)\/[a-z0-9/.-]+$/),
     titleZh: zh,
     titleEn: en,
     altZh: zh,
@@ -204,6 +208,7 @@ export const mediaSchema = z
       "ui-texture",
       "ui-icon",
       "wordmark",
+      "audio-track",
     ]),
     provenanceType: z.enum([
       "sourced",

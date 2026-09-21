@@ -566,7 +566,7 @@ When a biography or relationship comes from the in-game portrait / journal / cod
 
 ---
 
-## 10. Image Handling
+## 10. Media Handling
 
 Store only local image paths inside JSON.
 
@@ -594,6 +594,19 @@ Each production image must have metadata in `src/data/media.json`:
 - usage note
 
 Do not bulk-copy copyrighted game screenshots into a public repository without reviewing usage rights.
+
+### 10.1 Background audio
+
+The site may ship a small, independent background-music player. Production
+tracks live under `public/audio/`, use the `audio-track` media role, and must be
+registered in `src/data/media.json` with creator and public-release permission
+before the files enter the public build.
+
+Background music and synthesized interface sounds have separate controls and
+separate persisted preferences. A first-time visitor defaults to background
+music enabled; returning visitors keep their last enabled state and selected
+track. The player attempts audible autoplay, then retries on the visitor's first
+interaction when browser autoplay policy blocks the initial request.
 
 ---
 

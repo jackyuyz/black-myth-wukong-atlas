@@ -797,6 +797,7 @@ decorative-interpretation
 ui-texture
 ui-icon
 wordmark
+audio-track
 ```
 
 Allowed `provenanceType` values:

@@ -15,6 +15,7 @@ import {
   RouteConditions,
 } from "./components/Map";
 import { InterfaceSounds } from "./components/InterfaceSounds";
+import { BackgroundMusic } from "./components/BackgroundMusic";
 import { LanguageToggle } from "./components/LanguageToggle";
 import {
   LocaleLink,
@@ -101,6 +102,7 @@ function AppShell({ children }: { children: React.ReactNode }) {
         <p>{t.footerDisclaimer}</p>
         <LocaleLink to="/sources">{t.footerLink}</LocaleLink>
       </footer>
+      <BackgroundMusic />
     </>
   );
 }
@@ -773,7 +775,11 @@ function SourcesPage() {
           <p>
             {t.creditCreator}
             <Text>{item.creator}</Text> ·{" "}
-            {item.documentary ? t.creditDocumentary : t.creditOriginal} ·{" "}
+            {item.assetRole === "audio-track"
+              ? t.creditAudio
+              : item.documentary
+                ? t.creditDocumentary
+                : t.creditOriginal} ·{" "}
             {licenseLabel(item.license, lang)}
           </p>
           <p>

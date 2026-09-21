@@ -206,11 +206,12 @@ const zh = {
   sourcesLede:
     "原著、游戏资料与文物报道各自证明不同的事实。阅读卡中的引用指向这里同一份来源索引。",
   sourcesTextTitle: "文字与研究资料",
-  sourcesMediaTitle: "图片与原创素材",
+  sourcesMediaTitle: "图片、音乐与原创素材",
   sourceId: (id: string) => `来源编号 ${id}`,
   creditCreator: "创作者：",
   creditDocumentary: "纪实照片",
   creditOriginal: "原创非纪实矢量作品",
+  creditAudio: "授权背景音乐",
   creditSourceLink: "图片原始来源 ↗",
   creditLicenseLink: "阅读许可 ↗",
   sourcesFontTitle: "字体",
@@ -224,6 +225,14 @@ const zh = {
   soundOn: "开",
   soundOff: "关",
   soundAria: (enabled: boolean) => `界面声音：${enabled ? "开启" : "关闭"}`,
+  musicRegionLabel: "背景音乐播放器",
+  musicLabel: "背景音乐",
+  musicTrackLabel: "选择背景音乐曲目",
+  musicPrevious: "上一首",
+  musicNext: "下一首",
+  musicPlay: "播放背景音乐",
+  musicPause: "暂停背景音乐",
+  musicAutoplayBlocked: "点击页面后开始播放",
 };
 type Dict = typeof zh;
 const en: Dict = {
@@ -452,11 +461,12 @@ const en: Dict = {
   sourcesLede:
     "The novel, game material, and heritage reporting each prove different things. Citations on the reading cards point to this one shared index.",
   sourcesTextTitle: "Texts and research material",
-  sourcesMediaTitle: "Images and original artwork",
+  sourcesMediaTitle: "Images, music and original artwork",
   sourceId: (id: string) => `Source ID ${id}`,
   creditCreator: "Creator: ",
   creditDocumentary: "documentary photograph",
   creditOriginal: "original non-documentary vector artwork",
+  creditAudio: "licensed background music",
   creditSourceLink: "Original image source ↗",
   creditLicenseLink: "Read the licence ↗",
   sourcesFontTitle: "Typefaces",
@@ -471,5 +481,13 @@ const en: Dict = {
   soundOff: "Off",
   soundAria: (enabled: boolean) =>
     `Interface sound: ${enabled ? "on" : "off"}`,
+  musicRegionLabel: "Background music player",
+  musicLabel: "Background music",
+  musicTrackLabel: "Choose a background music track",
+  musicPrevious: "Previous track",
+  musicNext: "Next track",
+  musicPlay: "Play background music",
+  musicPause: "Pause background music",
+  musicAutoplayBlocked: "Starts after your first interaction",
 };
 export const ui: Record<Lang, Dict> = { zh, en };
