@@ -1229,10 +1229,10 @@
     {
       "path": "assets/optimized/heritage/yuhuang-temple/kang-jin-long.webp",
       "kind": "optimized",
-      "width": 1600,
-      "height": 1200,
-      "bytes": 211646,
-      "sha256": "a81265d0ff92684cfb3f56feb061fab94ab90547c8af01fb461fc466f14e7c6b"
+      "width": 1200,
+      "height": 1600,
+      "bytes": 236396,
+      "sha256": "fbfe054a955d873723080145f37ca88ea276b1cd40336b95321467ce2cce1839"
     },
     {
       "path": "assets/optimized/heritage/yuhuang-temple/kui-mu-lang.webp",

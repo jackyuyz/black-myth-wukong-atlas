@@ -203,7 +203,7 @@
     "modificationNoteZh": "由公版来源图转换为网页格式，保留原始构图。"
   },
   "heritage-yuhuang-kang-jin-long-01": {
-    "file": "/images/kang-jin-long.webp",
+    "file": "/images/kang-jin-long-upright.webp",
     "titleZh": "府城玉皇庙亢金龙彩塑",
     "altZh": "府城玉皇庙亢金龙彩塑，人物坐姿下方可见盘曲的龙形塑像。",
     "usageNoteZh": "现实文物纪实照片；依许可署名。",
@@ -217,7 +217,7 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%A2%E9%87%91%E9%BE%99.jpg",
     "evidenceSourceIds": ["H01", "H04"],
     "evidenceScopeZh": "照片展示府城玉皇庙亢金龙彩塑及龙形动物属性；游戏关联必须另引 H01/H04，照片本身不证明扫描或一比一复制。",
-    "modificationNoteZh": "由原照片转换为网页格式；保留构图，页面缩放显示，衍生图沿用相同许可。"
+    "modificationNoteZh": "由原照片顺时针旋转 90 度并转换为网页格式；未裁切或重绘，衍生图沿用相同许可。"
   },
   "chapter-01-map": {
     "file": "/art/chapter-01-map.svg",
