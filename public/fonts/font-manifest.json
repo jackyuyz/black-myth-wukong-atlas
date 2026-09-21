@@ -1,0 +1,80 @@
+{
+  "corpus": [
+    "src/App.tsx",
+    "src/components/BackgroundMusic.tsx",
+    "src/components/InterfaceSounds.tsx",
+    "src/components/LanguageToggle.tsx",
+    "src/components/Map.tsx",
+    "src/components/ReadingCard.tsx",
+    "src/data/chapters/chapter-01.json",
+    "src/data/chapters/chapter-02.json",
+    "src/data/chapters/chapter-03.json",
+    "src/data/chapters/chapter-04.json",
+    "src/data/chapters/chapter-05.json",
+    "src/data/chapters/chapter-06.json",
+    "src/data/index.ts",
+    "src/data/media.json",
+    "src/data/sources.json",
+    "src/entry-server.tsx",
+    "src/i18n/index.tsx",
+    "src/i18n/locale.ts",
+    "src/i18n/ui.ts",
+    "src/main.tsx",
+    "src/styles/app.css",
+    "src/types/schema.ts",
+    "index.html"
+  ],
+  "packages": {
+    "noto-sans-sc": {
+      "fontVersion": "v40",
+      "packageVersion": "5.3.0",
+      "source": "https://github.com/google/fonts",
+      "license": "OFL-1.1"
+    },
+    "noto-serif-sc": {
+      "fontVersion": "v35",
+      "packageVersion": "5.3.0",
+      "source": "https://github.com/google/fonts",
+      "license": "OFL-1.1"
+    }
+  },
+  "webEmbedding": "permitted under SIL Open Font License 1.1",
+  "licenseFile": "public/fonts/ofl-noto-sc.txt",
+  "faces": [
+    {
+      "family": "Noto Sans SC",
+      "weight": 400,
+      "path": "public/fonts/noto-sans-sc-400-subset.woff2",
+      "bytes": 184332,
+      "sha256": "8d5b969b8d8383626726f90e26a1228dd3bcad3ba7004ddd851403697edfe3df"
+    },
+    {
+      "family": "Noto Sans SC",
+      "weight": 600,
+      "path": "public/fonts/noto-sans-sc-600-subset.woff2",
+      "bytes": 187268,
+      "sha256": "06d9626904c379df54ff5d2903b711c2758cdbc155467f2e448c39af212be51d"
+    },
+    {
+      "family": "Noto Sans SC",
+      "weight": 700,
+      "path": "public/fonts/noto-sans-sc-700-subset.woff2",
+      "bytes": 188044,
+      "sha256": "4581f4325f5c5f80740396f4372de9d29034a8d974fe1e77ad1cb67cd9c0e600"
+    },
+    {
+      "family": "Noto Serif SC",
+      "weight": 400,
+      "path": "public/fonts/noto-serif-sc-400-subset.woff2",
+      "bytes": 237728,
+      "sha256": "a5e705c40b28cd4b807175f78726ce0022c00fa7ebd1d1bade709882113ce766"
+    },
+    {
+      "family": "Noto Serif SC",
+      "weight": 500,
+      "path": "public/fonts/noto-serif-sc-500-subset.woff2",
+      "bytes": 240156,
+      "sha256": "e697088c30e28dc3a792254cd7f8b10bd931f42d8153420fbb85f18542ad838e"
+    }
+  ]
+}

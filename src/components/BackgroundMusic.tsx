@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { media } from "../data";
 import { useUi } from "../i18n";
 import { LanguageToggle } from "./LanguageToggle";
@@ -34,16 +35,33 @@ export function BackgroundMusic() {
   const [autoplayBlocked, setAutoplayBlocked] = useState(false);
   const [position, setPosition] = useState<Position | null>(null);
   const [dragging, setDragging] = useState(false);
+  const [readerPortal, setReaderPortal] = useState<HTMLDialogElement | null>(
+    null,
+  );
   const current = tracks[trackIndex];
 
   const clampPosition = useCallback((next: Position): Position => {
     const panel = panelRef.current;
     if (!panel) return next;
-    const maxX = Math.max(VIEWPORT_GUTTER, window.innerWidth - panel.offsetWidth - VIEWPORT_GUTTER);
-    const maxY = Math.max(VIEWPORT_GUTTER, window.innerHeight - panel.offsetHeight - VIEWPORT_GUTTER);
+    const reader = panel.closest<HTMLDialogElement>(".info-drawer");
+    const bounds = reader?.getBoundingClientRect();
+    const minX = (bounds?.left ?? 0) + VIEWPORT_GUTTER;
+    const minY = (bounds?.top ?? 0) + VIEWPORT_GUTTER;
+    const maxX = Math.max(
+      minX,
+      (bounds?.right ?? window.innerWidth) -
+        panel.offsetWidth -
+        VIEWPORT_GUTTER,
+    );
+    const maxY = Math.max(
+      minY,
+      (bounds?.bottom ?? window.innerHeight) -
+        panel.offsetHeight -
+        VIEWPORT_GUTTER,
+    );
     return {
-      x: Math.min(Math.max(next.x, VIEWPORT_GUTTER), maxX),
-      y: Math.min(Math.max(next.y, VIEWPORT_GUTTER), maxY),
+      x: Math.min(Math.max(next.x, minX), maxX),
+      y: Math.min(Math.max(next.y, minY), maxY),
     };
   }, []);
 
@@ -84,9 +102,32 @@ export function BackgroundMusic() {
   }, []);
 
   useEffect(() => {
+    const findOpenReader = () => {
+      setReaderPortal(
+        document.querySelector<HTMLDialogElement>(".info-drawer[open]"),
+      );
+    };
+    findOpenReader();
+    const observer = new MutationObserver(findOpenReader);
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["open"],
+      childList: true,
+      subtree: true,
+    });
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     if (!ready || !positionRef.current) return;
     placePanel(positionRef.current);
-  }, [placePanel, ready]);
+    if (!readerPortal || typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver(() => {
+      if (positionRef.current) placePanel(positionRef.current);
+    });
+    observer.observe(readerPortal);
+    return () => observer.disconnect();
+  }, [placePanel, readerPortal, ready]);
 
   useEffect(() => {
     const keepInViewport = () => {
@@ -221,7 +262,7 @@ export function BackgroundMusic() {
     window.localStorage.setItem(MUSIC_POSITION_KEY, JSON.stringify(next));
   };
 
-  return (
+  const controls = (
     <aside
       ref={panelRef}
       className={`background-music${playing ? " is-playing" : ""}${dragging ? " is-dragging" : ""}`}
@@ -281,6 +322,12 @@ export function BackgroundMusic() {
         {t.musicNowPlaying}: {current.title}
         {enabled && autoplayBlocked ? `. ${t.musicAutoplayBlocked}` : ""}
       </p>
+    </aside>
+  );
+
+  return (
+    <>
+      {readerPortal ? createPortal(controls, readerPortal) : controls}
       <audio
         ref={audioRef}
         src={media[current.id].file}
@@ -289,6 +336,6 @@ export function BackgroundMusic() {
         onPause={() => setPlaying(false)}
         onEnded={() => moveTrack(1)}
       />
-    </aside>
+    </>
   );
 }

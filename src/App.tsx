@@ -827,6 +827,10 @@ function SourcesPage() {
             <Text>{item.creator}</Text> ·{" "}
             {item.assetRole === "audio-track"
               ? t.creditAudio
+              : item.assetRole === "typeface"
+                ? t.creditTypeface
+                : item.assetRole === "asset-documentation"
+                  ? t.creditDocumentation
               : item.documentary
                 ? t.creditDocumentary
                 : t.creditOriginal} ·{" "}

@@ -4,8 +4,8 @@
 
 | 用途 | 字体 | 建议字重 | 许可 | 官方来源 | 当前存储方式 |
 |---|---|---|---|---|---|
-| 标题、章节名、较短引文 | Noto Serif SC / Noto Serif CJK SC | 600、700 | SIL Open Font License 1.1 | <https://github.com/notofonts/noto-cjk/tree/main/Serif> | 暂不提交庞大的完整字体；实现阶段生成所需字重和字符范围的 WOFF2 子集 |
-| 正文、控件、来源和无障碍文字 | Noto Sans SC / Noto Sans CJK SC | 400、500、600 | SIL Open Font License 1.1 | <https://github.com/notofonts/noto-cjk/tree/main/Sans> | 暂不提交庞大的完整字体；实现阶段生成所需字重和字符范围的 WOFF2 子集 |
+| 标题、章节名、较短引文 | Noto Serif SC / Noto Serif CJK SC | 400、500 | SIL Open Font License 1.1 | <https://github.com/notofonts/noto-cjk/tree/main/Serif> | `public/fonts/noto-serif-sc-*-subset.woff2` |
+| 正文、控件、来源和无障碍文字 | Noto Sans SC / Noto Sans CJK SC | 400、600、700 | SIL Open Font License 1.1 | <https://github.com/notofonts/noto-cjk/tree/main/Sans> | `public/fonts/noto-sans-sc-*-subset.woff2` |
 
 ## 选择理由
 
@@ -28,3 +28,10 @@
 
 5. 不使用 AI 生成汉字、官方游戏 Logo 字形描摹或来源不明的“书法字体”。
 
+## 当前实现记录
+
+- 字体来源：Fontsource 打包的 Google Noto Sans SC 与 Noto Serif SC；字体版本、包版本和官方来源记录在 `public/fonts/font-manifest.json`。
+- 许可：SIL Open Font License 1.1，允许网页嵌入；许可正文保存在 `public/fonts/ofl-noto-sc.txt`。
+- 文件：正文使用 Noto Sans SC 400、600、700；标题使用 Noto Serif SC 400、500。每个文件的 SHA-256 和字节数记录在字体清单中。
+- 子集：`npm run fonts:build` 从 `src/` 与 `index.html` 的实际字符重新生成 WOFF2；命令需要安装支持 Brotli 的 Python FontTools。新增用户可见文字后应重新运行该命令。
+- 回退：正文为 `"Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif`；标题为 `"Noto Serif SC", "Songti SC", "STSong", serif`。

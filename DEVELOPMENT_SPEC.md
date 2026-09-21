@@ -615,6 +615,15 @@ its state from the current localized route. Visitors may drag the controller,
 and its clamped viewport position persists locally. The drag handle is keyboard
 reachable and supports arrow-key movement.
 
+### 10.2 Self-hosted Chinese typography
+
+The public build self-hosts project-character WOFF2 subsets of Noto Sans SC
+for body and interface copy and Noto Serif SC for headings and literary text.
+Font binaries use the `typeface` media role; the OFL licence and generated
+checksum manifest use `asset-documentation`. Every file under `public/fonts/`
+is registered in `src/data/media.json`, and `assets/research/FONT_PLAN.md`
+records the source, version, fallback stack and subset rebuild command.
+
 ---
 
 ## 11. Responsive Design

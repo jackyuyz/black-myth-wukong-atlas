@@ -130,6 +130,10 @@ export const licenseLabels: Record<string, Record<Lang, string>> = {
     zh: "已确认可用于本项目公开发布（2026-09-21）",
     en: "Cleared for public release in this project (confirmed 2026-09-21)",
   },
+  "SIL Open Font License 1.1": {
+    zh: "SIL 开放字体许可证 1.1",
+    en: "SIL Open Font License 1.1",
+  },
 };
 export const licenseLabel = (license: string, lang: Lang) =>
   licenseLabels[license]?.[lang] ?? license;
@@ -189,7 +193,7 @@ export const sourceSchema = z
   .strict();
 export const mediaSchema = z
   .object({
-    file: z.string().regex(/^\/(art|audio|images|maps)\/[a-z0-9/.-]+$/),
+    file: z.string().regex(/^\/(art|audio|fonts|images|maps)\/[a-z0-9/.-]+$/),
     titleZh: zh,
     titleEn: en,
     altZh: zh,
@@ -209,6 +213,8 @@ export const mediaSchema = z
       "ui-icon",
       "wordmark",
       "audio-track",
+      "typeface",
+      "asset-documentation",
     ]),
     provenanceType: z.enum([
       "sourced",
@@ -217,6 +223,7 @@ export const mediaSchema = z
       "original-vector",
       "original-illustration",
       "original-photography",
+      "original-document",
     ]),
     documentary: z.boolean(),
     creator: z.string().min(1),
