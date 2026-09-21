@@ -3,25 +3,35 @@
   "order": 1,
   "numeralZh": "一",
   "titleZh": "火照黑云",
+  "titleEn": "Fire Lights the Black Clouds",
   "regionZh": "黑风山",
+  "regionEn": "Black Wind Mountain",
   "themeZh": "一领袈裟，照见众生。",
+  "themeEn": "One cassock, and all beings are seen.",
   "overviewZh": "由苍狼林走向翠竹林、黑风洞，沿着人物与器物的线索，重新读一次观音院的故事。",
+  "overviewEn": "From the Forest of Wolves through the Bamboo Grove to Black Wind Cave, follow the trail of characters and objects and read the story of Guanyin Monastery once more.",
   "readingGuideZh": "先看观音禅院，再读广智、广谋与黑熊精：是谁放火，又是谁取走袈裟？",
+  "readingGuideEn": "Start at Guanyin Temple, then read Guangzhi, Guangmou and the Black Bear Guai: who set the fire, and who carried the cassock away?",
   "sources": ["G07", "W016", "W017"],
   "atmosphereMediaId": "atmosphere-01",
   "mapMode": "schematic",
   "topologyStatus": "verified-high-level",
   "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
+  "mapNoticeEn": "Route diagram, not to geographic scale, not an official map",
   "markers": [
     {
       "id": "guangzhi",
       "nameZh": "广智",
+      "nameEn": "Guangzhi",
       "type": "character",
       "areaZh": "苍狼林 · 林外",
+      "areaEn": "Forest of Wolves · Outside the Forest",
       "summaryZh": "原著里的小和尚，如何成为游戏中的持刃妖怪？",
+      "summaryEn": "How does a young monk from the novel become a blade-wielding yaoguai in the game?",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "广智是天命人在苍狼林可以遇到的头目，所在区域还与第一口钟有关。游戏赋予了这个名字新的造型与战斗经历。读这张卡，可以先记住名字，再把游戏里的妖怪与原著里提出夺宝计划的小和尚分开。",
+        "descriptionEn": "Guangzhi is a boss the Destined One can meet in the Forest of Wolves, in an area also tied to the first bell. The game gives the name a new design and a new fight. Take the name first from this card, then keep the yaoguai of the game apart from the young monk who proposes the plot to seize the treasure in the novel.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-1-guangzhi"]
       },
@@ -31,10 +41,14 @@
         "relationship": "direct",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "广智是观音院的小和尚。他看见唐僧的袈裟后，提出杀害唐僧、夺取袈裟的计策。",
+        "summaryEn": "Guangzhi is a young monk of Guanyin Monastery. After seeing Tang Sanzang's cassock, he proposes a scheme to kill him and take it.",
         "excerptZh": "正說話處，有一個小和尚，名喚廣智，出頭道：「公公要得長遠，也容易。」",
+        "excerptEn": "As they were speaking, a young monk named Guangzhi stepped forward and said: “If your reverence would keep it for good, that is easy enough.”",
         "excerptSourceId": "W016",
         "adaptationNoteZh": "名字与夺宝故事有直接出处；妖怪形象及游戏经历属于重新创作。",
+        "adaptationNoteEn": "The name and the plot to seize the treasure have a direct source; the yaoguai design and everything the character goes through in the game are new invention.",
         "sources": ["W016"]
       },
       "position": { "x": 0.1, "y": 0.2 }
@@ -42,35 +56,45 @@
     {
       "id": "wandering-wight",
       "nameZh": "幽魂",
+      "nameEn": "Wandering Wight",
       "type": "boss",
       "areaZh": "苍狼林 · 林外",
+      "areaEn": "Forest of Wolves · Outside the Forest",
       "summaryZh": "相似的造型，不等于相同的原著身份。",
+      "summaryEn": "A similar design does not make it the same figure from the novel.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "幽魂出现在苍狼林林外的探索区域，是第一回可遇到的头目。这里先学习如何区分角色：即使形象使人联想到另一位人物，也不能仅凭长相推断原著身份。幽魂与金池长老在阅读目录中分别列卡。",
+        "descriptionEn": "The Wandering Wight appears in the exploration area outside the Forest of Wolves and is one of the bosses of Chapter One. Begin here with how to tell figures apart: even when an appearance brings another character to mind, a resemblance alone cannot settle who someone is in the novel. The Wandering Wight and Elder Jinchi are listed as separate cards in this reading index.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-escapist-chapter-1-wandering-wight-portrait"]
       },
       "funFacts": [],
       "sources": ["G07", "G09"],
       "noDirectNovelZh": "本条没有可直接对应的《西游记》人物或情节；请把这里的形象作为游戏创作来理解。",
+      "noDirectNovelEn": "There is no figure or episode in Journey to the West that corresponds to this entry directly; read what you see here as the game's own creation.",
       "position": { "x": 0.2, "y": 0.66 }
     },
     {
       "id": "guanyin-temple",
       "nameZh": "观音禅院",
+      "nameEn": "Guanyin Temple",
       "type": "architecture",
       "areaZh": "苍狼林",
+      "areaEn": "Forest of Wolves",
       "summaryZh": "一座寺院，串起袈裟、贪念与一场大火。",
+      "summaryEn": "One temple ties together a cassock, a greed and a great fire.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "观音禅院是苍狼林中的游戏地点，与灵虚子所在区域相连。在第一回的文化阅读中，它也是连接广智、广谋、金池长老与袈裟故事的入口。注意区分这里与通过三口钟进入的隐·旧观音禅院。",
+        "descriptionEn": "Guanyin Temple is a location in the Forest of Wolves, joined to the area where Lingxuzi is found. In the cultural reading of Chapter One it is also the way in to Guangzhi, Guangmou, Elder Jinchi and the story of the cassock. Keep it apart from the hidden Ancient Guanyin Temple, which is entered through the three bells.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-gamersky-chapter-1-black-wind-mountain-journeyers-chart"]
       },
       "funFacts": [
         {
           "textZh": "这句原文说明了殿上的题字，也让我们知道“观音禅院”并非游戏新造的名字。节选保留所引版本的繁体字。",
+          "textEn": "This line records the inscription on the hall and shows that “Chan Monastery of Guanyin” is not a name the game invented. The excerpt keeps the traditional characters of the edition cited.",
           "sources": ["W016"]
         }
       ],
@@ -79,10 +103,14 @@
         "relationship": "direct",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "唐僧与悟空在观音禅院借宿，袈裟引起老僧的贪念，随后发生谋害、纵火与失窃。",
+        "summaryEn": "Tang Sanzang and Wukong lodge at Guanyin Monastery. The cassock rouses the old abbot's greed, and a murder plot, an arson and a theft follow.",
         "adaptationNoteZh": "游戏把原著里的借宿与失火故事重构为玩家探索的空间；同名地点不等于已确认的现实寺院模型。",
+        "adaptationNoteEn": "The game rebuilds the night's lodging and the fire of the novel as a space for the player to explore; a place that shares the name is not a confirmed real temple used as a model.",
         "sources": ["W016"],
         "excerptZh": "那正殿上書四個大字，是「觀音禪院」。",
+        "excerptEn": "On the main hall four great characters were written: “Chan Monastery of Guanyin”.",
         "excerptSourceId": "W016",
         "mediaIds": ["historical-jttw-guanyin-1590"]
       },
@@ -91,12 +119,16 @@
     {
       "id": "lingxuzi",
       "nameZh": "灵虚子",
+      "nameEn": "Lingxuzi",
       "type": "boss",
       "areaZh": "苍狼林 · 观音禅院",
+      "areaEn": "Forest of Wolves · Guanyin Temple",
       "summaryZh": "“灵”与“凌”之间，藏着改编的距离。",
+      "summaryEn": "Two names that sound alike are written with different characters, and in that difference sits the adaptation.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "灵虚子是观音禅院的头目。游戏中的名字写作“灵虚子”，原著人物却写作“凌虚子”。阅读时先留意这个字的差别：它提醒我们，即便借用了苍狼与黑风山的元素，也不能把两者的身份经历直接合并。",
+        "descriptionEn": "Lingxuzi is the boss of Guanyin Temple. The game writes the name 灵虚子, while the figure in the novel is written 凌虚子. Notice that difference in writing first: it is a reminder that although the game borrows the grey wolf and Black Wind Mountain, the two identities and their histories cannot simply be merged.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-1-lingxuzi"]
       },
@@ -106,10 +138,14 @@
         "relationship": "recombined",
         "chapterNumbers": [17],
         "chapterTitlesZh": ["孙行者大闹黑风山　观世音收伏熊罴怪"],
+        "chapterTitlesEn": ["Sun Wukong Makes Havoc on Black Wind Mountain; Guanyin Subdues the Bear Monster"],
         "summaryZh": "原著的凌虚子是黑熊精的友人，为苍狼所化，参与黑风山的故事。",
+        "summaryEn": "The novel's Lingxuzi (凌虚子) is a friend of the Black Bear Guai, a grey wolf in transformed shape, and takes part in the Black Wind Mountain story.",
         "excerptZh": "那個盤兒底下卻有字，刻道「凌虛子製」。",
+        "excerptEn": "On the underside of the tray were characters, carved: “Made by Lingxuzi”.",
         "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏“灵虚子”的身份与遭遇需按游戏叙事理解；不能直接套用原著“凌虚子”的生平。",
+        "adaptationNoteEn": "Who the game's Lingxuzi is, and what befalls him, must be read from the game's own telling; the life of the novel's 凌虚子 cannot be applied to him directly.",
         "sources": ["W017"]
       },
       "position": { "x": 0.36, "y": 0.43 }
@@ -117,29 +153,38 @@
     {
       "id": "baw-li-guhh-lang",
       "nameZh": "波里个浪",
+      "nameEn": "Baw-Li-Guhh-Lang",
       "type": "boss",
       "areaZh": "翠竹林 · 蛇径",
+      "areaEn": "Bamboo Grove · Snake Trail",
       "summaryZh": "先认识游戏角色，再判断有没有文学出处。",
+      "summaryEn": "Meet the character in the game first, then ask whether there is a literary source at all.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "波里个浪是翠竹林蛇径附近河流支线的头目。这里将它作为游戏世界的一部分介绍，不替它补造《西游记》中的同名角色。名字与造型可以引起联想，但联想本身不能充当文学出处。",
+        "descriptionEn": "Baw-Li-Guhh-Lang is the boss of the river branch near the Snake Trail in the Bamboo Grove. It is introduced here as part of the game's world, without inventing a namesake for it in Journey to the West. A name and a design may suggest associations, but an association cannot itself serve as a literary source.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-game8-chapter-1-baw-li-guhh-lang-banner"]
       },
       "funFacts": [],
       "sources": ["G07", "G09"],
       "noDirectNovelZh": "本条没有可直接对应的《西游记》人物或情节；请把这里的形象作为游戏创作来理解。",
+      "noDirectNovelEn": "There is no figure or episode in Journey to the West that corresponds to this entry directly; read what you see here as the game's own creation.",
       "position": { "x": 0.42, "y": 0.76 }
     },
     {
       "id": "guangmou",
       "nameZh": "广谋",
+      "nameEn": "Guangmou",
       "type": "character",
       "areaZh": "翠竹林",
+      "areaEn": "Bamboo Grove",
       "summaryZh": "不是完全原创：原著里已有这位谋划者。",
+      "summaryEn": "Not wholly invented: this schemer is already in the novel.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "广谋出现在翠竹林的探索途中，其所在位置与第二口钟相连。游戏让一个原著里参与计谋的人物成为可以面对的头目。把他与广智并排阅读，会发现游戏借用了人物名字，却为他们添加了不同的表现。",
+        "descriptionEn": "Guangmou appears along the way through the Bamboo Grove, at a spot connected to the second bell. The game turns a figure who joins the plot in the novel into a boss you can face. Read him beside Guangzhi and you will see that the game borrows the names while giving each of them a different showing.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-pc-invasion-chapter-1-guangmou-feature"]
       },
@@ -149,10 +194,14 @@
         "relationship": "direct",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "广谋在原著中是广智的师弟，提出用纵火烧毁禅堂的方法谋害唐僧、留下袈裟。",
+        "summaryEn": "In the novel Guangmou is Guangzhi's junior disciple-brother. He proposes burning down the meditation hall to kill Tang Sanzang and keep the cassock.",
         "excerptZh": "內中又有一個小和尚，名喚廣謀，就是那廣智的師弟。",
+        "excerptEn": "Among them was another young monk named Guangmou, the junior disciple-brother of that Guangzhi.",
         "excerptSourceId": "W016",
         "adaptationNoteZh": "原著提供人物与纵火计谋；游戏中的妖怪造型、战斗和后续经历是扩写。",
+        "adaptationNoteEn": "The novel supplies the character and the arson plot; the yaoguai design, the fight and everything that follows in the game are expansion.",
         "sources": ["W016"]
       },
       "position": { "x": 0.52, "y": 0.45 }
@@ -160,12 +209,16 @@
     {
       "id": "whiteclad-noble",
       "nameZh": "白衣秀士",
+      "nameEn": "Whiteclad Noble",
       "type": "character",
       "areaZh": "翠竹林 · 白雾泽",
+      "areaEn": "Bamboo Grove · Marsh of White Mist",
       "summaryZh": "白衣文人的背后，是原著里的白花蛇。",
+      "summaryEn": "Behind the scholar in white stands the white-patterned snake of the novel.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "白衣秀士出现在白雾泽一带，靠近第三口钟所在的探索分支，也处于通往黑风洞的阶段。这个称呼既带有人物形象，也保留文学线索：回到原著，才能看清他与黑熊精以及白花蛇的关系。",
+        "descriptionEn": "The Whiteclad Noble appears around the Marsh of White Mist, close to the exploration branch that holds the third bell and on the stretch leading towards Black Wind Cave. The title carries both a figure and a literary clue: only back in the novel can you see how he stands in relation to the Black Bear Guai and to the white-patterned snake.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-1-whiteclad-noble"]
       },
@@ -175,10 +228,14 @@
         "relationship": "direct",
         "chapterNumbers": [17],
         "chapterTitlesZh": ["孙行者大闹黑风山　观世音收伏熊罴怪"],
+        "chapterTitlesEn": ["Sun Wukong Makes Havoc on Black Wind Mountain; Guanyin Subdues the Bear Monster"],
         "summaryZh": "原著中的白衣秀士是黑熊精的同伴，原形为白花蛇。",
+        "summaryEn": "In the novel the Whiteclad Noble is a companion of the Black Bear Guai whose true form is a white-patterned snake.",
         "excerptZh": "只把個白衣秀士一棒打死。拖將過來看處，卻是一條白花蛇怪。",
+        "excerptEn": "With a single blow of the staff he killed the Whiteclad Noble. When they dragged the body over to look at it, it was a white-patterned snake monster.",
         "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏重新安排了他的遭遇与战斗。原著写的是“白花蛇”，不要误记成“百花蛇”。",
+        "adaptationNoteEn": "The game rearranges his encounters and his fight. The novel writes 白花蛇, a white-patterned snake; do not misremember it as 百花蛇, a hundred-flower snake.",
         "sources": ["W017"]
       },
       "position": { "x": 0.64, "y": 0.43 }
@@ -186,12 +243,16 @@
     {
       "id": "ancient-guanyin-temple",
       "nameZh": "隐·旧观音禅院",
+      "nameEn": "Hidden · Ancient Guanyin Temple",
       "type": "location",
       "areaZh": "隐藏区域",
+      "areaEn": "Hidden area",
       "summaryZh": "三声钟响，回到一段未散的往事。",
+      "summaryEn": "Three strokes of a bell, and an unsettled past returns.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "隐·旧观音禅院是第一回的隐藏区域。敲响三口钟之后，玩家经传送进入这里并遇到金池长老。它与主线观音禅院分开呈现；图上的虚线表示带条件的关联，不表示一条普通步行道路。",
+        "descriptionEn": "The Ancient Guanyin Temple is the hidden area of Chapter One. Once the three bells have been struck, the player is carried here and meets Elder Jinchi. It is shown apart from the Guanyin Temple of the main route; the dotted line on the diagram marks a conditional link, not an ordinary path on foot.",
         "sources": ["G10", "G12"],
         "mediaIds": ["community-gameplay-gamersky-chapter-1-secret-ancient-guanyin-temple-chart"]
       },
@@ -201,10 +262,14 @@
         "relationship": "recombined",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "原著第十六回的寺院大火来自夺取袈裟的贪念。金池与僧人的选择推动了这场悲剧。",
+        "summaryEn": "In Chapter 16 of the novel, the fire at the monastery grows out of greed for the cassock. The choices of Jinchi and his monks drive the tragedy.",
         "excerptZh": "須臾間，風狂火盛，把一座觀音院，處處通紅。",
+        "excerptEn": "In a moment the wind raged and the fire rose, and the whole of Guanyin Monastery glowed red from end to end.",
         "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏借用旧事与人物重构隐藏区域；三口钟开启隐藏场景是游戏机制，不是原著桥段。",
+        "adaptationNoteEn": "The game borrows the old events and the figures to build a hidden area; opening a hidden scene by striking three bells is a game mechanic, not an episode from the novel.",
         "sources": ["W016"]
       },
       "position": { "x": 0.67, "y": 0.86 }
@@ -212,12 +277,16 @@
     {
       "id": "elder-jinchi",
       "nameZh": "金池长老",
+      "nameEn": "Elder Jinchi",
       "type": "character",
       "areaZh": "隐·旧观音禅院",
+      "areaEn": "Hidden · Ancient Guanyin Temple",
       "summaryZh": "一件袈裟，照见一个人的执念。",
+      "summaryEn": "One cassock shows a man his own obsession.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "金池长老出现在隐·旧观音禅院，是隐藏区域中可以遇到的头目。对于不熟悉游戏的读者，先把他看成理解袈裟故事的关键人物：原著讲他的贪念，游戏则把这段往事改写成天命人能够进入的遭遇。",
+        "descriptionEn": "Elder Jinchi appears in the Ancient Guanyin Temple and is the boss to be met in that hidden area. For a reader who does not know the game, take him first as the key to the story of the cassock: the novel tells of his greed, and the game rewrites that past into an encounter the Destined One can enter.",
         "sources": ["G10", "G12"],
         "mediaIds": ["community-gameplay-gamespot-chapter-1-elder-jinchi"]
       },
@@ -227,10 +296,14 @@
         "relationship": "recombined",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "观音院的老僧见到袈裟后动了贪念。原著中他自述二百七十岁，这是小说人物的自述，不是现实寿命记录。",
+        "summaryEn": "The old monk of Guanyin Monastery is seized by greed at the sight of the cassock. In the novel he says of himself that he is two hundred and seventy years old; that is a character speaking within a work of fiction, not a record of a real lifespan.",
         "excerptZh": "我今年二百七十歲，空掙了幾百件袈裟。",
+        "excerptEn": "I am two hundred and seventy years old this year, and to no purpose have I gathered several hundred cassocks.",
         "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏中的金池形象和战斗属于对原著悲剧的重构，不能当作小说里的原貌。",
+        "adaptationNoteEn": "Jinchi's design in the game, and the fight with him, are a reconstruction of the novel's tragedy and cannot be taken for his original form in the book.",
         "sources": ["W016"]
       },
       "position": { "x": 0.88, "y": 0.86 }
@@ -238,12 +311,16 @@
     {
       "id": "fireproof-mantle",
       "nameZh": "辟火罩",
+      "nameEn": "Fireproof Mantle",
       "type": "item",
       "areaZh": "第三口钟关联区域",
+      "areaEn": "Area linked to the third bell",
       "summaryZh": "从保护唐僧的宝物，到游戏中的法宝。",
+      "summaryEn": "From the treasure that shielded Tang Sanzang to an item of power in the game.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "辟火罩是第一回可以获得的法宝。法宝在这里指具有特殊效用的器物类别。它与三口钟、旧观音禅院和金池长老相关；击败金池后，需返回第三口钟旁调查悬尸领取。它的名字有明确的原著来源。",
+        "descriptionEn": "The Fireproof Mantle is an item of power obtainable in Chapter One; “item of power” here means a class of object with a special effect. It is bound up with the three bells, the Ancient Guanyin Temple and Elder Jinchi: after Jinchi is defeated, return to the third bell and examine the hanging corpse to collect it. Its name has a clear source in the novel.",
         "sources": ["G11", "G10"],
         "mediaIds": ["community-gameplay-escapist-chapter-1-fireproof-mantle-item"]
       },
@@ -253,10 +330,14 @@
         "relationship": "direct",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "悟空向广目天王借来辟火罩保护唐僧，使唐僧在观音院的大火中免遭焚烧。",
+        "summaryEn": "Wukong borrows the fireproof mantle from the Broad-Eyed Heavenly King to shield Tang Sanzang, so that he comes through the fire at Guanyin Monastery unburned.",
         "excerptZh": "只是借此罩，護住了唐僧無傷，其餘管他，盡他燒去。",
+        "excerptEn": "I borrow this mantle only to keep Tang Sanzang from harm; as for the rest, let it all burn.",
         "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏沿用名称和避火意象，重新设计了获得方式与使用机制；规范名称是“辟火罩”。",
+        "adaptationNoteEn": "The game keeps the name and the fire-warding image while redesigning how the object is obtained and used; the standard form of the name is 辟火罩.",
         "sources": ["W016"]
       },
       "position": { "x": 0.8, "y": 0.65 }
@@ -264,12 +345,16 @@
     {
       "id": "black-wind-king",
       "nameZh": "黑风大王",
+      "nameEn": "Black Wind King",
       "type": "boss",
       "areaZh": "黑风洞 · 洞内",
+      "areaEn": "Black Wind Cave · Inside the cave",
       "summaryZh": "同一回的游戏呈现，也要分清文学叙事。",
+      "summaryEn": "Even inside one chapter, keep what the game shows apart from what the novel tells.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黑风大王在黑风洞洞内出现，随后探索路径继续通往洞外与见谛峰。阅读这张卡时，可以把黑风洞当作游戏和原著共同的故事地名，同时留意：游戏的战斗阶段安排，并不是原著章节的原样复现。",
+        "descriptionEn": "The Black Wind King appears inside Black Wind Cave, after which the route continues out of the cave and on to the Peak of Insight. Reading this card, you may treat Black Wind Cave as a place name the game and the novel share, while noting that the way the game stages its fight is not a reproduction of a chapter of the book.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-1-black-wind-king"]
       },
@@ -279,10 +364,14 @@
         "relationship": "recombined",
         "chapterNumbers": [16, 17],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟", "孙行者大闹黑风山　观世音收伏熊罴怪"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock","Sun Wukong Makes Havoc on Black Wind Mountain; Guanyin Subdues the Bear Monster"],
         "summaryZh": "黑风山黑风洞是原著黑熊精活动的地方。袈裟失窃之后，悟空前往黑风山追寻，最终由观音收伏熊罴怪。",
+        "summaryEn": "Black Wind Cave on Black Wind Mountain is where the novel's Black Bear Guai makes his home. After the cassock is stolen, Wukong goes to Black Wind Mountain to search for it, and in the end Guanyin subdues the bear monster.",
         "excerptZh": "一個是修正齊天聖，一個是成精黑大王。",
+        "excerptEn": "The one, the Great Sage Equal to Heaven, cultivated to rectitude; the other, the Black King, a spirit grown into his powers.",
         "excerptSourceId": "W017",
         "adaptationNoteZh": "洞内的游戏战斗是新的情境；黑风山、黑风洞与袈裟事件构成了文学背景。",
+        "adaptationNoteEn": "The fight inside the cave is a new situation; Black Wind Mountain, Black Wind Cave and the affair of the cassock form the literary background.",
         "sources": ["W016", "W017"]
       },
       "position": { "x": 0.8, "y": 0.36 }
@@ -290,12 +379,16 @@
     {
       "id": "black-bear-guai",
       "nameZh": "黑熊精",
+      "nameEn": "Black Bear Guai",
       "type": "boss",
       "areaZh": "黑风洞 · 见谛峰",
+      "areaEn": "Black Wind Cave · Peak of Insight",
       "summaryZh": "他本来想去救火，后来却取走了袈裟。",
+      "summaryEn": "He came to help put out the fire, and left with the cassock.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黑熊精出现在第一回见谛峰阶段，是黑风山故事的重要角色。游戏重新讲述了与他相关的遭遇。要理解这个人物，值得回到原著看一眼他为何来到观音院，而不是把“放火”和“偷袈裟”草率归给同一个人。",
+        "descriptionEn": "The Black Bear Guai appears at the Peak of Insight stage of Chapter One and is a central figure in the Black Wind Mountain story. The game retells the encounters around him. To understand the character it is worth going back to the novel to see why he comes to Guanyin Monastery, rather than hastily assigning both “setting the fire” and “stealing the cassock” to one person.",
         "sources": ["G07", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-1-black-bear-guai"]
       },
@@ -305,10 +398,14 @@
         "relationship": "direct",
         "chapterNumbers": [16, 17],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟", "孙行者大闹黑风山　观世音收伏熊罴怪"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock","Sun Wukong Makes Havoc on Black Wind Mountain; Guanyin Subdues the Bear Monster"],
         "summaryZh": "黑熊精看到观音院起火，原本准备救火；进入院中见到袈裟后起了贪念，趁乱取走。第十七回他被观音收伏。",
+        "summaryEn": "Seeing Guanyin Monastery ablaze, the Black Bear Guai at first means to help put out the fire; once inside, the sight of the cassock rouses his greed and he carries it off in the confusion. In Chapter 17 he is subdued by Guanyin.",
         "excerptZh": "侍生熊羆頓首拜，啟上大闡金池老上人丹房。",
+        "excerptEn": "Your servant Xiongpi bows his head in salutation, and addresses the cell of the venerable Elder Jinchi, great expounder of the Law.",
         "excerptSourceId": "W017",
         "adaptationNoteZh": "游戏续写了角色经历；原著提供的是火乱、窃衣与收伏的故事，二者应分层阅读。",
+        "adaptationNoteEn": "The game continues the character's story; what the novel supplies is the confusion of the fire, the theft of the robe and the subduing. The two should be read as separate layers.",
         "sources": ["W016", "W017"]
       },
       "position": { "x": 0.91, "y": 0.22 }
@@ -316,12 +413,16 @@
     {
       "id": "kasaya",
       "nameZh": "锦襕袈裟",
+      "nameEn": "Jinlan Kasaya",
       "type": "story",
       "areaZh": "第一回 · 故事线索",
+      "areaEn": "Chapter One · story thread",
       "summaryZh": "让人物串联起来的，不一定是一场战斗。",
+      "summaryEn": "What strings these figures together need not be a fight.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "锦襕袈裟是理解第一回剧情的重要器物线索。本条作为故事阅读卡呈现，不在地图上伪造一个可拾取坐标，也不把它列成玩家可装备的法宝。顺着它读，可以把寺院、僧人和黑熊精联系起来。",
+        "descriptionEn": "The Jinlan Kasaya is the object that holds the plot of Chapter One together. It is presented here as a story card: no pickup coordinate is invented for it on the map, and it is not listed as a treasure the player can equip. Follow it and the monastery, the monks and the Black Bear Guai fall into one line.",
         "sources": ["G01"]
       },
       "funFacts": [],
@@ -330,10 +431,14 @@
         "relationship": "direct",
         "chapterNumbers": [16],
         "chapterTitlesZh": ["观音院僧谋宝贝　黑风山怪窃袈裟"],
+        "chapterTitlesEn": ["The Monks of Guanyin Monastery Plot for the Treasure; The Monster of Black Wind Mountain Steals the Cassock"],
         "summaryZh": "唐僧展示的袈裟让金池长老生贪，僧人随后设下计谋。寺院火乱时，黑熊精把袈裟取走。",
+        "summaryEn": "The cassock Tang Sanzang displays rouses Elder Jinchi's greed, and the monks lay their plot. In the confusion of the fire, the Black Bear Guai carries the cassock away.",
         "excerptZh": "那和尚把袈裟騙到手，拿在後房燈下，對袈裟號咷痛哭。",
+        "excerptEn": "The monk, having got the cassock by deceit, took it to the back room under the lamp and wept aloud over it.",
         "excerptSourceId": "W016",
         "adaptationNoteZh": "游戏以袈裟相关往事重构黑风山叙事；器物的叙事作用与玩家装备系统需要分开。",
+        "adaptationNoteEn": "The game rebuilds the Black Wind Mountain narrative around the events surrounding the cassock; the object's role in the story must be kept apart from the player's equipment system.",
         "sources": ["W016"]
       }
     }
@@ -342,16 +447,19 @@
     {
       "id": "forest",
       "nameZh": "苍狼林",
+      "nameEn": "Forest of Wolves",
       "position": { "x": 0.17, "y": 0.08 }
     },
     {
       "id": "bamboo",
       "nameZh": "翠竹林",
+      "nameEn": "Bamboo Grove",
       "position": { "x": 0.5, "y": 0.12 }
     },
     {
       "id": "cave",
       "nameZh": "黑风洞",
+      "nameEn": "Black Wind Cave",
       "position": { "x": 0.82, "y": 0.08 }
     }
   ],
@@ -411,7 +519,8 @@
       "kind": "optional",
       "mode": "route",
       "sources": ["G07", "G09"],
-      "labelZh": "林外探索；第一口钟"
+      "labelZh": "林外探索；第一口钟",
+      "labelEn": "Exploration outside the forest; the first bell"
     },
     {
       "from": "forest-outside",
@@ -419,7 +528,8 @@
       "kind": "optional",
       "mode": "route",
       "sources": ["G07", "G09"],
-      "labelZh": "林外可选遭遇"
+      "labelZh": "林外可选遭遇",
+      "labelEn": "Optional encounter outside the forest"
     },
     {
       "from": "snake-trail",
@@ -427,7 +537,8 @@
       "kind": "optional",
       "mode": "route",
       "sources": ["G07", "G09"],
-      "labelZh": "河流支线"
+      "labelZh": "河流支线",
+      "labelEn": "River branch"
     },
     {
       "from": "whiteclad-noble",
@@ -435,7 +546,8 @@
       "kind": "optional",
       "mode": "route",
       "sources": ["G10", "G12"],
-      "labelZh": "白衣秀士后方支路"
+      "labelZh": "白衣秀士后方支路",
+      "labelEn": "Branch behind the Whiteclad Noble"
     },
     {
       "from": "third-bell",
@@ -444,7 +556,9 @@
       "mode": "teleport",
       "sources": ["G10", "G12"],
       "labelZh": "三钟齐鸣后传送",
-      "conditionZh": "须敲响广智、广谋场地及白衣秀士后方的三口钟。此连线按常见初次探索顺序示意，不表示必定由这口钟最后触发。"
+      "labelEn": "Passage once all three bells have rung",
+      "conditionZh": "须敲响广智、广谋场地及白衣秀士后方的三口钟。此连线按常见初次探索顺序示意，不表示必定由这口钟最后触发。",
+      "conditionEn": "All three bells must be struck: at Guangzhi's ground, at Guangmou's, and behind the Whiteclad Noble. This line follows the order of a common first playthrough; it does not mean this bell must be the last one struck."
     },
     {
       "from": "ancient-guanyin-temple",
@@ -452,7 +566,8 @@
       "kind": "optional",
       "mode": "route",
       "sources": ["G09", "G12"],
-      "labelZh": "隐藏区域"
+      "labelZh": "隐藏区域",
+      "labelEn": "Hidden area"
     },
     {
       "from": "elder-jinchi",
@@ -460,7 +575,8 @@
       "kind": "optional",
       "mode": "return",
       "sources": ["G11", "G12"],
-      "labelZh": "完成后返回钟旁"
+      "labelZh": "完成后返回钟旁",
+      "labelEn": "Return to the bell once finished"
     },
     {
       "from": "third-bell",
@@ -469,25 +585,30 @@
       "mode": "reward",
       "sources": ["G11", "G12"],
       "labelZh": "完成旧禅院支线后领取",
-      "conditionZh": "击败金池长老后，返回第三口钟旁调查悬尸。"
+      "labelEn": "Collected after the Ancient Temple branch",
+      "conditionZh": "击败金池长老后，返回第三口钟旁调查悬尸。",
+      "conditionEn": "After defeating Elder Jinchi, return to the third bell and examine the hanging corpse."
     }
   ],
   "anchors": [
     {
       "id": "forest-outside",
       "nameZh": "林外",
+      "nameEn": "Outside the Forest",
       "position": { "x": 0.1, "y": 0.43 },
       "sources": ["G07", "G08"]
     },
     {
       "id": "snake-trail",
       "nameZh": "蛇径",
+      "nameEn": "Snake Trail",
       "position": { "x": 0.44, "y": 0.52 },
       "sources": ["G07", "G08"]
     },
     {
       "id": "third-bell",
       "nameZh": "第三口钟",
+      "nameEn": "The Third Bell",
       "position": { "x": 0.66, "y": 0.65 },
       "sources": ["G10", "G12"]
     }

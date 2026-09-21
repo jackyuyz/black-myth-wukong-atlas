@@ -3,10 +3,15 @@
   "order": 3,
   "numeralZh": "三",
   "titleZh": "夜生白露",
+  "titleEn": "White Dew Falls at Night",
   "regionZh": "小西天",
+  "regionEn": "New West",
   "themeZh": "一山雪色，万象有源。",
+  "themeEn": "A mountain of snow; every image has a source.",
   "overviewZh": "从亢金龙破金铙的文学典故，走到府城玉皇庙的星宿彩塑；在这里，把游戏、原著和现实艺术放在各自的证据里阅读。",
+  "overviewEn": "From the literary episode in which Kang-Jin-Loong pierces the golden cymbals to the painted constellation sculptures of the Yuhuang Temple at Fucheng: here the game, the novel and real art are each read against their own evidence.",
   "readingGuideZh": "重点观察：原著解释故事，彩塑照片展示文物，政府报道说明二者与游戏形象的联系。",
+  "readingGuideEn": "What to watch for: the novel explains the story, the photograph shows the sculpture, and the government report is what links the two to the game's design.",
   "sources": ["G09", "W065", "H01", "H04"],
   "atmosphereMediaId": "atmosphere-03",
   "mapMediaId": "chapter-03-map",
@@ -14,16 +19,21 @@
   "topologyStatus": "verified-high-level",
   "topologyLog": "assets/research/chapter-03-topology.json",
   "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
+  "mapNoticeEn": "Route diagram, not to geographic scale, not an official map",
   "markers": [
     {
       "id": "kang-jin-loong",
       "nameZh": "亢金龙",
+      "nameEn": "Kang-Jin-Loong",
       "type": "character",
       "areaZh": "第三回 · 小西天",
+      "areaEn": "Chapter Three · New West",
       "summaryZh": "从星宿之名，到一尊可以亲眼看见的彩塑。",
+      "summaryEn": "From the name of a lunar mansion to a painted sculpture you can go and see.",
       "layers": ["game", "journey-to-the-west", "real-world"],
       "game": {
         "descriptionZh": "亢金龙是第三回出现的角色。理解这一形象，可以同时走两条线：去原著看他怎样帮助悟空脱困，再去现实艺术中观察同名星宿的塑像。两条线的证据不同，不能互相替代。",
+        "descriptionEn": "Kang-Jin-Loong is a character who appears in Chapter Three. Two lines run alongside each other here: in the novel, see how he helps Wukong out of his trap; in real art, look at the sculpture of the lunar mansion that carries the same name. The evidence on each line is different, and neither can stand in for the other.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-3-kang-jin-loong"]
       },
@@ -33,18 +43,26 @@
         "relationship": "direct",
         "chapterNumbers": [65],
         "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
+        "chapterTitlesEn": ["A Demon Sets Up a False Thunderclap Temple; All Four Pilgrims Meet Great Calamity"],
         "summaryZh": "二十八宿参与解救困在金铙中的悟空。亢金龙把角伸入金铙，悟空设法借此脱身。金铙在这个故事里是一件能困住人的法器。",
+        "summaryEn": "The Twenty-Eight Lunar Mansions join the rescue of Wukong, who is trapped inside a pair of golden cymbals. Kang-Jin-Loong works his horn into the seam, and Wukong contrives his escape through it. In this story the golden cymbals are a magic implement that can hold a person fast.",
         "excerptZh": "亢金龍道：「大聖啊，且休焦躁。觀此寶定是個如意之物，斷然也能變化。」",
+        "excerptEn": "Kang-Jin-Loong said: “Great Sage, do not fret. This treasure must be a thing that answers to the will, and so it must also be able to transform.”",
         "excerptSourceId": "W065",
         "adaptationNoteZh": "游戏重新设计了形态、人格和遭遇；原著典故不能证明开发团队使用过哪一件文物。",
+        "adaptationNoteEn": "The game redesigns the form, the personality and the encounter; the literary episode cannot prove which real artifact, if any, the development team worked from.",
         "sources": ["W065"]
       },
       "realWorld": [
         {
           "nameZh": "府城玉皇庙 · 亢金龙彩塑",
+          "nameEn": "Yuhuang Temple at Fucheng · painted sculpture of Kang Jin Long",
           "locationZh": "山西省 · 晋城市 · 泽州县",
+          "locationEn": "Zezhou County, Jincheng, Shanxi Province",
           "descriptionZh": "二十八宿是中国传统天象体系中的一组名称，也进入了神话和造像艺术。府城玉皇庙的彩塑把人物与动物形象结合起来，照片中可以观察亢金龙人物身边的龙形塑像。",
+          "descriptionEn": "The Twenty-Eight Lunar Mansions are a set of names from the traditional Chinese system of the sky, and they passed into mythology and into sculpture. The painted figures of the Yuhuang Temple at Fucheng combine human and animal forms; in the photograph the dragon beside the figure of Kang Jin Long can be seen.",
           "evidenceScopeZh": "晋城市政府报道将游戏概念形象与玉皇庙泥塑并列对照。证据支持角色造型的文化联系，不证明小雷音寺整组建筑来自玉皇庙，也不证明这个模型是一比一扫描。",
+          "evidenceScopeEn": "A report by the Jincheng municipal government sets the game's concept art beside the clay sculptures of the Yuhuang Temple. The evidence supports a cultural connection in the character's design. It does not show that the whole Little Thunderclap Temple complex derives from the Yuhuang Temple, nor that the model is a one-to-one scan.",
           "relationship": "cultural-comparison",
           "confidence": "high-confidence",
           "evidenceType": "government-source",
@@ -57,12 +75,16 @@
     {
       "id": "yellowbrow",
       "nameZh": "黄眉",
+      "nameEn": "Yellowbrow",
       "type": "boss",
       "areaZh": "第三回 · 小雷音寺",
+      "areaEn": "Chapter Three · Little Thunderclap Temple",
       "summaryZh": "假佛境的故事，原著如何落笔？",
+      "summaryEn": "A false Buddha realm: how does the novel set it down?",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黄眉是小雷音寺故事的核心角色。游戏为他重构了寺中情境和执念；原著则以取经人遇到假佛境展开。第一次阅读时，不必预先认识所有神佛，先区分地点、人物和法器的作用即可。",
+        "descriptionEn": "Yellowbrow is the central figure of the Little Thunderclap Temple story. The game rebuilds the situation inside the temple and the obsession that drives him; the novel opens instead with the pilgrims walking into a false Buddha realm. On a first reading you need not recognise every god and buddha: it is enough to keep the place, the figures and the magic implements apart.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-3-yellowbrow"]
       },
@@ -72,10 +94,14 @@
         "relationship": "direct",
         "chapterNumbers": [65, 66],
         "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难", "诸神遭毒手　弥勒缚妖魔"],
+        "chapterTitlesEn": ["A Demon Sets Up a False Thunderclap Temple; All Four Pilgrims Meet Great Calamity","The Gods Suffer at a Cruel Hand; Maitreya Binds the Demon"],
         "summaryZh": "原著的黄眉原是弥勒座前童子，使用金铙与人种袋，最终被弥勒收伏。",
+        "summaryEn": "In the novel Yellowbrow was once a servant boy before Maitreya's seat. He uses the golden cymbals and the human-seed bag, and in the end Maitreya subdues him.",
         "excerptZh": "他是我面前司磬的一個黃眉童兒。",
+        "excerptEn": "He is a yellow-browed boy of mine, the one who sounded the chime before me.",
         "excerptSourceId": "W066",
         "adaptationNoteZh": "游戏里天命人的遭遇与寺中故事是重新创作，不是原著文字的逐场复现。",
+        "adaptationNoteEn": "What the Destined One meets, and the story inside the temple, are new creation rather than a scene-by-scene reproduction of the novel's text.",
         "sources": ["W065", "W066"]
       },
       "position": { "x": 0.93, "y": 0.45 }
@@ -83,12 +109,16 @@
     {
       "id": "kang-jin-star",
       "nameZh": "亢金星君",
+      "nameEn": "Kang-Jin-Star",
       "type": "character",
       "areaZh": "浮屠界 · 安身寺",
+      "areaEn": "Pagoda Realm · Warding Temple",
       "summaryZh": "同一星宿名目，在游戏中被扩写成新的形象。",
+      "summaryEn": "One lunar mansion name, expanded in the game into a new figure.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "亢金星君出现在浮屠界后段、安身寺通往苦海的路径上。她与前段亢金龙共享星宿线索，但地图将两次遭遇分开，避免把不同形态和剧情压成同一个节点。",
+        "descriptionEn": "Kang-Jin-Star appears in the later part of the Pagoda Realm, on the path from the Warding Temple to the Bitter Lake. She shares the lunar-mansion thread with Kang-Jin-Loong earlier in the chapter, but the diagram keeps the two encounters apart rather than pressing different forms and different scenes into one node.",
         "sources": ["G08", "G09", "G15"],
         "mediaIds": ["community-gameplay-gamespot-chapter-3-kang-jin-star"]
       },
@@ -98,10 +128,14 @@
         "relationship": "recombined",
         "chapterNumbers": [65],
         "chapterTitlesZh": ["妖邪假设小雷音　四众皆遭大厄难"],
+        "chapterTitlesEn": ["A Demon Sets Up a False Thunderclap Temple; All Four Pilgrims Meet Great Calamity"],
         "summaryZh": "原著写二十八宿协助悟空脱离金铙，其中有亢金龙之名。",
+        "summaryEn": "The novel records that the Twenty-Eight Lunar Mansions helped Wukong out of the golden cymbals, and the name Kang-Jin-Loong is among them.",
         "excerptZh": "亢金龍道：「大聖啊，且休焦躁。觀此寶定是個如意之物，斷然也能變化。」",
+        "excerptEn": "Kang-Jin-Loong said: “Great Sage, do not fret. This treasure must be a thing that answers to the will, and so it must also be able to transform.”",
         "excerptSourceId": "W065",
         "adaptationNoteZh": "游戏以“星君”形象扩写角色经历；原著没有与游戏完全相同的人物生平。",
+        "adaptationNoteEn": "The game expands the character through the figure of a “star lord”; the novel contains no life story identical to the game's.",
         "sources": ["W065"]
       },
       "position": { "x": 0.46, "y": 0.28 }
@@ -109,44 +143,58 @@
     {
       "id": "melon-field",
       "nameZh": "瓜田",
+      "nameEn": "Melon Field",
       "type": "location",
       "areaZh": "极乐谷 · 瓜田",
+      "areaEn": "Valley of Ecstasy · Melon Field",
       "summaryZh": "雪谷支路中的一处条件地点。",
+      "summaryEn": "A conditional location on a branch off the snowy valley.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "瓜田位于极乐谷的可选探索分支，与翠笠武师支线及禁字法相关。路线图从快活林分出虚线，表示它不在通往小雷音寺的直线主路上。",
+        "descriptionEn": "The Melon Field lies on an optional exploration branch in the Valley of Ecstasy, tied to the Chapped Hat Fighter side quest and to the Restraining spell. The diagram draws a dashed line out of the Forest of Felicity to show that it does not sit on the direct main route to the Little Thunderclap Temple.",
         "sources": ["G03", "G08", "G15"]
       },
       "funFacts": [],
       "sources": ["G03", "G08", "G15"],
       "noDirectNovelZh": "这处瓜田及其任务是游戏事件，不是《西游记》小雷音寺故事中的地点。",
+      "noDirectNovelEn": "This melon field and its quest are events in the game, not a location in the Little Thunderclap Temple story of Journey to the West.",
       "position": { "x": 0.7, "y": 0.78 }
     },
     {
       "id": "great-pagoda",
       "nameZh": "浮屠塔",
+      "nameEn": "Great Pagoda",
       "type": "architecture",
       "areaZh": "浮屠界 · 浮屠塔",
+      "areaEn": "Pagoda Realm · Great Pagoda",
       "summaryZh": "第三回留下的入口，连接后期的梅山支线。",
+      "summaryEn": "An entrance left open in Chapter Three, leading to the late Mount Mei branch.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "浮屠塔从照鉴湖后的浮屠界支路进入。初次到达时并不会立刻展开梅山事件；满足多个隐藏区域与支线条件后，玩家才会由此进入隐·梅山。",
+        "descriptionEn": "The Great Pagoda is entered from the Pagoda Realm branch beyond Mirror Lake. Reaching it for the first time does not open the Mount Mei events; only once several hidden areas and side quests have been completed does this become the way into the hidden Mount Mei.",
         "sources": ["G08", "G16"]
       },
       "funFacts": [],
       "sources": ["G08", "G16"],
       "noDirectNovelZh": "浮屠塔作为这套游戏路线机关，没有可直接对应的小说地点。",
+      "noDirectNovelEn": "As a piece of route machinery in the game, the Great Pagoda has no location in the novel that corresponds to it directly.",
       "position": { "x": 0.54, "y": 0.1 }
     },
     {
       "id": "erlang-sacred-divinity",
       "nameZh": "二郎显圣真君",
+      "nameEn": "Erlang, the Sacred Divinity",
       "type": "boss",
       "areaZh": "隐·梅山 · 梅见峰",
+      "areaEn": "Hidden · Mount Mei · Meijian Peak",
       "summaryZh": "入口在第三回，文学母题却回到花果山斗法。",
+      "summaryEn": "The entrance is in Chapter Three, but the literary motif goes back to the contest on Mount Huaguo.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "二郎显圣真君的隐藏遭遇发生在梅山，但入口位于第三回浮屠塔。地图把它放在条件传送的末端，并明确不把梅山误画成第六回花果山上的本地洞穴。",
+        "descriptionEn": "The hidden encounter with Erlang takes place on Mount Mei, but the way in is the Great Pagoda in Chapter Three. The diagram places it at the far end of a conditional passage and is careful not to draw Mount Mei as a local cave on Mount Huaguo in Chapter Six.",
         "sources": ["G06", "G09", "G16"],
         "mediaIds": ["community-gameplay-gamespot-chapter-6-erlang-sacred-divinity"]
       },
@@ -156,15 +204,21 @@
         "relationship": "recombined",
         "chapterNumbers": [6],
         "chapterTitlesZh": ["观音赴会问原因　小圣施威降大圣"],
+        "chapterTitlesEn": ["Guanyin Attends the Assembly and Asks the Cause; The Junior Sage Displays His Power and Subdues the Great Sage"],
         "summaryZh": "原著第六回写二郎神与悟空在花果山斗武艺、斗变化。",
+        "summaryEn": "Chapter 6 of the novel tells how Erlang and Wukong contend on Mount Huaguo, first in arms and then in transformations.",
         "excerptZh": "真君與大聖鬥經三百餘合，不知勝負。",
+        "excerptEn": "The Divinity and the Great Sage fought more than three hundred bouts, and neither could be called the winner.",
         "excerptSourceId": "W006",
         "adaptationNoteZh": "游戏借用人物与斗法母题，重新安排发生时间、地点与结局。",
+        "adaptationNoteEn": "The game borrows the figure and the motif of the contest, and rearranges when it happens, where, and how it ends.",
         "sources": ["W006"]
       },
       "spoiler": {
         "warningZh": "含后期隐藏路线信息",
+        "warningEn": "Contains information about a late hidden route",
         "textZh": "梅山入口需要完成多回隐藏内容与第三回支线后才会开启。",
+        "textEn": "The way into Mount Mei opens only after hidden content in several chapters and the Chapter Three side quest have been completed.",
         "sources": ["G16"]
       },
       "position": { "x": 0.79, "y": 0.1 }
@@ -174,21 +228,25 @@
     {
       "id": "snowhill",
       "nameZh": "雪山径",
+      "nameEn": "Snow Mountain Path",
       "position": { "x": 0.13, "y": 0.09 }
     },
     {
       "id": "pagoda",
       "nameZh": "浮屠界",
+      "nameEn": "Pagoda Realm",
       "position": { "x": 0.38, "y": 0.09 }
     },
     {
       "id": "lake-valley",
       "nameZh": "苦海 · 极乐谷",
+      "nameEn": "Bitter Lake · Valley of Ecstasy",
       "position": { "x": 0.67, "y": 0.09 }
     },
     {
       "id": "temple",
       "nameZh": "小雷音寺",
+      "nameEn": "Little Thunderclap Temple",
       "position": { "x": 0.9, "y": 0.09 }
     }
   ],
@@ -255,7 +313,9 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "极乐谷支路",
+      "labelEn": "Valley of Ecstasy branch",
       "conditionZh": "由快活林向谷底支路探索，并推进翠笠武师相关事件。",
+      "conditionEn": "Explore the branch from the Forest of Felicity down to the valley floor, and advance the events around the Chapped Hat Fighter.",
       "sources": ["G08", "G15"]
     },
     {
@@ -264,6 +324,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "浮屠界支路",
+      "labelEn": "Pagoda Realm branch",
       "sources": ["G08", "G16"]
     },
     {
@@ -272,7 +333,9 @@
       "kind": "optional",
       "mode": "teleport",
       "labelZh": "后期条件传送至梅山",
+      "labelEn": "Late conditional passage to Mount Mei",
       "conditionZh": "需完成第一、二、四、五回隐藏区域及第三回翠笠武师支线，再回到浮屠塔。",
+      "conditionEn": "Complete the hidden areas of Chapters One, Two, Four and Five and the Chapter Three Chapped Hat Fighter side quest, then return to the Great Pagoda.",
       "sources": ["G16"]
     }
   ],
@@ -280,36 +343,42 @@
     {
       "id": "frost-clad-path",
       "nameZh": "披霜道",
+      "nameEn": "Frost-Clad Path",
       "position": { "x": 0.07, "y": 0.45 },
       "sources": ["G08", "G15"]
     },
     {
       "id": "lower-pagoda",
       "nameZh": "浮屠界下层",
+      "nameEn": "Lower Pagoda Realm",
       "position": { "x": 0.28, "y": 0.45 },
       "sources": ["G08", "G15"]
     },
     {
       "id": "warding-temple",
       "nameZh": "安身寺",
+      "nameEn": "Warding Temple",
       "position": { "x": 0.4, "y": 0.3 },
       "sources": ["G08", "G15"]
     },
     {
       "id": "north-shore",
       "nameZh": "苦海北岸",
+      "nameEn": "North Shore of the Bitter Lake",
       "position": { "x": 0.56, "y": 0.5 },
       "sources": ["G08", "G15"]
     },
     {
       "id": "forest-of-felicity",
       "nameZh": "快活林",
+      "nameEn": "Forest of Felicity",
       "position": { "x": 0.69, "y": 0.45 },
       "sources": ["G08", "G15"]
     },
     {
       "id": "temple-entrance",
       "nameZh": "寺门",
+      "nameEn": "Temple Gate",
       "position": { "x": 0.84, "y": 0.45 },
       "sources": ["G08", "G15"]
     }

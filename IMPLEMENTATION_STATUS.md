@@ -39,3 +39,36 @@
 本轮没有上线部署、提交或推送。`dist/` 是静态部署产物，`.ssr/` 仅用于构建，二者均被忽略。构建不会自动批量清理任何目录。
 
 最终补充验证：手机键盘聚焦到原本位于视野外的黑熊精标记后，该点已自动进入地图可见区域；回车打开、Esc 关闭通过。拖拽平移的变换值发生预期改变；复位后可恢复初始视图。中文未知路径返回 HTTP 404。已将本机最终预览保持在 `http://127.0.0.1:4175/`。
+
+---
+
+# 双语界面实现与验证记录
+
+日期：2026-09-21。
+
+## 已实现
+
+- 中英双语界面：中文在 `/`，英文在 `/en/`，页面右上角常驻分段式切换控件。控件是两条真实链接，保留当前路径、查询串与锚点，关闭 JavaScript 也能切换；当前语言除填色外带 `aria-current`，不靠颜色单独表意。
+- 语言由 URL 推导，不使用状态或本地存储，因此每个页面都可预渲染、可分享。`src/i18n/` 提供 `useLang`、`localePath`、`swapLocale`、带前缀的 `LocaleLink` / `LocaleNavLink`，以及 `pick(lang, obj, "field")` 字段取值。
+- 20 条预渲染路由（中英各 10）及两个错误页。英文页写入 `<html lang="en">`、英文 `<title>` 与 `<meta description>`，两侧互带 `hreflang` 备用链接。
+- 数据层新增 851 个 `*En` 字段，覆盖六回章节、48 条来源与 53 条素材记录，与中文并列存放，ID、坐标、来源、许可、置信度仍只有一份。
+- 界面文案字典 `src/i18n/ui.ts` 约 160 条，英文表按中文表的类型定义；缺键或签名不符在 `npm run typecheck` 失败。
+- 所有枚举经 `src/types/schema.ts` 的 `labels` 表输出中英文标签，包括原先写在组件里的「原著直接出现／元素重组」「现实文化对照／开发者确认采用」。`licenseLabels` 同样处理 `media.json` 的自由文本许可字段。
+- 原著摘引保留繁体原文作为被引证据，英文页在其下附 `excerptEn`，并标注「Working translation by this project — 以上方原文为准」。已出版英译本仍在版权期内，未使用。
+- 英文页中保留的汉字（原文、括注原名、来源原题名、作者署名）全部带 `lang="zh-Hans"` / `zh-Hant`；`Text` 组件自动为英文句子内部的汉字加标记。
+- `:lang(en)` 下调整为 CJK 调校的字距、字号与竖排设定；英文地名较长，地图区域名、标记名与连接点名单独缩小并允许换行。
+
+## 验证
+
+- `npm run validate` / `typecheck` / `test`（29 项，新增 8 项中英对照反例）/ `build` 全部通过；预渲染 20 页与两个错误页。
+- 新增数据门槛：缺英文字段、英文照抄中文、中英文回目数量不一致、`mapNoticeEn` 缺三项示意声明、路线标签只译一半、素材与来源缺英文说明、许可无展示标签，均会使构建失败。
+- 拓扑比对在对比前剥离 `labelEn` / `conditionEn`；节点、走向、`kind`、`mode` 与 `sources` 仍逐项比较，门槛未放宽，`assets/research/*-topology.json` 未改动。
+- 浏览器逐条检查：`/en`、`/en/chapters`、`/en/about`、`/en/sources`、`/en/chapter/chapter-01`…`chapter-06` 均返回 200，未知英文路径返回 404。
+- `/chapter/chapter-03#kang-jin-loong` 点击 EN 后落到 `/en/chapter/chapter-03#kang-jin-loong`，对应阅读卡自动展开；`<html lang>` 随之切换；控制台无错误或水合警告。
+- 静态 HTML 审计：六个英文章节页与首页、关于、来源、错误页中，未被 `lang="zh-*"` 标记的汉字数量为 0。
+- 英文页未出现任何原始枚举值；`journey-to-the-west` 仅作为 `<option value>` 属性存在，不是可见文案。
+- 第一回英文页确认没有现实遗产区块（该回无已核实实地原型），也没有占位或致歉文案；第三回英文页的证据徽章为 Real-world cultural comparison / High confidence / Government publication。
+- 1440×1000 与 390×844 两档均无横向溢出；页头三个控件在 1100px 与 760px 断点下顺序一致、不重叠。修正了 `.site-header nav` 误命中语言控件（语言控件本身是 `<nav>`）的选择器，改为 `.site-header > nav`。
+- 键盘顺序：跳到正文 → 站标 → 主导航 → 语言控件 → 声音开关 → 正文；语言链接焦点可见。
+
+本轮没有上线部署、提交或推送。

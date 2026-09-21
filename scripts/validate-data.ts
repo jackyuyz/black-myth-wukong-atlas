@@ -3,7 +3,12 @@ import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { z } from "zod";
-import { chapterSchema, mediaSchema, sourceSchema } from "../src/types/schema";
+import {
+  chapterSchema,
+  licenseLabels,
+  mediaSchema,
+  sourceSchema,
+} from "../src/types/schema";
 export function validateData(
   input: { chapters: unknown[]; sources: unknown; media: unknown },
   checkFiles = false,
@@ -28,6 +33,32 @@ export function validateData(
   const mediaRef = (ref: string) => {
     if (!media[ref]) fail(`缺少素材：${ref}`);
   };
+  /**
+   * Both language columns ship together. Every `xxxZh` needs an `xxxEn`
+   * beside it that is actually a translation, so an English page can never
+   * go out half-written or padded with copied Chinese. `numeralZh` is the one
+   * exception: English derives its chapter ordinal from `order`.
+   */
+  const checkTranslations = (value: unknown, where: string) => {
+    if (Array.isArray(value))
+      return value.forEach((item) => checkTranslations(item, where));
+    if (!value || typeof value !== "object") return;
+    const record = value as Record<string, unknown>;
+    for (const [key, child] of Object.entries(record)) {
+      const stem = key.slice(0, -2);
+      if (key.endsWith("Zh") && key !== "numeralZh") {
+        const twin = record[`${stem}En`];
+        if (twin === undefined) fail(`缺少英文字段：${where} ${stem}En`);
+        if (Array.isArray(child)) {
+          if (!Array.isArray(twin) || twin.length !== child.length)
+            fail(`中英文条目数不一致：${where} ${key}`);
+        } else if (twin === child) fail(`英文字段未翻译：${where} ${key}`);
+      }
+      if (key.endsWith("En") && record[`${stem}Zh`] === undefined)
+        fail(`缺少中文字段：${where} ${stem}Zh`);
+      if (child && typeof child === "object") checkTranslations(child, where);
+    }
+  };
   for (const [key, item] of Object.entries(media)) {
     if (!["cleared", "public-domain"].includes(item.licenseStatus))
       fail(`素材未经许可：${key}`);
@@ -43,11 +74,15 @@ export function validateData(
     )
       fail(`生成素材元数据或审核缺失：${key}`);
     if (item.documentary && !item.sourceUrl) fail(`纪实素材缺少出处：${key}`);
+    if (!licenseLabels[item.license]) fail(`许可缺少中英文展示标签：${key}`);
     if (item.file.includes("..")) fail(`素材路径不安全：${key}`);
     if (checkFiles && !existsSync(resolve("public", "." + item.file)))
       fail(`素材文件缺失：${item.file}`);
     checkRefs(item);
+    checkTranslations(item, `素材 ${key}`);
   }
+  for (const [key, source] of Object.entries(sources))
+    checkTranslations(source, `来源 ${key}`);
   const allIds = new Set<string>();
   const orders = new Set<number>();
   for (const chapter of chapters) {
@@ -56,6 +91,7 @@ export function validateData(
     allIds.add(chapter.id);
     orders.add(chapter.order);
     checkRefs(chapter);
+    checkTranslations(chapter, `章节 ${chapter.id}`);
     mediaRef(chapter.atmosphereMediaId);
     const permitted =
       chapter.mapMode === "schematic"
@@ -87,9 +123,12 @@ export function validateData(
         fail("地图素材与章节核验状态不一致");
       if (
         chapter.mapMode === "schematic" &&
-        !["路线示意图", "非地理比例", "非官方地图"].every((t) =>
+        (!["路线示意图", "非地理比例", "非官方地图"].every((t) =>
           chapter.mapNoticeZh.includes(t),
-        )
+        ) ||
+          !["route diagram", "not to geographic scale", "not an official map"].every(
+            (t) => chapter.mapNoticeEn.toLowerCase().includes(t),
+          ))
       )
         fail("缺少完整地图说明");
     }
@@ -195,7 +234,12 @@ export function validateData(
         ...(e.label ? { labelZh: e.label } : {}),
         ...(e.condition ? { conditionZh: e.condition } : {}),
       }));
-      if (!isDeepStrictEqual(chapter.routes, expectedEdges))
+      // Translations of a label are not route semantics: strip them, then
+      // compare node order, branching, mode and sources exactly as before.
+      const actualEdges = chapter.routes.map(
+        ({ labelEn, conditionEn, ...edge }) => edge,
+      );
+      if (!isDeepStrictEqual(actualEdges, expectedEdges))
         fail("地图连线与已复核线框不一致");
     }
     for (const edge of chapter.routes) {

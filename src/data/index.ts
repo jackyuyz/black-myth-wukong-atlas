@@ -7,13 +7,18 @@ import ch6 from "./chapters/chapter-06.json";
 import mediaData from "./media.json";
 import sourcesData from "./sources.json";
 import type { Chapter, Media, Source } from "../types/schema";
+import { localePath } from "../i18n/locale";
 export const chapters = [ch1, ch2, ch3, ch4, ch5, ch6] as Chapter[];
 export const media = mediaData as Record<string, Media>;
 export const sources = sourcesData as Record<string, Source>;
-export const allRoutes = [
+export const routePaths = [
   "/",
   "/chapters",
   ...chapters.map((c) => `/chapter/${c.id}`),
   "/about",
   "/sources",
+];
+export const allRoutes = [
+  ...routePaths.map((path) => localePath("zh", path)),
+  ...routePaths.map((path) => localePath("en", path)),
 ];

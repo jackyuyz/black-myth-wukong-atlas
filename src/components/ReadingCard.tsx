@@ -1,21 +1,29 @@
 import type { Marker } from "../types/schema";
-import {
-  typeLabels,
-  confidenceLabels,
-  evidenceLabels,
-  sourceLabels,
-} from "../types/schema";
+import { labels, licenseLabel } from "../types/schema";
 import { media, sources } from "../data";
+import {
+  OriginalName,
+  Text,
+  Zh,
+  pick,
+  pickMaybe,
+  useLang,
+  useUi,
+} from "../i18n";
 export function SourceLinks({ ids }: { ids: string[] }) {
+  const lang = useLang();
   return (
     <ul className="citations">
       {[...new Set(ids)].map((id) => (
         <li key={id}>
           <a href={sources[id].url} target="_blank" rel="noreferrer">
-            {sources[id].titleZh}
+            <Zh>{sources[id].titleZh}</Zh>
             <span aria-hidden="true"> ↗</span>
           </a>
-          <small>{sourceLabels[sources[id].type]}</small>
+          <OriginalName className="citation-translated-title">
+            {sources[id].titleEn}
+          </OriginalName>
+          <small>{labels[lang].source[sources[id].type]}</small>
         </li>
       ))}
     </ul>
@@ -28,59 +36,70 @@ export function HeritagePhoto({
   id: string;
   compact?: boolean;
 }) {
+  const lang = useLang();
+  const t = useUi();
   const item = media[id];
   return (
     <figure className={compact ? "heritage-photo compact" : "heritage-photo"}>
       <img
         src={item.file}
-        alt={item.altZh}
+        alt={pick(lang, item, "alt")}
         loading="lazy"
         width="960"
         height="720"
       />
       <figcaption>
-        <strong>{item.titleZh}</strong>
+        <strong>{pick(lang, item, "title")}</strong>
         <span>
-          摄影：{item.creator} ·{" "}
+          {t.photoBy}
+          <Text>{item.creator}</Text> ·{" "}
           <a href={item.sourceUrl} target="_blank" rel="noreferrer">
-            图片来源 ↗
+            {t.photoSourceLink}
           </a>{" "}
           ·{" "}
           <a href={item.licenseUrl} target="_blank" rel="noreferrer">
-            署名—相同方式共享 4.0
+            {licenseLabel(item.license, lang)}
           </a>
         </span>
-        {!compact && <span>{item.modificationNoteZh}</span>}
+        {!compact && (
+          <span>
+            <Text>{pick(lang, item, "modificationNote")}</Text>
+          </span>
+        )}
       </figcaption>
     </figure>
   );
 }
 function HistoricalImage({ id }: { id: string }) {
+  const lang = useLang();
+  const t = useUi();
   const item = media[id];
   return (
     <figure className="historical-image">
       <div className="historical-image-mat">
         <img
           src={item.file}
-          alt={item.altZh}
+          alt={pick(lang, item, "alt")}
           loading="lazy"
           width="720"
           height="540"
         />
       </div>
       <figcaption>
-        <strong>{item.titleZh}</strong>
-        <span>{item.usageNoteZh}</span>
+        <strong>{pick(lang, item, "title")}</strong>
         <span>
-          {item.creator} ·{" "}
+          <Text>{pick(lang, item, "usageNote")}</Text>
+        </span>
+        <span>
+          <Text>{item.creator}</Text> ·{" "}
           <a href={item.sourceUrl} target="_blank" rel="noreferrer">
-            图像来源 ↗
+            {t.imageSourceLink}
           </a>
           {item.licenseUrl && (
             <>
               {" · "}
               <a href={item.licenseUrl} target="_blank" rel="noreferrer">
-                {item.license}
+                {licenseLabel(item.license, lang)}
               </a>
             </>
           )}
@@ -90,26 +109,30 @@ function HistoricalImage({ id }: { id: string }) {
   );
 }
 function GameImage({ id }: { id: string }) {
+  const lang = useLang();
+  const t = useUi();
   const item = media[id];
   return (
     <figure className="game-image">
       <div className="game-image-frame">
         <img
           src={item.file}
-          alt={item.altZh}
+          alt={pick(lang, item, "alt")}
           loading="lazy"
           width="1280"
           height="720"
         />
-        <span className="game-image-stamp">授权画面</span>
+        <span className="game-image-stamp">{t.gameImageStamp}</span>
       </div>
       <figcaption>
-        <strong>{item.titleZh}</strong>
-        <span>{item.usageNoteZh}</span>
+        <strong>{pick(lang, item, "title")}</strong>
         <span>
-          {item.creator} ·{" "}
+          <Text>{pick(lang, item, "usageNote")}</Text>
+        </span>
+        <span>
+          <Text>{item.creator}</Text> ·{" "}
           <a href={item.sourceUrl} target="_blank" rel="noreferrer">
-            图片出处 ↗
+            {t.gameSourceLink}
           </a>
         </span>
       </figcaption>
@@ -117,40 +140,60 @@ function GameImage({ id }: { id: string }) {
   );
 }
 export function ReadingCard({ marker }: { marker: Marker }) {
+  const lang = useLang();
+  const t = useUi();
   const novel = marker.journeyToTheWest;
   return (
     <article className="reading-card">
       <div className="eyebrow">
-        {marker.areaZh} <span> / </span> {typeLabels[marker.type]}
+        {pick(lang, marker, "area")} <span> / </span>{" "}
+        {labels[lang].type[marker.type]}
       </div>
-      <h2>{marker.nameZh}</h2>
-      <p className="card-deck">{marker.summaryZh}</p>
+      <h2>
+        {pick(lang, marker, "name")}
+        <OriginalName className="card-original-name">
+          {marker.nameZh}
+        </OriginalName>
+      </h2>
+      <p className="card-deck">
+        <Text>{pick(lang, marker, "summary")}</Text>
+      </p>
       <p className="reading-key">
-        游戏中的呈现 → 原著中的出处与改编
-        {marker.realWorld ? " → 现实文化与实地遗产" : ""}
+        {t.readingKeyBase}
+        {marker.realWorld ? t.readingKeyHeritage : ""}
       </p>
       {novel && (
         <div className="novel-frontispiece">
           <blockquote className="novel-excerpt novel-excerpt-featured">
-            <span className="novel-excerpt-label">《西游记》原著原文</span>
-            <p>{novel.excerptZh}</p>
+            <span className="novel-excerpt-label">{t.novelExcerptLabel}</span>
+            <p lang="zh-Hant">{novel.excerptZh}</p>
+            {lang === "en" && (
+              <p className="novel-excerpt-translation">
+                <span>{t.workingTranslationLabel}</span>
+                {novel.excerptEn}
+                <small>{t.workingTranslationNote}</small>
+              </p>
+            )}
             <cite>
-              原文节选 ·{" "}
+              {t.novelExcerptCite}
               <a
                 href={sources[novel.excerptSourceId]!.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                {sources[novel.excerptSourceId]!.titleZh}
+                <Zh>{sources[novel.excerptSourceId]!.titleZh}</Zh>
                 <span aria-hidden="true"> ↗</span>
               </a>
             </cite>
           </blockquote>
           {!!novel.mediaIds?.length && (
-            <div className="historical-gallery" aria-label="原著历史图像参考">
+            <div
+              className="historical-gallery"
+              aria-label={t.historicalGalleryLabel}
+            >
               <div className="historical-gallery-label">
-                <span>原著图像参考</span>
-                <small>历史版本图像 · 非游戏造型</small>
+                <span>{t.historicalGalleryTitle}</span>
+                <small>{t.historicalGalleryNote}</small>
               </div>
               <div className="historical-gallery-grid">
                 {novel.mediaIds.map((id) => (
@@ -163,14 +206,16 @@ export function ReadingCard({ marker }: { marker: Marker }) {
       )}
       <section>
         <h3>
-          <span>一</span> 游戏中的呈现
+          <span>{t.sectionGameMark}</span> {t.sectionGame}
         </h3>
-        <p>{marker.game.descriptionZh}</p>
+        <p>
+          <Text>{pick(lang, marker.game, "description")}</Text>
+        </p>
         {!!marker.game.mediaIds?.length && (
-          <div className="game-gallery" aria-label="游戏画面参考">
+          <div className="game-gallery" aria-label={t.gameGalleryLabel}>
             <div className="game-gallery-label">
-              <span>游戏画面参考</span>
-              <small>授权素材 · 对应当前节点</small>
+              <span>{t.gameGalleryTitle}</span>
+              <small>{t.gameGalleryNote}</small>
             </div>
             <div className="game-gallery-grid">
               {marker.game.mediaIds.map((id) => (
@@ -183,67 +228,84 @@ export function ReadingCard({ marker }: { marker: Marker }) {
       </section>
       <section>
         <h3>
-          <span>二</span> 《西游记》中的出处与改编
+          <span>{t.sectionNovelMark}</span> {t.sectionNovel}
         </h3>
         {novel ? (
           <>
             <div className="badge">
-              {novel.relationship === "direct"
-                ? "原著直接出现"
-                : "原著元素重组"}
+              {labels[lang].novelRelation[novel.relationship]}
             </div>
-            <p className="chapter-ref">
-              {novel.chapterNumbers.map((n) => `第${n}回`).join("、")}
+            <p className="chapter-ref">{t.novelChapters(novel.chapterNumbers)}</p>
+            {(lang === "zh" ? novel.chapterTitlesZh : novel.chapterTitlesEn).map(
+              (title) => (
+                <p key={title} className="chapter-title">
+                  {title}
+                </p>
+              ),
+            )}
+            <p>
+              <Text>{pick(lang, novel, "summary")}</Text>
             </p>
-            {novel.chapterTitlesZh.map((t) => (
-              <p key={t} className="chapter-title">
-                {t}
-              </p>
-            ))}
-            <p>{novel.summaryZh}</p>
             <div className="adaptation">
-              <strong>游戏怎样改写</strong>
-              <p>{novel.adaptationNoteZh}</p>
+              <strong>{t.adaptationTitle}</strong>
+              <p>
+                <Text>{pick(lang, novel, "adaptationNote")}</Text>
+              </p>
             </div>
             <SourceLinks ids={novel.sources} />
           </>
         ) : (
-          <p>{marker.noDirectNovelZh}</p>
+          <p>
+            <Text>{pickMaybe(lang, marker, "noDirectNovel")}</Text>
+          </p>
         )}
       </section>
       {marker.realWorld?.map((site) => (
         <section key={site.nameZh} className="heritage-section">
           <h3>
-            <span>三</span> 现实文化与实地遗产
+            <span>{t.sectionHeritageMark}</span> {t.sectionHeritage}
           </h3>
-          <p className="eyebrow">{site.locationZh}</p>
-          <h4>{site.nameZh}</h4>
+          <p className="eyebrow">{pick(lang, site, "location")}</p>
+          <h4>
+            {pick(lang, site, "name")}
+            <OriginalName className="card-original-name">
+              {site.nameZh}
+            </OriginalName>
+          </h4>
           <div className="badges">
             <span className="badge">
-              {site.relationship === "cultural-comparison"
-                ? "现实文化对照"
-                : "开发者确认采用"}
+              {labels[lang].heritageRelation[site.relationship]}
             </span>
-            <span className="badge">{confidenceLabels[site.confidence]}</span>
-            <span className="badge">{evidenceLabels[site.evidenceType]}</span>
+            <span className="badge">
+              {labels[lang].confidence[site.confidence]}
+            </span>
+            <span className="badge">
+              {labels[lang].evidence[site.evidenceType]}
+            </span>
           </div>
-          <p>{site.descriptionZh}</p>
+          <p>
+            <Text>{pick(lang, site, "description")}</Text>
+          </p>
           {site.mediaIds?.map((id) => (
             <HeritagePhoto key={id} id={id} />
           ))}
           <div className="evidence-scope">
-            <strong>这条证据能说明什么？</strong>
-            <p>{site.evidenceScopeZh}</p>
+            <strong>{t.evidenceScopeTitle}</strong>
+            <p>
+              <Text>{pick(lang, site, "evidenceScope")}</Text>
+            </p>
           </div>
           <SourceLinks ids={site.sources} />
         </section>
       ))}
       {!!marker.funFacts.length && (
         <section>
-          <h3>再多看一眼</h3>
+          <h3>{t.funFactsTitle}</h3>
           {marker.funFacts.map((f) => (
             <div key={f.textZh}>
-              <p>{f.textZh}</p>
+              <p>
+                <Text>{pick(lang, f, "text")}</Text>
+              </p>
               <SourceLinks ids={f.sources} />
             </div>
           ))}
@@ -251,8 +313,12 @@ export function ReadingCard({ marker }: { marker: Marker }) {
       )}
       {marker.spoiler && (
         <details className="spoiler">
-          <summary data-sound="open">{marker.spoiler.warningZh}</summary>
-          <p>{marker.spoiler.textZh}</p>
+          <summary data-sound="open">
+            {pick(lang, marker.spoiler, "warning")}
+          </summary>
+          <p>
+            <Text>{pick(lang, marker.spoiler, "text")}</Text>
+          </p>
           <SourceLinks ids={marker.spoiler.sources} />
         </details>
       )}

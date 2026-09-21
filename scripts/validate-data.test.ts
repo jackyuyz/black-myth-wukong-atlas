@@ -96,3 +96,29 @@ rejects(
   "新增但没有验证规则的内容字段必须失败",
   (d) => (d.chapters[0].unreviewedField = "不应发布"),
 );
+rejects("缺少英文正文必须失败", (d) => {
+  delete d.chapters[0].markers[0].summaryEn;
+});
+rejects(
+  "英文字段照抄中文必须失败",
+  (d) => (d.chapters[0].markers[0].nameEn = d.chapters[0].markers[0].nameZh),
+);
+rejects("英文字段填中文必须失败", (d) => {
+  d.chapters[0].markers[0].nameEn = "黑熊精";
+});
+rejects("中英文回目数量不一致必须失败", (d) => {
+  d.chapters[4].markers[1].journeyToTheWest.chapterTitlesEn.pop();
+});
+rejects(
+  "英文地图说明缺少示意声明必须失败",
+  (d) => (d.chapters[0].mapNoticeEn = "Route diagram of Black Wind Mountain"),
+);
+rejects("路线标签只译一半必须失败", (d) => {
+  delete d.chapters[0].routes[7].labelEn;
+});
+rejects("缺少英文素材说明必须失败", (d) => {
+  delete d.media["atmosphere-01"].altEn;
+});
+rejects("缺少英文来源说明必须失败", (d) => {
+  delete d.sources.W016.scopeEn;
+});

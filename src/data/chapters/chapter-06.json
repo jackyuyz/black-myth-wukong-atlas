@@ -3,10 +3,15 @@
   "order": 6,
   "numeralZh": "六",
   "titleZh": "未竟",
+  "titleEn": "Unfinished",
   "regionZh": "花果山",
+  "regionEn": "Mount Huaguo",
   "themeZh": "来时石生，归处何寻。",
+  "themeEn": "Born out of stone; where is there to return to?",
   "overviewZh": "花果山让故事回到石猴、水帘洞与悟空的起点。游戏结局属于新的创作，不能当作《西游记》原有的后续章节。",
+  "overviewEn": "Mount Huaguo brings the story back to the Stone Monkey, the Water Curtain Cave and Wukong's beginning. The game's ending is new creation and cannot be taken for a continuation the novel itself provides.",
   "readingGuideZh": "先重读石猴出世，再区分游戏石猴与原著起源的关系。",
+  "readingGuideEn": "Reread the birth of the Stone Monkey first, then work out how the game's Stone Monkey stands in relation to that origin.",
   "sources": ["G09", "W001"],
   "atmosphereMediaId": "atmosphere-06",
   "mapMediaId": "chapter-06-map",
@@ -14,16 +19,21 @@
   "topologyStatus": "verified-high-level",
   "topologyLog": "assets/research/chapter-06-topology.json",
   "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
+  "mapNoticeEn": "Route diagram, not to geographic scale, not an official map",
   "markers": [
     {
       "id": "stone-monkey",
       "nameZh": "石猴",
+      "nameEn": "Stone Monkey",
       "type": "character",
       "areaZh": "第六回 · 花果山",
+      "areaEn": "Chapter Six · Mount Huaguo",
       "summaryZh": "回到石头、山水与一个故事的起点。",
+      "summaryEn": "Back to the stone, the mountain and the beginning of a story.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "石猴是第六回故事中的重要形象。读到这里，可以回望小说开篇，再区分游戏中的具体角色与原著的石猴起源。名称和意象产生呼应，却不意味着两部作品有完全相同的结局。",
+        "descriptionEn": "The Stone Monkey is a central figure in the story of Chapter Six. Here it is worth looking back at the novel's opening, and then separating the particular character in the game from the origin of the Stone Monkey in the book. The name and the imagery echo one another; that does not mean the two works end the same way.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-6-stone-monkey"]
       },
@@ -33,11 +43,15 @@
         "relationship": "recombined",
         "chapterNumbers": [1],
         "chapterTitlesZh": ["灵根育孕源流出　心性修持大道生"],
+        "chapterTitlesEn": ["The Spiritual Root Conceives and the Source Flows Forth; With the Nature Cultivated, the Great Way Is Born"],
         "summaryZh": "原著开篇写花果山仙石孕育石猴，之后石猴发现水帘洞。",
+        "summaryEn": "The novel opens with an immortal stone on Mount Huaguo conceiving the Stone Monkey, who then discovers the Water Curtain Cave.",
         "excerptZh": "內育仙胞，一日迸裂，產一石卵，似圓毬樣大。因見風，化作一個石猴，五官俱備，四肢皆全。",
+        "excerptEn": "Within it an immortal embryo took form. One day it split open and brought forth a stone egg, about the size of a ball. Meeting the wind, it changed into a stone monkey, with all five senses and four limbs complete.",
         "excerptSourceId": "W001",
         "mediaIds": ["historical-jttw-sun-wukong-1590"],
         "adaptationNoteZh": "游戏第六回属于独立的结局创作，不能把新的遭遇补写进小说原文。",
+        "adaptationNoteEn": "Chapter Six of the game is an ending of its own making; its new encounters cannot be written into the text of the novel.",
         "sources": ["W001"]
       },
       "position": { "x": 0.93, "y": 0.36 }
@@ -45,93 +59,122 @@
     {
       "id": "supreme-inspector",
       "nameZh": "王灵官",
+      "nameEn": "Supreme Inspector",
       "type": "boss",
       "areaZh": "山脚 · 青嶂道",
+      "areaEn": "Foothills · Verdant Path",
       "summaryZh": "花果山开放探索前的门槛。",
+      "summaryEn": "The threshold before Mount Huaguo opens up.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "王灵官位于花果山山脚青嶂道，是第六回开启大范围探索前的主线遭遇。战胜后取得的移动能力让后续四处遗物路线得以展开。",
+        "descriptionEn": "The Supreme Inspector stands on the Verdant Path in the foothills of Mount Huaguo, the main-route encounter before the wide exploration of Chapter Six opens. The movement ability gained by defeating him is what makes the four relic routes possible.",
         "sources": ["G08", "G09", "G20"],
         "mediaIds": ["community-gameplay-gamespot-chapter-6-supreme-inspector"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G20"],
       "noDirectNovelZh": "这里只按游戏中的具体角色与流程介绍；不能凭“灵官”称谓直接拼接小说身份。",
+      "noDirectNovelEn": "He is described here only by his role in the game; the title “Lingguan” is no ground on which to attach a novel identity to him.",
       "position": { "x": 0.14, "y": 0.45 }
     },
     {
       "id": "gold-armored-rhino",
       "nameZh": "金甲犀",
+      "nameEn": "Gold-Armored Rhino",
       "type": "boss",
       "areaZh": "山脚 · 望犀坡",
+      "areaEn": "Foothills · Rhinowatch Slope",
       "summaryZh": "四件大圣遗物中的一条开放探索支路。",
+      "summaryEn": "One of four open-world branches towards the Great Sage's relics.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "金甲犀位于望犀坡，是取得大圣遗物的四个关键遭遇之一。路线图从筋斗云开放点分出多条主线，表示四处目标可以在开放区域中选择顺序。",
+        "descriptionEn": "The Gold-Armored Rhino is found on Rhinowatch Slope, one of the four key encounters for gathering the Great Sage's relics. The diagram runs several main lines out of the point where the Somersault Cloud becomes available, to show that the four objectives can be taken in any order across the open area.",
         "sources": ["G08", "G09", "G20"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G20"],
       "noDirectNovelZh": "金甲犀及其遗物关卡属于游戏设计，没有可直接对应的《西游记》角色。",
+      "noDirectNovelEn": "The Gold-Armored Rhino and its relic stage are game design; no character in Journey to the West corresponds to them directly.",
       "position": { "x": 0.34, "y": 0.2 }
     },
     {
       "id": "cloudtreading-deer",
       "nameZh": "步云鹿",
+      "nameEn": "Cloudtreading Deer",
       "type": "boss",
       "areaZh": "山脚 · 见鹿林",
+      "areaEn": "Foothills · Deersight Forest",
       "summaryZh": "湖畔红林中的另一件大圣遗物。",
+      "summaryEn": "Another of the Great Sage's relics, in the red woods by the lake.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "步云鹿位于见鹿林，是大圣遗物路线的四个关键节点之一。它与金甲犀并列为开放探索目标，图中上下分支不代表固定先后。",
+        "descriptionEn": "The Cloudtreading Deer is found in Deersight Forest, one of the four key nodes on the relic route. It stands beside the Gold-Armored Rhino as an open-exploration objective; the upper and lower branches in the diagram do not set a fixed order.",
         "sources": ["G08", "G09", "G20"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G20"],
       "noDirectNovelZh": "本条没有可直接对应的《西游记》人物或情节。",
+      "noDirectNovelEn": "There is no figure or episode in Journey to the West that corresponds to this entry directly.",
       "position": { "x": 0.34, "y": 0.7 }
     },
     {
       "id": "feng-tail-general",
       "nameZh": "凤翅将军",
+      "nameEn": "Feng-Tail General",
       "type": "boss",
       "areaZh": "山脚 · 捕螂汀",
+      "areaEn": "Foothills · Mantiscatch Shoal",
       "summaryZh": "跨湖跃动的遗物考验。",
+      "summaryEn": "A relic trial that leaps across the lake.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "凤翅将军活动于捕螂汀一带，是大圣遗物路线之一。地图只标记其流程归属，不把不断移动的遭遇伪装成一个精确地理点。",
+        "descriptionEn": "The Feng-Tail General moves about the area of Mantiscatch Shoal and is one of the relic routes. The diagram marks only where the encounter belongs in the sequence; it does not disguise a constantly moving fight as a precise point on the ground.",
         "sources": ["G08", "G09", "G20"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G20"],
       "noDirectNovelZh": "凤翅将军及其挑战机制属于游戏创作。",
+      "noDirectNovelEn": "The Feng-Tail General and the way the fight works are the game's own creation.",
       "position": { "x": 0.49, "y": 0.2 }
     },
     {
       "id": "emerald-armed-mantis",
       "nameZh": "碧臂螂",
+      "nameEn": "Emerald-Armed Mantis",
       "type": "boss",
       "areaZh": "山脚 · 捕螂汀",
+      "areaEn": "Foothills · Mantiscatch Shoal",
       "summaryZh": "前三件遗物之后出现的第四个节点。",
+      "summaryEn": "The fourth node, which appears once the first three relics are done.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "碧臂螂位于捕螂汀。它在其他三件遗物相关遭遇完成后出现，因此路线图把三条分支与它共同汇向“遗物齐备”，但不声称开放区域只有一种探索顺序。",
+        "descriptionEn": "The Emerald-Armed Mantis is found at Mantiscatch Shoal. It appears only once the other three relic encounters are complete, so the diagram gathers the three branches together with it into “relics complete” — without claiming that the open area can be explored in only one order.",
         "sources": ["G08", "G09", "G20"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G20"],
       "noDirectNovelZh": "碧臂螂及其遗物关卡属于游戏设计。",
+      "noDirectNovelEn": "The Emerald-Armed Mantis and its relic stage are game design.",
       "position": { "x": 0.49, "y": 0.7 }
     },
     {
       "id": "water-curtain-cave",
       "nameZh": "水帘洞",
+      "nameEn": "Water Curtain Cave",
       "type": "location",
       "areaZh": "水帘洞 · 峰回路",
+      "areaEn": "Water Curtain Cave · Winding Path",
       "summaryZh": "从小说开篇的洞天，走向游戏终局。",
+      "summaryEn": "From the cave-heaven of the novel's opening to the game's finale.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "集齐相关遗物后，天命人进入水帘洞，并沿峰回路、天真顶走向石卵。游戏把悟空起点改造成终局通道，位置与作用都服务于新的叙事。",
+        "descriptionEn": "Once the relics are gathered, the Destined One enters the Water Curtain Cave and follows the Winding Path and the Peak of Innocence towards the Birthstone. The game remakes Wukong's starting point into the passage to its finale; both its place and its purpose serve the new narrative.",
         "sources": ["G08", "G09", "G20"]
       },
       "funFacts": [],
@@ -140,10 +183,14 @@
         "relationship": "direct",
         "chapterNumbers": [1],
         "chapterTitlesZh": ["灵根育孕源流出　心性修持大道生"],
+        "chapterTitlesEn": ["The Spiritual Root Conceives and the Source Flows Forth; With the Nature Cultivated, the Great Way Is Born"],
         "summaryZh": "原著第一回写石猴穿过瀑布发现水帘洞，群猴随后尊他为王。",
+        "summaryEn": "Chapter 1 of the novel tells how the Stone Monkey passes through the waterfall and discovers the Water Curtain Cave, after which the monkeys honour him as their king.",
         "excerptZh": "只見正當中有一石碣，碣上有一行楷書大字，鐫著「花果山福地，水簾洞洞天」。",
+        "excerptEn": "In the very middle stood a stone tablet, and on it a line of large characters in regular script, carved: “Blessed Land of the Mountain of Flowers and Fruit, Cave-Heaven of the Water Curtain Cave”.",
         "excerptSourceId": "W001",
         "adaptationNoteZh": "游戏沿用花果山与水帘洞意象，却把这里重构为走向最终战的空间。",
+        "adaptationNoteEn": "The game keeps the imagery of Mount Huaguo and the Water Curtain Cave while rebuilding the place as the approach to its final battle.",
         "sources": ["W001"]
       },
       "position": { "x": 0.71, "y": 0.45 }
@@ -151,21 +198,28 @@
     {
       "id": "great-sages-broken-shell",
       "nameZh": "大圣残躯",
+      "nameEn": "Great Sage's Broken Shell",
       "type": "boss",
       "areaZh": "石卵 · 核心",
+      "areaEn": "Birthstone · Heart",
       "summaryZh": "游戏续写的最终对照面。",
+      "summaryEn": "The final mirror held up by the game's continuation.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "大圣残躯紧接石猿之后，是第六回最终遭遇的一部分。它属于游戏对“大圣遗留之物”与继承问题的独立创作，不能被写成《西游记》结尾。",
+        "descriptionEn": "The Great Sage's Broken Shell follows straight after the Stone Ape and is part of the final encounter of Chapter Six. It is the game's own treatment of what the Great Sage left behind and of who inherits it; it cannot be written up as the ending of Journey to the West.",
         "sources": ["G09", "G20"],
         "mediaIds": ["community-gameplay-gamespot-chapter-6-great-sages-broken-shell"]
       },
       "funFacts": [],
       "sources": ["G09", "G20"],
       "noDirectNovelZh": "原著没有孙悟空死后留下“大圣残躯”作为最终头目的情节。",
+      "noDirectNovelEn": "The novel contains no episode in which Sun Wukong dies and leaves behind a “broken shell” to be fought as a final boss.",
       "spoiler": {
         "warningZh": "含第六回终局信息",
+        "warningEn": "Contains information about the finale of Chapter Six",
         "textZh": "大圣残躯在石猿阶段之后出现。",
+        "textEn": "The Great Sage's Broken Shell appears after the Stone Ape stage.",
         "sources": ["G09", "G20"]
       },
       "position": { "x": 0.93, "y": 0.61 }
@@ -173,17 +227,22 @@
     {
       "id": "giant-shigandang",
       "nameZh": "大石敢当",
+      "nameEn": "Giant Shigandang",
       "type": "boss",
       "areaZh": "山脚 · 青嶂道支路",
+      "areaEn": "Foothills · Verdant Path branch",
       "summaryZh": "五蕴线索汇聚出的可选巨像。",
+      "summaryEn": "An optional colossus at the end of the Five Aggregates thread.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "大石敢当位于花果山开放区域的一条峡谷支路，需要此前收集的四蕴才会出现。它与四件大圣遗物不是同一条前置链，地图因此单独画成可选分支。",
+        "descriptionEn": "The Giant Shigandang stands on a ravine branch in the open area of Mount Huaguo and appears only once the first four Aggregates have been collected. It does not share a chain of prerequisites with the four relics of the Great Sage, so the diagram draws it as a separate optional branch.",
         "sources": ["G09"]
       },
       "funFacts": [],
       "sources": ["G09"],
       "noDirectNovelZh": "大石敢当与五蕴收集线属于游戏机制，不是《西游记》原有情节。",
+      "noDirectNovelEn": "The Giant Shigandang and the Five Aggregates collection are game mechanics, not an episode from Journey to the West.",
       "position": { "x": 0.48, "y": 0.88 }
     }
   ],
@@ -191,16 +250,19 @@
     {
       "id": "foothills",
       "nameZh": "山脚 · 开放山体",
+      "nameEn": "Foothills · Open Mountain",
       "position": { "x": 0.28, "y": 0.09 }
     },
     {
       "id": "curtain",
       "nameZh": "水帘洞",
+      "nameEn": "Water Curtain Cave",
       "position": { "x": 0.72, "y": 0.09 }
     },
     {
       "id": "birthstone",
       "nameZh": "石卵",
+      "nameEn": "Birthstone",
       "position": { "x": 0.91, "y": 0.09 }
     }
   ],
@@ -295,7 +357,9 @@
       "kind": "main",
       "mode": "teleport",
       "labelZh": "进入石卵",
+      "labelEn": "Entering the Birthstone",
       "conditionZh": "沿水帘洞与天真顶推进，在终点进入石卵核心。",
+      "conditionEn": "Advance through the Water Curtain Cave and the Peak of Innocence, and at the end enter the heart of the Birthstone.",
       "sources": ["G08", "G20"]
     },
     {
@@ -311,6 +375,7 @@
       "kind": "main",
       "mode": "route",
       "labelZh": "终局后段",
+      "labelEn": "Final stretch",
       "sources": ["G09", "G20"]
     },
     {
@@ -319,7 +384,9 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "五蕴支线",
+      "labelEn": "Five Aggregates side quest",
       "conditionZh": "需先取得前四蕴，再前往开放山体中的峡谷。",
+      "conditionEn": "Collect the first four Aggregates, then make for the ravine on the open mountain.",
       "sources": ["G09"]
     }
   ],
@@ -327,30 +394,35 @@
     {
       "id": "verdant-path",
       "nameZh": "青嶂道",
+      "nameEn": "Verdant Path",
       "position": { "x": 0.07, "y": 0.45 },
       "sources": ["G08", "G20"]
     },
     {
       "id": "cloud-open",
       "nameZh": "筋斗云开放",
+      "nameEn": "Somersault Cloud unlocked",
       "position": { "x": 0.23, "y": 0.45 },
       "sources": ["G09", "G20"]
     },
     {
       "id": "armor-complete",
       "nameZh": "遗物齐备",
+      "nameEn": "Relics complete",
       "position": { "x": 0.61, "y": 0.45 },
       "sources": ["G09", "G20"]
     },
     {
       "id": "peak-innocence",
       "nameZh": "天真顶",
+      "nameEn": "Peak of Innocence",
       "position": { "x": 0.8, "y": 0.45 },
       "sources": ["G08", "G20"]
     },
     {
       "id": "heart-birthstone",
       "nameZh": "石卵核心",
+      "nameEn": "Heart of the Birthstone",
       "position": { "x": 0.87, "y": 0.45 },
       "sources": ["G08", "G20"]
     }

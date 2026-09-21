@@ -26,14 +26,15 @@ Where they disagree, `KNOWLEDGE_BASE.md` wins on facts and `ASSET_REQUIREMENTS.m
 3. Never conflate the four relationship types: 原著直接出现 / 原著元素重组 / 现实文化对照 / 开发者确认采用. Each needs its own source.
 4. Keep chapter content in JSON under `src/data/`, not hard-coded in components.
 5. Keep source IDs (`W###`, `G##`, `H##`, `L##`, `F##`) intact and resolvable through `src/data/sources.json`.
-6. v1 ships a Chinese-only visible interface. Every label, error, empty state, alt text, and accessibility name is Chinese. `*En` fields may exist in data but are not rendered.
-7. Never expose a raw English enum value (`confirmed`, `government-source`, `schematic`) in the interface. Map it to its Chinese display label.
+6. The interface ships in Chinese and English, and both columns ship complete. Chinese is the authoritative version and English is derived from it: every content field needs both `xxxZh` and `xxxEn`, and `scripts/validate-data.ts` fails on a missing, empty, or untranslated twin. Chinese routes live at `/`, English at `/en/`, and both are prerendered. Interface copy lives in `src/i18n/ui.ts`, where the `en` table is typed against the `zh` table so a missing key fails `typecheck`.
+7. Never expose a raw enum value (`confirmed`, `government-source`, `schematic`) in either interface. Map it through `labels` in `src/types/schema.ts`, which carries a Chinese and an English display label for every enum. `license` strings go through `licenseLabels` in the same file.
+8. Chinese that stays inside an English page — a cited excerpt, an original name, a source title — is wrapped in `lang="zh-Hans"` (or `zh-Hant` for a traditional-character excerpt). The `Text`, `Zh` and `OriginalName` helpers in `src/i18n/` do this.
 
 ## Map rules
 
 Chapter maps declare a `mapMode`. v1 uses `schematic`.
 
-- **`schematic`** is a scroll-style route diagram. Marker coordinates are illustration-layout positions. Requires `topologyStatus: verified-high-level`, meaning the route order and branching are backed by the chapter's topology log. The map must carry a persistent Chinese notice such as **“路线示意图，非地理比例，非官方地图”**.
+- **`schematic`** is a scroll-style route diagram. Marker coordinates are illustration-layout positions. Requires `topologyStatus: verified-high-level`, meaning the route order and branching are backed by the chapter's topology log. The map must carry a persistent notice in both languages: **“路线示意图，非地理比例，非官方地图”** and an English `mapNoticeEn` containing *route diagram*, *not to geographic scale* and *not an official map*. The validator checks for all six phrases.
 - **`geographic`** claims real spatial layout and requires `topologyStatus: verified-markers`.
 
 Inventing *layout* on a verified route is design work. Inventing an area, landmark, or branch the topology log does not support is fabrication, in either mode. A chapter whose topology is still `unverified` ships as an overview image with no markers.
@@ -46,7 +47,9 @@ Coordinates are always normalized 0–1, never pixels.
 - Chapter 1 currently has no verified real-world prototype. Do not bind Shanxi sites used by other chapters to 黑风山.
 - Visual similarity alone is never `confirmed`. Use the confidence scale in `DEVELOPMENT_SPEC.md` §7.1.D.
 - Biographies from the in-game 影神图 are game lore, not novel canon. Label them as such.
-- Spoilers beyond the current chapter stay collapsed behind a Chinese warning.
+- Spoilers beyond the current chapter stay collapsed behind a warning in the reader's language.
+- Excerpts from *Journey to the West* keep the cited original as the evidence. `excerptEn` is a working translation by this project, labelled as such in the interface — published English translations of the novel are still in copyright and must not be used.
+- Game entities use the official English localization name (the marker IDs in `src/data/chapters/*.json` and the filenames under `public/images/game/` record most of them). Do not invent a competing English name for something already named there.
 
 ## Asset rules
 
@@ -60,7 +63,7 @@ Coordinates are always normalized 0–1, never pixels.
 
 Two gates are not optional and must not be weakened to make a build pass.
 
-**Prerendering.** Every route ships its Chinese content inside the HTML source, not after hydration. The product is a body of searchable cultural writing; content that only exists once JavaScript runs cannot be indexed, previewed, or read without scripts. Do not introduce runtime-only data sources.
+**Prerendering.** Every route, in both languages, ships its content inside the HTML source, not after hydration. The product is a body of searchable cultural writing; content that only exists once JavaScript runs cannot be indexed, previewed, or read without scripts. Do not introduce runtime-only data sources.
 
 **Data validation.** `scripts/validate-data.ts` runs in `prebuild` and CI and fails on unresolvable source IDs, invalid enum values, missing or non-`cleared` media references, coordinates on a map whose `mapMode`/`topologyStatus` does not permit them, a `realWorld` entry with no sources, or a `journeyToTheWest` block with no chapter number. Fix the data or remove the claim; never loosen the check. When you add a content field, add its rule in the same change.
 
@@ -76,4 +79,4 @@ Two gates are not optional and must not be weakened to make a build pass.
 ## Before you finish
 
 - Document any new content field in `DEVELOPMENT_SPEC.md` before using it widely.
-- Re-check that no Chinese label is missing, no English enum leaked, and no unsourced claim was added to fill a card.
+- Re-check that no label is missing in either language, no raw enum leaked, no Chinese sits untagged inside an English page, and no unsourced claim was added to fill a card.

@@ -3,10 +3,15 @@
   "order": 4,
   "numeralZh": "四",
   "titleZh": "曲度紫鸳",
+  "titleEn": "A Tune for the Purple Mandarin Ducks",
   "regionZh": "盘丝岭",
+  "regionEn": "Webbed Hollow Ridge",
   "themeZh": "丝缠旧梦，谁解其结。",
+  "themeEn": "Silk winds around an old dream; who can undo the knot?",
   "overviewZh": "盘丝洞与黄花观把读者引向《西游记》第七十二、七十三回。原著的蜘蛛精与多目怪，在游戏里获得新的姓名、关系与命运。",
+  "overviewEn": "The Webbed Hollow and the Yellow Flower Temple lead the reader to Chapters 72 and 73 of Journey to the West. The spider spirits and the Many-Eyed Monster of the novel are given new names, new relationships and new fates in the game.",
   "readingGuideZh": "留意人物姓名和家族故事：同一组文学元素，可以被重新组织。",
+  "readingGuideEn": "Watch the names and the family stories: one set of literary elements can be rearranged into quite another shape.",
   "sources": ["G09", "W072", "W073"],
   "atmosphereMediaId": "atmosphere-04",
   "mapMediaId": "chapter-04-map",
@@ -14,16 +19,21 @@
   "topologyStatus": "verified-high-level",
   "topologyLog": "assets/research/chapter-04-topology.json",
   "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
+  "mapNoticeEn": "Route diagram, not to geographic scale, not an official map",
   "markers": [
     {
       "id": "violet-spider",
       "nameZh": "紫蛛儿",
+      "nameEn": "Violet Spider",
       "type": "character",
       "areaZh": "盘丝岭 · 盘丝洞",
+      "areaEn": "Webbed Hollow Ridge · Webbed Hollow",
       "summaryZh": "蜘蛛精的旧名目，游戏里的新身世。",
+      "summaryEn": "An old name for a spider spirit, and a new life story in the game.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "紫蛛儿出现在盘丝洞相关故事中。游戏赋予这个人物姓名和家族经历。把她放回文学背景中比较时，需要把原著的七蜘蛛精与游戏塑造的具体人物分开，不能从一种关系推断另一种关系。",
+        "descriptionEn": "Violet Spider belongs to the stories around the Webbed Hollow. The game gives this character a name and a family history. When setting her back against her literary background, keep the seven spider spirits of the novel apart from the particular character the game has built; neither set of relationships can be inferred from the other.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-4-violet-spider"]
       },
@@ -33,10 +43,14 @@
         "relationship": "recombined",
         "chapterNumbers": [72],
         "chapterTitlesZh": ["盘丝洞七情迷本　濯垢泉八戒忘形"],
+        "chapterTitlesEn": ["At Webbed Hollow the Seven Passions Cloud the Source; At Filth-Cleansing Spring Bajie Forgets Himself"],
         "summaryZh": "原著第七十二回有盘丝洞七蜘蛛精及濯垢泉的故事。",
+        "summaryEn": "Chapter 72 of the novel tells of the seven spider spirits of the Webbed Hollow and of the Filth-Cleansing Spring.",
         "excerptZh": "原來此處喚做盤絲嶺，那莊村喚做盤絲洞。洞中有七個女怪，把我師父拿住，吊在洞裡。",
+        "excerptEn": "It turns out this place is called Webbed Hollow Ridge, and that settlement is called the Webbed Hollow. In the cave are seven female monsters, who have seized my master and hung him up inside.",
         "excerptSourceId": "W072",
         "adaptationNoteZh": "紫蛛儿的姓名、家族和与猪八戒的过往属于游戏扩写。",
+        "adaptationNoteEn": "Violet Spider's name, her family, and her history with Zhu Bajie are the game's own expansion.",
         "sources": ["W072"]
       },
       "position": { "x": 0.61, "y": 0.46 }
@@ -44,12 +58,16 @@
     {
       "id": "hundred-eyed-daoist",
       "nameZh": "百眼魔君",
+      "nameEn": "Hundred-Eyed Daoist Master",
       "type": "boss",
       "areaZh": "盘丝岭 · 黄花观",
+      "areaEn": "Webbed Hollow Ridge · Yellow Flower Temple",
       "summaryZh": "从黄花观多目怪，读到游戏百眼魔君。",
+      "summaryEn": "From the Many-Eyed Monster of the Yellow Flower Temple to the game's Hundred-Eyed Daoist Master.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "百眼魔君出现在黄花观，是盘丝岭的重要角色。道观是道教活动的场所；黄花观在这里首先是故事地点。不能仅凭建筑风格就给它指定现实原型，人物的文学关系也需要单独核对。",
+        "descriptionEn": "The Hundred-Eyed Daoist Master is found at the Yellow Flower Temple and is a major figure of Webbed Hollow Ridge. A daoguan is a place of Daoist practice; here the Yellow Flower Temple is first of all a place in a story. An architectural style alone cannot assign it a real-world model, and the character's literary connections have to be checked on their own.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-4-hundred-eyed-daoist-master"]
       },
@@ -59,10 +77,14 @@
         "relationship": "direct",
         "chapterNumbers": [73],
         "chapterTitlesZh": ["情因旧恨生灾毒　心主遭魔幸破光"],
+        "chapterTitlesEn": ["Old Grievance Breeds a Poisonous Calamity; The Mind-Lord Meets the Demon and the Light Is Broken"],
         "summaryZh": "黄花观的多目怪为蜈蚣精，设毒茶害取经人，最终由毗蓝婆菩萨协助降伏。",
+        "summaryEn": "The Many-Eyed Monster of the Yellow Flower Temple is a centipede spirit who serves the pilgrims poisoned tea; in the end the Bodhisattva Pilanpo helps to subdue him.",
         "excerptZh": "他本是個百眼魔君，又喚做多目怪。",
+        "excerptEn": "He is in truth a Hundred-Eyed Demon Lord, also called the Many-Eyed Monster.",
         "excerptSourceId": "W073",
         "adaptationNoteZh": "游戏重新创作他的目标、势力关系与命运。",
+        "adaptationNoteEn": "The game newly invents his aims, his alliances and his fate.",
         "sources": ["W073"]
       },
       "position": { "x": 0.93, "y": 0.46 }
@@ -70,12 +92,16 @@
     {
       "id": "zhu-bajie",
       "nameZh": "猪八戒",
+      "nameEn": "Zhu Bajie",
       "type": "character",
       "areaZh": "盘丝洞 · 若仙庵",
+      "areaEn": "Webbed Hollow · Hut of Immortality",
       "summaryZh": "同一位取经人，在盘丝岭遇到新的旧事。",
+      "summaryEn": "The same pilgrim meets a new old story on Webbed Hollow Ridge.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "猪八戒在盘丝洞后段与天命人发生重要遭遇。地图把这一节点放在若仙庵与濯垢泉之间，只说明流程位置；人物过往与紫蛛儿的关系必须按游戏叙事理解。",
+        "descriptionEn": "Zhu Bajie has an important encounter with the Destined One in the later part of the Webbed Hollow. The diagram places this node between the Hut of Immortality and the Filth-Cleansing Spring to show where it falls in the route only; his past and his relationship with Violet Spider must be read from the game's own telling.",
         "sources": ["G08", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-4-zhu-bajie"]
       },
@@ -85,11 +111,15 @@
         "relationship": "recombined",
         "chapterNumbers": [72],
         "chapterTitlesZh": ["盘丝洞七情迷本　濯垢泉八戒忘形"],
+        "chapterTitlesEn": ["At Webbed Hollow the Seven Passions Cloud the Source; At Filth-Cleansing Spring Bajie Forgets Himself"],
         "summaryZh": "原著第七十二回写猪八戒在濯垢泉撞见七蜘蛛精，并参与盘丝洞一难。",
+        "summaryEn": "Chapter 72 of the novel tells how Zhu Bajie blunders upon the seven spider spirits at the Filth-Cleansing Spring and takes part in the ordeal at the Webbed Hollow.",
         "excerptZh": "八戒笑道：「女菩薩，在這裡洗澡哩？也攜帶我和尚洗洗，何如？」",
+        "excerptEn": "Bajie said with a grin: “Lady bodhisattvas, bathing here, are you? How about taking this monk along for a wash as well?”",
         "excerptSourceId": "W072",
         "mediaIds": ["historical-jttw-zhu-bajie-1590", "historical-jttw-yunzhandong-zhu-bajie"],
         "adaptationNoteZh": "游戏把人物与蜘蛛精故事重新组织成新的前缘和冲突，不能当作小说原有身世。",
+        "adaptationNoteEn": "The game rearranges the character and the spider-spirit story into a new shared past and a new conflict; this cannot be taken for a life story the novel already contains.",
         "sources": ["W072"]
       },
       "position": { "x": 0.49, "y": 0.48 }
@@ -97,29 +127,38 @@
     {
       "id": "venom-daoist",
       "nameZh": "黑手道人",
+      "nameEn": "Venom Daoist",
       "type": "boss",
       "areaZh": "盘丝洞 · 碎玉池／黄花观",
+      "areaEn": "Webbed Hollow · Pool of Shattered Jade / Yellow Flower Temple",
       "summaryZh": "两次遭遇，才显出紫云山入口。",
+      "summaryEn": "Two encounters before the way to Purple Cloud Mountain appears.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "黑手道人需要在碎玉池附近与黄花观末段分别遭遇。路线图用两条虚线同时指向这一张卡，强调它是跨越本回前后段的条件链，而不是一条普通岔路。",
+        "descriptionEn": "The Venom Daoist must be met twice: once near the Pool of Shattered Jade, and again at the end of the Yellow Flower Temple. The diagram runs two dashed lines into this one card to stress that it is a chain of conditions spanning the early and late parts of the chapter, not an ordinary fork in the road.",
         "sources": ["G09", "G17"],
         "mediaIds": ["community-gameplay-gamespot-chapter-4-venom-daoist"]
       },
       "funFacts": [],
       "sources": ["G09", "G17"],
       "noDirectNovelZh": "黑手道人及其开启紫云山的具体经历属于游戏创作。",
+      "noDirectNovelEn": "The Venom Daoist, and the particular sequence by which he opens Purple Cloud Mountain, are the game's own creation.",
       "position": { "x": 0.38, "y": 0.2 }
     },
     {
       "id": "duskveil",
       "nameZh": "晦月魔君",
+      "nameEn": "Duskveil",
       "type": "boss",
       "areaZh": "隐·紫云山 · 巢云顶",
+      "areaEn": "Hidden · Purple Cloud Mountain · Cloudnest Peak",
       "summaryZh": "昴日星官与蝎子精母题，在游戏里被重新编织。",
+      "summaryEn": "The motifs of the Star Lord of the Pleiades and of the scorpion spirit are rewoven in the game.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "晦月魔君位于隐·紫云山末段。理解这一形象时，可以同时回看原著昴日星官降蝎子精，以及毗蓝婆与百眼魔君的两段故事；游戏把原本分开的关系编织成新的遭遇。",
+        "descriptionEn": "Duskveil stands at the end of the hidden Purple Cloud Mountain. To understand the figure it helps to look back at two separate episodes in the novel: the Star Lord of the Pleiades subduing the scorpion spirit, and Pilanpo against the Hundred-Eyed Demon Lord. The game weaves relationships that were apart in the book into a single new encounter.",
         "sources": ["G04", "G09", "G17"],
         "mediaIds": ["community-gameplay-gamespot-chapter-4-duskveil"]
       },
@@ -129,10 +168,14 @@
         "relationship": "recombined",
         "chapterNumbers": [55, 73],
         "chapterTitlesZh": ["色邪淫戏唐三藏　性正修持不坏身", "情因旧恨生灾毒　心主遭魔幸破光"],
+        "chapterTitlesEn": ["A Lustful Demon Toys with Tang Sanzang; With Upright Nature and Steady Practice the Body Is Not Harmed","Old Grievance Breeds a Poisonous Calamity; The Mind-Lord Meets the Demon and the Light Is Broken"],
         "summaryZh": "第五十五回写昴日星官降蝎子精；第七十三回又写毗蓝婆以绣花针破多目怪金光。",
+        "summaryEn": "Chapter 55 tells how the Star Lord of the Pleiades subdues the scorpion spirit; Chapter 73 tells how Pilanpo breaks the golden light of the Many-Eyed Monster with an embroidery needle.",
         "excerptZh": "你去東天門裡光明宮告求昴日星官，方能降伏。",
+        "excerptEn": "Go to the Palace of Brightness within the Eastern Gate of Heaven and beg the Star Lord of the Pleiades; only then can it be subdued.",
         "excerptSourceId": "W055",
         "adaptationNoteZh": "晦月魔君的变异经历与盘丝岭势力关系属于游戏重组，原著没有同样人物线。",
+        "adaptationNoteEn": "Duskveil's transformation and his standing among the powers of Webbed Hollow Ridge are the game's rearrangement; the novel holds no equivalent character arc.",
         "sources": ["W055", "W073"]
       },
       "position": { "x": 0.88, "y": 0.82 }
@@ -140,12 +183,16 @@
     {
       "id": "weavers-needle",
       "nameZh": "绣花针",
+      "nameEn": "Weaver's Needle",
       "type": "item",
       "areaZh": "隐·紫云山",
+      "areaEn": "Hidden · Purple Cloud Mountain",
       "summaryZh": "小说中的破光之针，成为游戏法宝。",
+      "summaryEn": "The needle that breaks the light in the novel becomes an item of power in the game.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "完成隐·紫云山并战胜晦月魔君后，可以取得法宝绣花针。地图把它画成奖励关系，不伪装成紫云山中的普通拾取点。",
+        "descriptionEn": "After finishing the hidden Purple Cloud Mountain and defeating Duskveil, the Weaver's Needle can be obtained. The diagram draws it as a reward relationship rather than disguising it as an ordinary pickup somewhere on the mountain.",
         "sources": ["G11", "G17"]
       },
       "funFacts": [],
@@ -154,10 +201,14 @@
         "relationship": "direct",
         "chapterNumbers": [73],
         "chapterTitlesZh": ["情因旧恨生灾毒　心主遭魔幸破光"],
+        "chapterTitlesEn": ["Old Grievance Breeds a Poisonous Calamity; The Mind-Lord Meets the Demon and the Light Is Broken"],
         "summaryZh": "原著第七十三回中，毗蓝婆用一枚绣花针破除多目怪放出的金光。",
+        "summaryEn": "In Chapter 73 of the novel, Pilanpo uses a single embroidery needle to break the golden light cast out by the Many-Eyed Monster.",
         "excerptZh": "毘藍道：「我有個繡花針兒，能破那廝。」",
+        "excerptEn": "Pilanpo said: “I have an embroidery needle that can break that creature.”",
         "excerptSourceId": "W073",
         "adaptationNoteZh": "游戏沿用名称与克制金光的意象，重新设计了获得方式和法宝机制。",
+        "adaptationNoteEn": "The game keeps the name and the image of countering the golden light, while redesigning how the item is obtained and how it works.",
         "sources": ["W073"]
       },
       "position": { "x": 0.96, "y": 0.68 }
@@ -167,21 +218,25 @@
     {
       "id": "lanxi",
       "nameZh": "兰喜村",
+      "nameEn": "Lanxi Village",
       "position": { "x": 0.12, "y": 0.09 }
     },
     {
       "id": "webbed",
       "nameZh": "盘丝洞",
+      "nameEn": "Webbed Hollow",
       "position": { "x": 0.45, "y": 0.09 }
     },
     {
       "id": "yellow-flower",
       "nameZh": "黄花观",
+      "nameEn": "Yellow Flower Temple",
       "position": { "x": 0.78, "y": 0.09 }
     },
     {
       "id": "purple-cloud",
       "nameZh": "隐 · 紫云山",
+      "nameEn": "Hidden · Purple Cloud Mountain",
       "position": { "x": 0.82, "y": 0.94 }
     }
   ],
@@ -241,6 +296,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "碎玉池支路",
+      "labelEn": "Pool of Shattered Jade branch",
       "sources": ["G08", "G17"]
     },
     {
@@ -249,7 +305,9 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "第一次遭遇",
+      "labelEn": "First encounter",
       "conditionZh": "先在碎玉池附近击破怪茧，完成第一次黑手道人遭遇。",
+      "conditionEn": "Break the cocoon near the Pool of Shattered Jade first, completing the first encounter with the Venom Daoist.",
       "sources": ["G17"]
     },
     {
@@ -258,7 +316,9 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "第二次遭遇",
+      "labelEn": "Second encounter",
       "conditionZh": "在黄花观末段找到黑手道人并再次战胜他。",
+      "conditionEn": "Find the Venom Daoist at the end of the Yellow Flower Temple and defeat him a second time.",
       "sources": ["G17"]
     },
     {
@@ -267,7 +327,9 @@
       "kind": "optional",
       "mode": "teleport",
       "labelZh": "进入隐·紫云山",
+      "labelEn": "Entering the hidden Purple Cloud Mountain",
       "conditionZh": "完成黑手道人两次遭遇后，调查墙面进入隐藏区域。",
+      "conditionEn": "After both encounters with the Venom Daoist, examine the wall to enter the hidden area.",
       "sources": ["G17"]
     },
     {
@@ -276,6 +338,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "紫云山主路",
+      "labelEn": "Purple Cloud Mountain main route",
       "sources": ["G08", "G17"]
     },
     {
@@ -284,7 +347,9 @@
       "kind": "optional",
       "mode": "reward",
       "labelZh": "完成隐藏区域后取得",
+      "labelEn": "Obtained after finishing the hidden area",
       "conditionZh": "击败晦月魔君后获得法宝绣花针。",
+      "conditionEn": "Defeat Duskveil to receive the Weaver's Needle.",
       "sources": ["G11", "G17"]
     }
   ],
@@ -292,42 +357,49 @@
     {
       "id": "estate-zhu",
       "nameZh": "朱家大院",
+      "nameEn": "Zhu Family Estate",
       "position": { "x": 0.08, "y": 0.46 },
       "sources": ["G08"]
     },
     {
       "id": "upper-hollow",
       "nameZh": "盘丝洞上层",
+      "nameEn": "Upper Webbed Hollow",
       "position": { "x": 0.22, "y": 0.46 },
       "sources": ["G08"]
     },
     {
       "id": "pool-shattered-jade",
       "nameZh": "碎玉池",
+      "nameEn": "Pool of Shattered Jade",
       "position": { "x": 0.32, "y": 0.2 },
       "sources": ["G08", "G17"]
     },
     {
       "id": "hut-immortality",
       "nameZh": "若仙庵",
+      "nameEn": "Hut of Immortality",
       "position": { "x": 0.42, "y": 0.48 },
       "sources": ["G08", "G09"]
     },
     {
       "id": "mountain-trail",
       "nameZh": "山道",
+      "nameEn": "Mountain Trail",
       "position": { "x": 0.69, "y": 0.46 },
       "sources": ["G08"]
     },
     {
       "id": "court-illumination",
       "nameZh": "金光苑",
+      "nameEn": "Court of Illumination",
       "position": { "x": 0.82, "y": 0.46 },
       "sources": ["G08", "G17"]
     },
     {
       "id": "purple-cloud-entry",
       "nameZh": "紫云山入口",
+      "nameEn": "Entrance to Purple Cloud Mountain",
       "position": { "x": 0.7, "y": 0.82 },
       "sources": ["G17"]
     }

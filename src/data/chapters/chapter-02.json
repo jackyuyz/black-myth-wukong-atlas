@@ -3,10 +3,15 @@
   "order": 2,
   "numeralZh": "二",
   "titleZh": "风起黄昏",
+  "titleEn": "Wind Rises at Dusk",
   "regionZh": "黄风岭",
+  "regionEn": "Yellow Wind Ridge",
   "themeZh": "黄沙之下，旧事未息。",
+  "themeEn": "Beneath the yellow sand, the old story has not settled.",
   "overviewZh": "黄风岭将黄风怪故事与游戏新增的国度往事交织在一起。从虎先锋与黄风大圣入手，辨认文学人物与游戏续写。",
+  "overviewEn": "Yellow Wind Ridge weaves the story of the Yellow Wind Monster together with the history of a kingdom the game itself adds. Start from the Tiger Vanguard and the Yellow Wind Sage, and learn to tell a figure from the novel apart from the game's continuation.",
   "readingGuideZh": "先对照黄风怪的称呼，勿把游戏的黄金之国历史全部当成原著。",
+  "readingGuideEn": "Compare the titles given to the Yellow Wind Monster first, and do not take the game's history of the Kingdom of Gold for the novel.",
   "sources": ["G09", "W020", "W021"],
   "atmosphereMediaId": "atmosphere-02",
   "mapMediaId": "chapter-02-map",
@@ -14,16 +19,21 @@
   "topologyStatus": "verified-high-level",
   "topologyLog": "assets/research/chapter-02-topology.json",
   "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
+  "mapNoticeEn": "Route diagram, not to geographic scale, not an official map",
   "markers": [
     {
       "id": "tiger-vanguard",
       "nameZh": "虎先锋",
+      "nameEn": "Tiger Vanguard",
       "type": "boss",
       "areaZh": "黄风岭 · 卧虎寺",
+      "areaEn": "Yellow Wind Ridge · Crouching Tiger Temple",
       "summaryZh": "原著里已有其名，家族故事另有新写。",
+      "summaryEn": "The title is already in the novel; the family story is newly written.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "虎先锋是黄风岭卧虎寺的头目。把游戏中的形象与原著对照，可以看见改编沿用了称谓，却发展出新的角色关系。这里不将游戏中虎妖的亲缘故事写成原著事实。",
+        "descriptionEn": "The Tiger Vanguard is the boss of Crouching Tiger Temple on Yellow Wind Ridge. Set the game's figure beside the novel and you can see that the adaptation keeps the title while growing a new set of relationships around it. The kinship story of the tiger yaoguai in the game is not recorded here as a fact of the novel.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-2-tiger-vanguard"]
       },
@@ -33,10 +43,14 @@
         "relationship": "direct",
         "chapterNumbers": [20],
         "chapterTitlesZh": ["黄风岭唐僧有难　半山中八戒争先"],
+        "chapterTitlesEn": ["Tang Sanzang Meets Trouble on Yellow Wind Ridge; Bajie Presses Ahead Halfway up the Mountain"],
         "summaryZh": "原著第二十回的虎先锋是黄风怪的手下，曾抓走唐僧。",
+        "summaryEn": "In Chapter 20 of the novel the Tiger Vanguard is a subordinate of the Yellow Wind Monster, and it is he who carries Tang Sanzang off.",
         "excerptZh": "吾當不是別人，乃是黃風大王部下的前路先鋒。",
+        "excerptEn": "I am no one else: I am the vanguard of the road under the Great King of the Yellow Wind.",
         "excerptSourceId": "W020",
         "adaptationNoteZh": "游戏中的虎妖家族与人物经历属于游戏扩写。",
+        "adaptationNoteEn": "The family of tiger yaoguai in the game, and what each of them goes through, are the game's own expansion.",
         "sources": ["W020"]
       },
       "position": { "x": 0.46, "y": 0.25 }
@@ -44,12 +58,16 @@
     {
       "id": "yellow-wind-sage",
       "nameZh": "黄风大圣",
+      "nameEn": "Yellow Wind Sage",
       "type": "boss",
       "areaZh": "黄风岭 · 黄风阵",
+      "areaEn": "Yellow Wind Ridge · Yellow Wind Formation",
       "summaryZh": "从“黄风怪”到“黄风大圣”。",
+      "summaryEn": "From “the Yellow Wind Monster” to “the Yellow Wind Sage”.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "黄风大圣是黄风岭的重要妖王。游戏使用“大圣”的称呼，并把他的故事与此地的历史联系起来。先读原著中的黄风怪，再理解游戏增加的情境，能避免将两个作品的叙事混成一段。",
+        "descriptionEn": "The Yellow Wind Sage is the major yaoguai king of Yellow Wind Ridge. The game gives him the title “Sage” and ties his story to the history of this place. Read the Yellow Wind Monster of the novel first and the game's added situation second, and the two narratives will not run together into one.",
         "sources": ["G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-2-yellow-wind-sage"]
       },
@@ -59,10 +77,14 @@
         "relationship": "direct",
         "chapterNumbers": [20, 21],
         "chapterTitlesZh": ["黄风岭唐僧有难　半山中八戒争先", "护法设庄留大圣　须弥灵吉定风魔"],
+        "chapterTitlesEn": ["Tang Sanzang Meets Trouble on Yellow Wind Ridge; Bajie Presses Ahead Halfway up the Mountain","A Guardian Sets Up a Farmstead to Keep the Great Sage; Lingji of Mount Sumeru Quells the Wind Demon"],
         "summaryZh": "原著写黄风岭黄风洞的黄风怪，第二十一回中灵吉菩萨协助降伏他。",
+        "summaryEn": "The novel tells of the Yellow Wind Monster of Yellow Wind Cave on Yellow Wind Ridge; in Chapter 21 the Bodhisattva Lingji helps to subdue him.",
         "excerptZh": "忽然間，一陣黃風，從空刮起。",
+        "excerptEn": "All at once a gust of yellow wind came sweeping down out of the sky.",
         "excerptSourceId": "W021",
         "adaptationNoteZh": "游戏里的黄金之国往事是独立扩写，不等于原著已有同样完整的历史。",
+        "adaptationNoteEn": "The history of the Kingdom of Gold in the game is a separate expansion; the novel does not contain the same worked-out history.",
         "sources": ["W020", "W021"]
       },
       "position": { "x": 0.91, "y": 0.43 }
@@ -70,68 +92,88 @@
     {
       "id": "stone-vanguard",
       "nameZh": "石先锋",
+      "nameEn": "Stone Vanguard",
       "type": "boss",
       "areaZh": "挟魂崖 · 枕石坪",
+      "areaEn": "Fright Cliff · Rockrest Flat",
       "summaryZh": "石门前的另一条推进线索。",
+      "summaryEn": "The other line of advance before the stone gate.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "石先锋位于挟魂崖一线，是黄风岭两条主要探索路径中的关键遭遇之一。路线图把它与卧虎寺的虎先锋并列，表示两条路径都通向本回后段，不把二者误画成必须依次挑战。",
+        "descriptionEn": "The Stone Vanguard stands along the Fright Cliff line and is one of the key encounters on the two main exploration paths of Yellow Wind Ridge. The diagram sets it beside the Tiger Vanguard at Crouching Tiger Temple to show that both paths lead into the later part of the chapter, rather than drawing them as challenges that must be taken in order.",
         "sources": ["G08", "G09", "G13"],
         "mediaIds": ["community-gameplay-gamespot-chapter-2-stone-vanguard"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G13"],
       "noDirectNovelZh": "本条只说明游戏中的石妖与路线作用，没有可直接对应的《西游记》人物。",
+      "noDirectNovelEn": "This entry describes only the stone yaoguai of the game and its place on the route; there is no figure in Journey to the West that corresponds to it directly.",
       "position": { "x": 0.46, "y": 0.66 }
     },
     {
       "id": "yellow-robed-squire",
       "nameZh": "黄袍员外",
+      "nameEn": "Yellow-Robed Squire",
       "type": "character",
       "areaZh": "挟魂崖 · 枕石坪",
+      "areaEn": "Fright Cliff · Rockrest Flat",
       "summaryZh": "一段支线，打开失落国度的入口。",
+      "summaryEn": "A side quest that opens the way to a lost kingdom.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "黄袍员外相关支线从枕石坪附近展开。完成物品交付与后续遭遇后，玩家可以经一座石门进入隐·斯哈哩国。图上的支线只表示条件关系，不把斯哈哩国画成普通步行岔路。",
+        "descriptionEn": "The side quest around the Yellow-Robed Squire opens near Rockrest Flat. Once the deliveries and the encounters that follow are done, the player can pass through a stone gate into the hidden Kingdom of Sahali. The branch on the diagram marks a conditional link only; it does not draw Sahali as an ordinary fork in the road.",
         "sources": ["G14"],
         "mediaIds": ["community-gameplay-gamespot-chapter-2-yellow-robed-squire"]
       },
       "funFacts": [],
       "sources": ["G14"],
       "noDirectNovelZh": "游戏借用了“斯哈哩国”等文学词汇，但黄袍员外这段具体支线不是《西游记》原有情节。",
+      "noDirectNovelEn": "The game borrows wording such as “the Kingdom of Sahali” from literature, but this particular side quest around the Yellow-Robed Squire is not an episode of Journey to the West.",
       "position": { "x": 0.41, "y": 0.84 }
     },
     {
       "id": "fuban",
       "nameZh": "蝜蝂",
+      "nameEn": "Fuban",
       "type": "boss",
       "areaZh": "隐·斯哈哩国 · 沙门界",
+      "areaEn": "Hidden · Kingdom of Sahali · Sandgate Realm",
       "summaryZh": "古文里的负物小虫，在游戏中化作沙海巨妖。",
+      "summaryEn": "A small load-bearing insect from a classical essay becomes a giant of the sand sea in the game.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "蝜蝂是隐·斯哈哩国末段的妖王。游戏把这个古老虫名塑造成背负巨大构件的沙中巨兽；古文可以提供一个阅读角度，但不能反过来证明游戏剧情就是柳宗元寓言的复述。",
+        "descriptionEn": "Fuban is the yaoguai king at the end of the hidden Kingdom of Sahali. The game shapes this ancient insect name into a giant of the sands carrying an enormous structure on its back. The classical essay offers one way of reading it, but it cannot in turn prove that the game's story is a retelling of Liu Zongyuan's fable.",
         "sources": ["G09", "G14"],
         "mediaIds": ["community-gameplay-gamespot-chapter-2-fuban"]
       },
       "funFacts": [
         {
           "textZh": "柳宗元《蝜蝂传》写这种小虫遇物便负、负重不止。这里只作名称与意象对读，不声明开发者明确采用了这篇寓言。",
+          "textEn": "Liu Zongyuan's “Biography of the Fuban” describes an insect that picks up whatever it meets and never stops adding to its load. The name and the image are set side by side here for reading only; no claim is made that the developers drew on this fable.",
           "sources": ["L01"]
         }
       ],
       "sources": ["G09", "G14", "L01"],
       "noDirectNovelZh": "蝜蝂的古文出处不是《西游记》；游戏中的妖王经历也不属于小说原著。",
+      "noDirectNovelEn": "The classical source of the Fuban is not Journey to the West, and what the yaoguai king goes through in the game does not belong to the novel either.",
       "position": { "x": 0.78, "y": 0.84 }
     },
     {
       "id": "wind-tamer",
       "nameZh": "定风珠",
+      "nameEn": "Wind Tamer",
       "type": "item",
       "areaZh": "隐·斯哈哩国",
+      "areaEn": "Hidden · Kingdom of Sahali",
       "summaryZh": "游戏法宝与原著降风母题，彼此呼应但并不相同。",
+      "summaryEn": "An item of power in the game and the wind-quelling motif of the novel echo each other without being the same thing.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "完成隐·斯哈哩国并战胜蝜蝂后，可以取得法宝定风珠。它在黄风岭叙事中回应了降风主题，但具体外观、获得方式与使用机制属于游戏设计。",
+        "descriptionEn": "After finishing the hidden Kingdom of Sahali and defeating the Fuban, the Wind Tamer can be obtained. Within the Yellow Wind Ridge narrative it answers the theme of quelling the wind, but its appearance, the way it is obtained and the way it works are the game's own design.",
         "sources": ["G11", "G14"]
       },
       "funFacts": [],
@@ -140,11 +182,15 @@
         "relationship": "recombined",
         "chapterNumbers": [21],
         "chapterTitlesZh": ["护法设庄留大圣　须弥灵吉定风魔"],
+        "chapterTitlesEn": ["A Guardian Sets Up a Farmstead to Keep the Great Sage; Lingji of Mount Sumeru Quells the Wind Demon"],
         "summaryZh": "原著第二十一回由灵吉菩萨出面降伏黄风怪，核心是如何克制黄风神通。",
+        "summaryEn": "In Chapter 21 of the novel it is the Bodhisattva Lingji who comes forward to subdue the Yellow Wind Monster; the heart of the episode is how the monster's wind power is countered.",
         "excerptZh": "如來賜了我一顆定風丹、一柄飛龍寶杖。",
+        "excerptEn": "The Tathagata granted me a Wind-Quelling Pill and a Flying Dragon staff.",
         "excerptSourceId": "W021",
         "mediaIds": ["historical-jttw-rulai-1590"],
         "adaptationNoteZh": "小说里的降风过程与游戏法宝系统不是同一件事；这里只说明母题重组。",
+        "adaptationNoteEn": "The quelling of the wind in the novel and the game's system of items are not the same thing; what is described here is only the rearrangement of a motif.",
         "sources": ["W021"]
       },
       "position": { "x": 0.91, "y": 0.76 }
@@ -154,21 +200,25 @@
     {
       "id": "sandgate",
       "nameZh": "沙门村",
+      "nameEn": "Sandgate Village",
       "position": { "x": 0.13, "y": 0.09 }
     },
     {
       "id": "cliff-temple",
       "nameZh": "挟魂崖 · 卧虎寺",
+      "nameEn": "Fright Cliff · Crouching Tiger Temple",
       "position": { "x": 0.43, "y": 0.09 }
     },
     {
       "id": "formation",
       "nameZh": "黄风阵",
+      "nameEn": "Yellow Wind Formation",
       "position": { "x": 0.82, "y": 0.09 }
     },
     {
       "id": "sahi",
       "nameZh": "隐 · 斯哈哩国",
+      "nameEn": "Hidden · Kingdom of Sahali",
       "position": { "x": 0.62, "y": 0.94 }
     }
   ],
@@ -235,6 +285,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "黄袍员外支线",
+      "labelEn": "Yellow-Robed Squire side quest",
       "sources": ["G14"]
     },
     {
@@ -243,7 +294,9 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "完成交付与遭遇后开门",
+      "labelEn": "Gate opens after the deliveries and encounters",
       "conditionZh": "需推进黄袍员外支线，并完成相应物品交付与战斗。",
+      "conditionEn": "The Yellow-Robed Squire side quest must be advanced, with the required deliveries and fights completed.",
       "sources": ["G14"]
     },
     {
@@ -252,6 +305,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "隐·斯哈哩国",
+      "labelEn": "Hidden · Kingdom of Sahali",
       "sources": ["G08", "G14"]
     },
     {
@@ -260,7 +314,9 @@
       "kind": "optional",
       "mode": "reward",
       "labelZh": "完成隐藏区域后取得",
+      "labelEn": "Obtained after finishing the hidden area",
       "conditionZh": "击败蝜蝂并完成隐·斯哈哩国流程。",
+      "conditionEn": "Defeat the Fuban and complete the hidden Kingdom of Sahali.",
       "sources": ["G11", "G14"]
     }
   ],
@@ -268,36 +324,42 @@
     {
       "id": "village-entrance",
       "nameZh": "村口",
+      "nameEn": "Village Entrance",
       "position": { "x": 0.08, "y": 0.43 },
       "sources": ["G08", "G13"]
     },
     {
       "id": "valley-of-despair",
       "nameZh": "不济谷",
+      "nameEn": "Valley of Despair",
       "position": { "x": 0.23, "y": 0.43 },
       "sources": ["G08", "G13"]
     },
     {
       "id": "rockrest-flat",
       "nameZh": "枕石坪",
+      "nameEn": "Rockrest Flat",
       "position": { "x": 0.31, "y": 0.66 },
       "sources": ["G08", "G14"]
     },
     {
       "id": "cellar",
       "nameZh": "地窖",
+      "nameEn": "The Cellar",
       "position": { "x": 0.65, "y": 0.27 },
       "sources": ["G08", "G13"]
     },
     {
       "id": "windseal-gate",
       "nameZh": "定风桥",
+      "nameEn": "Windseal Bridge",
       "position": { "x": 0.7, "y": 0.58 },
       "sources": ["G08", "G13"]
     },
     {
       "id": "kingdom-gate",
       "nameZh": "斯哈哩国石门",
+      "nameEn": "Stone Gate of Sahali",
       "position": { "x": 0.58, "y": 0.84 },
       "sources": ["G14"]
     }

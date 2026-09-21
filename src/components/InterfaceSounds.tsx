@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useUi } from "../i18n";
 
 type SoundKind =
   | "click"
@@ -201,6 +202,7 @@ function playSound(context: AudioContext, kind: SoundKind) {
 }
 
 export function InterfaceSounds() {
+  const t = useUi();
   const [enabled, setEnabled] = useState(true);
   const enabledRef = useRef(true);
   const contextRef = useRef<AudioContext | null>(null);
@@ -259,11 +261,11 @@ export function InterfaceSounds() {
       className="sound-toggle"
       type="button"
       aria-pressed={enabled}
-      aria-label={`界面声音：${enabled ? "开启" : "关闭"}`}
+      aria-label={t.soundAria(enabled)}
       onClick={toggle}
     >
-      <span>界面声音</span>
-      <b>{enabled ? "开" : "关"}</b>
+      <span>{t.soundLabel}</span>
+      <b>{enabled ? t.soundOn : t.soundOff}</b>
     </button>
   );
 }

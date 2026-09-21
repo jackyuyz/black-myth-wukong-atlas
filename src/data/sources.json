@@ -1,338 +1,482 @@
 {
   "W001": {
     "titleZh": "第一回：花果山、仙石、石猴、水帘洞",
+    "titleEn": "Chapter 1: Mount Huaguo, the immortal stone, the Stone Monkey, the Water Curtain Cave",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第001回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W006": {
     "titleZh": "第六回：二郎神、梅山六兄弟、斗法",
+    "titleEn": "Chapter 6: Erlang, the Six Brothers of Mount Mei, the contest of transformations",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第006回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W013": {
     "titleZh": "第十三回：寅将军与取经早期故事",
+    "titleEn": "Chapter 13: General Yin and the early stages of the pilgrimage",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第013回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W016": {
     "titleZh": "第十六回：观音禅院、广智广谋、金池、辟火罩、袈裟失窃",
+    "titleEn": "Chapter 16: the Chan Monastery of Guanyin, Guangzhi and Guangmou, Jinchi, the fireproof mantle, the theft of the cassock",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第016回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W017": {
     "titleZh": "第十七回：凌虚子、白衣秀士、黑熊精归宿",
+    "titleEn": "Chapter 17: Lingxuzi, the Whiteclad Noble, and the fate of the Black Bear Guai",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第017回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W020": {
     "titleZh": "第二十回：黄风岭、虎先锋",
+    "titleEn": "Chapter 20: Yellow Wind Ridge and the Tiger Vanguard",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第020回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W021": {
     "titleZh": "第二十一回：黄风怪、灵吉菩萨",
+    "titleEn": "Chapter 21: the Yellow Wind Monster and the Bodhisattva Lingji",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第021回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W040": {
     "titleZh": "第四十回：红孩儿故事起始",
+    "titleEn": "Chapter 40: the beginning of the Red Boy episode",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第040回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W042": {
     "titleZh": "第四十二回：观音收红孩儿",
+    "titleEn": "Chapter 42: Guanyin subdues Red Boy",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第042回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W043": {
     "titleZh": "第四十三回：泾河龙王九子与四渎龙",
+    "titleEn": "Chapter 43: the nine sons of the Jing River Dragon King and the dragons of the Four Waterways",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第043回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W055": {
     "titleZh": "第五十五回：毒敌山蝎子精、昴日星官",
+    "titleEn": "Chapter 55: the scorpion spirit of Poison Foe Mountain and the Star Lord of the Pleiades",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第055回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W058": {
     "titleZh": "第五十八回：混世四猴、赤尻马猴",
+    "titleEn": "Chapter 58: the Four Monkeys of Chaos and the Red-Buttocked Horse Monkey",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第058回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W059": {
     "titleZh": "第五十九回：铁扇公主、火焰山、借芭蕉扇",
+    "titleEn": "Chapter 59: Princess Iron Fan, the Flaming Mountains, borrowing the Plantain Fan",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第059回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W060": {
     "titleZh": "第六十回：牛魔王、辟水金睛兽、再借芭蕉扇",
+    "titleEn": "Chapter 60: the Bull Demon King, the Water-Parting Golden-Eyed Beast, borrowing the Plantain Fan again",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第060回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W061": {
     "titleZh": "第六十一回：牛魔王、三调芭蕉扇",
+    "titleEn": "Chapter 61: the Bull Demon King and the third attempt at the Plantain Fan",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第061回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W065": {
     "titleZh": "第六十五回：小雷音寺、黄眉、金铙、二十八宿",
+    "titleEn": "Chapter 65: the Little Thunderclap Temple, Yellowbrow, the golden cymbals, the Twenty-Eight Lunar Mansions",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第065回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W066": {
     "titleZh": "第六十六回：黄眉归宿、弥勒",
+    "titleEn": "Chapter 66: the fate of Yellowbrow, and Maitreya",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第066回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W072": {
     "titleZh": "第七十二回：盘丝洞七蜘蛛、濯垢泉",
+    "titleEn": "Chapter 72: the seven spiders of the Webbed Hollow and the Filth-Cleansing Spring",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第072回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "W073": {
     "titleZh": "第七十三回：黄花观、百眼魔君、毗蓝婆、绣花针",
+    "titleEn": "Chapter 73: the Yellow Flower Temple, the Hundred-Eyed Demon Lord, Pilanpo, the embroidery needle",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/西遊記/第073回",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "F01": {
     "titleZh": "《封神演义》原文总入口",
+    "titleEn": "Investiture of the Gods: entry point to the full text",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/封神演義",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "L01": {
     "titleZh": "柳宗元《蝜蝂传》原文",
+    "titleEn": "Liu Zongyuan, “Biography of the Fuban”: full text",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/蝜蝂傳",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "L02": {
     "titleZh": "李白《代别情人》原文",
+    "titleEn": "Li Bai, “Parting on Behalf of a Lover”: full text",
     "publisherZh": "维基文库",
+    "publisherEn": "Wikisource",
     "url": "https://zh.wikisource.org/wiki/代別情人",
     "type": "primary-text",
-    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。"
+    "scopeZh": "用于核对古籍原文，不证明游戏制作取材。",
+    "scopeEn": "Used to check the wording of the classical text. It is not evidence of what the game drew on."
   },
   "G01": {
     "titleZh": "第一回收集/头目 线索与后续进入隐藏探索的资料入口",
+    "titleEn": "Chapter One collectibles and bosses, and the way into the hidden area",
     "publisherZh": "游戏资料站",
+    "publisherEn": "Game reference site",
     "url": "https://www.gamersky.com/handbook/202408/1803178.shtml",
     "type": "game-guide",
-    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。"
+    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。",
+    "scopeEn": "Used to check what happens in the game. It is not evidence about literature or artifacts."
   },
   "G02": {
     "titleZh": "第二回地图、支线及道具后续核对入口",
+    "titleEn": "Chapter Two map, side quests and items, for later checking",
     "publisherZh": "游戏资料站",
+    "publisherEn": "Game reference site",
     "url": "https://wiki.biligame.com/wukong/",
     "type": "game-guide",
-    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。"
+    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。",
+    "scopeEn": "Used to check what happens in the game. It is not evidence about literature or artifacts."
   },
   "G03": {
     "titleZh": "第三回隐藏区域、六六村、瓜田与禁字法",
+    "titleEn": "Chapter Three hidden area, Liuliu Village, the Melon Field and the Restraining spell",
     "publisherZh": "游戏资料站",
+    "publisherEn": "Game reference site",
     "url": "https://gl.ali213.net/html/2024-8/1481507.html",
     "type": "game-guide",
-    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。"
+    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。",
+    "scopeEn": "Used to check what happens in the game. It is not evidence about literature or artifacts."
   },
   "G04": {
     "titleZh": "第四回 头目 / 物品研究入口",
+    "titleEn": "Chapter Four bosses and items: research entry point",
     "publisherZh": "游戏资料站",
+    "publisherEn": "Game reference site",
     "url": "https://www.gamersky.com/handbook/202408/1803178.shtml",
     "type": "game-guide",
-    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。"
+    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。",
+    "scopeEn": "Used to check what happens in the game. It is not evidence about literature or artifacts."
   },
   "G05": {
     "titleZh": "第五回璧水金睛兽等位置与关卡机制",
+    "titleEn": "Chapter Five: locations such as the Bishui Golden-Eyed Beast, and how the stages work",
     "publisherZh": "游戏资料站",
+    "publisherEn": "Game reference site",
     "url": "https://www.gamersky.com/handbook/202409/1816109.shtml",
     "type": "game-guide",
-    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。"
+    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。",
+    "scopeEn": "Used to check what happens in the game. It is not evidence about literature or artifacts."
   },
   "G06": {
     "titleZh": "梅山触发与第六回结局路线线索",
+    "titleEn": "Triggering Mount Mei, and the route through the Chapter Six ending",
     "publisherZh": "游戏资料站",
+    "publisherEn": "Game reference site",
     "url": "https://gl.ali213.net/html/2024-8/1481507.html",
     "type": "game-guide",
-    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。"
+    "scopeZh": "用于核对游戏情境，不作为文学或文物证据。",
+    "scopeEn": "Used to check what happens in the game. It is not evidence about literature or artifacts."
   },
   "H01": {
     "titleZh": "晋城市人民政府转载晋城新闻客户端，2024-08-27：玉皇庙亢金龙彩塑与游戏形象并列对照",
+    "titleEn": "Jincheng Municipal People's Government, reprinting Jincheng News, 27 August 2024: the painted Kang Jin Long sculpture at the Yuhuang Temple set beside the game's design",
     "publisherZh": "政府与新闻机构",
+    "publisherEn": "Government bodies and news organisations",
     "url": "https://jcgov.gov.cn/dtxx/jcdt/202408/t20240827_2026026.shtml",
     "type": "government-source",
-    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。"
+    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。",
+    "scopeEn": "Supports only the real-world cultural connection the report describes explicitly. It does not extend to a claim that whole scenes were scanned."
   },
   "H02": {
     "titleZh": "央视新闻稿（永州新闻网转载），2024-08-22：隰县小西天悬塑与游戏“既见未来，为何不拜”的场景对照。",
+    "titleEn": "CCTV news report (reprinted by Yongzhou News), 22 August 2024: the suspended sculptures of Xiaoxitian in Xi County compared with the game's “Having seen the future, why not bow?” scene.",
     "publisherZh": "政府与新闻机构",
+    "publisherEn": "Government bodies and news organisations",
     "url": "https://news.yongzhou.gov.cn/mixmedia/content/WS66c6a02ee4b0005f4ec30d1c.html",
     "type": "government-source",
-    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。"
+    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。",
+    "scopeEn": "Supports only the real-world cultural connection the report describes explicitly. It does not extend to a claim that whole scenes were scanned."
   },
   "H03": {
     "titleZh": "隰县小西天文化遗产与游戏场景：检察日报稿，检察机关网站转载，2024-08-28。",
+    "titleEn": "The heritage of Xiaoxitian in Xi County and the game's scenes: Procuratorate Daily, reprinted on a procuratorate website, 28 August 2024.",
     "publisherZh": "政府与新闻机构",
+    "publisherEn": "Government bodies and news organisations",
     "url": "https://www.sx.jcy.gov.cn/jcxwlm/mtbb/202408/t20240828_6627169.shtml",
     "type": "government-source",
-    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。"
+    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。",
+    "scopeEn": "Supports only the real-world cultural connection the report describes explicitly. It does not extend to a claim that whole scenes were scanned."
   },
   "H04": {
     "titleZh": "晋城市人民政府《晋城文物闪耀游戏世界》，2024-08-22：杨奇赴晋城采风，提及铁佛寺二十四诸天、玉皇庙二十八宿及相关建模。",
+    "titleEn": "Jincheng Municipal People's Government, “Jincheng's Cultural Relics Shine in a Game World”, 22 August 2024: Yang Qi's research visit to Jincheng, mentioning the Twenty-Four Devas of Tiefo Temple, the Twenty-Eight Lunar Mansions of the Yuhuang Temple, and the modelling work involved.",
     "publisherZh": "政府与新闻机构",
+    "publisherEn": "Government bodies and news organisations",
     "url": "https://www.jcgov.gov.cn/dtxx/jcdt/202408/t20240822_2024024.shtml",
     "type": "government-source",
-    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。"
+    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。",
+    "scopeEn": "Supports only the real-world cultural connection the report describes explicitly. It does not extend to a claim that whole scenes were scanned."
   },
   "H05": {
     "titleZh": "高平市人民政府，2024-08-21：公开不完整的取景地名单与山西相关统计。",
+    "titleEn": "Gaoping Municipal People's Government, 21 August 2024: a partial published list of locations used, with figures for Shanxi.",
     "publisherZh": "政府与新闻机构",
+    "publisherEn": "Government bodies and news organisations",
     "url": "https://www.sxgp.gov.cn/zjgp/dmgp_423/202408/t20240821_2023289.shtml",
     "type": "government-source",
-    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。"
+    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。",
+    "scopeEn": "Supports only the real-world cultural connection the report describes explicitly. It does not extend to a claim that whole scenes were scanned."
   },
   "H06": {
     "titleZh": "黑龙江省文旅厅转载展览报道，2025-04：展览中依据陕西蓝田水陆庵实景1:1复刻 3D 打印的悬塑与游戏场景对照。",
+    "titleEn": "Heilongjiang Provincial Department of Culture and Tourism, reprinting an exhibition report, April 2025: 3D-printed suspended sculptures reproduced 1:1 from Shuilu Temple in Lantian, Shaanxi, shown beside the game's scenes.",
     "publisherZh": "政府与新闻机构",
+    "publisherEn": "Government bodies and news organisations",
     "url": "https://wlt.hlj.gov.cn/wlt/c114253/202504/c00_31834742.shtml",
     "type": "government-source",
-    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。"
+    "scopeZh": "仅支持报道明确描述的现实文化联系，不外推为全部场景扫描。",
+    "scopeEn": "Supports only the real-world cultural connection the report describes explicitly. It does not extend to a claim that whole scenes were scanned."
   },
   "G07": {
     "titleZh": "第一回黑风山路线指引",
+    "titleEn": "Chapter One route guide for Black Wind Mountain",
     "publisherZh": "游民星空",
+    "publisherEn": "Gamersky",
     "url": "https://www.gamersky.com/handbook/202412/1858397.shtml",
     "type": "game-guide",
-    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。",
+    "scopeEn": "Checks which area a character is found in and the conditions along the route. It is not evidence of a literary source or a real-world location."
   },
   "G08": {
     "titleZh": "土地庙与章节区域清单",
+    "titleEn": "Shrines and the list of areas by chapter",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-all-shrines-fast-travel-points/",
     "type": "game-guide",
-    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。",
+    "scopeEn": "Checks which area a character is found in and the conditions along the route. It is not evidence of a literary source or a real-world location."
   },
   "G09": {
     "titleZh": "各回头目与所在区域实录",
+    "titleEn": "Record of the bosses of each chapter and the areas they are found in",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-boss-guide-all-bosses/",
     "type": "game-guide",
-    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。",
+    "scopeEn": "Checks which area a character is found in and the conditions along the route. It is not evidence of a literary source or a real-world location."
   },
   "G10": {
     "titleZh": "三口钟与旧观音禅院",
+    "titleEn": "The three bells and the Ancient Guanyin Temple",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-bell-locations-how-to-reach-ancient-guanyin-temple/",
     "type": "game-guide",
-    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。",
+    "scopeEn": "Checks which area a character is found in and the conditions along the route. It is not evidence of a literary source or a real-world location."
   },
   "G11": {
     "titleZh": "四件法宝与获取地点",
+    "titleEn": "The four items of power and where they are obtained",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-all-vessel-locations/",
     "type": "game-guide",
-    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。",
+    "scopeEn": "Checks which area a character is found in and the conditions along the route. It is not evidence of a literary source or a real-world location."
   },
   "G12": {
     "titleZh": "金池长老与隐藏区域",
+    "titleEn": "Elder Jinchi and the hidden area",
     "publisherZh": "游民星空",
+    "publisherEn": "Gamersky",
     "url": "https://www.gamersky.com/handbook/202411/1850941.shtml",
     "type": "game-guide",
-    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。"
+    "scopeZh": "核对游戏角色所在区域和路线条件；不证明文学出处或现实取景。",
+    "scopeEn": "Checks which area a character is found in and the conditions along the route. It is not evidence of a literary source or a real-world location."
   },
   "G13": {
     "titleZh": "第二回完整流程时间线",
+    "titleEn": "Full walkthrough timeline for Chapter Two",
     "publisherZh": "IGN 攻略频道",
+    "publisherEn": "IGN guides",
     "url": "https://www.youtube.com/watch?v=k_Ryz-0kOxY",
     "type": "game-guide",
-    "scopeZh": "核对第二回各区域先后与主线汇合关系；不证明文学出处或现实取景。"
+    "scopeZh": "核对第二回各区域先后与主线汇合关系；不证明文学出处或现实取景。",
+    "scopeEn": "Checks the order of the areas in Chapter Two and where they rejoin the main route. It is not evidence of a literary source or a real-world location."
   },
   "G14": {
     "titleZh": "第二回黄袍员外支线与隐·斯哈哩国",
+    "titleEn": "Chapter Two: the Yellow-Robed Squire side quest and the hidden Kingdom of Sahali",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-boar-questline-how-to-reach-secret-kingdom-of-sahi/",
     "type": "game-guide",
-    "scopeZh": "核对黄袍员外支线、斯哈哩国入口、蝜蝂与定风珠关系；不证明文学出处。"
+    "scopeZh": "核对黄袍员外支线、斯哈哩国入口、蝜蝂与定风珠关系；不证明文学出处。",
+    "scopeEn": "Checks the Yellow-Robed Squire side quest, the way into Sahali, and how the Fuban and the Wind Tamer are connected. It is not evidence of a literary source."
   },
   "G15": {
     "titleZh": "第三回雪山径至小雷音寺流程",
+    "titleEn": "Chapter Three: the route from Snow Mountain Path to the Little Thunderclap Temple",
     "publisherZh": "Game8 攻略站",
+    "publisherEn": "Game8 guides",
     "url": "https://game8.co/games/Black-Myth-Wukong/archives/468746",
     "type": "game-guide",
-    "scopeZh": "核对第三回区域先后、瓜田支线与小雷音寺流程；不证明文学或文物关系。"
+    "scopeZh": "核对第三回区域先后、瓜田支线与小雷音寺流程；不证明文学或文物关系。",
+    "scopeEn": "Checks the order of the areas in Chapter Three, the Melon Field branch, and the route through the Little Thunderclap Temple. It is not evidence of a literary or an archaeological connection."
   },
   "G16": {
     "titleZh": "第三回隐·梅山解锁条件",
+    "titleEn": "Chapter Three: conditions for unlocking the hidden Mount Mei",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-how-to-unlock-chapter-3-secret-area-mount-mei/",
     "type": "game-guide",
-    "scopeZh": "核对浮屠塔与梅山之间的条件传送；不把梅山误画成第六回本地支线。"
+    "scopeZh": "核对浮屠塔与梅山之间的条件传送；不把梅山误画成第六回本地支线。",
+    "scopeEn": "Checks the conditional passage between the Great Pagoda and Mount Mei, so that Mount Mei is not drawn as a local branch of Chapter Six."
   },
   "G17": {
     "titleZh": "第四回隐·紫云山解锁路线",
+    "titleEn": "Chapter Four: the route that unlocks the hidden Purple Cloud Mountain",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-how-to-reach-chapter-4-secret-area/",
     "type": "game-guide",
-    "scopeZh": "核对黑手道人两次遭遇、紫云山入口、晦月魔君与绣花针关系；不证明文学出处。"
+    "scopeZh": "核对黑手道人两次遭遇、紫云山入口、晦月魔君与绣花针关系；不证明文学出处。",
+    "scopeEn": "Checks the two encounters with the Venom Daoist, the way into Purple Cloud Mountain, and how Duskveil and the Weaver's Needle are connected. It is not evidence of a literary source."
   },
   "G18": {
     "titleZh": "第五回灰烬林至火光地流程",
+    "titleEn": "Chapter Five: the route from the Forest of Ashes to the Fields of Fire",
     "publisherZh": "Game8 攻略站",
+    "publisherEn": "Game8 guides",
     "url": "https://game8.co/games/Black-Myth-Wukong/archives/468231",
     "type": "game-guide",
-    "scopeZh": "核对第五回大区先后与主线节点；不证明文学出处或现实取景。"
+    "scopeZh": "核对第五回大区先后与主线节点；不证明文学出处或现实取景。",
+    "scopeEn": "Checks the order of the major areas in Chapter Five and the main-route nodes. It is not evidence of a literary source or a real-world location."
   },
   "G19": {
     "titleZh": "第五回隐·璧水洞解锁路线",
+    "titleEn": "Chapter Five: the route that unlocks the hidden Bishui Cave",
     "publisherZh": "派瓦派克游戏攻略站",
+    "publisherEn": "PowerPyx game guides",
     "url": "https://www.powerpyx.com/black-myth-wukong-how-to-reach-chapter-5-secret-area-bishui-cave/",
     "type": "game-guide",
-    "scopeZh": "核对皓斧力士、五行战车、清凉坡与璧水洞的条件关系；不证明文学出处。"
+    "scopeZh": "核对皓斧力士、五行战车、清凉坡与璧水洞的条件关系；不证明文学出处。",
+    "scopeEn": "Checks how the Pale-Axe Stalwart, the Five Elements Carts, the Cooling Slope and Bishui Cave depend on one another. It is not evidence of a literary source."
   },
   "G20": {
     "titleZh": "第六回花果山完整流程时间线",
+    "titleEn": "Full walkthrough timeline for Mount Huaguo in Chapter Six",
     "publisherZh": "IGN 攻略频道",
+    "publisherEn": "IGN guides",
     "url": "https://www.youtube.com/watch?v=8tDy65zeuc8",
     "type": "game-guide",
-    "scopeZh": "核对山脚开放探索、水帘洞、未竟峰与石卵最终战的先后；不证明文学出处。"
+    "scopeZh": "核对山脚开放探索、水帘洞、未竟峰与石卵最终战的先后；不证明文学出处。",
+    "scopeEn": "Checks the order of the open foothills, the Water Curtain Cave, the unfinished peak and the final fight at the Birthstone. It is not evidence of a literary source."
   }
 }

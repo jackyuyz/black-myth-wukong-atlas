@@ -3,4 +3,5 @@ dist/
 .ssr/
 output/
 .playwright-cli/
+.playwright-mcp/
 .DS_Store

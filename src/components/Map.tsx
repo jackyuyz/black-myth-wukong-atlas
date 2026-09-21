@@ -1,5 +1,6 @@
 import type { Chapter, Marker } from "../types/schema";
 import { media, chapters } from "../data";
+import { LocaleLink, Text, pick, pickMaybe, useLang, useUi } from "../i18n";
 export function MapSymbol({ type }: { type: string }) {
   return (
     <svg
@@ -35,20 +36,22 @@ export function InteractiveMap({
   visible: Marker[];
   onSelect: (marker: Marker) => void;
 }) {
+  const lang = useLang();
+  const t = useUi();
   const positionFor = (id: string) =>
     chapter.markers.find((m) => m.id === id)?.position ??
     chapter.anchors.find((a) => a.id === id)!.position;
   return (
     <div className="map-frame">
       <div className="map-topline">
-        <span>路线卷轴 · 点选印记阅读</span>
-        <span>固定构图 · 完整呈现</span>
+        <span>{t.mapTopLeft}</span>
+        <span>{t.mapTopRight}</span>
       </div>
       <div
         className="map-static-viewport"
         tabIndex={0}
         role="region"
-        aria-label={`${chapter.regionZh}路线图，可点选地图印记阅读`}
+        aria-label={t.mapRegionLabel(pick(lang, chapter, "region"))}
       >
         <div
           className="map-canvas"
@@ -86,7 +89,7 @@ export function InteractiveMap({
                 top: `${area.position.y * 100}%`,
               }}
             >
-              {area.nameZh}
+              {pick(lang, area, "name")}
             </div>
           ))}
           {chapter.anchors.map((a) => (
@@ -99,7 +102,7 @@ export function InteractiveMap({
               }}
             >
               <span>◇</span>
-              {a.nameZh}
+              {pick(lang, a, "name")}
             </div>
           ))}
           {chapter.markers
@@ -110,7 +113,7 @@ export function InteractiveMap({
                 id={`map-${m.id}`}
                 className={`map-marker ${visible.some((v) => v.id === m.id) ? "" : "filtered-out"}`}
                 href={`#${m.id}`}
-                aria-label={`阅读${m.nameZh}`}
+                aria-label={t.mapMarkerLabel(pick(lang, m, "name"))}
                 style={{
                   left: `${m.position!.x * 100}%`,
                   top: `${m.position!.y * 100}%`,
@@ -124,51 +127,56 @@ export function InteractiveMap({
                 <span className="marker-glyph">
                   <MapSymbol type={m.type} />
                 </span>
-                <span className="marker-label">{m.nameZh}</span>
+                <span className="marker-label">{pick(lang, m, "name")}</span>
               </a>
             ))}
           {chapter.routes.some((route) => route.mode === "teleport") && (
-            <div className="map-note note-teleport">条件传送</div>
+            <div className="map-note note-teleport">{t.mapNoteTeleport}</div>
           )}
           {chapter.routes.some((route) => route.mode === "return") && (
-            <div className="map-note note-return">回行路线</div>
+            <div className="map-note note-return">{t.mapNoteReturn}</div>
           )}
           {chapter.routes.some((route) => route.mode === "reward") && (
-            <div className="map-note note-reward">条件取得</div>
+            <div className="map-note note-reward">{t.mapNoteReward}</div>
           )}
           <span className="map-seal" aria-hidden="true">
-            山川
+            {t.mapSealTop}
             <br />
-            有据
+            {t.mapSealBottom}
           </span>
         </div>
       </div>
       <div className="map-bottomline">
-        <span>{chapter.mapNoticeZh}</span>
-        <span className="map-mobile-hint">窄屏可左右滑动查看完整路线</span>
+        <span>{pick(lang, chapter, "mapNotice")}</span>
+        <span className="map-mobile-hint">{t.mapMobileHint}</span>
       </div>
     </div>
   );
 }
 export function RouteConditions({ chapter }: { chapter: Chapter }) {
+  const lang = useLang();
+  const t = useUi();
   return (
     <details className="route-explanation">
-      <summary data-sound="open">读图说明：主线、可选探索与条件传送</summary>
-      <p>
-        实线表示主要区域先后，虚线表示可选探索，点线表示传送与返回。连线省略了中间路段，不代表直达路线；人物点的布局也不表示实际岔路。
-      </p>
+      <summary data-sound="open">{t.routeSummary}</summary>
+      <p>{t.routeText}</p>
       {chapter.routes
         .filter((r) => r.conditionZh)
         .map((r) => (
           <p key={`${r.from}-${r.to}`}>
-            <strong>{r.labelZh}：</strong>
-            {r.conditionZh}
+            <strong>
+              {pickMaybe(lang, r, "label")}
+              {t.labelSeparator}
+            </strong>
+            <Text>{pickMaybe(lang, r, "condition")}</Text>
           </p>
         ))}
     </details>
   );
 }
 export function HomeMapPreview() {
+  const lang = useLang();
+  const t = useUi();
   const chapter = chapters[0];
   const nodes = [
     ...chapter.markers
@@ -177,8 +185,9 @@ export function HomeMapPreview() {
     ...chapter.anchors,
   ];
   const pos = (id: string) => nodes.find((n) => n.id === id)!.position;
+  const temple = chapter.markers.find((m) => m.id === "guanyin-temple")!;
   return (
-    <div className="home-map-preview" aria-label="第一回路线预览">
+    <div className="home-map-preview" aria-label={t.homePreviewLabel}>
       <svg viewBox="0 0 1200 700" aria-hidden="true">
         {chapter.routes.map((edge, i) => {
           const a = pos(edge.from),
@@ -200,19 +209,24 @@ export function HomeMapPreview() {
           />
         ))}
       </svg>
-      <span className="preview-region first">{chapter.areas[0].nameZh}</span>
-      <span className="preview-region second">{chapter.areas[1].nameZh}</span>
-      <span className="preview-region third">{chapter.areas[2].nameZh}</span>
-      <a
+      <span className="preview-region first">
+        {pick(lang, chapter.areas[0], "name")}
+      </span>
+      <span className="preview-region second">
+        {pick(lang, chapter.areas[1], "name")}
+      </span>
+      <span className="preview-region third">
+        {pick(lang, chapter.areas[2], "name")}
+      </span>
+      <LocaleLink
         className="preview-temple"
-        href={`/chapter/${chapter.id}#guanyin-temple`}
+        to={`/chapter/${chapter.id}#guanyin-temple`}
         data-sound="marker"
       >
         <MapSymbol type="architecture" />
-        {chapter.markers.find((m) => m.id === "guanyin-temple")!.nameZh}{" "}
-        <span>↗</span>
-      </a>
-      <p>{chapter.mapNoticeZh}</p>
+        {pick(lang, temple, "name")} <span>↗</span>
+      </LocaleLink>
+      <p>{pick(lang, chapter, "mapNotice")}</p>
     </div>
   );
 }

@@ -3,10 +3,15 @@
   "order": 5,
   "numeralZh": "五",
   "titleZh": "日落红尘",
+  "titleEn": "Sunset on the Red Dust",
   "regionZh": "火焰山",
+  "regionEn": "Flaming Mountains",
   "themeZh": "一扇风火，一家离合。",
+  "themeEn": "One fan of wind and fire; one family joined and broken.",
   "overviewZh": "火焰山的阅读入口是牛魔王一家与芭蕉扇。从原著的三调芭蕉扇，再看游戏里被重新塑造的角色与器物。",
+  "overviewEn": "The way into the Flaming Mountains is the family of the Bull Demon King and the Plantain Fan. Read the novel's three attempts to borrow the fan first, then look at the characters and objects the game has reshaped.",
   "readingGuideZh": "原著中的坐骑如何成为游戏中的妖王？读辟水金睛兽一条即可比较。",
+  "readingGuideEn": "How does a mount in the novel become a yaoguai king in the game? The card on the Golden-Eyed Beast is where to compare them.",
   "sources": ["G09", "W059", "W060", "W061"],
   "atmosphereMediaId": "atmosphere-05",
   "mapMediaId": "chapter-05-map",
@@ -14,16 +19,21 @@
   "topologyStatus": "verified-high-level",
   "topologyLog": "assets/research/chapter-05-topology.json",
   "mapNoticeZh": "路线示意图，非地理比例，非官方地图",
+  "mapNoticeEn": "Route diagram, not to geographic scale, not an official map",
   "markers": [
     {
       "id": "bishui-beast",
       "nameZh": "璧水金睛兽",
+      "nameEn": "Bishui Golden-Eyed Beast",
       "type": "boss",
       "areaZh": "第五回 · 隐·璧水洞",
+      "areaEn": "Chapter Five · Hidden · Bishui Cave",
       "summaryZh": "原著中的坐骑，在游戏里成为妖王。",
+      "summaryEn": "A mount in the novel becomes a yaoguai king in the game.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "璧水金睛兽出现在第五回隐藏区域璧水洞。它是比较“同一文学意象如何改变叙事作用”的好入口。游戏强调的是隐藏区域中的妖王遭遇，原著则把相近名称的异兽放在牛魔王的出行故事中。",
+        "descriptionEn": "The Bishui Golden-Eyed Beast is found in Bishui Cave, the hidden area of Chapter Five. It is a good place to compare how one literary image can change its role in a story. The game makes it the yaoguai king of a hidden area, while the novel places a beast of almost the same name in the Bull Demon King's travels.",
         "sources": ["G05", "G09"],
         "mediaIds": ["community-gameplay-gamespot-chapter-5-bishui-golden-eyed-beast"]
       },
@@ -33,10 +43,14 @@
         "relationship": "recombined",
         "chapterNumbers": [60],
         "chapterTitlesZh": ["牛魔王罢战赴华筵　孙行者二调芭蕉扇"],
+        "chapterTitlesEn": ["The Bull Demon King Breaks Off the Fight for a Splendid Banquet; Sun Wukong Seeks the Plantain Fan a Second Time"],
         "summaryZh": "原著“辟水金睛兽”是牛魔王的坐骑，出现在赴宴与悟空设法借扇的情节里。",
+        "summaryEn": "The novel's 辟水金睛兽, the Water-Parting Golden-Eyed Beast, is the Bull Demon King's mount, and appears when he rides to the banquet and Wukong schemes to borrow the fan.",
         "excerptZh": "牌樓下拴著那個辟水金睛獸。",
+        "excerptEn": "Beneath the archway was tethered that Water-Parting Golden-Eyed Beast.",
         "excerptSourceId": "W060",
         "adaptationNoteZh": "注意名称用字：游戏妖王为“璧水金睛兽”，原著坐骑为“辟水金睛兽”；角色作用与故事也有所不同。",
+        "adaptationNoteEn": "Note the characters used: the game's yaoguai king is written 璧水金睛兽, the novel's mount 辟水金睛兽. Their roles and their stories differ as well.",
         "sources": ["W060"]
       },
       "position": { "x": 0.94, "y": 0.82 }
@@ -44,12 +58,16 @@
     {
       "id": "plantain-fan",
       "nameZh": "芭蕉扇",
+      "nameEn": "Plantain Fan",
       "type": "item",
       "areaZh": "第五回 · 火焰山",
+      "areaEn": "Chapter Five · Flaming Mountains",
       "summaryZh": "一把扇子，贯穿火焰山的文学故事。",
+      "summaryEn": "One fan runs through the whole literary story of the Flaming Mountains.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "芭蕉扇是游戏里的法宝之一，也是一条熟悉而值得重读的文学线索。在地图科普中，我们关注它怎样参与故事，以及游戏如何改写它的获得与使用方式，不把这张卡写成战斗操作指南。",
+        "descriptionEn": "The Plantain Fan is one of the items of power in the game and also a familiar literary thread worth rereading. This atlas is concerned with how it takes part in the story and how the game rewrites the way it is obtained and used; the card is not a combat guide.",
         "sources": ["G11"]
       },
       "funFacts": [],
@@ -58,10 +76,14 @@
         "relationship": "direct",
         "chapterNumbers": [59, 60, 61],
         "chapterTitlesZh": ["唐三藏路阻火焰山　孙行者一调芭蕉扇", "牛魔王罢战赴华筵　孙行者二调芭蕉扇", "猪八戒助力败魔王　孙行者三调芭蕉扇"],
+        "chapterTitlesEn": ["Tang Sanzang's Road Is Blocked at the Flaming Mountains; Sun Wukong Seeks the Plantain Fan a First Time","The Bull Demon King Breaks Off the Fight for a Splendid Banquet; Sun Wukong Seeks the Plantain Fan a Second Time","Zhu Bajie Lends His Strength to Defeat the Demon King; Sun Wukong Seeks the Plantain Fan a Third Time"],
         "summaryZh": "原著用三回篇幅讲悟空三调芭蕉扇，牵连铁扇公主、牛魔王与火焰山。",
+        "summaryEn": "The novel spends three chapters on Wukong's three attempts to borrow the Plantain Fan, drawing in Princess Iron Fan, the Bull Demon King and the Flaming Mountains.",
         "excerptZh": "在西方路上，難過火焰山，特來拜借芭蕉扇一用。",
+        "excerptEn": "On the road to the West we cannot pass the Flaming Mountains, and so I have come expressly to beg the loan of the Plantain Fan.",
         "excerptSourceId": "W059",
         "adaptationNoteZh": "游戏借用器物和人物关系，重新安排天命人的经历。",
+        "adaptationNoteEn": "The game borrows the object and the relationships between the characters, and rearranges them around what the Destined One goes through.",
         "sources": ["W059", "W060", "W061"]
       },
       "position": { "x": 0.64, "y": 0.69 }
@@ -69,63 +91,82 @@
     {
       "id": "pale-axe-stalwart",
       "nameZh": "皓斧力士",
+      "nameEn": "Pale-Axe Stalwart",
       "type": "character",
       "areaZh": "灰烬林 · 火燎一关",
+      "areaEn": "Forest of Ashes · Blaze Pass One",
       "summaryZh": "从第一辆战车旁开始的一条长支线。",
+      "summaryEn": "A long side quest that begins beside the first cart.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "皓斧力士出现在灰烬林前段，与五行战车支线相连。图上把他画在主路旁，随后用条件线通向清凉坡；这表示任务线会跨越多个区域，不表示能够从起点直接走到隐藏洞口。",
+        "descriptionEn": "The Pale-Axe Stalwart appears early in the Forest of Ashes and is tied to the Five Elements Carts side quest. The diagram places him beside the main route and then runs a conditional line to the Cooling Slope: the quest crosses several areas, and this does not mean the hidden cave mouth can be walked to directly from the start.",
         "sources": ["G09", "G19"],
         "mediaIds": ["community-gameplay-gamespot-chapter-5-pale-axe-stalwart"]
       },
       "funFacts": [],
       "sources": ["G09", "G19"],
       "noDirectNovelZh": "皓斧力士及五行战车任务属于游戏故事，没有可直接对应的《西游记》人物。",
+      "noDirectNovelEn": "The Pale-Axe Stalwart and the Five Elements Carts quest belong to the game's own story; no figure in Journey to the West corresponds to them directly.",
       "position": { "x": 0.15, "y": 0.7 }
     },
     {
       "id": "five-element-carts",
       "nameZh": "五行战车",
+      "nameEn": "Five Elements Carts",
       "type": "boss",
       "areaZh": "灰烬林至火光地",
+      "areaEn": "Forest of Ashes to the Fields of Fire",
       "summaryZh": "分布在多段流程中的战车线索。",
+      "summaryEn": "A cart thread spread across several stretches of the chapter.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "五行战车不是集中在同一处的单一头目，而是跨越灰烬林、丹灶谷与火光地的一组遭遇。路线图用一个汇总节点表示支线进度，不伪造每辆战车的地理坐标。",
+        "descriptionEn": "The Five Elements Carts are not a single boss gathered in one spot but a set of encounters running across the Forest of Ashes, the Valley of Cinnabar Furnaces and the Fields of Fire. The diagram uses one summary node for the progress of the quest rather than inventing a position for each cart.",
         "sources": ["G05", "G18", "G19"],
         "mediaIds": ["community-gameplay-gamespot-chapter-5-five-element-carts"]
       },
       "funFacts": [],
       "sources": ["G05", "G18", "G19"],
       "noDirectNovelZh": "五行战车是游戏关卡与任务设计，不是《西游记》原有器物或人物。",
+      "noDirectNovelEn": "The Five Elements Carts are level and quest design; they are not an object or a character from Journey to the West.",
       "position": { "x": 0.36, "y": 0.24 }
     },
     {
       "id": "keeper-flaming-mountains",
       "nameZh": "火焰山土地",
+      "nameEn": "Keeper of Flaming Mountains",
       "type": "boss",
       "areaZh": "丹灶谷 · 翠云殿",
+      "areaEn": "Valley of Cinnabar Furnaces · Emerald Hall",
       "summaryZh": "在丹灶谷末段，土地与阴阳鱼共同出现。",
+      "summaryEn": "At the end of the Valley of Cinnabar Furnaces, the Keeper appears together with the Yin-Yang Fish.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "火焰山土地与阴阳鱼的遭遇位于丹灶谷翠云殿，是通往火光地之前的主线节点。这里按游戏身份介绍，不从传统土地神概念反推一段不存在的小说人物经历。",
+        "descriptionEn": "The encounter with the Keeper of Flaming Mountains and the Yin-Yang Fish takes place at the Emerald Hall in the Valley of Cinnabar Furnaces, the main-route node before the Fields of Fire. He is described here by his role in the game; no life story is reconstructed for him out of the general idea of a local earth god.",
         "sources": ["G08", "G09", "G18"],
         "mediaIds": ["community-gameplay-gamespot-chapter-5-keeper-of-flaming-mountains"]
       },
       "funFacts": [],
       "sources": ["G08", "G09", "G18"],
       "noDirectNovelZh": "本条没有与游戏角色身份完全对应的《西游记》人物传记。",
+      "noDirectNovelEn": "There is no biography in Journey to the West that matches this character's role in the game.",
       "position": { "x": 0.61, "y": 0.45 }
     },
     {
       "id": "red-boy",
       "nameZh": "红孩儿",
+      "nameEn": "Red Boy",
       "type": "character",
       "areaZh": "火光地 · 陨砖坑",
+      "areaEn": "Fields of Fire · Fallen Brick Crater",
       "summaryZh": "原著的圣婴大王，在游戏终局前获得新的家族悲剧。",
+      "summaryEn": "The novel's Great King Holy Child is given a new family tragedy before the game's finale.",
       "layers": ["game", "journey-to-the-west"],
       "game": {
         "descriptionZh": "红孩儿出现在火光地末段，并与夜叉王构成连续遭遇。游戏把牛魔王一家放到取经之后的新处境中；地图只标明流程先后，不提前替读者解释结局。",
+        "descriptionEn": "Red Boy appears at the end of the Fields of Fire and runs straight into the Yaksha King as one continuous encounter. The game places the Bull Demon King's family in a new situation after the pilgrimage; the diagram marks only the order of the route and does not explain the ending in advance.",
         "sources": ["G09", "G18"],
         "mediaIds": ["community-gameplay-gamespot-chapter-5-red-boy-yaksha-king"]
       },
@@ -135,10 +176,14 @@
         "relationship": "direct",
         "chapterNumbers": [40, 42],
         "chapterTitlesZh": ["婴儿戏化禅心乱　猿马刀归木母空", "大圣殷勤拜南海　观音慈善缚红孩"],
+        "chapterTitlesEn": ["A Child at Play Disturbs the Chan Mind; The Ape and Horse Return, the Wood Mother Is Lost","The Great Sage Earnestly Calls at the Southern Sea; Merciful Guanyin Binds Red Boy"],
         "summaryZh": "原著中的红孩儿是牛魔王与罗刹女之子，号圣婴大王，后来由观音收为善财童子。",
+        "summaryEn": "In the novel Red Boy is the son of the Bull Demon King and the Raksasi, titled Great King Holy Child; later Guanyin takes him in as the Boy of Wealth.",
         "excerptZh": "你今既受我戒，我卻也不慢你，稱你做善財童子，如何？",
+        "excerptEn": "Now that you have accepted my precepts, I shall not slight you: I shall call you the Boy of Wealth. How would that be?",
         "excerptSourceId": "W042",
         "adaptationNoteZh": "游戏中的夜叉王形态、家族冲突与结局属于续写，不能补进原著。",
+        "adaptationNoteEn": "The Yaksha King form, the family conflict and the ending in the game are a continuation and cannot be written back into the novel.",
         "sources": ["W040", "W042"]
       },
       "position": { "x": 0.9, "y": 0.43 }
@@ -146,21 +191,28 @@
     {
       "id": "yaksha-king",
       "nameZh": "夜叉王",
+      "nameEn": "Yaksha King",
       "type": "boss",
       "areaZh": "火光地 · 陨砖坑",
+      "areaEn": "Fields of Fire · Fallen Brick Crater",
       "summaryZh": "与红孩儿连续发生的游戏终战。",
+      "summaryEn": "The final fight of the chapter, following straight on from Red Boy.",
       "layers": ["game"],
       "game": {
         "descriptionZh": "夜叉王紧接红孩儿之后出现，是第五回末段的连续遭遇。它与原著红孩儿的关系需要按游戏剧情理解，不能因为名称带有“夜叉”便为其拼接一段古典小说身世。",
+        "descriptionEn": "The Yaksha King appears immediately after Red Boy, as the continuous encounter that ends Chapter Five. How it stands in relation to the novel's Red Boy must be read from the game's story; the word “yaksha” in the name is no reason to graft a classical-novel life story onto it.",
         "sources": ["G09", "G18"],
         "mediaIds": ["community-gameplay-gamespot-chapter-5-red-boy-yaksha-king"]
       },
       "funFacts": [],
       "sources": ["G09", "G18"],
       "noDirectNovelZh": "夜叉王这一具体角色与遭遇属于游戏创作；原著红孩儿故事没有同样的连续变身终战。",
+      "noDirectNovelEn": "This particular character and encounter are the game's own creation; the Red Boy story in the novel contains no such continuous transforming final fight.",
       "spoiler": {
         "warningZh": "含第五回末段剧情信息",
+        "warningEn": "Contains plot information from the end of Chapter Five",
         "textZh": "夜叉王在红孩儿遭遇之后立即出现。",
+        "textEn": "The Yaksha King appears immediately after the encounter with Red Boy.",
         "sources": ["G09"]
       },
       "position": { "x": 0.97, "y": 0.43 }
@@ -170,21 +222,25 @@
     {
       "id": "ember",
       "nameZh": "灰烬林",
+      "nameEn": "Forest of Ashes",
       "position": { "x": 0.16, "y": 0.09 }
     },
     {
       "id": "furnace",
       "nameZh": "丹灶谷",
+      "nameEn": "Valley of Cinnabar Furnaces",
       "position": { "x": 0.5, "y": 0.09 }
     },
     {
       "id": "fire-field",
       "nameZh": "火光地",
+      "nameEn": "Fields of Fire",
       "position": { "x": 0.82, "y": 0.09 }
     },
     {
       "id": "bishui-cave",
       "nameZh": "隐 · 璧水洞",
+      "nameEn": "Hidden · Bishui Cave",
       "position": { "x": 0.86, "y": 0.94 }
     }
   ],
@@ -258,6 +314,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "战车支线起点",
+      "labelEn": "Start of the cart side quest",
       "sources": ["G09", "G19"]
     },
     {
@@ -266,7 +323,9 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "跨区域追寻战车",
+      "labelEn": "Tracking the carts across areas",
       "conditionZh": "需多次与皓斧力士交谈，并推进分布在本回各区的战车遭遇。",
+      "conditionEn": "Speak with the Pale-Axe Stalwart several times and advance the cart encounters spread across the chapter's areas.",
       "sources": ["G19"]
     },
     {
@@ -275,7 +334,9 @@
       "kind": "optional",
       "mode": "reward",
       "labelZh": "主线战斗后取得",
+      "labelEn": "Obtained after the main-route fight",
       "conditionZh": "完成翠云殿的火焰山土地与阴阳鱼遭遇。",
+      "conditionEn": "Complete the encounter with the Keeper of Flaming Mountains and the Yin-Yang Fish at the Emerald Hall.",
       "sources": ["G11", "G09"]
     },
     {
@@ -284,7 +345,9 @@
       "kind": "optional",
       "mode": "return",
       "labelZh": "回行至清凉坡",
+      "labelEn": "Back to the Cooling Slope",
       "conditionZh": "推进五行战车支线后，从陨砖坑回行并进入新开的岔路。",
+      "conditionEn": "After advancing the Five Elements Carts side quest, travel back from the Fallen Brick Crater and take the newly opened branch.",
       "sources": ["G08", "G19"]
     },
     {
@@ -293,7 +356,9 @@
       "kind": "optional",
       "mode": "teleport",
       "labelZh": "进入隐·璧水洞",
+      "labelEn": "Entering the hidden Bishui Cave",
       "conditionZh": "完成皓斧力士与五行战车相关条件后，由清凉坡穿过冰封大门。",
+      "conditionEn": "Once the Pale-Axe Stalwart and Five Elements Carts conditions are met, pass through the frozen gate at the Cooling Slope.",
       "sources": ["G19"]
     },
     {
@@ -302,6 +367,7 @@
       "kind": "optional",
       "mode": "route",
       "labelZh": "隐藏区域末段",
+      "labelEn": "End of the hidden area",
       "sources": ["G08", "G09", "G19"]
     }
   ],
@@ -309,48 +375,56 @@
     {
       "id": "ashen-pass-one",
       "nameZh": "火燎一关",
+      "nameEn": "Blaze Pass One",
       "position": { "x": 0.08, "y": 0.45 },
       "sources": ["G08", "G18"]
     },
     {
       "id": "ashen-pass-two",
       "nameZh": "火燎二关",
+      "nameEn": "Blaze Pass Two",
       "position": { "x": 0.25, "y": 0.45 },
       "sources": ["G08", "G18"]
     },
     {
       "id": "valley-entrance",
       "nameZh": "谷口",
+      "nameEn": "Valley Entrance",
       "position": { "x": 0.43, "y": 0.45 },
       "sources": ["G08", "G18"]
     },
     {
       "id": "emerald-hall",
       "nameZh": "翠云殿",
+      "nameEn": "Emerald Hall",
       "position": { "x": 0.55, "y": 0.45 },
       "sources": ["G08", "G18"]
     },
     {
       "id": "ashen-pass-three",
       "nameZh": "火燎三关",
+      "nameEn": "Blaze Pass Three",
       "position": { "x": 0.72, "y": 0.45 },
       "sources": ["G08", "G18"]
     },
     {
       "id": "fallen-crater",
       "nameZh": "陨砖坑",
+      "nameEn": "Fallen Brick Crater",
       "position": { "x": 0.83, "y": 0.45 },
       "sources": ["G08", "G18"]
     },
     {
       "id": "cooling-slope",
       "nameZh": "清凉坡",
+      "nameEn": "Cooling Slope",
       "position": { "x": 0.76, "y": 0.82 },
       "sources": ["G08", "G19"]
     },
     {
       "id": "bishui-depths",
       "nameZh": "洞天深处",
+      "nameEn": "Depths of the Cave Realm",
       "position": { "x": 0.87, "y": 0.82 },
       "sources": ["G08", "G19"]
     }

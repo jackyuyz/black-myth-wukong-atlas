@@ -6,7 +6,7 @@
 **Project type:** Frontend-only interactive cultural atlas  
 **Primary goal:** Help users explore *Black Myth: Wukong* through an interactive chapter map while learning how locations, characters, artifacts, architecture, and visual design connect to *Journey to the West* and real-world Chinese cultural heritage.
 
-**v1 language:** Simplified Chinese. English filenames, route segments, IDs, component names, and data keys are allowed, but every user-facing label, navigation item, explanation, error, empty state, image alt text, and accessibility label must be Chinese in v1. English UI is a later localization phase, not an MVP requirement.
+**Languages:** Simplified Chinese (authoritative) and English (derived), both complete and both prerendered — Chinese at `/`, English at `/en/`, with a switch in the top right of every page. Every user-facing label, navigation item, explanation, error, empty state, image alt text and accessibility label exists in both. See 2.2.
 
 This is **not** a strategy guide, combat wiki, completion tracker, or account-based community product. The experience should prioritize cultural exploration, visual storytelling, and source-backed connections between:
 
@@ -36,14 +36,20 @@ A user should be able to:
 
 The experience must be understandable to a visitor who has never played the game and has little prior knowledge of Chinese literature or religion. The homepage and first marker opened should make the three-layer reading model explicit: **游戏中的呈现 →《西游记》中的出处或差异 → 现实文化与实地遗产**. Specialized terms such as 悬塑、二十八宿、道观、法宝、影神图 should receive a short plain-Chinese explanation on first use. Do not assume familiarity with the plot, Buddhist/Daoist systems, or Chinese architectural vocabulary.
 
-### 2.2 Chinese-first content and localization
+### 2.2 Bilingual content: Chinese authoritative, English derived
 
-- The primary project title shown in v1 is **黑神话：悟空文化地图**. `Black Myth Wukong Atlas` may appear as a small repository/project identifier, not as the dominant UI title.
-- All visible chapter, filter, panel, evidence, source, control, and status labels must use Chinese.
-- Chinese copy should favor clear modern prose over unexplained classical or academic language. Necessary classical quotations must be followed by a concise modern-Chinese explanation.
-- Names from the game use the official Chinese spelling in `KNOWLEDGE_BASE.md`. English names may be stored in optional `*En` fields for future localization but should not be required or shown by default.
-- The data model must leave room for a future English locale without duplicating evidence records, media metadata, IDs, coordinates, or source URLs.
-- Do not mix Chinese and English merely as decoration. English text must not become a substitute for a deliberate future translation pass.
+The site ships a Chinese interface at `/` and a complete English interface at `/en/`, switchable from a control in the top right of every page. Chinese is the authoritative version of the content; English is a translation of it, and the two are never allowed to drift apart or ship half-finished.
+
+- The project title is **黑神话：悟空文化地图** in Chinese and **Black Myth: Wukong Cultural Atlas** in English.
+- Every content field carries both `xxxZh` and `xxxEn`. `scripts/validate-data.ts` fails the build on a missing twin, on an `xxxEn` identical to its `xxxZh`, and on arrays of unequal length. `numeralZh` is the single exception: English derives its chapter ordinal from `order`.
+- Both languages keep the same evidence: a single set of IDs, coordinates, source URLs, media records, licences and confidence values. Translation never duplicates or restates them.
+- Interface copy lives in `src/i18n/ui.ts`. The English table is typed as the Chinese table's shape, so a missing key or a changed signature fails `npm run typecheck`.
+- Copy in both languages favours clear modern prose. A classical quotation is followed by an explanation in the reader's language.
+- Game entities use the official English localization name. Most are already recorded in the marker IDs under `src/data/chapters/` and the filenames under `public/images/game/`; read those before naming something yourself.
+- Excerpts from *Journey to the West* keep the cited classical Chinese as the evidence, with `excerptEn` shown beneath it and labelled a working translation by this project. Published English translations of the novel remain in copyright and are not used.
+- On an English page, the English name leads and the Chinese original is shown beside it at card headings, chapter headings and in the source index, so a reader can search for the term or check it against a Chinese source. Map labels show English only, to stay legible.
+- Chinese kept inside an English page is wrapped in `lang="zh-Hans"`, or `lang="zh-Hant"` for a traditional-character excerpt. `Text`, `Zh` and `OriginalName` in `src/i18n/` do this; `Text` tags Chinese that sits inside an English sentence.
+- Source titles for Chinese publications stay in the original so they remain findable, with an English rendering beneath. Creator names stay verbatim, because attribution requires it.
 
 ### 2.3 Scope boundaries
 
@@ -96,7 +102,7 @@ The reasoning is that this project's risk is bad *data*, not bad rendering: a mi
 
 ### 3.2 Prerendering
 
-The site must be prerendered to static HTML at build time. Every v1 route — `/`, `/chapters`, `/chapter/:chapterId` for all six chapters, `/about`, `/sources` — must ship its Chinese content inside the HTML source rather than rendering it only after hydration.
+The site must be prerendered to static HTML at build time. Every route — `/`, `/chapters`, `/chapter/:chapterId` for all six chapters, `/about`, `/sources`, and the `/en/` mirror of each — must ship its content inside the HTML source rather than rendering it only after hydration. That is twenty pages plus a 404 per language. Each page sets `<html lang>` for its own language and carries `hreflang` alternates for both; `scripts/prerender.ts` asserts that every marker's game and novel prose is present, in the language of that page.
 
 This is a product requirement, not a performance nicety. The project's value is a body of searchable cultural writing: roughly ninety marker cards covering 观音禅院、亢金龙、辟水金睛兽 and similar terms. Content that exists only after JavaScript runs cannot be indexed, linked with a preview, or read without scripts.
 
@@ -110,7 +116,8 @@ A validation script must run in `prebuild` and in CI, and must fail the build on
 2. a `confidence`, `evidenceType`, `type`, `layers`, `mapMode`, or `topologyStatus` value outside its allowed set;
 3. a media ID referenced by chapter data that is missing from `src/data/media.json`, or whose `licenseStatus` is not `cleared`, `public-domain`, or a documented first-party `original-*`;
 4. a marker carrying coordinates on a map whose `mapMode`/`topologyStatus` combination does not permit them, per 6.2;
-5. a `realWorld` entry with no `sources`, or a marker whose `journeyToTheWest` block cites no chapter number.
+5. a `realWorld` entry with no `sources`, or a marker whose `journeyToTheWest` block cites no chapter number;
+6. a content field with no English twin, an `xxxEn` that is identical to its `xxxZh`, `chapterTitlesZh`/`chapterTitlesEn` of unequal length, a `mapNoticeEn` missing any of *route diagram*, *not to geographic scale* or *not an official map*, or a media `license` string with no entry in `licenseLabels`.
 
 Most content in this repository is written by agents across many sessions. A build that fails loudly on a broken citation is a stronger safeguard than any review convention, because a broken citation otherwise renders as ordinary-looking text that nobody notices.
 
@@ -123,12 +130,14 @@ Most content in this repository is written by agents across many sessions. A bui
 Suggested routes:
 
 ```text
-/
-/chapters
-/chapter/:chapterId
-/about
-/sources
+/                          /en
+/chapters                  /en/chapters
+/chapter/:chapterId        /en/chapter/:chapterId
+/about                     /en/about
+/sources                   /en/sources
 ```
+
+The locale is carried by the URL alone — no state, no storage — so every page is prerenderable and shareable, and the switch works with scripts turned off. `useLang()` reads it from the path; `LocaleLink` and `LocaleNavLink` keep internal links inside the current locale.
 
 Optional future routes:
 
@@ -292,8 +301,8 @@ Every marker may contain some or all of the following sections.
 #### A. Header
 
 - Chinese name (primary)
-- category badge in Chinese
-- chapter / region in Chinese
+- category badge, in the reader's language
+- chapter / region, in the reader's language
 - hero image if available
 - optional English name field reserved for the future locale; hidden by default in v1
 
@@ -341,7 +350,7 @@ speculative
 unknown
 ```
 
-These are internal data keys. Display them in Chinese as:
+These are internal data keys. Never render them. Display them through `labels` in `src/types/schema.ts`, which maps each one to a Chinese and an English label:
 
 | Key | v1 label |
 |---|---|
@@ -552,7 +561,7 @@ When a biography or relationship comes from the in-game portrait / journal / cod
 - Clearly state when a game entity has no direct counterpart in the novel.
 - Do not use “大家都知道”“显然”“原作党”等 insider phrasing.
 - Do not require the reader to recognize a deity, constellation, Buddhist object, Daoist practice, dynasty, province, or architectural component from its name alone.
-- Spoilers beyond the current chapter must be collapsed behind a Chinese spoiler warning.
+- Spoilers beyond the current chapter must be collapsed behind a spoiler warning in the reader's language (`warningZh` / `warningEn`).
 - A real-world site is shown only when the specific connection has evidence; the absence of a verified site is valid and must not be filled with a guess.
 
 ---
@@ -732,7 +741,7 @@ Agents working on this repository should follow these rules:
 3. Keep chapter content in JSON, not hard-coded in components.
 4. Do not invent historical, literary, or game facts.
 5. Preserve normalized map coordinates, and respect the `mapMode` gate: authored coordinates are allowed on a `schematic` map with verified route order, never on an unverified one.
-6. Ship a Chinese-only visible interface for v1; retain optional English fields only for future localization.
+6. Ship both interfaces complete. Any content field added must carry `xxxZh` and `xxxEn` in the same change, with its validation rule.
 7. Keep citations and source IDs intact.
 8. Treat speculative real-world connections as speculative.
 9. Prioritize map usability over decorative UI.
@@ -794,21 +803,30 @@ Only after the map experience is stable:
 - image comparison sliders
 - timeline of *Journey to the West* episodes
 - relationship graph for selected characters
-- bilingual UI toggle
 - classroom presentation mode
 
 These should remain optional enhancements rather than requirements for initial development.
 
 ## 19. Initial implementation schema (2026-09-20)
 
-The executable schema lives in `src/types/schema.ts`. All content fields below are validated before building. All text ending in `Zh` must contain Chinese text. No chapter content is stored in components.
+The executable schema lives in `src/types/schema.ts`. All content fields below are validated before building. Text ending in `Zh` must contain Chinese; every such field has an `En` twin that must contain Latin script and must differ from it (`numeralZh` excepted — English builds its ordinal from `order`). No chapter content is stored in components.
 
 - Chapter: `numeralZh`, `themeZh`, `overviewZh`, `readingGuideZh`, `sources`, `atmosphereMediaId`, optional `mapMediaId`, `mapNoticeZh`, `mapMode`, `topologyStatus`, `markers`, `routes` and `areas`. The existing `id`, `order`, `titleZh`, `regionZh` remain. Other chapters can have reading cards without `position`; these are not map markers.
 - `areas`: `{ id, nameZh, position }` for verified schematic areas. `routes`: `{ from, to, kind: main | optional, sources }`, referencing marker IDs; connections only represent researched route relationships. All positions use normalized coordinates and pass the map gate. A topological map needs a local `topologyLog` path. Unverified chapters have no areas, routes, map media or coordinates.
 - Marker: `areaZh`, `summaryZh`, `sources`, optional `position`, `game: { descriptionZh, optional mediaIds, sources }`, optional `journeyToTheWest`, optional `realWorld`, `funFacts`, optional `spoiler: { warningZh, textZh, sources }`. Game media must resolve to a cleared, documentary `game-reference` record with `game-capture` provenance and must portray that exact node. `journeyToTheWest` contains `relationship: direct | recombined`, chapter numbers, chapter titles, summary, adaptation note, a required original-text excerpt, its exact `excerptSourceId`, optional `mediaIds`, and sources. The excerpt source must resolve to `primary-text` and also appear in that block's `sources`; literary media must resolve to licensed `historical-documentary` or `historical-analogue` records and is labeled as historical imagery rather than a game depiction. These are shown as 原著直接出现 / 原著元素重组. Markers without a literary block must carry `noDirectNovelZh`; do not fabricate a chapter reference.
 - Heritage: `nameZh`, `locationZh`, `descriptionZh`, `evidenceScopeZh`, `relationship: cultural-comparison | developer-confirmed`, `confidence`, `evidenceType`, `sources`, optional `mediaIds`. Explicit evidence scope prevents a visual comparison from becoming a claim about scanning. `developer-confirmed` requires developer evidence; `confirmed` cannot use visual-comparison/community-theory evidence.
 - Media index: keyed by stable ID, using local `file`, Chinese title/alt/usage note, asset role, documentary flag, provenance, creator, license/license URL/status, source URL, evidence source IDs/scope, modification note. Original vectors have `firstParty: true` and a production license. Documentary photos retain attribution and share-alike terms. Original atmosphere vectors are non-documentary and do not portray an exact game location.
-- Source index: keyed by original W/G/H/L/F IDs or new G07+ research IDs; each has `titleZh`, `publisherZh`, `url`, `type`, `scopeZh`. Source types map to Chinese labels. Existing IDs are never repurposed.
+- Source index: keyed by original W/G/H/L/F IDs or new G07+ research IDs; each has `titleZh`, `publisherZh`, `url`, `type`, `scopeZh`. Source types map through `labels`. Existing IDs are never repurposed.
+
+### 19.2 English fields (2026-09-21)
+
+Every rendered `xxxZh` gained an `xxxEn` beside it in the same record, so IDs, coordinates, sources, media references and licences stay single-sourced: chapter `titleEn` `regionEn` `themeEn` `overviewEn` `readingGuideEn` `mapNoticeEn`; `areas[].nameEn`, `anchors[].nameEn`, `routes[].labelEn` and `routes[].conditionEn` (each optional, but paired with its Chinese); marker `nameEn` `areaEn` `summaryEn` `noDirectNovelEn` and `game.descriptionEn`; `journeyToTheWest.chapterTitlesEn` (same length as the Chinese array), `summaryEn`, `adaptationNoteEn` and `excerptEn`; `realWorld[].nameEn` `locationEn` `descriptionEn` `evidenceScopeEn`; `funFacts[].textEn`; `spoiler.warningEn` and `textEn`; media `titleEn` `altEn` `usageNoteEn` `evidenceScopeEn` `modificationNoteEn`; source `titleEn` `publisherEn` `scopeEn`.
+
+`excerptZh` is untouched — it remains the cited original, shown in full on the English page above `excerptEn`, which is labelled a working translation by this project.
+
+Route records carry their translations too, so `validate-data.ts` strips `labelEn` and `conditionEn` before comparing `routes` against the chapter's topology log. Node order, branching, `kind`, `mode` and `sources` are still compared exactly; the gate is unchanged, not relaxed.
+
+`labels` in `src/types/schema.ts` holds a Chinese and an English display label for every enum, including the relationship labels that were previously inline ternaries in the components. `licenseLabels` does the same for the free-text `license` strings in `media.json`, and the validator fails on any licence with no entry — without it, an English page would print the Chinese rights record verbatim.
 
 Build-time static rendering uses React's server renderer plus React Router's static router. All ten required route pages include the full Chinese reading cards in native disclosure elements, so closed drawers do not hide the writing from static HTML or script-free readers. The same cards are reused in interactive dialogs. Hash links identify cards and work without JavaScript. No fetch is needed to read content. Unknown paths use the generated Chinese 404 page. Vite's automatic directory deletion is disabled in accordance with repository deletion rules.
 
